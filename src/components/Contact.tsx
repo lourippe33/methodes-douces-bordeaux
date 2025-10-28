@@ -3,7 +3,41 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
+
 const Contact = () => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: ""
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!formData.name || !formData.email || !formData.message) {
+      toast({
+        title: "Champs requis",
+        description: "Veuillez remplir au moins votre nom, email et message",
+        variant: "destructive"
+      });
+      return;
+    }
+
+    const subject = `Nouveau message de ${formData.name}`;
+    const body = `Nom: ${formData.name}
+Email: ${formData.email}
+Téléphone: ${formData.phone || "Non renseigné"}
+
+Message:
+${formData.message}`;
+
+    const mailtoLink = `mailto:eric.gata@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  };
   return <section id="contact" className="py-24 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
@@ -24,32 +58,58 @@ const Contact = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <form className="space-y-4">
+                <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium">
                       Nom complet
                     </label>
-                    <Input id="name" placeholder="Votre nom" />
+                    <Input 
+                      id="name" 
+                      placeholder="Votre nom" 
+                      value={formData.name}
+                      onChange={(e) => setFormData({...formData, name: e.target.value})}
+                      required
+                    />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm font-medium">
                       Email
                     </label>
-                    <Input id="email" type="email" placeholder="votre@email.com" />
+                    <Input 
+                      id="email" 
+                      type="email" 
+                      placeholder="votre@email.com"
+                      value={formData.email}
+                      onChange={(e) => setFormData({...formData, email: e.target.value})}
+                      required
+                    />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="phone" className="text-sm font-medium">
                       Téléphone
                     </label>
-                    <Input id="phone" type="tel" placeholder="06 12 34 56 78" />
+                    <Input 
+                      id="phone" 
+                      type="tel" 
+                      placeholder="06 12 34 56 78"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                    />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="message" className="text-sm font-medium">
                       Message
                     </label>
-                    <Textarea id="message" placeholder="Parlez-nous de votre besoin..." rows={4} />
+                    <Textarea 
+                      id="message" 
+                      placeholder="Parlez-nous de votre besoin..." 
+                      rows={4}
+                      value={formData.message}
+                      onChange={(e) => setFormData({...formData, message: e.target.value})}
+                      required
+                    />
                   </div>
-                  <Button className="w-full bg-gradient-primary hover:shadow-strong transition-all">
+                  <Button type="submit" className="w-full bg-gradient-primary hover:shadow-strong transition-all">
                     Envoyer le message
                   </Button>
                 </form>
