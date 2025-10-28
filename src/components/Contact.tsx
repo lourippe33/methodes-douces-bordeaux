@@ -12,18 +12,18 @@ const Contact = () => {
     name: "",
     email: "",
     phone: "",
-    message: ""
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!formData.name || !formData.email || !formData.message) {
       toast({
         title: "Champs requis",
         description: "Veuillez remplir au moins votre nom, email et message",
-        variant: "destructive"
+        variant: "destructive",
       });
       return;
     }
@@ -37,7 +37,7 @@ const Contact = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          access_key: "VOTRE_CLE_WEB3FORMS", // Remplacez par votre clé Web3Forms
+          access_key: "037b1536-40d8-4f5c-a784-717f0cc7235a", // Remplacez par votre clé Web3Forms
           from_name: formData.name,
           email: formData.email,
           phone: formData.phone || "Non renseigné",
@@ -69,7 +69,8 @@ const Contact = () => {
       setIsSubmitting(false);
     }
   };
-  return <section id="contact" className="py-24 bg-muted/30">
+  return (
+    <section id="contact" className="py-24 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16 space-y-4">
@@ -84,9 +85,7 @@ const Contact = () => {
             <Card className="border-2">
               <CardHeader>
                 <CardTitle>Envoyez-nous un message</CardTitle>
-                <CardDescription>
-                  Nous vous répondrons dans les plus brefs délais
-                </CardDescription>
+                <CardDescription>Nous vous répondrons dans les plus brefs délais</CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-4">
@@ -94,11 +93,11 @@ const Contact = () => {
                     <label htmlFor="name" className="text-sm font-medium">
                       Nom complet
                     </label>
-                    <Input 
-                      id="name" 
-                      placeholder="Votre nom" 
+                    <Input
+                      id="name"
+                      placeholder="Votre nom"
                       value={formData.name}
-                      onChange={(e) => setFormData({...formData, name: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       required
                     />
                   </div>
@@ -106,12 +105,12 @@ const Contact = () => {
                     <label htmlFor="email" className="text-sm font-medium">
                       Email
                     </label>
-                    <Input 
-                      id="email" 
-                      type="email" 
+                    <Input
+                      id="email"
+                      type="email"
                       placeholder="votre@email.com"
                       value={formData.email}
-                      onChange={(e) => setFormData({...formData, email: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       required
                     />
                   </div>
@@ -119,28 +118,32 @@ const Contact = () => {
                     <label htmlFor="phone" className="text-sm font-medium">
                       Téléphone
                     </label>
-                    <Input 
-                      id="phone" 
-                      type="tel" 
+                    <Input
+                      id="phone"
+                      type="tel"
                       placeholder="06 12 34 56 78"
                       value={formData.phone}
-                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="message" className="text-sm font-medium">
                       Message
                     </label>
-                    <Textarea 
-                      id="message" 
-                      placeholder="Parlez-nous de votre besoin..." 
+                    <Textarea
+                      id="message"
+                      placeholder="Parlez-nous de votre besoin..."
                       rows={4}
                       value={formData.message}
-                      onChange={(e) => setFormData({...formData, message: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       required
                     />
                   </div>
-                  <Button type="submit" className="w-full bg-gradient-primary hover:shadow-strong transition-all" disabled={isSubmitting}>
+                  <Button
+                    type="submit"
+                    className="w-full bg-gradient-primary hover:shadow-strong transition-all"
+                    disabled={isSubmitting}
+                  >
                     {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
                   </Button>
                 </form>
@@ -157,7 +160,10 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Email</h3>
-                      <a href="mailto:eric.gata@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                      <a
+                        href="mailto:eric.gata@gmail.com"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
                         eric.gata@gmail.com
                       </a>
                     </div>
@@ -187,9 +193,9 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Localisation</h3>
-                      <a 
-                        href="https://www.google.com/maps/search/?api=1&query=9+galerie+marchande+33370+Tresses" 
-                        target="_blank" 
+                      <a
+                        href="https://www.google.com/maps/search/?api=1&query=9+galerie+marchande+33370+Tresses"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
@@ -206,8 +212,7 @@ const Contact = () => {
                   <div className="space-y-1 text-muted-foreground">
                     <p>Lundi – mardi – vendredi : 9 h - 19 h</p>
                     <p>Mercredi et jeudi : 9 h - 13 h</p>
-                    <p>
-                  </p>
+                    <p></p>
                   </div>
                 </CardContent>
               </Card>
@@ -215,6 +220,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
 export default Contact;
