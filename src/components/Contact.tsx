@@ -3,16 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin } from "lucide-react";
-
 const Contact = () => {
-  return (
-    <section id="contact" className="py-24 bg-muted/30">
+  return <section id="contact" className="py-24 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Contactez-nous
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground">Contactez-moi</h2>
             <p className="text-xl text-muted-foreground">
               Prêt à commencer votre parcours de changement ? Parlons-en ensemble
             </p>
@@ -51,11 +47,7 @@ const Contact = () => {
                     <label htmlFor="message" className="text-sm font-medium">
                       Message
                     </label>
-                    <Textarea 
-                      id="message" 
-                      placeholder="Parlez-nous de votre besoin..."
-                      rows={4}
-                    />
+                    <Textarea id="message" placeholder="Parlez-nous de votre besoin..." rows={4} />
                   </div>
                   <Button className="w-full bg-gradient-primary hover:shadow-strong transition-all">
                     Envoyer le message
@@ -74,7 +66,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Email</h3>
-                      <p className="text-muted-foreground">contact@methodes-douces-bordeaux.fr</p>
+                      <p className="text-muted-foreground">eric.gata@gmail.com</p>
                     </div>
                   </div>
                 </CardContent>
@@ -88,7 +80,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Téléphone</h3>
-                      <p className="text-muted-foreground">06 12 34 56 78</p>
+                      <p className="text-muted-foreground">07 82 38 66 21</p>
                     </div>
                   </div>
                 </CardContent>
@@ -112,9 +104,10 @@ const Contact = () => {
                 <CardContent className="pt-6">
                   <h3 className="font-semibold text-lg mb-2">Horaires</h3>
                   <div className="space-y-1 text-muted-foreground">
-                    <p>Lundi - Vendredi : 9h00 - 19h00</p>
-                    <p>Samedi : 9h00 - 13h00</p>
-                    <p>Dimanche : Fermé</p>
+                    <p>Lundi – mardi – vendredi : 9 h - 19 h</p>
+                    <p>Mercredi et jeudi : 9 h - 13 h</p>
+                    <p>
+                  </p>
                   </div>
                 </CardContent>
               </Card>
@@ -122,8 +115,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
