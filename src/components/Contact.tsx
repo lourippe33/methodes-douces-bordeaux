@@ -66,7 +66,9 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Email</h3>
-                      <p className="text-muted-foreground">eric.gata@gmail.com</p>
+                      <a href="mailto:eric.gata@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                        eric.gata@gmail.com
+                      </a>
                     </div>
                   </div>
                 </CardContent>
@@ -94,7 +96,14 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Localisation</h3>
-                      <p className="text-muted-foreground">Tresses, Bordeaux, Libourne</p>
+                      <a 
+                        href="https://www.google.com/maps/search/?api=1&query=9+galerie+marchande+33370+Tresses" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        9 galerie marchande 33370 Tresses
+                      </a>
                     </div>
                   </div>
                 </CardContent>
