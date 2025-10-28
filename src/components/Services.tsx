@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Brain, Activity, Scale, Cigarette, ArrowRight } from "lucide-react";
+import { Brain, Activity, ArrowRight } from "lucide-react";
 
 const services = [
   {
@@ -15,20 +15,6 @@ const services = [
     title: "Neurofeedback",
     description: "Une méthode innovante pour réguler votre activité cérébrale et améliorer votre bien-être au quotidien.",
     benefits: ["TDA(H)", "Insomnie", "Migraines", "Gestion du stress"],
-    color: "secondary",
-  },
-  {
-    icon: Scale,
-    title: "Accompagnement Poids",
-    description: "Une approche globale et bienveillante pour atteindre vos objectifs de poids de façon durable.",
-    benefits: ["Perte de poids durable", "Rééquilibrage alimentaire", "Gestion émotionnelle", "Suivi personnalisé"],
-    color: "primary",
-  },
-  {
-    icon: Cigarette,
-    title: "Stop Tabac",
-    description: "Libérez-vous du tabac grâce à des méthodes douces et efficaces adaptées à votre profil.",
-    benefits: ["Arrêt définitif", "Sans substitution", "Méthode douce", "Accompagnement suivi"],
     color: "secondary",
   },
 ];
