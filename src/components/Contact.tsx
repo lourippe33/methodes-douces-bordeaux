@@ -14,8 +14,9 @@ const Contact = () => {
     phone: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!formData.name || !formData.email || !formData.message) {
@@ -27,29 +28,46 @@ const Contact = () => {
       return;
     }
 
-    const subject = `Nouveau message de ${formData.name}`;
-    const body = `Nom: ${formData.name}
-Email: ${formData.email}
-Téléphone: ${formData.phone || "Non renseigné"}
+    setIsSubmitting(true);
 
-Message:
-${formData.message}`;
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "VOTRE_CLE_WEB3FORMS", // Remplacez par votre clé Web3Forms
+          from_name: formData.name,
+          email: formData.email,
+          phone: formData.phone || "Non renseigné",
+          message: formData.message,
+          to_email: "eric.gata@gmail.com",
+          subject: `Nouveau message de ${formData.name}`,
+        }),
+      });
 
-    const mailtoLink = `mailto:eric.gata@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-    // Ouvrir le client email
-    window.location.href = mailtoLink;
-    
-    // Afficher un message de confirmation
-    toast({
-      title: "Ouverture de votre messagerie",
-      description: "Votre client email va s'ouvrir avec le message pré-rempli",
-    });
-    
-    // Réinitialiser le formulaire après un court délai
-    setTimeout(() => {
-      setFormData({ name: "", email: "", phone: "", message: "" });
-    }, 1000);
+      const result = await response.json();
+
+      if (result.success) {
+        toast({
+          title: "Message envoyé !",
+          description: "Nous vous répondrons dans les plus brefs délais.",
+        });
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      } else {
+        throw new Error("Erreur lors de l'envoi");
+      }
+    } catch (error) {
+      console.error("Erreur:", error);
+      toast({
+        title: "Erreur",
+        description: "Une erreur est survenue lors de l'envoi du message. Veuillez réessayer.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   return <section id="contact" className="py-24 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -122,8 +140,8 @@ ${formData.message}`;
                       required
                     />
                   </div>
-                  <Button type="submit" className="w-full bg-gradient-primary hover:shadow-strong transition-all">
-                    Envoyer le message
+                  <Button type="submit" className="w-full bg-gradient-primary hover:shadow-strong transition-all" disabled={isSubmitting}>
+                    {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
                   </Button>
                 </form>
               </CardContent>
