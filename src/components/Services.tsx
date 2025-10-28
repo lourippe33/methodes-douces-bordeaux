@@ -9,6 +9,7 @@ const services = [
     description: "Un accompagnement efficace pour retrouver confiance, estime de soi et surmonter vos blocages émotionnels.",
     benefits: ["Gestion des angoisses", "Phobies et peurs", "Traumatismes", "Confiance en soi"],
     color: "primary",
+    link: null,
   },
   {
     icon: Activity,
@@ -16,6 +17,7 @@ const services = [
     description: "Une méthode innovante pour réguler votre activité cérébrale et améliorer votre bien-être au quotidien.",
     benefits: ["TDA(H)", "Insomnie", "Migraines", "Gestion du stress"],
     color: "secondary",
+    link: "https://neurofeedback-stress.fr/",
   },
 ];
 
@@ -58,13 +60,26 @@ const Services = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button 
-                    variant="ghost" 
-                    className={`w-full group/btn hover:bg-${service.color}/10 hover:text-${service.color}`}
-                  >
-                    En savoir plus
-                    <ArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform" size={16} />
-                  </Button>
+                  {service.link ? (
+                    <Button 
+                      variant="ghost" 
+                      className={`w-full group/btn hover:bg-${service.color}/10 hover:text-${service.color}`}
+                      asChild
+                    >
+                      <a href={service.link} target="_blank" rel="noopener noreferrer">
+                        En savoir plus
+                        <ArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform" size={16} />
+                      </a>
+                    </Button>
+                  ) : (
+                    <Button 
+                      variant="ghost" 
+                      className={`w-full group/btn hover:bg-${service.color}/10 hover:text-${service.color}`}
+                    >
+                      En savoir plus
+                      <ArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform" size={16} />
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             );
