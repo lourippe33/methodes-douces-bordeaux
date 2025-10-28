@@ -1,9 +1,12 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { GraduationCap, Users, Video, Award, CheckCircle2 } from "lucide-react";
+import { GraduationCap, Users, Video, Award } from "lucide-react";
 import logo from "@/assets/logo-agp.png";
+import formationImage from "@/assets/formation-hands.jpg";
+
 const Formation = () => {
-  return <section id="formation" className="py-24 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+  return (
+    <section id="formation" className="py-24 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           {/* Header */}
@@ -75,27 +78,43 @@ const Formation = () => {
                 </div>
               </div>
 
+              {/* Formation Image */}
+              <div className="rounded-xl overflow-hidden shadow-soft">
+                <img 
+                  src={formationImage} 
+                  alt="Formation AGP - Accompagnement personnalisé" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+
               {/* Benefits List */}
               <div className="bg-gradient-to-r from-primary/5 to-secondary/5 p-6 rounded-xl">
-                <h4 className="font-semibold text-lg mb-4 text-left">Ce que vous allez apprendre :
-
-I. La chronobiologie – Comprendre l’horloge interne et ses rythmes, le rôle du cortisol et de l’insuline, l’équilibre entre protéines, lipides et glucides, l’importance de l’homéostasie et des enzymes, et les effets délétères du sucre, des produits light et transformés.
-
-II. Les neuromédiateurs – Explorer la biologie des émotions, les carences responsables de troubles du comportement et l’impact de l’alimentation sur la production des neuromédiateurs.
-
-III. Coaching & Hypnose – Approfondir la structure d’une séance (anamnèse, nutri-coaching, croyances limitantes, comportements alimentaires).
-
-IV. Psychologie & comportements – Travailler sur la relation à soi, au corps et aux autres, la gestion du stress, les blocages, et le changement des habitudes.
-
-V. Outils thérapeutiques – Utiliser l’hypnose conversationnelle et divers outils émotionnels (négociation des parties, recadrage, PNE, cohérence cardiaque, pleine conscience, lâcher-prise).
-
-VI. Les blessures & le poids – Identifier les liens entre émotions, blessures personnelles et comportements alimentaires pour rétablir une relation saine à soi et à l’alimentation.
-
-
-              </h4>
-                <ul className="space-y-2">
-                  {["Méthodologie complète d'accompagnement du poids", "Outils pratiques pour vos consultations", "Gestion des émotions et comportements alimentaires", "Approche holistique du bien-être", "Techniques d'hypnose et de sophrologie appliquées", "Études de cas réels et mises en pratique"].map((item, index) => {})}
-                </ul>
+                <h4 className="font-semibold text-lg mb-4 text-left">Ce que vous allez apprendre :</h4>
+                <div className="space-y-4 text-left">
+                  <p>
+                    <strong>I. La chronobiologie</strong> – Comprendre l'horloge interne et ses rythmes, le rôle du cortisol et de l'insuline, l'équilibre entre protéines, lipides et glucides, l'importance de l'homéostasie et des enzymes, et les effets délétères du sucre, des produits light et transformés.
+                  </p>
+                  
+                  <p>
+                    <strong>II. Les neuromédiateurs</strong> – Explorer la biologie des émotions, les carences responsables de troubles du comportement et l'impact de l'alimentation sur la production des neuromédiateurs.
+                  </p>
+                  
+                  <p>
+                    <strong>III. Coaching & Hypnose</strong> – Approfondir la structure d'une séance (anamnèse, nutri-coaching, croyances limitantes, comportements alimentaires).
+                  </p>
+                  
+                  <p>
+                    <strong>IV. Psychologie & comportements</strong> – Travailler sur la relation à soi, au corps et aux autres, la gestion du stress, les blocages, et le changement des habitudes.
+                  </p>
+                  
+                  <p>
+                    <strong>V. Outils thérapeutiques</strong> – Utiliser l'hypnose conversationnelle et divers outils émotionnels (négociation des parties, recadrage, PNE, cohérence cardiaque, pleine conscience, lâcher-prise).
+                  </p>
+                  
+                  <p>
+                    <strong>VI. Les blessures & le poids</strong> – Identifier les liens entre émotions, blessures personnelles et comportements alimentaires pour rétablir une relation saine à soi et à l'alimentation.
+                  </p>
+                </div>
               </div>
 
               {/* CTA */}
@@ -108,6 +127,8 @@ VI. Les blessures & le poids – Identifier les liens entre émotions, blessures
           </Card>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Formation;
