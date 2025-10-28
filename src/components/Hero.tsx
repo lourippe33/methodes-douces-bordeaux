@@ -34,7 +34,7 @@ const Hero = () => {
               onClick={scrollToServices}
               className="bg-gradient-primary hover:shadow-strong transition-all text-lg px-8 py-6 group"
             >
-              Découvrir nos services
+              Découvrir mes services
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
             </Button>
             <Button 
