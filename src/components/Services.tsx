@@ -27,7 +27,7 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            Mes services
+            Découvrir mes services
           </h2>
           <p className="text-xl text-muted-foreground">
             Des méthodes douces et efficaces pour vous accompagner vers le changement
