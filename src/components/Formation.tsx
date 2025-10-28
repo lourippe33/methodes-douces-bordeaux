@@ -2,10 +2,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { GraduationCap, Users, Video, Award, CheckCircle2 } from "lucide-react";
 import logo from "@/assets/logo-agp.png";
-
 const Formation = () => {
-  return (
-    <section id="formation" className="py-24 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+  return <section id="formation" className="py-24 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           {/* Header */}
@@ -30,7 +28,7 @@ const Formation = () => {
                 Devenez un pro de la gestion du poids !
               </h3>
               <div className="inline-block bg-white/20 backdrop-blur-sm px-6 py-2 rounded-full mt-4">
-                <p className="text-lg font-semibold">RÉDUCTION DE 90 € !</p>
+                <p className="text-lg font-semibold">Maitrisez vos accompagnements !</p>
               </div>
             </div>
 
@@ -47,7 +45,7 @@ const Formation = () => {
                 <div className="flex items-start gap-3 p-4 bg-muted/50 rounded-lg">
                   <Video className="text-primary flex-shrink-0 mt-1" size={24} />
                   <div>
-                    <h4 className="font-semibold mb-1">Covisions mensuelles en live</h4>
+                    <h4 className="font-semibold mb-1">Suivi praticiens régulier</h4>
                     <p className="text-sm text-muted-foreground">Échanges réguliers et suivi personnalisé</p>
                   </div>
                 </div>
@@ -63,7 +61,7 @@ const Formation = () => {
                 <div className="flex items-start gap-3 p-4 bg-muted/50 rounded-lg">
                   <Award className="text-primary flex-shrink-0 mt-1" size={24} />
                   <div>
-                    <h4 className="font-semibold mb-1">Certification reconnue</h4>
+                    <h4 className="font-semibold mb-1">Attestation de fin de cycle</h4>
                     <p className="text-sm text-muted-foreground">Attestation de formation professionnelle</p>
                   </div>
                 </div>
@@ -71,7 +69,7 @@ const Formation = () => {
                 <div className="flex items-start gap-3 p-4 bg-muted/50 rounded-lg">
                   <GraduationCap className="text-secondary flex-shrink-0 mt-1" size={24} />
                   <div>
-                    <h4 className="font-semibold mb-1">Accès à vie</h4>
+                    <h4 className="font-semibold mb-1">Accès à vie à la formation</h4>
                     <p className="text-sm text-muted-foreground">Contenu mis à jour régulièrement</p>
                   </div>
                 </div>
@@ -79,21 +77,24 @@ const Formation = () => {
 
               {/* Benefits List */}
               <div className="bg-gradient-to-r from-primary/5 to-secondary/5 p-6 rounded-xl">
-                <h4 className="font-semibold text-lg mb-4">Ce que vous allez apprendre :</h4>
+                <h4 className="font-semibold text-lg mb-4">Ce que vous allez apprendre :
+
+I. La chronobiologie – Comprendre l’horloge interne et ses rythmes, le rôle du cortisol et de l’insuline, l’équilibre entre protéines, lipides et glucides, l’importance de l’homéostasie et des enzymes, et les effets délétères du sucre, des produits light et transformés.
+
+II. Les neuromédiateurs – Explorer la biologie des émotions, les carences responsables de troubles du comportement et l’impact de l’alimentation sur la production des neuromédiateurs.
+
+III. Coaching & Hypnose – Approfondir la structure d’une séance (anamnèse, nutri-coaching, croyances limitantes, comportements alimentaires).
+
+IV. Psychologie & comportements – Travailler sur la relation à soi, au corps et aux autres, la gestion du stress, les blocages, et le changement des habitudes.
+
+V. Outils thérapeutiques – Utiliser l’hypnose conversationnelle et divers outils émotionnels (négociation des parties, recadrage, PNE, cohérence cardiaque, pleine conscience, lâcher-prise).
+
+VI. Les blessures & le poids – Identifier les liens entre émotions, blessures personnelles et comportements alimentaires pour rétablir une relation saine à soi et à l’alimentation.
+
+
+              </h4>
                 <ul className="space-y-2">
-                  {[
-                    "Méthodologie complète d'accompagnement du poids",
-                    "Outils pratiques pour vos consultations",
-                    "Gestion des émotions et comportements alimentaires",
-                    "Approche holistique du bien-être",
-                    "Techniques d'hypnose et de sophrologie appliquées",
-                    "Études de cas réels et mises en pratique",
-                  ].map((item, index) => (
-                    <li key={index} className="flex items-center gap-3">
-                      <CheckCircle2 className="text-secondary flex-shrink-0" size={20} />
-                      <span>{item}</span>
-                    </li>
-                  ))}
+                  {["Méthodologie complète d'accompagnement du poids", "Outils pratiques pour vos consultations", "Gestion des émotions et comportements alimentaires", "Approche holistique du bien-être", "Techniques d'hypnose et de sophrologie appliquées", "Études de cas réels et mises en pratique"].map((item, index) => {})}
                 </ul>
               </div>
 
@@ -107,8 +108,6 @@ const Formation = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Formation;
