@@ -36,7 +36,20 @@ Message:
 ${formData.message}`;
 
     const mailtoLink = `mailto:eric.gata@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Ouvrir le client email
     window.location.href = mailtoLink;
+    
+    // Afficher un message de confirmation
+    toast({
+      title: "Ouverture de votre messagerie",
+      description: "Votre client email va s'ouvrir avec le message pré-rempli",
+    });
+    
+    // Réinitialiser le formulaire après un court délai
+    setTimeout(() => {
+      setFormData({ name: "", email: "", phone: "", message: "" });
+    }, 1000);
   };
   return <section id="contact" className="py-24 bg-muted/30">
       <div className="container mx-auto px-4">
