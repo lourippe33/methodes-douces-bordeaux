@@ -77,7 +77,7 @@ const Formation = () => {
 
               {/* Benefits List */}
               <div className="bg-gradient-to-r from-primary/5 to-secondary/5 p-6 rounded-xl">
-                <h4 className="font-semibold text-lg mb-4">Ce que vous allez apprendre :
+                <h4 className="font-semibold text-lg mb-4 text-left">Ce que vous allez apprendre :
 
 I. La chronobiologie – Comprendre l’horloge interne et ses rythmes, le rôle du cortisol et de l’insuline, l’équilibre entre protéines, lipides et glucides, l’importance de l’homéostasie et des enzymes, et les effets délétères du sucre, des produits light et transformés.
 
