@@ -1,20 +1,23 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Brain, Activity, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 const services = [{
   icon: Brain,
   title: "Hypnose & EFT-H",
   description: "Un accompagnement efficace pour retrouver confiance, estime de soi et surmonter vos blocages émotionnels.",
   benefits: ["Gestion des angoisses", "Phobies et peurs", "Traumatismes", "Confiance en soi"],
   color: "primary",
-  link: null
+  link: "/hypnose-eft-h",
+  external: false
 }, {
   icon: Activity,
   title: "Neurofeedback",
   description: "Une méthode innovante pour réguler votre activité cérébrale et améliorer votre bien-être au quotidien.",
   benefits: ["TDA(H)", "Insomnie", "Migraines", "Gestion du stress"],
   color: "secondary",
-  link: "https://neurofeedback-stress.fr/"
+  link: "https://neurofeedback-stress.fr/",
+  external: true
 }];
 const Services = () => {
   return <section id="services" className="py-24 bg-muted/30">
@@ -46,15 +49,26 @@ const Services = () => {
                         {benefit}
                       </li>)}
                   </ul>
-                  {service.link ? <Button variant="ghost" className={`w-full group/btn hover:bg-${service.color}/10 hover:text-${service.color}`} asChild>
+                  {service.link && service.external ? (
+                    <Button variant="ghost" className={`w-full group/btn hover:bg-${service.color}/10 hover:text-${service.color}`} asChild>
                       <a href={service.link} target="_blank" rel="noopener noreferrer">
                         En savoir plus
                         <ArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform" size={16} />
                       </a>
-                    </Button> : <Button variant="ghost" className={`w-full group/btn hover:bg-${service.color}/10 hover:text-${service.color}`}>
+                    </Button>
+                  ) : service.link ? (
+                    <Button variant="ghost" className={`w-full group/btn hover:bg-${service.color}/10 hover:text-${service.color}`} asChild>
+                      <Link to={service.link}>
+                        En savoir plus
+                        <ArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform" size={16} />
+                      </Link>
+                    </Button>
+                  ) : (
+                    <Button variant="ghost" className={`w-full group/btn hover:bg-${service.color}/10 hover:text-${service.color}`} disabled>
                       En savoir plus
                       <ArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform" size={16} />
-                    </Button>}
+                    </Button>
+                  )}
                 </CardContent>
               </Card>;
         })}
