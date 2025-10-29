@@ -1,9 +1,9 @@
 [build]
-  publish = "."
+  publish = "dist"
 
 [[plugins]]
 package = "@netlify/plugin-sitemap"
 
   [plugins.inputs]
-  buildDir = "."
+  buildDir = "dist"
   exclude = ["/404.html"]
