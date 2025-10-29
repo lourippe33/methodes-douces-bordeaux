@@ -4,19 +4,11 @@ import { ArrowLeft, Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 const HypnoseEftH = () => {
   const navigate = useNavigate();
-
   useEffect(() => {
     document.title = "Hypnose et EFT-H à Tresses (33) - Cabinet près de Bordeaux | Gestion du stress, émotions, confiance en soi";
-    
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute("content", "Praticien en hypnose et EFT-H à Tresses, près de Bordeaux. Accompagnement pour la gestion du stress, des émotions, arrêt du tabac, confiance en soi. Séances en cabinet.");
@@ -27,27 +19,22 @@ const HypnoseEftH = () => {
       document.head.appendChild(meta);
     }
   }, []);
-
   const scrollToContact = () => {
     navigate("/");
     setTimeout(() => {
       const element = document.getElementById("contact");
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        element.scrollIntoView({
+          behavior: "smooth"
+        });
       }
     }, 100);
   };
-
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Header />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
-          <Button 
-            variant="ghost" 
-            onClick={() => navigate("/")}
-            className="mb-8 -ml-2"
-          >
+          <Button variant="ghost" onClick={() => navigate("/")} className="mb-8 -ml-2">
             <ArrowLeft className="mr-2" size={16} />
             Retour
           </Button>
@@ -169,11 +156,7 @@ const HypnoseEftH = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button 
-                  onClick={scrollToContact}
-                  className="bg-gradient-primary hover:shadow-strong transition-all"
-                  size="lg"
-                >
+                <Button onClick={scrollToContact} className="bg-gradient-primary hover:shadow-strong transition-all" size="lg">
                   Prendre rendez-vous dès maintenant
                 </Button>
               </div>
@@ -265,9 +248,7 @@ const HypnoseEftH = () => {
                     <Phone className="text-primary mt-1 flex-shrink-0" size={20} />
                     <div>
                       <strong>Téléphone :</strong><br />
-                      <a href="tel:0652217745" className="hover:text-primary transition-colors">
-                        06 52 21 77 45
-                      </a>
+                      <a href="tel:0652217745" className="hover:text-primary transition-colors">07 82 38 66 21</a>
                     </div>
                   </div>
                   
@@ -284,9 +265,9 @@ const HypnoseEftH = () => {
                   <div className="space-y-2">
                     <strong>Horaires :</strong>
                     <ul className="ml-4 space-y-1">
-                      <li>Lundi au vendredi : 9h00 – 19h00</li>
-                      <li>Samedi : sur rendez-vous</li>
-                      <li>Dimanche : fermé</li>
+                      <li>lundi, mardi et vendredi : 9 h – 12 h et 14 h 30 - 17 h 30</li>
+                      <li>mercredi et jeudi : 9 h - 12 h</li>
+                      <li> samedi et dimanche : fermé</li>
                     </ul>
                   </div>
                 </div>
@@ -301,8 +282,6 @@ const HypnoseEftH = () => {
         </div>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default HypnoseEftH;
