@@ -26,9 +26,9 @@ const Services = () => {
     <section id="services" className="py-24 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">Mes services
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground">Mes services
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-muted-foreground font-light">
             Des méthodes douces et efficaces pour vous accompagner vers le changement
           </p>
         </div>
@@ -39,7 +39,7 @@ const Services = () => {
             return (
               <Card 
                 key={index} 
-                className="group hover:shadow-strong transition-all duration-300 hover:-translate-y-2 border-2 hover:border-primary/20"
+                className="group hover:shadow-warm transition-all duration-500 hover:-translate-y-1 border-0 shadow-soft bg-card/80 backdrop-blur-sm"
               >
                 <CardHeader>
                   <div className={`w-14 h-14 rounded-xl bg-gradient-${service.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>

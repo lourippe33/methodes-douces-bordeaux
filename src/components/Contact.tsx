@@ -74,18 +74,18 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">Contactez-moi</h2>
-            <p className="text-xl text-muted-foreground">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground">Contactez-moi</h2>
+            <p className="text-xl text-muted-foreground font-light">
               Prêt à commencer votre parcours de changement ? Parlons-en ensemble
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Contact Form */}
-            <Card className="border-2">
+            <Card className="border-0 shadow-soft bg-card/80 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle>Envoyez-nous un message</CardTitle>
-                <CardDescription>Nous vous répondrons dans les plus brefs délais</CardDescription>
+                <CardTitle className="font-heading">Envoyez-nous un message</CardTitle>
+                <CardDescription className="font-light">Nous vous répondrons dans les plus brefs délais</CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-4">
@@ -152,14 +152,14 @@ const Contact = () => {
 
             {/* Contact Info */}
             <div className="space-y-6">
-              <Card className="border-2 hover:shadow-soft transition-all">
+              <Card className="border-0 shadow-soft hover:shadow-warm transition-all duration-500 bg-card/80 backdrop-blur-sm">
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
                       <Mail className="text-white" size={24} />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-1">Email</h3>
+                      <h3 className="font-heading font-semibold text-lg mb-1">Email</h3>
                       <a
                         href="mailto:eric.gata@gmail.com"
                         className="text-muted-foreground hover:text-primary transition-colors"
@@ -171,28 +171,28 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-2 hover:shadow-soft transition-all">
+              <Card className="border-0 shadow-soft hover:shadow-warm transition-all duration-500 bg-card/80 backdrop-blur-sm">
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-gradient-secondary rounded-xl flex items-center justify-center flex-shrink-0">
                       <Phone className="text-white" size={24} />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-1">Téléphone</h3>
+                      <h3 className="font-heading font-semibold text-lg mb-1">Téléphone</h3>
                       <p className="text-muted-foreground">07 82 38 66 21</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="border-2 hover:shadow-soft transition-all">
+              <Card className="border-0 shadow-soft hover:shadow-warm transition-all duration-500 bg-card/80 backdrop-blur-sm">
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
                       <MapPin className="text-white" size={24} />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-1">Localisation</h3>
+                      <h3 className="font-heading font-semibold text-lg mb-1">Localisation</h3>
                       <a
                         href="https://www.google.com/maps/search/?api=1&query=9+galerie+marchande+33370+Tresses"
                         target="_blank"
@@ -206,9 +206,9 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-2 bg-gradient-to-br from-primary/5 to-secondary/5">
+              <Card className="border-0 shadow-soft bg-gradient-to-br from-primary/5 to-secondary/5">
                 <CardContent className="pt-6">
-                  <h3 className="font-semibold text-lg mb-2">Horaires</h3>
+                  <h3 className="font-heading font-semibold text-lg mb-2">Horaires</h3>
                   <div className="space-y-1 text-muted-foreground">
                     <p>Lundi – mardi – vendredi : 9 h - 19 h</p>
                     <p>Mercredi et jeudi : 9 h - 13 h</p>

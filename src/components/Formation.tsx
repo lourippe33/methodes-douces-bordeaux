@@ -14,20 +14,20 @@ const Formation = () => {
             <div className="inline-block p-3 bg-gradient-primary rounded-2xl mb-4">
               <GraduationCap className="text-white" size={40} />
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground">
               Formation AGP
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-light">
               Praticiens accompagnants, vous cherchez une formation pour la gestion du poids ? 
               Vous êtes au bon endroit !
             </p>
           </div>
 
           {/* Main Card */}
-          <Card className="border-2 border-primary/20 shadow-strong overflow-hidden">
+          <Card className="border-0 shadow-strong overflow-hidden bg-card/80 backdrop-blur-sm">
             <div className="bg-gradient-hero p-8 text-white text-center">
               <img src={logo} alt="AGP Logo" className="h-20 w-auto mx-auto mb-4 bg-white/90 rounded-xl p-2" />
-              <h3 className="text-3xl font-bold mb-2">
+              <h3 className="text-3xl font-heading font-bold mb-2">
                 Devenez un pro de la gestion du poids !
               </h3>
               <div className="inline-block bg-white/20 backdrop-blur-sm px-6 py-2 rounded-full mt-4">
@@ -36,8 +36,8 @@ const Formation = () => {
             </div>
 
             <CardHeader className="text-center pb-4">
-              <CardTitle className="text-2xl">Formation complète et accessible</CardTitle>
-              <CardDescription className="text-base">
+              <CardTitle className="text-2xl font-heading">Formation complète et accessible</CardTitle>
+              <CardDescription className="text-base font-light">
                 Formation AGP, covisions mensuelles en live, accessible à vie, tarif compétitif
               </CardDescription>
             </CardHeader>

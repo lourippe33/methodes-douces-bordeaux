@@ -16,14 +16,14 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight">
+          <h1 className="text-5xl md:text-7xl font-heading font-bold text-foreground leading-tight">
             Bienvenue dans votre{" "}
             <span className="bg-gradient-hero bg-clip-text text-transparent">
               changement
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed font-light">
             Méthodes douces et accompagnement personnalisé pour retrouver bien-être, 
             confiance et équilibre dans votre vie
           </p>

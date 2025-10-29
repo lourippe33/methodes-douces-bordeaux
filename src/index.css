@@ -42,16 +42,17 @@ All colors MUST be HSL.
     --input: 214 32% 91%;
     --ring: 217 91% 60%;
 
-    --radius: 0.75rem;
+    --radius: 1.5rem;
 
     /* Custom gradients */
     --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(217 91% 70%) 100%);
     --gradient-secondary: linear-gradient(135deg, hsl(110 72% 40%) 0%, hsl(110 72% 50%) 100%);
     --gradient-hero: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(110 72% 40%) 100%);
     
-    /* Shadows */
-    --shadow-soft: 0 2px 20px -2px hsl(217 91% 60% / 0.1);
-    --shadow-strong: 0 8px 30px -4px hsl(217 91% 60% / 0.2);
+    /* Shadows - softer and warmer */
+    --shadow-soft: 0 4px 24px -4px hsl(217 91% 60% / 0.08);
+    --shadow-strong: 0 12px 48px -8px hsl(217 91% 60% / 0.15);
+    --shadow-warm: 0 8px 32px -4px hsl(110 72% 40% / 0.12);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -95,5 +96,11 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
   }
 }
