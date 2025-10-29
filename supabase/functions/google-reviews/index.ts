@@ -23,40 +23,44 @@ serve(async (req) => {
       );
     }
 
-    console.log('Fetching reviews from Google Places API...');
+    console.log('Fetching reviews from Google Places API (New)...');
 
-    // Fetch place details including reviews
+    // Use the new Places API
     const response = await fetch(
-      `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=reviews&key=${apiKey}&language=fr`
+      `https://places.googleapis.com/v1/places/${placeId}`,
+      {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Goog-Api-Key': apiKey,
+          'X-Goog-FieldMask': 'reviews'
+        }
+      }
     );
 
     if (!response.ok) {
-      console.error('Google API error:', response.status, await response.text());
-      throw new Error(`Google API returned status ${response.status}`);
+      const errorText = await response.text();
+      console.error('Google API error:', response.status, errorText);
+      throw new Error(`Google API returned status ${response.status}: ${errorText}`);
     }
 
     const data = await response.json();
-    console.log('Google API response status:', data.status);
+    console.log('Google API response received');
 
-    if (data.status !== 'OK') {
-      console.error('Google API error status:', data.status, data.error_message);
-      throw new Error(`Google API error: ${data.status}`);
-    }
-
-    const reviews = data.result?.reviews || [];
+    const reviews = data.reviews || [];
     console.log(`Found ${reviews.length} reviews`);
 
     // Filter reviews that have text and get the latest 5
     const filteredReviews = reviews
-      .filter((review: any) => review.text && review.text.trim() !== '')
+      .filter((review: any) => review.text?.text && review.text.text.trim() !== '')
       .slice(0, 5)
       .map((review: any) => ({
-        author_name: review.author_name,
-        rating: review.rating,
-        text: review.text,
-        time: review.time,
-        relative_time_description: review.relative_time_description,
-        profile_photo_url: review.profile_photo_url
+        author_name: review.authorAttribution?.displayName || 'Anonyme',
+        rating: review.rating || 0,
+        text: review.text?.text || '',
+        time: review.publishTime ? new Date(review.publishTime).getTime() / 1000 : Date.now() / 1000,
+        relative_time_description: review.relativePublishTimeDescription || '',
+        profile_photo_url: review.authorAttribution?.photoUri || null
       }));
 
     console.log(`Returning ${filteredReviews.length} filtered reviews`);
