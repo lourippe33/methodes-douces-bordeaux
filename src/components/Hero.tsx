@@ -18,7 +18,7 @@ const Hero = () => {
         style={{ backgroundImage: `url(${heroBackground})` }}
       >
         {/* Overlay pour améliorer la lisibilité du texte */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/80 to-background"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/50 to-background/90"></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
