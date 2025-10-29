@@ -1,6 +1,27 @@
+import { useNavigate, useLocation } from "react-router-dom";
 import logo from "@/assets/logo-agp.png";
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const scrollToSection = (sectionId: string) => {
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
   return (
     <footer className="bg-foreground/5 border-t border-border py-12">
       <div className="container mx-auto px-4">
@@ -15,10 +36,38 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Liens rapides</h3>
             <ul className="space-y-2 text-muted-foreground text-sm">
-              <li><a href="#services" className="hover:text-primary transition-colors">Services</a></li>
-              <li><a href="#formation" className="hover:text-primary transition-colors">Formation</a></li>
-              <li><a href="#about" className="hover:text-primary transition-colors">À propos</a></li>
-              <li><a href="#contact" className="hover:text-primary transition-colors">Contact</a></li>
+              <li>
+                <button 
+                  onClick={() => scrollToSection("services")} 
+                  className="hover:text-primary transition-colors text-left"
+                >
+                  Prestations
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => scrollToSection("formation")} 
+                  className="hover:text-primary transition-colors text-left"
+                >
+                  Formation
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => scrollToSection("about")} 
+                  className="hover:text-primary transition-colors text-left"
+                >
+                  À propos
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => scrollToSection("contact")} 
+                  className="hover:text-primary transition-colors text-left"
+                >
+                  Contact
+                </button>
+              </li>
             </ul>
           </div>
 
