@@ -80,13 +80,8 @@ const About = () => {
                       </a>
                     </p>
                     <p>
-                      <a href="https://www.neurofeedback-dynamique.fr/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
+                      <a href="https://www.adnf.org/neurofeedback_directory.htm" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
                         👉 Réseau Neurofeedback dynamique – ADNF
-                      </a>
-                    </p>
-                    <p>
-                      <a href="https://www.afpn.fr/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
-                        👉 Association Française de Psychothérapie et de Neurofeedback (AFPN)
                       </a>
                     </p>
                   </div>
@@ -138,10 +133,17 @@ const About = () => {
                   <p>
                     J'ai également complété mon parcours par une formation en hypnose rapide auprès de Jordan Verot, afin d'adapter la méthode au rythme et aux besoins de chacun.
                   </p>
-                  <div className="pl-4 border-l-2 border-primary/30">
-                    <a href="https://www.hypnose-medicale-33.fr/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
-                      👉 Institut de Bordeaux – IHEC / Hypnose Médicale 33
-                    </a>
+                  <div className="space-y-2 pl-4 border-l-2 border-primary/30">
+                    <p>
+                      <a href="https://i-hec.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
+                        👉 Institut de Bordeaux – IHEC / Hypnose Médicale 33
+                      </a>
+                    </p>
+                    <p>
+                      <a href="https://centre-hypnose-nice.fr/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
+                        👉 Formations leviers de changements et EFT-H – Jordan Verot
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>
