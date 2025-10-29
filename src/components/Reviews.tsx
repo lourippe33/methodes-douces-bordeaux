@@ -7,6 +7,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Star } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
 
 interface Review {
   auteur: string;
@@ -108,6 +109,11 @@ const Reviews = () => {
             align: "start",
             loop: true,
           }}
+          plugins={[
+            Autoplay({
+              delay: 4000,
+            }),
+          ]}
           className="w-full"
         >
           <CarouselContent className="-ml-4">
