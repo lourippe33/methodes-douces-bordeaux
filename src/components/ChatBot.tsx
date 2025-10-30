@@ -14,7 +14,7 @@ const ChatBot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      content: "Bonjour ! Je suis l'assistant d'Antoine. Comment puis-je vous aider aujourd'hui ?",
+      content: "Bonjour ! Je suis AGP. Comment puis-je vous aider aujourd'hui ?",
     },
   ]);
   const [input, setInput] = useState("");
@@ -181,7 +181,7 @@ const ChatBot = () => {
           <div className="flex items-center justify-between p-4 border-b bg-primary text-primary-foreground rounded-t-lg">
             <div className="flex items-center gap-2">
               <MessageCircle className="h-5 w-5" />
-              <h3 className="font-semibold">Assistant Antoine Gata</h3>
+              <h3 className="font-semibold">Assistant AGP</h3>
             </div>
             <Button
               variant="ghost"
