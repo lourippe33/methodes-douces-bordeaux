@@ -20,28 +20,6 @@ const HypnoseEftH = () => {
     }
   }, []);
 
-  useEffect(() => {
-    const existing = document.querySelector('script[src*="tinder.thrivecart.com/embed/v1/thrivecart.js"]') as HTMLScriptElement | null;
-    const ensureInit = () => {
-      try {
-        // @ts-ignore
-        if ((window as any).ThriveCart && (window as any).ThriveCart.scan) {
-          // @ts-ignore
-          (window as any).ThriveCart.scan();
-        }
-      } catch {}
-    };
-
-    if (!existing) {
-      const s = document.createElement('script');
-      s.src = '//tinder.thrivecart.com/embed/v1/thrivecart.js';
-      s.async = true;
-      s.onload = ensureInit;
-      document.body.appendChild(s);
-    } else {
-      ensureInit();
-    }
-  }, []);
   const scrollToContact = () => {
     navigate("/");
     setTimeout(() => {
@@ -177,14 +155,19 @@ const HypnoseEftH = () => {
                     <p className="text-2xl font-bold text-foreground">70€</p>
                     <p className="text-muted-foreground">la séance d'hypnose et/ou EFT-H</p>
                   </div>
-                  <a 
-                    data-thrivecart-account="ericgata" 
-                    data-thrivecart-tpl="v2" 
-                    data-thrivecart-product="4" 
-                    className="thrivecart-button thrivecart-button-styled thrivecart-button_style-rounded thrivecart-button-green inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium h-11 px-8 cursor-pointer"
+                  <Button 
+                    asChild
+                    className="bg-[#00a86b] hover:bg-[#008c5a] text-white"
+                    size="lg"
                   >
-                    Paiement en ligne
-                  </a>
+                    <a 
+                      href="https://ericgata.thrivecart.com/purchases/product/4/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      💳 Paiement en ligne
+                    </a>
+                  </Button>
                 </div>
                 <p className="text-sm text-muted-foreground italic">
                   Les séances ne sont pas prises en charge par la Sécurité sociale, mais certaines mutuelles proposent un remboursement partiel.
