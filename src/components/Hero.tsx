@@ -30,7 +30,7 @@ const Hero = () => {
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed font-light">
+          <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed font-medium">
             Méthodes douces et accompagnement personnalisé pour retrouver bien-être, 
             confiance et équilibre dans votre vie
           </p>
