@@ -60,7 +60,15 @@ Ton rôle:
     if (!response.ok) {
       const errorText = await response.text();
       console.error('OpenAI API error:', response.status, errorText);
-      return new Response(JSON.stringify({ error: 'OpenAI API error' }), {
+      
+      let errorMessage = 'Erreur de connexion à l\'IA';
+      if (response.status === 429) {
+        errorMessage = 'Quota OpenAI dépassé. Veuillez vérifier vos crédits sur platform.openai.com';
+      } else if (response.status === 401) {
+        errorMessage = 'Clé API OpenAI invalide';
+      }
+      
+      return new Response(JSON.stringify({ error: errorMessage }), {
         status: response.status,
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
       });
