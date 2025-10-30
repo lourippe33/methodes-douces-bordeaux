@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Heart, Target, Sparkles, Award, Users, BookOpen } from "lucide-react";
+import ericPhoto from "@/assets/eric-gata.png";
 
 const About = () => {
   const navigate = useNavigate();
@@ -46,6 +47,41 @@ const About = () => {
                 Eric Gata – Praticien en hypnose, neurofeedback et aromathérapie à Tresses
               </h1>
             </header>
+
+            <Card className="max-w-5xl mx-auto p-8 md:p-12 bg-gradient-to-br from-card/80 to-muted/30 border-0 shadow-soft backdrop-blur-sm">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-primary rounded-2xl blur-2xl opacity-20"></div>
+                  <img 
+                    src={ericPhoto} 
+                    alt="Eric Gata, praticien en hypnose, neurofeedback et aromathérapie" 
+                    className="relative rounded-2xl shadow-warm w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="space-y-4">
+                  <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground">
+                    Bienvenue
+                  </h2>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Ancien technicien supérieur en laboratoire pharmaceutique, je me consacre aujourd'hui à accompagner les personnes vers un mieux-être global à travers des approches naturelles et complémentaires.
+                  </p>
+                  <div className="flex flex-wrap gap-3 pt-2">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <Heart className="text-primary" size={18} />
+                      <span>Bienveillance</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <Target className="text-primary" size={18} />
+                      <span>Personnalisation</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <Sparkles className="text-primary" size={18} />
+                      <span>Efficacité</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
 
             <section className="max-w-4xl mx-auto space-y-8">
               <div className="space-y-6">
