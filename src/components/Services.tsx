@@ -6,7 +6,7 @@ const services = [{
   icon: Brain,
   title: "Hypnose & EFT-H",
   description: "Un accompagnement efficace pour retrouver confiance, estime de soi et surmonter vos blocages émotionnels.",
-  benefits: ["Gestion des angoisses", "Phobies et peurs", "Traumatismes", "Confiance en soi"],
+  benefits: ["Gestion des angoisses", "Phobies et peurs", "Blessures émotionnelles", "Confiance en soi"],
   color: "primary",
   link: "/hypnose-eft-h",
   external: false
