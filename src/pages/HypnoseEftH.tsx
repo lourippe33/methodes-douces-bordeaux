@@ -19,6 +19,29 @@ const HypnoseEftH = () => {
       document.head.appendChild(meta);
     }
   }, []);
+
+  useEffect(() => {
+    const existing = document.querySelector('script[src*="tinder.thrivecart.com/embed/v1/thrivecart.js"]') as HTMLScriptElement | null;
+    const ensureInit = () => {
+      try {
+        // @ts-ignore
+        if ((window as any).ThriveCart && (window as any).ThriveCart.scan) {
+          // @ts-ignore
+          (window as any).ThriveCart.scan();
+        }
+      } catch {}
+    };
+
+    if (!existing) {
+      const s = document.createElement('script');
+      s.src = '//tinder.thrivecart.com/embed/v1/thrivecart.js';
+      s.async = true;
+      s.onload = ensureInit;
+      document.body.appendChild(s);
+    } else {
+      ensureInit();
+    }
+  }, []);
   const scrollToContact = () => {
     navigate("/");
     setTimeout(() => {
