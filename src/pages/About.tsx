@@ -93,9 +93,7 @@ const About = () => {
                   </p>
                   <div className="space-y-2 pl-4 border-l-2 border-primary/30">
                     <p>
-                      <a href="https://zengar.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
-                        👉 Lien vers Zengar
-                      </a>
+                      <a href="https://zengar.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Aujourd'hui, j'exerce en tant que praticien en hypnose, eft-h et en neurofeedback dynamique et conseiller en aromathérapie. Ces quatre approches, à la fois indépendantes et synergiques, me permettent d'accompagner chaque personne dans sa singularité, avec une attention particulière portée à l'équilibre émotionnel, au lâcher-prise et à la régulation du stress.</a>
                     </p>
                     <p>
                       <a href="https://www.adnf.org/neurofeedback_directory.htm" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
