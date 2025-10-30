@@ -47,12 +47,13 @@ Ton rôle:
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'gpt-5-mini-2025-08-07',
+        model: 'gpt-4o-mini',
         messages: [
           { role: 'system', content: systemPrompt },
           ...messages
         ],
-        max_completion_tokens: 500,
+        max_tokens: 500,
+        temperature: 0.8,
         stream: true,
       }),
     });
