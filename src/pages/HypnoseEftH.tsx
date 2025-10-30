@@ -15,6 +15,7 @@ declare global {
 
 const HypnoseEftH = () => {
   const navigate = useNavigate();
+  
   useEffect(() => {
     document.title = "Hypnose et EFT-H à Tresses (33) - Cabinet près de Bordeaux | Gestion du stress, émotions, confiance en soi";
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -26,6 +27,18 @@ const HypnoseEftH = () => {
       meta.content = "Praticien en hypnose et EFT-H à Tresses, près de Bordeaux. Accompagnement pour la gestion du stress, des émotions, arrêt du tabac, confiance en soi. Séances en cabinet.";
       document.head.appendChild(meta);
     }
+
+    // Load Stripe Buy Button script
+    const script = document.createElement('script');
+    script.src = 'https://js.stripe.com/v3/buy-button.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+    };
   }, []);
 
   const scrollToContact = () => {
@@ -163,10 +176,7 @@ const HypnoseEftH = () => {
                     <p className="text-2xl font-bold text-foreground">70€</p>
                     <p className="text-muted-foreground">la séance d'hypnose et/ou EFT-H</p>
                   </div>
-                  <script async
-                    src="https://js.stripe.com/v3/buy-button.js">
-                  </script>
-
+                  
                   <stripe-buy-button
                     buy-button-id="buy_btn_1SNrxLIm6viVop01jrxS8WM6"
                     publishable-key="pk_live_51S5SEgIm6viVop01DTKbxl5DepTI0nqharUTys7fWk3bAe6mT4ptHihfMheDdJHU9sQmVc7Dxu96c8gClXExqcO90074S31sgi"
