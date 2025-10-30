@@ -7,18 +7,13 @@ import { useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Heart, Target, Sparkles, Award, Users, BookOpen } from "lucide-react";
 import ericPhoto from "@/assets/eric-gata.png";
-
 const About = () => {
   const navigate = useNavigate();
-
   useEffect(() => {
     document.title = "À propos - Eric Gata | Praticien en hypnose, neurofeedback et aromathérapie à Tresses";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute(
-        "content",
-        "Eric Gata, praticien en hypnose, neurofeedback dynamique et aromathérapie à Tresses. Spécialisé dans la gestion du stress, l'arrêt du tabac et la perte de poids."
-      );
+      metaDescription.setAttribute("content", "Eric Gata, praticien en hypnose, neurofeedback dynamique et aromathérapie à Tresses. Spécialisé dans la gestion du stress, l'arrêt du tabac et la perte de poids.");
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
@@ -26,17 +21,11 @@ const About = () => {
       document.head.appendChild(meta);
     }
   }, []);
-
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Header />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-6xl">
-          <Button
-            variant="ghost"
-            onClick={() => navigate("/")}
-            className="mb-8 -ml-2"
-          >
+          <Button variant="ghost" onClick={() => navigate("/")} className="mb-8 -ml-2">
             <ArrowLeft className="mr-2" size={16} />
             Retour
           </Button>
@@ -52,11 +41,7 @@ const About = () => {
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-primary rounded-2xl blur-2xl opacity-20"></div>
-                  <img 
-                    src={ericPhoto} 
-                    alt="Eric Gata, praticien en hypnose, neurofeedback et aromathérapie" 
-                    className="relative rounded-2xl shadow-warm w-full h-auto object-cover"
-                  />
+                  <img src={ericPhoto} alt="Eric Gata, praticien en hypnose, neurofeedback et aromathérapie" className="relative rounded-2xl shadow-warm w-full h-auto object-cover" />
                 </div>
                 <div className="space-y-4">
                   <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground">
@@ -93,10 +78,7 @@ const About = () => {
                     Après plus de quinze années passées dans une grande entreprise pharmaceutique, où j'occupais le poste de technicien supérieur en laboratoire, j'ai choisi de donner un nouveau sens à ma vie professionnelle.
                     Animé depuis toujours par la curiosité de comprendre le fonctionnement du cerveau humain et ses capacités naturelles de régulation, j'ai décidé de me reconvertir pour accompagner les personnes vers un mieux-être global, à travers des approches naturelles et complémentaires.
                   </p>
-                  <p>
-                    Aujourd'hui, j'exerce en tant que praticien en hypnose, praticien certifié en neurofeedback dynamique et conseiller en aromathérapie.
-                    Ces trois approches, à la fois indépendantes et synergiques, me permettent d'accompagner chaque personne dans sa singularité, avec une attention particulière portée à l'équilibre émotionnel, au lâcher-prise et à la régulation du stress.
-                  </p>
+                  <p>Aujourd'hui, j'exerce en tant que praticien en hypnose, eft-h et en neurofeedback dynamique et conseiller en aromathérapie. Ces trois approches, à la fois indépendantes et synergiques, me permettent d'accompagner chaque personne dans sa singularité, avec une attention particulière portée à l'équilibre émotionnel, au lâcher-prise et à la régulation du stress.</p>
                 </div>
               </div>
 
@@ -212,19 +194,17 @@ const About = () => {
                   <p>Spécialisé dans la gestion du stress, l'arrêt du tabac, la perte de poids et le mieux-être global</p>
                 </div>
                 <div className="pt-4">
-                  <Button
-                    onClick={() => {
-                      navigate("/");
-                      setTimeout(() => {
-                        const element = document.getElementById("contact");
-                        if (element) {
-                          element.scrollIntoView({ behavior: "smooth" });
-                        }
-                      }, 100);
-                    }}
-                    className="bg-gradient-primary hover:shadow-strong transition-all"
-                    size="lg"
-                  >
+                  <Button onClick={() => {
+                  navigate("/");
+                  setTimeout(() => {
+                    const element = document.getElementById("contact");
+                    if (element) {
+                      element.scrollIntoView({
+                        behavior: "smooth"
+                      });
+                    }
+                  }, 100);
+                }} className="bg-gradient-primary hover:shadow-strong transition-all" size="lg">
                     Prendre rendez-vous
                   </Button>
                 </div>
@@ -234,8 +214,6 @@ const About = () => {
         </div>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default About;
