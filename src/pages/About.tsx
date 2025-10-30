@@ -187,7 +187,7 @@ const About = () => {
                   🕊️ En résumé
                 </h2>
                 <div className="space-y-3 text-muted-foreground leading-relaxed">
-                  <p className="font-medium">Eric Gata, praticien en hypnose, neurofeedback et aromathérapie à Tresses</p>
+                  <p className="font-medium">Eric Gata, praticien en hypnose, eft-h, neurofeedback et aromathérapie à Tresses</p>
                   <p>Formé à l'IHEC Bordeaux, Zengar, Hippocratus, ATH, AFPN</p>
                   <p>Spécialisé dans la gestion du stress, l'arrêt du tabac, la perte de poids et le mieux-être global</p>
                 </div>
