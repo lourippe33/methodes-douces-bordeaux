@@ -155,19 +155,15 @@ const HypnoseEftH = () => {
                     <p className="text-2xl font-bold text-foreground">70€</p>
                     <p className="text-muted-foreground">la séance d'hypnose et/ou EFT-H</p>
                   </div>
-                  <Button 
-                    asChild
-                    className="bg-[#00a86b] hover:bg-[#008c5a] text-white"
-                    size="lg"
+                  <script async src="//tinder.thrivecart.com/embed/v1/thrivecart.js"></script>
+                  <a 
+                    data-thrivecart-account="ericgata" 
+                    data-thrivecart-tpl="v2" 
+                    data-thrivecart-product="4" 
+                    className="thrivecart-button thrivecart-button-styled thrivecart-button_style-rounded thrivecart-button-blue"
                   >
-                    <a 
-                      href="https://ericgata.thrivecart.com/purchases/product/4/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      💳 Paiement en ligne
-                    </a>
-                  </Button>
+                    Paiement en ligne
+                  </a>
                 </div>
                 <p className="text-sm text-muted-foreground italic">
                   Les séances ne sont pas prises en charge par la Sécurité sociale, mais certaines mutuelles proposent un remboursement partiel.
