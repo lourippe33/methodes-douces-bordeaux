@@ -12,10 +12,8 @@ declare global {
     }
   }
 }
-
 const HypnoseEftH = () => {
   const navigate = useNavigate();
-  
   useEffect(() => {
     document.title = "Hypnose et EFT-H à Tresses (33) - Cabinet près de Bordeaux | Gestion du stress, émotions, confiance en soi";
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -33,14 +31,12 @@ const HypnoseEftH = () => {
     script.src = 'https://js.stripe.com/v3/buy-button.js';
     script.async = true;
     document.body.appendChild(script);
-
     return () => {
       if (script.parentNode) {
         script.parentNode.removeChild(script);
       }
     };
   }, []);
-
   const scrollToContact = () => {
     navigate("/");
     setTimeout(() => {
@@ -177,10 +173,7 @@ const HypnoseEftH = () => {
                     <p className="text-muted-foreground">la séance d'hypnose et/ou EFT-H</p>
                   </div>
                   
-                  <stripe-buy-button
-                    buy-button-id="buy_btn_1SNrxLIm6viVop01jrxS8WM6"
-                    publishable-key="pk_live_51S5SEgIm6viVop01DTKbxl5DepTI0nqharUTys7fWk3bAe6mT4ptHihfMheDdJHU9sQmVc7Dxu96c8gClXExqcO90074S31sgi"
-                  >
+                  <stripe-buy-button buy-button-id="buy_btn_1SNrxLIm6viVop01jrxS8WM6" publishable-key="pk_live_51S5SEgIm6viVop01DTKbxl5DepTI0nqharUTys7fWk3bAe6mT4ptHihfMheDdJHU9sQmVc7Dxu96c8gClXExqcO90074S31sgi">
                   </stripe-buy-button>
                 </div>
                 <p className="text-sm text-muted-foreground italic">
@@ -313,7 +306,7 @@ const HypnoseEftH = () => {
                     <ul className="ml-4 space-y-1">
                       <li>lundi, mardi et vendredi : 9 h – 12 h et 14 h 30 - 17 h 30</li>
                       <li>mercredi et jeudi : 9 h - 12 h</li>
-                      <li> samedi et dimanche : fermé</li>
+                      <li>samedi et dimanche : fermé</li>
                     </ul>
                   </div>
                 </div>
