@@ -143,6 +143,32 @@ const HypnoseEftH = () => {
               </div>
             </section>
 
+            <section className="space-y-6 bg-gradient-primary/10 p-8 rounded-2xl border border-primary/20">
+              <h2 className="text-3xl font-heading font-bold text-foreground">
+                Tarification
+              </h2>
+              
+              <div className="space-y-4">
+                <div className="flex items-center justify-between flex-wrap gap-4">
+                  <div>
+                    <p className="text-2xl font-bold text-foreground">70€</p>
+                    <p className="text-muted-foreground">la séance d'hypnose et/ou EFT-H</p>
+                  </div>
+                  <a 
+                    data-thrivecart-account="ericgata" 
+                    data-thrivecart-tpl="v2" 
+                    data-thrivecart-product="4" 
+                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 cursor-pointer"
+                  >
+                    Paiement en ligne
+                  </a>
+                </div>
+                <p className="text-sm text-muted-foreground italic">
+                  Les séances ne sont pas prises en charge par la Sécurité sociale, mais certaines mutuelles proposent un remboursement partiel.
+                </p>
+              </div>
+            </section>
+
             <section className="space-y-6 bg-muted/30 p-8 rounded-2xl">
               <h2 className="text-3xl font-heading font-bold text-foreground">
                 Hypnose et EFT-H à Tresses, près de Bordeaux
