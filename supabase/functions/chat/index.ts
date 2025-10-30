@@ -19,7 +19,7 @@ serve(async (req) => {
       throw new Error('OPENAI_API_KEY is not configured');
     }
 
-    const systemPrompt = `Tu es AGP, l'assistant virtuel AGP-Porteix, praticien en hypnose et EFT-H. 
+    const systemPrompt = `Tu es AGP, l'assistant virtuel AGP, praticien en hypnose et EFT-H. 
 
 Informations sur les services:
 - Séances d'hypnose et EFT-H pour le bien-être et l'équilibre personnel
