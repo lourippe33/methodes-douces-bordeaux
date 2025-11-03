@@ -2,6 +2,13 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
 
+// Declare dataLayer for TypeScript
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
+
 const CookieConsent = () => {
   const [showBanner, setShowBanner] = useState(false);
 
@@ -15,22 +22,12 @@ const CookieConsent = () => {
   }, []);
 
   const loadGoogleAnalytics = () => {
-    const script1 = document.createElement("script");
-    script1.async = true;
-    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX";
-    document.head.appendChild(script1);
-
-    const script2 = document.createElement("script");
-    script2.innerHTML = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX', {
-        'anonymize_ip': true,
-        'cookie_flags': 'SameSite=None;Secure'
-      });
-    `;
-    document.head.appendChild(script2);
+    // Push consent event to GTM
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'event': 'cookie_consent_granted',
+      'consent_analytics': true
+    });
   };
 
   const handleAccept = () => {
@@ -55,7 +52,7 @@ const CookieConsent = () => {
               <strong>🍪 Cookies et confidentialité</strong>
             </p>
             <p className="text-muted-foreground">
-              Nous utilisons des cookies pour analyser le trafic du site via Google Analytics et améliorer votre expérience. 
+              Nous utilisons des cookies pour analyser le trafic du site et améliorer votre expérience. 
               Aucun cookie publicitaire n'est utilisé. Vous pouvez accepter ou refuser leur utilisation.{" "}
               <a href="/confidentialite" className="underline hover:text-primary">
                 En savoir plus
