@@ -10,6 +10,7 @@ import MentionsLegales from "./pages/MentionsLegales";
 import CGV from "./pages/CGV";
 import Confidentialite from "./pages/Confidentialite";
 import NotFound from "./pages/NotFound";
+import CookieConsent from "@/components/CookieConsent";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <CookieConsent />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
