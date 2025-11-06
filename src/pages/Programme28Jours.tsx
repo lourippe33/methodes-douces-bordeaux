@@ -2,10 +2,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Calendar, Target, TrendingDown, CheckCircle2 } from "lucide-react";
-
 const Programme28Jours = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Header />
       <main className="pt-24">
         {/* Hero Section */}
@@ -88,8 +86,8 @@ const Programme28Jours = () => {
 
               {/* Introduction */}
               <div className="bg-card p-8 rounded-lg border border-border mb-8">
-                <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                  <span>🌿</span> Programme HGP – Hypnose & Gestion du Poids
+                <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">🌿
+Programme AGP – Accompagnement & Gestion du Poids<span>🌿</span> Programme HGP – Hypnose & Gestion du Poids
                 </h3>
                 <p className="text-xl font-semibold text-primary mb-6">
                   28 jours pour reprendre le contrôle en douceur, naturellement.
@@ -103,9 +101,7 @@ const Programme28Jours = () => {
                     Le corps, les émotions et les automatismes alimentaires travaillent ensemble.
                     Si l'un prend le dessus, tout devient lutte.
                   </p>
-                  <p>
-                    Le programme HGP a été conçu pour vous permettre de sortir de cette bataille intérieure, sans régime, sans frustration, et sans culpabilité.
-                  </p>
+                  <p>Le programme AGP a été conçu pour vous permettre de sortir de cette bataille intérieure, sans régime, sans frustration, et sans culpabilité.</p>
                 </div>
               </div>
 
@@ -115,13 +111,8 @@ const Programme28Jours = () => {
                   <span>✨</span> D'où vient cette méthode ?
                 </h3>
                 <div className="space-y-4 text-foreground/80">
-                  <p>
-                    Je suis le créateur de la méthode AGP, une approche globale de la gestion du poids et du comportement alimentaire, qui a déjà permis de former plus de 450 praticiens.
-                  </p>
-                  <p>
-                    Le programme HGP est la version destinée au grand public :
-                    une méthode accessible, guidée, simple à suivre, qui vous permet d'agir sur votre relation à la nourriture, à votre rythme.
-                  </p>
+                  <p>Je suis le créateur de la méthode AGP, une approche globale de la gestion du poids et du comportement alimentaire, qui a déjà permis de former plus de 450 praticiens. Cette méthode existe depuis plus de 10 ans.</p>
+                  <p>Le programme AGP 28 jours est la version destinée au grand public : une méthode accessible, guidée, simple à suivre, qui vous permet d'agir sur votre relation à la nourriture, à votre rythme. C'est une application qui vous guide et vous permet d'avancer à votre rythme.</p>
                 </div>
               </div>
 
@@ -162,10 +153,7 @@ const Programme28Jours = () => {
                     <h4 className="text-xl font-semibold mb-3 flex items-center gap-2">
                       <span>💬</span> Un suivi hebdomadaire personnalisé
                     </h4>
-                    <p className="text-foreground/80 mb-2">
-                      Vous n'êtes pas seul(e).
-                      Chaque semaine, nous faisons un point ensemble pour :
-                    </p>
+                    <p className="text-foreground/80 mb-2">Vous n'êtes pas seul(e). Chaque semaine, nous faisons un point ensemble, en visio, pour :</p>
                     <ul className="space-y-2 text-foreground/80">
                       <li>• ajuster</li>
                       <li>• soutenir</li>
@@ -223,7 +211,8 @@ const Programme28Jours = () => {
                 </p>
                 <div className="bg-card p-6 rounded-lg mb-6 text-center">
                   <p className="text-3xl font-bold text-primary mb-2">90€ au lieu de 190€</p>
-                  <p className="text-sm text-muted-foreground">(places limitées)</p>
+                  <p className="text-sm text-muted-foreground">
+                </p>
                 </div>
                 <Button size="lg" className="w-full bg-gradient-primary hover:shadow-strong text-lg">
                   Réserver ma place
@@ -253,8 +242,6 @@ const Programme28Jours = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Programme28Jours;
