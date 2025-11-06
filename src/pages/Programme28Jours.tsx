@@ -78,24 +78,175 @@ const Programme28Jours = () => {
           </div>
         </section>
 
-        {/* Coming Soon Section */}
+        {/* Program Details Section */}
         <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-4 text-center">
-            <div className="max-w-2xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
                 Détails du Programme
               </h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Les détails complets du programme seront disponibles très bientôt. 
-                Restez informé en vous inscrivant à notre liste d'attente.
-              </p>
-              <div className="bg-card p-8 rounded-lg border border-border">
-                <p className="text-lg mb-6">
-                  Inscrivez-vous à notre liste d'attente pour être informé du lancement officiel et bénéficier d'offres exclusives.
+
+              {/* Introduction */}
+              <div className="bg-card p-8 rounded-lg border border-border mb-8">
+                <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
+                  <span>🌿</span> Programme HGP – Hypnose & Gestion du Poids
+                </h3>
+                <p className="text-xl font-semibold text-primary mb-6">
+                  28 jours pour reprendre le contrôle en douceur, naturellement.
                 </p>
-                <Button size="lg" className="bg-gradient-primary">
-                  Rejoindre la liste d'attente
+                <div className="space-y-4 text-foreground/80">
+                  <p>
+                    Vous avez peut-être déjà essayé plusieurs régimes, compté les calories, supprimé des aliments, repris, re-perdu, puis reperdu confiance dans votre capacité à changer.
+                    Si c'est le cas, sachez une chose : <strong>ce n'est pas vous le problème.</strong>
+                  </p>
+                  <p>
+                    Le corps, les émotions et les automatismes alimentaires travaillent ensemble.
+                    Si l'un prend le dessus, tout devient lutte.
+                  </p>
+                  <p>
+                    Le programme HGP a été conçu pour vous permettre de sortir de cette bataille intérieure, sans régime, sans frustration, et sans culpabilité.
+                  </p>
+                </div>
+              </div>
+
+              {/* Origin */}
+              <div className="bg-card p-8 rounded-lg border border-border mb-8">
+                <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
+                  <span>✨</span> D'où vient cette méthode ?
+                </h3>
+                <div className="space-y-4 text-foreground/80">
+                  <p>
+                    Je suis le créateur de la méthode AGP, une approche globale de la gestion du poids et du comportement alimentaire, qui a déjà permis de former plus de 450 praticiens.
+                  </p>
+                  <p>
+                    Le programme HGP est la version destinée au grand public :
+                    une méthode accessible, guidée, simple à suivre, qui vous permet d'agir sur votre relation à la nourriture, à votre rythme.
+                  </p>
+                </div>
+              </div>
+
+              {/* How it works */}
+              <div className="bg-card p-8 rounded-lg border border-border mb-8">
+                <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                  <span>🧭</span> Comment fonctionne le programme ?
+                </h3>
+                <p className="text-foreground/80 mb-6">
+                  Pendant 28 jours, vous êtes accompagné(e) étape par étape via :
+                </p>
+                
+                <div className="space-y-6">
+                  <div className="border-l-4 border-primary pl-6">
+                    <h4 className="text-xl font-semibold mb-3 flex items-center gap-2">
+                      <span>📱</span> Une application dédiée
+                    </h4>
+                    <ul className="space-y-2 text-foreground/80">
+                      <li>• Chaque jour, des indications claires</li>
+                      <li>• Des conseils alimentaires basés sur la chronobiologie</li>
+                      <li>• Des exercices courts pour intégrer des nouveaux comportements</li>
+                    </ul>
+                  </div>
+
+                  <div className="border-l-4 border-primary pl-6">
+                    <h4 className="text-xl font-semibold mb-3 flex items-center gap-2">
+                      <span>🎧</span> Des séances d'hypnose et d'EFT
+                    </h4>
+                    <p className="text-foreground/80 mb-2">Pour :</p>
+                    <ul className="space-y-2 text-foreground/80">
+                      <li>• apaiser les envies impulsives</li>
+                      <li>• diminuer le stress</li>
+                      <li>• relâcher le besoin de compenser avec la nourriture</li>
+                    </ul>
+                  </div>
+
+                  <div className="border-l-4 border-primary pl-6">
+                    <h4 className="text-xl font-semibold mb-3 flex items-center gap-2">
+                      <span>💬</span> Un suivi hebdomadaire personnalisé
+                    </h4>
+                    <p className="text-foreground/80 mb-2">
+                      Vous n'êtes pas seul(e).
+                      Chaque semaine, nous faisons un point ensemble pour :
+                    </p>
+                    <ul className="space-y-2 text-foreground/80">
+                      <li>• ajuster</li>
+                      <li>• soutenir</li>
+                      <li>• encourager</li>
+                      <li>• maintenir l'élan</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* What it's not */}
+              <div className="bg-card p-8 rounded-lg border border-border mb-8">
+                <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
+                  <span>💛</span> Ce que ce programme n'est pas
+                </h3>
+                <ul className="space-y-3 text-foreground/80 mb-6">
+                  <li>• Ce n'est pas un régime</li>
+                  <li>• Ce n'est pas du contrôle par la force</li>
+                  <li>• Ce n'est pas de la restriction</li>
+                </ul>
+                <p className="text-foreground/80 mb-4">
+                  Le but n'est pas que vous vous battiez avec vous-même.
+                  Le but est que vous retrouviez votre pouvoir, naturellement.
+                </p>
+                <p className="text-sm text-muted-foreground italic">
+                  Si vous vivez une difficulté émotionnelle plus profonde (trauma, anxiété intense, blessure affective…), l'application vous en informera et je vous orienterai vers un accompagnement complémentaire adapté.
+                  Vous ne serez jamais seul(e).
+                </p>
+              </div>
+
+              {/* Who is it for */}
+              <div className="bg-card p-8 rounded-lg border border-border mb-8">
+                <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
+                  <span>🎯</span> Pour qui est-il fait ?
+                </h3>
+                <ul className="space-y-3 text-foreground/80 mb-4">
+                  <li>• Si vous mangez par stress, fatigue, ennui ou vide</li>
+                  <li>• Si vous avez l'impression de "perdre le contrôle"</li>
+                  <li>• Si vous cherchez une solution douce mais durable</li>
+                  <li>• Si vous voulez vous sentir fière, stable, alignée</li>
+                  <li>• Si vous voulez arrêter de commencer / arrêter / recommencer</li>
+                </ul>
+                <p className="text-lg font-semibold text-primary">
+                  Alors ce programme est pour vous.
+                </p>
+              </div>
+
+              {/* Launch Offer */}
+              <div className="bg-gradient-to-br from-primary/10 to-secondary/10 p-8 rounded-lg border-2 border-primary/20 mb-8">
+                <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
+                  <span>🚀</span> Offre de lancement
+                </h3>
+                <p className="text-foreground/80 mb-6">
+                  Je propose actuellement ce programme en version test, à tarif réduit, afin d'améliorer l'expérience grâce à vos retours :
+                </p>
+                <div className="bg-card p-6 rounded-lg mb-6 text-center">
+                  <p className="text-3xl font-bold text-primary mb-2">90€ au lieu de 190€</p>
+                  <p className="text-sm text-muted-foreground">(places limitées)</p>
+                </div>
+                <Button size="lg" className="w-full bg-gradient-primary hover:shadow-strong text-lg">
+                  Réserver ma place
                 </Button>
+              </div>
+
+              {/* What you'll find */}
+              <div className="bg-card p-8 rounded-lg border border-border">
+                <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
+                  <span>🧡</span> Ce que vous allez retrouver
+                </h3>
+                <ul className="space-y-3 text-foreground/80 mb-6">
+                  <li>• La sensation de vous choisir</li>
+                  <li>• Le plaisir de manger sans culpabilité</li>
+                  <li>• Une relation plus douce avec votre corps</li>
+                  <li>• Une capacité à dire stop, calmement</li>
+                  <li>• Et surtout : de la fierté</li>
+                </ul>
+                <div className="space-y-2 text-lg font-semibold text-primary">
+                  <p>Cette fois-ci, vous ne serez pas seul(e).</p>
+                  <p>Cette fois-ci, vous avancez accompagné(e).</p>
+                  <p>Cette fois-ci… vous vous choisissez.</p>
+                </div>
               </div>
             </div>
           </div>
