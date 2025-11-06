@@ -41,6 +41,11 @@ const Header = () => {
     setIsMenuOpen(false);
     navigate("/a-propos");
   };
+
+  const navigateToProgramme = () => {
+    setIsMenuOpen(false);
+    navigate("/programme-28-jours");
+  };
   return <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-soft">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
@@ -56,6 +61,18 @@ const Header = () => {
             </button>
             <button onClick={navigateToAbout} className="text-foreground hover:text-primary transition-colors font-medium">
               À propos
+            </button>
+            <button 
+              onClick={navigateToProgramme} 
+              className="relative text-foreground hover:text-primary transition-colors font-medium group"
+            >
+              <span className="relative">
+                Programme 28 jours
+                <span className="absolute -top-2 -right-2 flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                </span>
+              </span>
             </button>
             <Button onClick={() => scrollToSection("contact")} className="bg-gradient-primary hover:shadow-strong transition-all">
               Contact
@@ -78,6 +95,18 @@ const Header = () => {
             </button>
             <button onClick={navigateToAbout} className="text-left text-foreground hover:text-primary transition-colors font-medium py-2">
               À propos
+            </button>
+            <button 
+              onClick={navigateToProgramme} 
+              className="text-left text-foreground hover:text-primary transition-colors font-medium py-2 relative"
+            >
+              <span className="flex items-center gap-2">
+                Programme 28 jours
+                <span className="flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-primary opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                </span>
+              </span>
             </button>
             <Button onClick={() => scrollToSection("contact")} className="bg-gradient-primary w-full">
               Contact

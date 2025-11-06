@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import HypnoseEftH from "./pages/HypnoseEftH";
 import About from "./pages/About";
+import Programme28Jours from "./pages/Programme28Jours";
 import MentionsLegales from "./pages/MentionsLegales";
 import CGV from "./pages/CGV";
 import Confidentialite from "./pages/Confidentialite";
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/hypnose-eft-h" element={<HypnoseEftH />} />
           <Route path="/a-propos" element={<About />} />
+          <Route path="/programme-28-jours" element={<Programme28Jours />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/cgv" element={<CGV />} />
           <Route path="/confidentialite" element={<Confidentialite />} />
