@@ -80,7 +80,7 @@ const Header = () => {
             >
               <span className="relative">
                 Programme 28 Jours
-                <span className="absolute -top-2 -right-4 bg-red-500 text-white text-xs px-2 py-1 rounded-full animate-pulse">
+                <span className="absolute -top-2 -right-4 bg-blue-500 text-white text-xs px-2 py-1 rounded-full animate-pulse">
                   🔥 NOUVEAU
                 </span>
               </span>
