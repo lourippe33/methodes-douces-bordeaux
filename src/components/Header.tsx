@@ -11,7 +11,7 @@ const Header = () => {
 
   const scrollToSection = (id: string) => {
     setIsMenuOpen(false);
-    
+
     if (location.pathname !== "/") {
       navigate("/");
       setTimeout(() => {
@@ -46,7 +46,8 @@ const Header = () => {
     setIsMenuOpen(false);
     navigate("/programme-28-jours");
   };
-  return <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-soft">
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-soft">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3 cursor-pointer" onClick={handleLogoClick}>
@@ -55,26 +56,39 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <button onClick={() => scrollToSection("services")} className="text-foreground hover:text-primary transition-colors font-medium">Prestations</button>
-            <button onClick={() => scrollToSection("formation")} className="text-foreground hover:text-primary transition-colors font-medium">
+            <button
+              onClick={() => scrollToSection("services")}
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
+              Prestations
+            </button>
+            <button
+              onClick={() => scrollToSection("formation")}
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
               Formation
             </button>
-            <button onClick={navigateToAbout} className="text-foreground hover:text-primary transition-colors font-medium">
+            <button
+              onClick={navigateToAbout}
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
               À propos
             </button>
-            <button 
-              onClick={navigateToProgramme} 
+            <button
+              onClick={navigateToProgramme}
               className="relative text-foreground hover:text-primary transition-colors font-medium group"
             >
-              <span className="relative">
-                Programme 28 jours
-                <span className="absolute -top-2 -right-2 flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+              <span class="relative">
+                Programme 28 Jours
+                <span class="absolute -top-2 -right-4 bg-red-500 text-white text-xs px-2 py-1 rounded-full animate-pulse">
+                  🔥 NOUVEAU
                 </span>
               </span>
             </button>
-            <Button onClick={() => scrollToSection("contact")} className="bg-gradient-primary hover:shadow-strong transition-all">
+            <Button
+              onClick={() => scrollToSection("contact")}
+              className="bg-gradient-primary hover:shadow-strong transition-all"
+            >
               Contact
             </Button>
           </nav>
@@ -86,18 +100,28 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && <nav className="md:hidden mt-4 pb-4 flex flex-col gap-4 animate-fade-in">
-            <button onClick={() => scrollToSection("services")} className="text-left text-foreground hover:text-primary transition-colors font-medium py-2">
+        {isMenuOpen && (
+          <nav className="md:hidden mt-4 pb-4 flex flex-col gap-4 animate-fade-in">
+            <button
+              onClick={() => scrollToSection("services")}
+              className="text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+            >
               Prestations
             </button>
-            <button onClick={() => scrollToSection("formation")} className="text-left text-foreground hover:text-primary transition-colors font-medium py-2">
+            <button
+              onClick={() => scrollToSection("formation")}
+              className="text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+            >
               Formation
             </button>
-            <button onClick={navigateToAbout} className="text-left text-foreground hover:text-primary transition-colors font-medium py-2">
+            <button
+              onClick={navigateToAbout}
+              className="text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+            >
               À propos
             </button>
-            <button 
-              onClick={navigateToProgramme} 
+            <button
+              onClick={navigateToProgramme}
               className="text-left text-foreground hover:text-primary transition-colors font-medium py-2 relative"
             >
               <span className="flex items-center gap-2">
@@ -111,8 +135,10 @@ const Header = () => {
             <Button onClick={() => scrollToSection("contact")} className="bg-gradient-primary w-full">
               Contact
             </Button>
-          </nav>}
+          </nav>
+        )}
       </div>
-    </header>;
+    </header>
+  );
 };
 export default Header;
