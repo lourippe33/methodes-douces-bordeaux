@@ -30,8 +30,10 @@ const Programme28Jours = () => {
                 Un programme complet de perte de poids alliant nutrition, exercice et accompagnement personnalisé pour des résultats durables.
               </p>
               
-              <Button size="lg" className="bg-gradient-primary hover:shadow-strong text-lg px-8 py-6">
-                Réserver ma place
+              <Button size="lg" className="bg-gradient-primary hover:shadow-strong text-lg px-8 py-6" asChild>
+                <a href="https://ericgata.thrivecart.com/programme-28-jours-agp/" target="_blank" rel="noopener noreferrer">
+                  Réserver ma place
+                </a>
               </Button>
             </div>
           </div>
@@ -214,8 +216,10 @@ const Programme28Jours = () => {
                   <p className="text-sm text-muted-foreground">
                 </p>
                 </div>
-                <Button size="lg" className="w-full bg-gradient-primary hover:shadow-strong text-lg">
-                  Réserver ma place
+                <Button size="lg" className="w-full bg-gradient-primary hover:shadow-strong text-lg" asChild>
+                  <a href="https://ericgata.thrivecart.com/programme-28-jours-agp/" target="_blank" rel="noopener noreferrer">
+                    Réserver ma place
+                  </a>
                 </Button>
               </div>
 
