@@ -88,9 +88,7 @@ const Programme28Jours = () => {
 
               {/* Introduction */}
               <div className="bg-card p-8 rounded-lg border border-border mb-8">
-                <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                  🌿 Programme AGP – Accompagnement & Gestion du Poids
-                </h3>
+                <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">🌿 Défi minceur 28 jours</h3>
                 <p className="text-xl font-semibold text-primary mb-6">
                   28 jours pour reprendre le contrôle en douceur, naturellement.
                 </p>

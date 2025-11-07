@@ -66,9 +66,8 @@ const Header = () => {
               À propos
             </button>
             <button onClick={navigateToProgramme} className="relative text-foreground hover:text-primary transition-colors font-medium group">
-              <span className="relative inline-flex items-center gap-2">
-                Programme 28 Jours
-                <span className="bg-blue-500 text-white px-2 py-0.5 rounded-full animate-pulse text-xs whitespace-nowrap">
+              <span className="relative inline-flex items-center gap-2">Défi minceur 28 Jours
+🔥 NOUVEAU<span className="bg-blue-500 text-white px-2 py-0.5 rounded-full animate-pulse text-xs whitespace-nowrap">
                   🔥 NOUVEAU
                 </span>
               </span>
