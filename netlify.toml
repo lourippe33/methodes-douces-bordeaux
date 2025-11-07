@@ -10,3 +10,6 @@ package = "@netlify/plugin-sitemap"
   [plugins.inputs]
   buildDir = "dist"
   exclude = ["/404.html"]
+[[plugins]]
+package = "@netlify/plugin-functions-install-core"
+
