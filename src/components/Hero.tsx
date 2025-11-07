@@ -57,20 +57,20 @@ const Hero = () => {
             </Button>
           </div>
 
-          <div className="pt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+          <div className="pt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
             <div className="space-y-2 animate-slide-up" style={{ animationDelay: "0.2s" }}>
-              <div className="flex flex-col gap-1">
-                <div className="text-4xl font-bold text-primary">+1000</div>
-                <div className="text-muted-foreground">Personnes accompagnées</div>
-                <div className="text-3xl font-bold text-primary mt-2">+450</div>
-                <div className="text-muted-foreground">Praticiens formés</div>
-              </div>
+              <div className="text-4xl font-bold text-primary">+1000</div>
+              <div className="text-muted-foreground">Personnes accompagnées</div>
+            </div>
+            <div className="space-y-2 animate-slide-up" style={{ animationDelay: "0.3s" }}>
+              <div className="text-4xl font-bold text-primary">+450</div>
+              <div className="text-muted-foreground">Praticiens formés</div>
             </div>
             <div className="space-y-2 animate-slide-up" style={{ animationDelay: "0.4s" }}>
               <div className="text-4xl font-bold text-secondary">95%</div>
               <div className="text-muted-foreground">Taux de satisfaction</div>
             </div>
-            <div className="space-y-2 animate-slide-up" style={{ animationDelay: "0.6s" }}>
+            <div className="space-y-2 animate-slide-up" style={{ animationDelay: "0.5s" }}>
               <div className="text-4xl font-bold text-primary">10+</div>
               <div className="text-muted-foreground">Années d'expérience</div>
             </div>
