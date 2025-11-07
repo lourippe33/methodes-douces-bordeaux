@@ -31,7 +31,7 @@ const Programme28Jours = () => {
               </p>
               
               <Button size="lg" className="bg-gradient-primary hover:shadow-strong text-lg px-8 py-6" asChild>
-                <a href="https://ericgata.thrivecart.com/programme-28-jours-agp/" target="_blank" rel="noopener noreferrer">
+                <a href="https://ericgata.thrivecart.com/httpsbuystripecom14a4gzetc8fu1qtekqc3m02/" target="_blank" rel="noopener noreferrer">
                   Réserver ma place
                 </a>
               </Button>
@@ -217,7 +217,7 @@ const Programme28Jours = () => {
                 </p>
                 </div>
                 <Button size="lg" className="w-full bg-gradient-primary hover:shadow-strong text-lg" asChild>
-                  <a href="https://ericgata.thrivecart.com/programme-28-jours-agp/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://ericgata.thrivecart.com/httpsbuystripecom14a4gzetc8fu1qtekqc3m02/" target="_blank" rel="noopener noreferrer">
                     Réserver ma place
                   </a>
                 </Button>
