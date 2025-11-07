@@ -7,6 +7,7 @@ import Reviews from "@/components/Reviews";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ChatBot from "@/components/ChatBot";
+import WeightLossPopup from "@/components/WeightLossPopup";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
       </main>
       <Footer />
       <ChatBot />
+      <WeightLossPopup />
     </div>
   );
 };
