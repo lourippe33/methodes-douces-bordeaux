@@ -37,7 +37,7 @@ const WeightLossPopup = () => {
             <Scale className="h-8 w-8 text-primary-foreground" />
           </div>
           <DialogTitle className="text-center text-2xl font-bold">
-            Programme Perte de Poids
+            Défi minceur
             <span className="bg-gradient-hero bg-clip-text text-transparent"> 28 Jours</span>
           </DialogTitle>
           <DialogDescription className="space-y-4 pt-4 text-center text-base">
