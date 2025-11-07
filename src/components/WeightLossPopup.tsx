@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Scale, Sparkles, Target } from "lucide-react";
 
 const WeightLossPopup = () => {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const hasSeenPopup = localStorage.getItem("hasSeenWeightLossPopup");
@@ -23,8 +25,8 @@ const WeightLossPopup = () => {
 
   const handleCTA = () => {
     localStorage.setItem("hasSeenWeightLossPopup", "true");
-    window.open("https://ericgata.thrivecart.com/httpsbuystripecom14a4gzetc8fu1qtekqc3m02/", "_blank");
     setOpen(false);
+    navigate("/programme-28-jours");
   };
 
   return (
