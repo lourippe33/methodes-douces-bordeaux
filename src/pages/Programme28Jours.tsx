@@ -6,7 +6,7 @@ import { Calendar, Target, TrendingDown, CheckCircle2 } from "lucide-react";
 import { useEffect } from "react";
 const Programme28Jours = () => {
   useEffect(() => {
-    document.title = "Programme 28 Jours - Défi Minceur | AGP Méthodes Douces Bordeaux";
+    document.title = "Programme 28 Jours - Défi Minceur | Cabinet AGP Tresses";
     
     // Canonical
     let canonicalLink = document.querySelector('link[rel="canonical"]');
@@ -19,11 +19,11 @@ const Programme28Jours = () => {
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Programme 28 jours pour la gestion du poids. Offre de lancement 90€ au lieu de 190€. Hypnose, suivi personnalisé, sans régime. Inscription limitée.");
+      metaDescription.setAttribute("content", "Programme 28 jours pour retrouver équilibre et bien-être. Offre de lancement. Hypnose, suivi personnalisé, sans régime. Inscriptions limitées.");
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
-      meta.content = "Programme 28 jours pour la gestion du poids. Offre de lancement 90€ au lieu de 190€. Hypnose, suivi personnalisé, sans régime. Inscription limitée.";
+      meta.content = "Programme 28 jours pour retrouver équilibre et bien-être. Offre de lancement. Hypnose, suivi personnalisé, sans régime. Inscriptions limitées.";
       document.head.appendChild(meta);
     }
     
@@ -80,11 +80,11 @@ const Programme28Jours = () => {
               </h1>
               
               <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-                Transformez votre corps et votre esprit en seulement 28 jours
+                Transformez votre quotidien en seulement 28 jours
               </p>
               
               <p className="text-lg text-foreground/80 mb-12 max-w-2xl mx-auto">
-                Un programme complet de perte de poids alliant nutrition, exercice et accompagnement personnalisé pour des résultats durables.
+                Un programme complet alliant méthodes douces et accompagnement personnalisé pour des résultats durables et sans frustration.
               </p>
               
               <Button size="lg" className="bg-gradient-primary hover:shadow-strong text-lg px-8 py-6" asChild>
@@ -120,8 +120,8 @@ const Programme28Jours = () => {
                 <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
                   <TrendingDown className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Perte de Poids</h3>
-                <p className="text-muted-foreground">Méthode éprouvée et efficace</p>
+                <h3 className="text-xl font-semibold mb-2">Résultats durables</h3>
+                <p className="text-muted-foreground">Méthode douce et efficace</p>
               </div>
 
               <div className="text-center p-6 rounded-lg border border-border bg-card hover:shadow-soft transition-all">
@@ -267,9 +267,8 @@ const Programme28Jours = () => {
                   Je propose actuellement ce programme en version test, à tarif réduit, afin d'améliorer l'expérience grâce à vos retours :
                 </p>
                 <div className="bg-card p-6 rounded-lg mb-6 text-center">
-                  <p className="text-3xl font-bold text-primary mb-2">90€ au lieu de 190€</p>
-                  <p className="text-sm text-muted-foreground">
-                </p>
+                  <p className="text-3xl font-bold text-primary mb-2">Offre de lancement</p>
+                  <p className="text-sm text-muted-foreground">Tarif réduit pour cette phase test</p>
                 </div>
                 <Button size="lg" className="w-full bg-gradient-primary hover:shadow-strong text-lg" asChild>
                   <a href="https://ericgata.thrivecart.com/httpsbuystripecom14a4gzetc8fu1qtekqc3m02/" target="_blank" rel="noopener noreferrer">

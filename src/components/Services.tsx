@@ -5,16 +5,16 @@ import { Link } from "react-router-dom";
 const services = [{
   icon: Brain,
   title: "Hypnose & EFT-H",
-  description: "Un accompagnement efficace pour retrouver confiance, estime de soi et surmonter vos blocages émotionnels.",
-  benefits: ["Gestion des angoisses", "Phobies et peurs", "Blessures émotionnelles", "Confiance en soi"],
+  description: "Accompagnement par hypnose & EFT-H pour retrouver plus de calme intérieur, relâcher les tensions émotionnelles et renforcer la confiance en soi grâce à des méthodes douces adaptées à chacun.",
+  benefits: ["Tensions émotionnelles", "Confiance en soi", "Apaisement intérieur", "Lâcher-prise"],
   color: "primary",
   link: "/hypnose-eft-h",
   external: false
 }, {
   icon: Activity,
   title: "Neurofeedback",
-  description: "Une méthode innovante pour réguler votre activité cérébrale et améliorer votre bien-être au quotidien.",
-  benefits: ["TDA(H)", "Insomnie", "Migraines", "Gestion du stress"],
+  description: "Régulation naturelle du cerveau pour retrouver apaisement mental, concentration et sommeil plus paisible. Méthode douce adaptée aux adultes, enfants et adolescents.",
+  benefits: ["Surcharge mentale", "Difficultés d'endormissement", "Agitation intérieure", "Apaisement du mental"],
   color: "secondary",
   link: "https://neurofeedback-stress.fr/",
   external: true
@@ -23,9 +23,9 @@ const Services = () => {
   return <section id="services" className="py-24 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground">Mes prestations</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground">Accompagnement bien-être à Tresses</h2>
           <p className="text-xl text-muted-foreground font-light">
-            Des méthodes douces et efficaces pour vous accompagner vers le changement
+            Méthodes douces pour adultes, enfants et adolescents près de Bordeaux
           </p>
         </div>
 
@@ -76,8 +76,7 @@ const Services = () => {
 
         <div className="text-center mt-12">
           <p className="text-sm text-muted-foreground max-w-3xl mx-auto italic">
-            Les méthodes que j'utilise ne se substituent à aucun avis ni traitement médical. 
-            Cela vient en complément des soins qui vous sont prescrits et ne remplace jamais le suivi par un médecin.
+            Ces méthodes visent au bien-être et ne remplacent pas un suivi médical si nécessaire.
           </p>
         </div>
       </div>

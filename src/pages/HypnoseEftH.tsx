@@ -16,7 +16,7 @@ declare global {
 const HypnoseEftH = () => {
   const navigate = useNavigate();
   useEffect(() => {
-    document.title = "Hypnose et EFT-H à Tresses (33) - Cabinet près de Bordeaux | Gestion du stress, émotions";
+    document.title = "Hypnose et EFT-H à Tresses (33) - Cabinet bien-être près de Bordeaux";
     
     // Canonical
     let canonicalLink = document.querySelector('link[rel="canonical"]');
@@ -30,11 +30,11 @@ const HypnoseEftH = () => {
     // Meta Description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Cabinet d'hypnose et EFT-H à Tresses (33370) près de Bordeaux. Séances pour stress, émotions, arrêt tabac, confiance. 70€/séance. RDV au 07 82 38 66 21");
+      metaDescription.setAttribute("content", "Accompagnement par hypnose et EFT-H à Tresses près de Bordeaux. Apaisement émotionnel, confiance en soi, lâcher-prise. Cabinet sur rendez-vous.");
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
-      meta.content = "Cabinet d'hypnose et EFT-H à Tresses (33370) près de Bordeaux. Séances pour stress, émotions, arrêt tabac, confiance. 70€/séance. RDV au 07 82 38 66 21";
+      meta.content = "Accompagnement par hypnose et EFT-H à Tresses près de Bordeaux. Apaisement émotionnel, confiance en soi, lâcher-prise. Cabinet sur rendez-vous.";
       document.head.appendChild(meta);
     }
     
@@ -128,13 +128,13 @@ const HypnoseEftH = () => {
           <article className="space-y-12">
             <header>
               <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">
-                Hypnose et EFT-H : deux approches complémentaires pour un mieux-être durable
+                Hypnose et EFT-H à Tresses : accompagnement bien-être près de Bordeaux
               </h1>
             </header>
 
             <section className="space-y-6">
               <h2 className="text-3xl font-heading font-bold text-foreground">
-                L'hypnose : agir sur l'inconscient pour retrouver l'équilibre
+                L'hypnose : retrouver l'équilibre et le calme intérieur
               </h2>
               
               <div className="space-y-4 text-muted-foreground leading-relaxed">
@@ -149,14 +149,14 @@ const HypnoseEftH = () => {
                 </p>
                 
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>gérer le stress, les angoisses ou les troubles du sommeil,</li>
+                  <li>apaiser les tensions émotionnelles et le stress,</li>
                   <li>renforcer la confiance en soi ou se libérer de blocages,</li>
-                  <li>accompagner un arrêt du tabac ou une gestion du poids,</li>
+                  <li>accompagner un changement personnel (habitudes, comportements),</li>
                   <li>retrouver une stabilité émotionnelle durable.</li>
                 </ul>
                 
                 <p className="italic">
-                  L'hypnose ne remplace pas un traitement médical, mais agit en complément, en soutenant les capacités naturelles d'adaptation et d'équilibre du corps.
+                  Ces méthodes visent au bien-être et ne remplacent pas un suivi médical si nécessaire.
                 </p>
               </div>
             </section>
@@ -172,13 +172,13 @@ const HypnoseEftH = () => {
                   Cette méthode agit à la fois sur le plan énergétique et émotionnel, permettant de réduire l'intensité des émotions désagréables, des souvenirs ou des tensions internes.
                 </p>
                 
-                <p>Elle est particulièrement efficace pour :</p>
+                <p>Elle est particulièrement bénéfique pour :</p>
                 
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>diminuer le stress et les émotions négatives,</li>
+                  <li>diminuer les tensions émotionnelles et le stress,</li>
                   <li>surmonter les blocages liés au passé,</li>
                   <li>améliorer la confiance en soi,</li>
-                  <li>réguler les comportements liés aux émotions alimentaires ou à la dépendance.</li>
+                  <li>réguler les comportements émotionnels.</li>
                 </ul>
                 
                 <p>
@@ -203,7 +203,7 @@ const HypnoseEftH = () => {
                 </ul>
                 
                 <p>
-                  Cette synergie permet d'obtenir des résultats rapides tout en consolidant les changements dans le temps.
+                  Cette synergie permet d'obtenir des résultats durables tout en consolidant les changements dans le temps.
                   Elle s'adresse à toute personne souhaitant mieux gérer ses émotions, retrouver confiance et améliorer sa qualité de vie.
                 </p>
               </div>
@@ -231,22 +231,20 @@ const HypnoseEftH = () => {
 
             <section className="space-y-6 bg-gradient-primary/10 p-8 rounded-2xl border border-primary/20">
               <h2 className="text-3xl font-heading font-bold text-foreground">
-                Tarification
+                Informations pratiques
               </h2>
               
               <div className="space-y-4">
+                <p className="text-muted-foreground">
+                  Les séances se déroulent sur rendez-vous uniquement. Contactez-moi pour plus d'informations sur les tarifs et modalités.
+                </p>
+                
                 <div className="flex items-center justify-between flex-wrap gap-4">
                   <div>
-                    <p className="text-2xl font-bold text-foreground">70€</p>
-                    <p className="text-muted-foreground">la séance d'hypnose et/ou EFT-H</p>
+                    <p className="text-lg font-medium text-foreground">Séances d'hypnose et/ou EFT-H</p>
+                    <p className="text-sm text-muted-foreground">Durée variable selon les besoins</p>
                   </div>
-                  
-                  <stripe-buy-button buy-button-id="buy_btn_1SNrxLIm6viVop01jrxS8WM6" publishable-key="pk_live_51S5SEgIm6viVop01DTKbxl5DepTI0nqharUTys7fWk3bAe6mT4ptHihfMheDdJHU9sQmVc7Dxu96c8gClXExqcO90074S31sgi">
-                  </stripe-buy-button>
                 </div>
-                <p className="text-sm text-muted-foreground italic">
-                  Les séances ne sont pas prises en charge par la Sécurité sociale, mais certaines mutuelles proposent un remboursement partiel.
-                </p>
               </div>
             </section>
 
@@ -282,10 +280,10 @@ const HypnoseEftH = () => {
                   <AccordionContent className="text-muted-foreground leading-relaxed">
                     <p className="mb-3">
                       L'hypnose permet d'accéder à l'inconscient pour transformer des schémas profonds ou des comportements répétitifs.
-                      Par exemple, elle aide à arrêter de fumer, à retrouver un sommeil plus serein, ou à changer son rapport à l'alimentation.
+                      Par exemple, elle aide à modifier certaines habitudes, à retrouver un sommeil plus serein, ou à changer son rapport à certains comportements.
                     </p>
                     <p className="mb-3">
-                      L'EFT-H, quant à elle, agit directement sur la réaction émotionnelle : elle aide à calmer rapidement une crise d'angoisse, à dissiper une émotion bloquante (colère, culpabilité, peur), ou à apaiser un souvenir douloureux.
+                      L'EFT-H, quant à elle, agit directement sur la réaction émotionnelle : elle aide à calmer rapidement une montée d'angoisse, à dissiper une émotion bloquante (colère, culpabilité, peur), ou à apaiser un souvenir douloureux.
                     </p>
                     <p>
                       En combinant les deux approches, j'agis à la fois sur la cause inconsciente (grâce à l'hypnose) et sur la réponse émotionnelle immédiate (grâce à l'EFT-H), pour un travail complet et durable.
@@ -300,19 +298,18 @@ const HypnoseEftH = () => {
                   <AccordionContent className="text-muted-foreground leading-relaxed">
                     <p>
                       Le nombre de séances dépend de chaque personne et de son objectif.
-                      Certaines problématiques peuvent nécessiter une à trois séances (par exemple, l'arrêt du tabac ou une phobie ciblée), tandis que d'autres demandes, comme la gestion du poids ou la reconstruction émotionnelle, peuvent nécessiter un accompagnement plus progressif.
+                      Certaines problématiques peuvent nécessiter une à trois séances (par exemple, un changement d'habitude ou un blocage ciblé), tandis que d'autres demandes, comme un accompagnement plus global, peuvent nécessiter un suivi plus progressif.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-3">
                   <AccordionTrigger className="text-left">
-                    Les séances sont-elles remboursées ?
+                    Y a-t-il une prise en charge ?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground leading-relaxed">
                     <p>
-                      Les séances d'hypnose et d'EFT-H ne sont pas prises en charge par la Sécurité sociale, mais certaines mutuelles proposent un remboursement partiel ou forfaitaire.
-                      Je vous conseille de vérifier auprès de votre complémentaire santé si les soins de médecines douces ou les pratiques alternatives sont inclus.
+                      Les séances d'hypnose et d'EFT-H ne sont pas prises en charge par la Sécurité sociale. Certaines complémentaires santé proposent des forfaits pour les médecines douces. Je vous invite à vous renseigner directement auprès de votre mutuelle.
                     </p>
                   </AccordionContent>
                 </AccordionItem>

@@ -26,15 +26,15 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-heading font-bold text-foreground leading-tight">
-            Bienvenue dans votre{" "}
+            Méthodes douces & neurofeedback à{" "}
             <span className="bg-gradient-hero bg-clip-text text-transparent">
-              changement
+              Tresses
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed font-medium">
-            Méthodes douces et accompagnement personnalisé pour retrouver bien-être, 
-            confiance et équilibre dans votre vie
+            Accompagnement personnalisé pour retrouver bien-être, apaisement émotionnel 
+            et équilibre intérieur. Cabinet près de Bordeaux
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
