@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroBackground from "@/assets/hero-background-canyon.jpg";
+import heroBackground from "@/assets/hero-background.webp";
 
 const Hero = () => {
   const scrollToServices = () => {

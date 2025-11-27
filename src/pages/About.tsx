@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Heart, Target, Sparkles, Award, Users, BookOpen } from "lucide-react";
-import ericPhoto from "@/assets/eric-gata.png";
+import ericPhoto from "@/assets/eric-gata.webp";
 const About = () => {
   const navigate = useNavigate();
   useEffect(() => {
@@ -54,7 +54,7 @@ const About = () => {
                 <img 
                   src={ericPhoto} 
                   alt="Praticien bien-être hypnose neurofeedback à Tresses" 
-                  className="relative rounded-2xl shadow-warm w-full h-auto object-cover"
+                  className="relative rounded-2xl shadow-warm w-full max-w-sm mx-auto h-auto object-cover"
                   width="600"
                   height="600"
                   loading="lazy"
