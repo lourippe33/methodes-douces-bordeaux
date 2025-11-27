@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { ArrowLeft, Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
@@ -15,16 +16,84 @@ declare global {
 const HypnoseEftH = () => {
   const navigate = useNavigate();
   useEffect(() => {
-    document.title = "Hypnose et EFT-H à Tresses (33) - Cabinet près de Bordeaux | Gestion du stress, émotions, confiance en soi";
+    document.title = "Hypnose et EFT-H à Tresses (33) - Cabinet près de Bordeaux | Gestion du stress, émotions";
+    
+    // Canonical
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.setAttribute('href', 'https://methodes-douces-bordeaux.fr/hypnose-eft-h');
+    
+    // Meta Description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Praticien en hypnose et EFT-H à Tresses, près de Bordeaux. Accompagnement pour la gestion du stress, des émotions, arrêt du tabac, confiance en soi. Séances en cabinet.");
+      metaDescription.setAttribute("content", "Cabinet d'hypnose et EFT-H à Tresses (33370) près de Bordeaux. Séances pour stress, émotions, arrêt tabac, confiance. 70€/séance. RDV au 07 82 38 66 21");
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
-      meta.content = "Praticien en hypnose et EFT-H à Tresses, près de Bordeaux. Accompagnement pour la gestion du stress, des émotions, arrêt du tabac, confiance en soi. Séances en cabinet.";
+      meta.content = "Cabinet d'hypnose et EFT-H à Tresses (33370) près de Bordeaux. Séances pour stress, émotions, arrêt tabac, confiance. 70€/séance. RDV au 07 82 38 66 21";
       document.head.appendChild(meta);
     }
+    
+    // Structured Data - FAQ
+    const structuredDataFAQ = document.createElement('script');
+    structuredDataFAQ.type = 'application/ld+json';
+    structuredDataFAQ.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quelle est la différence entre l'hypnose et l'EFT-H ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L'hypnose permet d'accéder à l'inconscient pour transformer des schémas profonds ou des comportements répétitifs. L'EFT-H agit directement sur la réaction émotionnelle : elle aide à calmer rapidement une crise d'angoisse, à dissiper une émotion bloquante, ou à apaiser un souvenir douloureux."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien de séances sont nécessaires ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le nombre de séances dépend de chaque personne et de son objectif. Certaines problématiques peuvent nécessiter une à trois séances (arrêt du tabac, phobie), tandis que d'autres demandes comme la gestion du poids peuvent nécessiter un accompagnement plus progressif."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Les séances sont-elles remboursées ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les séances d'hypnose et d'EFT-H ne sont pas prises en charge par la Sécurité sociale, mais certaines mutuelles proposent un remboursement partiel ou forfaitaire."
+          }
+        }
+      ]
+    });
+    document.head.appendChild(structuredDataFAQ);
+    
+    // Structured Data - Service
+    const structuredDataService = document.createElement('script');
+    structuredDataService.type = 'application/ld+json';
+    structuredDataService.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Hypnose et EFT-H",
+      "provider": {
+        "@id": "https://methodes-douces-bordeaux.fr/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Bordeaux"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "70",
+        "priceCurrency": "EUR"
+      }
+    });
+    document.head.appendChild(structuredDataService);
 
     // Load Stripe Buy Button script
     const script = document.createElement('script');
@@ -52,10 +121,9 @@ const HypnoseEftH = () => {
       <Header />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
-          <Button variant="ghost" onClick={() => navigate("/")} className="mb-8 -ml-2">
-            <ArrowLeft className="mr-2" size={16} />
-            Retour
-          </Button>
+          <Breadcrumbs items={[
+            { label: "Hypnose et EFT-H" }
+          ]} />
           
           <article className="space-y-12">
             <header>

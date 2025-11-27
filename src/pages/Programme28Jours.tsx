@@ -1,11 +1,68 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Calendar, Target, TrendingDown, CheckCircle2 } from "lucide-react";
+import { useEffect } from "react";
 const Programme28Jours = () => {
+  useEffect(() => {
+    document.title = "Programme 28 Jours - Défi Minceur | AGP Méthodes Douces Bordeaux";
+    
+    // Canonical
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.setAttribute('href', 'https://methodes-douces-bordeaux.fr/programme-28-jours');
+    
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Programme 28 jours pour la gestion du poids. Offre de lancement 90€ au lieu de 190€. Hypnose, suivi personnalisé, sans régime. Inscription limitée.");
+    } else {
+      const meta = document.createElement("meta");
+      meta.name = "description";
+      meta.content = "Programme 28 jours pour la gestion du poids. Offre de lancement 90€ au lieu de 190€. Hypnose, suivi personnalisé, sans régime. Inscription limitée.";
+      document.head.appendChild(meta);
+    }
+    
+    // Structured Data - Event/Course
+    const structuredData = document.createElement('script');
+    structuredData.type = 'application/ld+json';
+    structuredData.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Programme 28 Jours - Défi Minceur",
+      "description": "Programme complet de gestion du poids sur 28 jours avec hypnose, EFT-H et suivi personnalisé",
+      "provider": {
+        "@id": "https://methodes-douces-bordeaux.fr/#business"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "90",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2025-01-27"
+      }
+    });
+    document.head.appendChild(structuredData);
+
+    return () => {
+      if (structuredData.parentNode) {
+        structuredData.parentNode.removeChild(structuredData);
+      }
+    };
+  }, []);
+
   return <div className="min-h-screen">
       <Header />
       <main className="pt-24">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <Breadcrumbs items={[
+            { label: "Programme 28 Jours" }
+          ]} />
+        </div>
         {/* Hero Section */}
         <section className="py-20 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
           <div className="container mx-auto px-4">

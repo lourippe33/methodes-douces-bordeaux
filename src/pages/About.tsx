@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
@@ -10,14 +11,24 @@ import ericPhoto from "@/assets/eric-gata.png";
 const About = () => {
   const navigate = useNavigate();
   useEffect(() => {
-    document.title = "À propos - Eric Gata | Praticien en hypnose, neurofeedback et aromathérapie à Tresses";
+    document.title = "À propos - Eric Gata | Praticien hypnose, neurofeedback à Tresses (33)";
+    
+    // Canonical
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (!canonicalLink) {
+      canonicalLink = document.createElement('link');
+      canonicalLink.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonicalLink);
+    }
+    canonicalLink.setAttribute('href', 'https://methodes-douces-bordeaux.fr/a-propos');
+    
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Eric Gata, praticien en hypnose, neurofeedback dynamique et aromathérapie à Tresses. Spécialisé dans la gestion du stress, l'arrêt du tabac et la perte de poids.");
+      metaDescription.setAttribute("content", "Eric Gata, praticien certifié en hypnose (IHEC), neurofeedback (Zengar) et aromathérapie à Tresses. Cabinet près de Bordeaux. 10+ ans d'expérience.");
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
-      meta.content = "Eric Gata, praticien en hypnose, neurofeedback dynamique et aromathérapie à Tresses. Spécialisé dans la gestion du stress, l'arrêt du tabac et la perte de poids.";
+      meta.content = "Eric Gata, praticien certifié en hypnose (IHEC), neurofeedback (Zengar) et aromathérapie à Tresses. Cabinet près de Bordeaux. 10+ ans d'expérience.";
       document.head.appendChild(meta);
     }
   }, []);
@@ -25,10 +36,9 @@ const About = () => {
       <Header />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-6xl">
-          <Button variant="ghost" onClick={() => navigate("/")} className="mb-8 -ml-2">
-            <ArrowLeft className="mr-2" size={16} />
-            Retour
-          </Button>
+          <Breadcrumbs items={[
+            { label: "À propos" }
+          ]} />
 
           <article className="space-y-16">
             <header className="text-center space-y-6">
