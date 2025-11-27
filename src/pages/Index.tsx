@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import SEOContent from "@/components/SEOContent";
 import Services from "@/components/Services";
 import Formation from "@/components/Formation";
 import About from "@/components/About";
@@ -15,6 +16,7 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <SEOContent />
         <Services />
         <Formation />
         <About />
