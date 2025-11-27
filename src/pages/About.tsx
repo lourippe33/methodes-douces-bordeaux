@@ -11,7 +11,7 @@ import ericPhoto from "@/assets/eric-gata.png";
 const About = () => {
   const navigate = useNavigate();
   useEffect(() => {
-    document.title = "À propos - Eric Gata | Praticien hypnose, neurofeedback à Tresses (33)";
+    document.title = "À propos - Eric Gata | Cabinet bien-être Tresses (33)";
     
     // Canonical
     let canonicalLink = document.querySelector('link[rel="canonical"]');
@@ -24,11 +24,11 @@ const About = () => {
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Eric Gata, praticien certifié en hypnose (IHEC), neurofeedback (Zengar) et aromathérapie à Tresses. Cabinet près de Bordeaux. 10+ ans d'expérience.");
+      metaDescription.setAttribute("content", "Eric Gata, praticien certifié en hypnose (IHEC), neurofeedback (Zengar) et aromathérapie. Cabinet bien-être à Tresses près de Bordeaux. 10+ ans d'expérience.");
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
-      meta.content = "Eric Gata, praticien certifié en hypnose (IHEC), neurofeedback (Zengar) et aromathérapie à Tresses. Cabinet près de Bordeaux. 10+ ans d'expérience.";
+      meta.content = "Eric Gata, praticien certifié en hypnose (IHEC), neurofeedback (Zengar) et aromathérapie. Cabinet bien-être à Tresses près de Bordeaux. 10+ ans d'expérience.";
       document.head.appendChild(meta);
     }
   }, []);
@@ -43,7 +43,7 @@ const About = () => {
           <article className="space-y-16">
             <header className="text-center space-y-6">
               <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground">
-                Eric Gata – Praticien en hypnose, neurofeedback et aromathérapie à Tresses
+                Eric Gata – Cabinet bien-être à Tresses : hypnose, neurofeedback et aromathérapie
               </h1>
             </header>
 
@@ -51,7 +51,7 @@ const About = () => {
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-primary rounded-2xl blur-2xl opacity-20"></div>
-                  <img src={ericPhoto} alt="Eric Gata, praticien en hypnose, neurofeedback et aromathérapie" className="relative rounded-2xl shadow-warm w-full h-auto object-cover" />
+                  <img src={ericPhoto} alt="Eric Gata, praticien bien-être à Tresses" className="relative rounded-2xl shadow-warm w-full h-auto object-cover" />
                 </div>
                 <div className="space-y-4">
                   <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground">
@@ -152,10 +152,11 @@ const About = () => {
                   <p>
                     Souhaitant proposer un accompagnement encore plus ciblé, j'ai suivi plusieurs spécialisations auprès de Michel et Marie Martin à l'école ATH, dans deux domaines qui me tiennent particulièrement à cœur :
                   </p>
-                  <ul className="list-disc list-inside space-y-2 pl-4">
-                    <li>l'arrêt du tabac,</li>
-                    <li>la gestion du poids et la minceur durable.</li>
-                  </ul>
+                <ul className="list-disc list-inside space-y-2 pl-4">
+                  <li>apaiser les tensions émotionnelles et renforcer la confiance en soi,</li>
+                  <li>accompagner un changement personnel (habitudes, comportements),</li>
+                  <li>retrouver une stabilité émotionnelle durable.</li>
+                </ul>
                   <p>
                     J'ai également complété mon parcours par une formation en hypnose rapide auprès de Jordan Verot, afin d'adapter la méthode au rythme et aux besoins de chacun.
                   </p>
@@ -199,7 +200,7 @@ const About = () => {
                 <div className="space-y-3 text-muted-foreground leading-relaxed">
                   <p className="font-medium">Eric Gata, praticien en hypnose, eft-h, neurofeedback et aromathérapie à Tresses</p>
                   <p>Formé à l'IHEC Bordeaux, Zengar, Hippocratus, ATH, AFPN</p>
-                  <p>Spécialisé dans la gestion du stress, l'arrêt du tabac, la perte de poids et le mieux-être global</p>
+                  <p>Accompagnement bien-être pour adultes, enfants et adolescents près de Bordeaux</p>
                 </div>
                 <div className="pt-4">
                   <Button onClick={() => {
