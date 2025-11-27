@@ -53,7 +53,7 @@ const About = () => {
                   <div className="absolute inset-0 bg-gradient-primary rounded-2xl blur-2xl opacity-20"></div>
                 <img 
                   src={ericPhoto} 
-                  alt="Eric Gata, praticien bien-être à Tresses" 
+                  alt="Praticien bien-être hypnose neurofeedback à Tresses" 
                   className="relative rounded-2xl shadow-warm w-full h-auto object-cover"
                   width="600"
                   height="600"

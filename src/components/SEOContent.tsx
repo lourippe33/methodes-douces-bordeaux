@@ -41,6 +41,23 @@ const SEOContent = () => {
             </p>
           </div>
 
+          {/* Additional content before disclaimer */}
+          <div className="space-y-4">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Chaque accompagnement est personnalisé en fonction de vos objectifs et de votre rythme. 
+              Les séances permettent de mieux comprendre vos réactions internes, d'apaiser le mental et 
+              d'encourager des changements durables. Que ce soit pour vous libérer d'une surcharge émotionnelle, 
+              retrouver un sommeil plus paisible, mieux gérer vos habitudes ou renforcer la confiance en vous, 
+              les méthodes utilisées favorisent l'autorégulation naturelle et l'équilibre intérieur.
+            </p>
+
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Mon rôle n'est pas de vous diriger, mais de vous accompagner avec une approche accessible, 
+              claire et progressive. Chaque séance vous aide à développer vos propres ressources 
+              et à prendre appui sur vos capacités naturelles d'adaptation.
+            </p>
+          </div>
+
           {/* Disclaimer */}
           <div className="pt-8 border-t border-border">
             <p className="text-sm text-muted-foreground italic">
