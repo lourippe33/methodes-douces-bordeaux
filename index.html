@@ -16,13 +16,16 @@
     <link rel="canonical" href="https://methodes-douces-bordeaux.fr/" />
     <title>Méthodes douces & neurofeedback à Tresses (près de Bordeaux) | Bien-être et accompagnement</title>
     
+    <!-- Preload Hero Image for LCP -->
+    <link rel="preload" as="image" href="/src/assets/hero-background.webp" fetchpriority="high">
+    
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <!-- Google Fonts with optimized loading -->
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
     <meta name="description" content="Bien-être, hypnose, EFT-H et neurofeedback à Tresses près de Bordeaux. Accompagnement adultes et enfants pour apaisement émotionnel, sommeil et lâcher-prise.">
     <meta name="author" content="Eric Gata - AGP Méthodes Douces" />
     <meta name="keywords" content="bien-être, hypnose, neurofeedback, tresses, bordeaux, accompagnement, émotions, sommeil, stress, eft-h">
@@ -199,7 +202,7 @@
     <!-- End Google Tag Manager (noscript) -->
     
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script defer type="module" src="/src/main.tsx"></script>
     <script async src="//tinder.thrivecart.com/embed/v1/thrivecart.js"></script>
   </body>
 </html>
