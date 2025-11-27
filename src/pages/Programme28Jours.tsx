@@ -19,11 +19,11 @@ const Programme28Jours = () => {
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Programme 28 jours pour retrouver équilibre et bien-être. Offre de lancement. Hypnose, suivi personnalisé, sans régime. Inscriptions limitées.");
+      metaDescription.setAttribute("content", "Programme AGP en ligne pour une perte de poids durable, sans régime strict. Méthode simple, structurée et personnalisée, accessible partout en francophonie.");
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
-      meta.content = "Programme 28 jours pour retrouver équilibre et bien-être. Offre de lancement. Hypnose, suivi personnalisé, sans régime. Inscriptions limitées.";
+      meta.content = "Programme AGP en ligne pour une perte de poids durable, sans régime strict. Méthode simple, structurée et personnalisée, accessible partout en francophonie.";
       document.head.appendChild(meta);
     }
     
@@ -78,6 +78,21 @@ const Programme28Jours = () => {
               <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
                 Programme 28 Jours
               </h1>
+              
+              <div className="space-y-4 text-lg text-foreground/80 mb-8 max-w-3xl mx-auto text-left">
+                <p>
+                  Le Programme 28 Jours AGP est destiné à toute personne francophone souhaitant perdre du poids 
+                  de manière durable, sans régime strict ni frustration. Cet accompagnement se déroule entièrement en ligne, 
+                  avec un suivi pratique et progressif basé sur l'écoute du corps, la gestion des habitudes alimentaires 
+                  et la compréhension du rythme biologique. Vous êtes guidé pas à pas, quel que soit votre lieu de vie, 
+                  avec des conseils simples, applicables au quotidien et adaptés à votre organisation personnelle.
+                </p>
+                <p>
+                  Ce programme peut également être associé, si vous le souhaitez, à un travail en cabinet à Tresses 
+                  pour renforcer la motivation ou faciliter certaines étapes. L'objectif reste le même : 
+                  un changement durable, agréable et respectueux de votre équilibre.
+                </p>
+              </div>
               
               <p className="text-xl md:text-2xl text-muted-foreground mb-8">
                 Transformez votre quotidien en seulement 28 jours

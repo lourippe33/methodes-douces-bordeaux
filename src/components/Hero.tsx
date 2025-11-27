@@ -17,7 +17,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBackground})` }}
         role="img"
-        aria-label="Paysage naturel inspirant le bien-être et la transformation personnelle"
+        aria-label="Cabinet bien-être Tresses près de Bordeaux"
       >
         {/* Overlay pour améliorer la lisibilité du texte */}
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/50 to-background/90"></div>

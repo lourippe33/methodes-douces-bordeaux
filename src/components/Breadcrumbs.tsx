@@ -22,13 +22,15 @@ const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
           "@type": "ListItem",
           "position": 1,
           "name": "Accueil",
-          "item": "https://methodes-douces-bordeaux.fr/"
+          "item": "https://methodes-douces-bordeaux.fr"
         },
         ...items.map((item, index) => ({
           "@type": "ListItem",
           "position": index + 2,
           "name": item.label,
-          "item": item.path ? `https://methodes-douces-bordeaux.fr${item.path}` : undefined
+          "item": item.path 
+            ? `https://methodes-douces-bordeaux.fr${item.path}` 
+            : `https://methodes-douces-bordeaux.fr/${item.label.toLowerCase().replace(/\s+/g, '-')}`
         }))
       ]
     };

@@ -30,11 +30,11 @@ const HypnoseEftH = () => {
     // Meta Description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Accompagnement par hypnose et EFT-H à Tresses près de Bordeaux. Apaisement émotionnel, confiance en soi, lâcher-prise. Cabinet sur rendez-vous.");
+      metaDescription.setAttribute("content", "Hypnose et EFT-H à Tresses près de Bordeaux. Méthodes douces pour lâcher-prise, confiance en soi, apaisement émotionnel et changements durables.");
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
-      meta.content = "Accompagnement par hypnose et EFT-H à Tresses près de Bordeaux. Apaisement émotionnel, confiance en soi, lâcher-prise. Cabinet sur rendez-vous.";
+      meta.content = "Hypnose et EFT-H à Tresses près de Bordeaux. Méthodes douces pour lâcher-prise, confiance en soi, apaisement émotionnel et changements durables.";
       document.head.appendChild(meta);
     }
     
