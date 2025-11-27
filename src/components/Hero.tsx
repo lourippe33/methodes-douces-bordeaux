@@ -25,16 +25,17 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-heading font-bold text-foreground leading-tight">
-            Méthodes douces & neurofeedback à{" "}
-            <span className="bg-gradient-hero bg-clip-text text-transparent">
-              Tresses
-            </span>
+          <h1 className="text-4xl md:text-6xl font-heading font-bold text-foreground leading-tight">
+            Méthodes douces & neurofeedback à Tresses (près de Bordeaux)
           </h1>
           
-          <p className="text-xl md:text-2xl text-foreground max-w-2xl mx-auto leading-relaxed font-medium">
-            Accompagnement personnalisé pour retrouver bien-être, apaisement émotionnel 
-            et équilibre intérieur. Cabinet près de Bordeaux
+          <p className="text-lg md:text-xl text-foreground max-w-3xl mx-auto leading-relaxed">
+            Bienvenue au cabinet de bien-être à Tresses, spécialisé en hypnose, EFT-H et neurofeedback dynamique. 
+            J'accompagne les adultes, enfants et adolescents à retrouver plus de calme intérieur, 
+            à relâcher les tensions émotionnelles et à favoriser un sommeil plus paisible. 
+            Les méthodes proposées sont douces, sans médicament, et respectent le rythme de chacun. 
+            Mon approche est centrée sur l'écoute, la régulation naturelle et le fonctionnement du cerveau. 
+            Les séances se déroulent au cabinet, sur rendez-vous, dans un espace dédié au bien-être.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
