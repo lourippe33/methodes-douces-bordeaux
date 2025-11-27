@@ -51,7 +51,14 @@ const About = () => {
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-primary rounded-2xl blur-2xl opacity-20"></div>
-                  <img src={ericPhoto} alt="Eric Gata, praticien bien-être à Tresses" className="relative rounded-2xl shadow-warm w-full h-auto object-cover" />
+                <img 
+                  src={ericPhoto} 
+                  alt="Eric Gata, praticien bien-être à Tresses" 
+                  className="relative rounded-2xl shadow-warm w-full h-auto object-cover"
+                  width="600"
+                  height="600"
+                  loading="lazy"
+                />
                 </div>
                 <div className="space-y-4">
                   <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground">

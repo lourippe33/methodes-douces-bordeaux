@@ -26,7 +26,7 @@ const Formation = () => {
           {/* Main Card */}
           <Card className="border-0 shadow-strong overflow-hidden bg-card/80 backdrop-blur-sm">
             <div className="bg-gradient-hero p-8 text-white text-center">
-              <img src={logo} alt="AGP Logo" className="h-20 w-auto mx-auto mb-4 bg-white/90 rounded-xl p-2" />
+              <img src={logo} alt="AGP Logo" className="h-20 w-auto mx-auto mb-4 bg-white/90 rounded-xl p-2" width="80" height="80" loading="eager" />
               <h3 className="text-3xl font-heading font-bold mb-2">
                 Devenez un pro de la gestion du poids !
               </h3>
@@ -84,6 +84,9 @@ const Formation = () => {
                   src={formationImage} 
                   alt="Formation AGP - Accompagnement personnalisé" 
                   className="w-full h-auto object-cover"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
                 />
               </div>
 
