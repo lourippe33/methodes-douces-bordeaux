@@ -1,1 +1,11 @@
+# Redirections depuis anciennes URLs WordPress (301 permanent)
+/eric-gata-hypnotherapeute-parcours/  /a-propos  301
+/eric-gata-hypnotherapeute-parcours  /a-propos  301
+/hypnose-eft/*  /hypnose-eft-h  301
+/gestion-poids/*  /programme-28-jours  301
+/programme-28-jours/*  /programme-28-jours  301
+/neurofeedback/*  /#services  301
+/contact/*  /#contact  301
+
+# Catch-all pour React Router (doit rester en dernier)
 /*    /index.html   200
