@@ -1,9 +1,29 @@
 [build]
   publish = "dist"
+  command = "npm run build"
 
 [functions]
   node_bundler = "esbuild"
 
+# --- Plugin Core Netlify (Lovable)
 [[plugins]]
-package = "@netlify/plugin-functions-install-core"
+  package = "@netlify/plugin-functions-install-core"
+
+# --- Plugin de vérification de liens HTTP et cassés
+[[plugins]]
+  package = "netlify-plugin-checklinks"
+
+  [plugins.inputs]
+  entryPoints = ["index.html"]
+  recursive = true
+  checkExternal = true
+  skipPatterns = ["/api/*", "/admin/*"]
+
+# --- Sécurité HTTP / Anti-XSS / Anti-MIME sniffing
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
 
