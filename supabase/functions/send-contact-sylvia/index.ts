@@ -28,7 +28,7 @@ const handler = async (req: Request): Promise<Response> => {
     console.log('Sending contact email to Sylvia from:', email);
 
     const emailResponse = await resend.emails.send({
-      from: "Contact Neurofeedback <onboarding@resend.dev>",
+      from: "Contact Neurofeedback <contact@ericgata.fr>",
       to: ["sylvia.rui33@gmail.com"],
       replyTo: email,
       subject: `Nouvelle demande de contact - ${name}`,
