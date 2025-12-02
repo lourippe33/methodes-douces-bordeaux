@@ -250,7 +250,7 @@ const HypnoseEftH = () => {
                       data-thrivecart-account="ericgata" 
                       data-thrivecart-tpl="v2" 
                       data-thrivecart-product="4" 
-                      className="thrivecart-button thrivecart-button-styled thrivecart-button_style-rounded thrivecart-button-blue"
+                      className="thrivecart-button thrivecart-button-styled thrivecart-button_style-rounded thrivecart-button-blue hover:scale-105 transition-transform"
                     >
                       Paiement en ligne
                     </a>
@@ -272,7 +272,7 @@ const HypnoseEftH = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button onClick={scrollToContact} className="bg-gradient-primary hover:shadow-strong transition-all" size="lg">
+                <Button onClick={scrollToContact} className="bg-gradient-primary hover:shadow-strong transition-all hover:scale-105" size="lg">
                   Prendre rendez-vous dès maintenant
                 </Button>
               </div>

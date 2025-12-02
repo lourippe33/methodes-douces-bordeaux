@@ -220,7 +220,7 @@ const About = () => {
                       });
                     }
                   }, 100);
-                }} className="bg-gradient-primary hover:shadow-strong transition-all" size="lg">
+                }} className="bg-gradient-primary hover:shadow-strong transition-all hover:scale-105" size="lg">
                     Prendre rendez-vous
                   </Button>
                 </div>

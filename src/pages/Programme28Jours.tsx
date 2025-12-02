@@ -110,7 +110,7 @@ const Programme28Jours = () => {
                 et sans frustration.
               </p>
 
-              <Button size="lg" className="bg-gradient-primary hover:shadow-strong text-lg px-8 py-6" asChild>
+              <Button size="lg" className="bg-gradient-primary hover:shadow-strong text-lg px-8 py-6 hover:scale-105 transition-transform" asChild>
                 <a
                   href="https://ericgata.thrivecart.com/httpsbuystripecom14a4gzetc8fu1qtekqc3m02/"
                   target="_blank"
@@ -311,7 +311,7 @@ const Programme28Jours = () => {
                   </p>
                   <p className="text-sm text-muted-foreground"></p>
                 </div>
-                <Button size="lg" className="w-full bg-gradient-primary hover:shadow-strong text-lg" asChild>
+                <Button size="lg" className="w-full bg-gradient-primary hover:shadow-strong text-lg hover:scale-105 transition-transform" asChild>
                   <a
                     href="https://ericgata.thrivecart.com/httpsbuystripecom14a4gzetc8fu1qtekqc3m02/"
                     target="_blank"
