@@ -422,9 +422,7 @@ const Neurofeedback = () => {
                   </div>
                   <a 
                     href="mailto:sylvia.rui33@gmail.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center w-full h-11 px-8 rounded-md text-base font-medium bg-primary text-white hover:bg-primary/90 transition-colors cursor-pointer no-underline"
+                    className="flex items-center justify-center w-full h-11 px-8 rounded-md text-base font-medium bg-primary text-white hover:bg-primary/90 transition-colors"
                   >
                     Prendre rendez-vous
                   </a>
