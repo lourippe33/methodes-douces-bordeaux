@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Brain, Heart, Moon, Zap, CheckCircle } from "lucide-react";
+import ericPhoto from "@/assets/eric-gata-portrait.png";
 const Neurofeedback = () => {
   const navigate = useNavigate();
   useEffect(() => {
@@ -267,9 +268,16 @@ const Neurofeedback = () => {
               {/* Eric Gata */}
               <Card className="bg-white/95 backdrop-blur">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-center text-primary">
-                    Avec Eric GATA
-                  </CardTitle>
+                  <div className="flex items-center justify-center gap-4">
+                    <CardTitle className="text-2xl text-primary">
+                      Avec Eric GATA
+                    </CardTitle>
+                    <img 
+                      src={ericPhoto} 
+                      alt="Eric GATA praticien neurofeedback" 
+                      className="w-16 h-16 rounded-full object-cover"
+                    />
+                  </div>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="space-y-3">
@@ -279,7 +287,15 @@ const Neurofeedback = () => {
                     </div>
                     <div className="flex items-center gap-3 text-foreground">
                       <CheckCircle className="text-primary flex-shrink-0" size={20} />
-                      <span className="text-lg">Mardi : 9h00-12h00 / 14h00-18h30</span>
+                      <span className="text-lg">Mardi : 9h00-12h00 / 14h00-18h30</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-foreground">
+                      <CheckCircle className="text-primary flex-shrink-0" size={20} />
+                      <span className="text-lg">Mercredi : 9h00-12h00</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-foreground">
+                      <CheckCircle className="text-primary flex-shrink-0" size={20} />
+                      <span className="text-lg">Jeudi : 9h00-12h00</span>
                     </div>
                     <div className="flex items-center gap-3 text-foreground">
                       <CheckCircle className="text-primary flex-shrink-0" size={20} />
