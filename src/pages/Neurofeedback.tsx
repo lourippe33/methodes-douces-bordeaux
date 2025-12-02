@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Brain, Heart, Moon, Zap, CheckCircle } from "lucide-react";
 import ericPhoto from "@/assets/eric-gata-portrait.png";
+import sylviaPhoto from "@/assets/sylvia-rui-portrait.png";
 const Neurofeedback = () => {
   const navigate = useNavigate();
   useEffect(() => {
@@ -311,9 +312,16 @@ const Neurofeedback = () => {
               {/* Sylvia RUI */}
               <Card className="bg-white/95 backdrop-blur">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-center text-primary">
-                    Avec Sylvia RUI
-                  </CardTitle>
+                  <div className="flex items-center justify-center gap-4">
+                    <CardTitle className="text-2xl text-primary">
+                      Avec Sylvia RUI
+                    </CardTitle>
+                    <img 
+                      src={sylviaPhoto} 
+                      alt="Sylvia RUI praticienne neurofeedback" 
+                      className="w-16 h-16 rounded-full object-cover"
+                    />
+                  </div>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="space-y-3">
