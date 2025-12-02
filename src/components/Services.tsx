@@ -16,8 +16,8 @@ const services = [{
   description: "Régulation naturelle du cerveau pour retrouver apaisement mental, concentration et sommeil plus paisible. Méthode douce adaptée aux adultes, enfants et adolescents.",
   benefits: ["Surcharge mentale", "Difficultés d'endormissement", "Agitation intérieure", "Apaisement du mental"],
   color: "secondary",
-  link: "https://neurofeedback-stress.fr/",
-  external: true
+  link: "/neurofeedback",
+  external: false
 }];
 const Services = () => {
   return <section id="services" className="py-24 bg-muted/30">
