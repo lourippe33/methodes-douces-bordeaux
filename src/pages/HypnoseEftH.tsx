@@ -120,17 +120,18 @@ const HypnoseEftH = () => {
   return <div className="min-h-screen">
       <Header />
       <main className="pt-24 pb-16">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <Breadcrumbs items={[
-            { label: "Hypnose et EFT-H" }
-          ]} />
-          
-          <article className="space-y-12">
-            <header>
-              <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">
-                Hypnose et EFT-H à Tresses : accompagnement bien-être près de Bordeaux
-              </h1>
-            </header>
+        <section className="py-12 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <Breadcrumbs items={[
+              { label: "Hypnose et EFT-H" }
+            ]} />
+            
+            <article className="space-y-12">
+              <header>
+                <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">
+                  Hypnose et EFT-H à Tresses : accompagnement bien-être près de Bordeaux
+                </h1>
+              </header>
 
             <section className="space-y-6">
               <h2 className="text-3xl font-heading font-bold text-foreground">
@@ -384,6 +385,7 @@ const HypnoseEftH = () => {
             </section>
           </article>
         </div>
+        </section>
       </main>
       <Footer />
     </div>;
