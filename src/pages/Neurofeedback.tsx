@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Brain, Heart, Moon, Zap, CheckCircle, Mail, Phone } from "lucide-react";
+import { Brain, Heart, Moon, Zap, CheckCircle, Phone } from "lucide-react";
 import ericPhoto from "@/assets/eric-gata-portrait.png";
 import sylviaPhoto from "@/assets/sylvia-rui-portrait.png";
 const Neurofeedback = () => {
@@ -282,11 +282,7 @@ const Neurofeedback = () => {
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="space-y-4">
-                    <div className="space-y-2 pb-3 border-b border-border/50">
-                      <a href="mailto:eric.gata@gmail.com" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
-                        <Mail className="text-primary flex-shrink-0" size={20} />
-                        <span className="text-base">eric.gata@gmail.com</span>
-                      </a>
+                    <div className="pb-3 border-b border-border/50">
                       <a href="tel:0782386621" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
                         <Phone className="text-primary flex-shrink-0" size={20} />
                         <span className="text-base">07 82 38 66 21</span>
@@ -337,11 +333,7 @@ const Neurofeedback = () => {
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="space-y-4">
-                    <div className="space-y-2 pb-3 border-b border-border/50">
-                      <a href="mailto:sylvia.rui33@gmail.com" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
-                        <Mail className="text-primary flex-shrink-0" size={20} />
-                        <span className="text-base">sylvia.rui33@gmail.com</span>
-                      </a>
+                    <div className="pb-3 border-b border-border/50">
                       <a href="tel:0783358869" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
                         <Phone className="text-primary flex-shrink-0" size={20} />
                         <span className="text-base">07 83 35 88 69</span>
