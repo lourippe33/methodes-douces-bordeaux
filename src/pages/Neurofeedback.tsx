@@ -5,6 +5,12 @@ import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { Brain, Heart, Moon, Zap, CheckCircle, Phone } from "lucide-react";
 import ericPhoto from "@/assets/eric-gata-portrait.png";
 import sylviaPhoto from "@/assets/sylvia-rui-portrait.png";
@@ -218,6 +224,70 @@ const Neurofeedback = () => {
           </div>
         </section>
 
+        {/* FAQ Section */}
+        <section className="container mx-auto px-4 py-16">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-12">
+              Questions fréquentes sur le Neurofeedback
+            </h2>
+            <Accordion type="single" collapsible className="w-full space-y-4">
+              <AccordionItem value="item-1" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-lg font-semibold text-left hover:no-underline">
+                  Combien de séances sont nécessaires ?
+                </AccordionTrigger>
+                <AccordionContent className="text-base text-muted-foreground">
+                  Le nombre de séances varie selon les besoins de chacun. En général, nous recommandons un minimum de 10 à 20 séances pour constater des changements durables. Les premiers effets peuvent être ressentis dès les premières séances, mais le cerveau nécessite du temps pour intégrer ces nouveaux apprentissages.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-2" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-lg font-semibold text-left hover:no-underline">
+                  Quelle est la durée d'une séance ?
+                </AccordionTrigger>
+                <AccordionContent className="text-base text-muted-foreground">
+                  Une séance de neurofeedback dure environ 33 minutes pour l'entraînement cérébral lui-même, auxquelles s'ajoutent le temps d'installation et le débriefing. Comptez environ 45 minutes à 1 heure au total pour une séance complète.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-3" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-lg font-semibold text-left hover:no-underline">
+                  Le neurofeedback est-il adapté aux enfants ?
+                </AccordionTrigger>
+                <AccordionContent className="text-base text-muted-foreground">
+                  Oui, le neurofeedback dynamique est parfaitement adapté aux enfants dès 5-6 ans. La méthode est douce, non invasive et ne nécessite aucun effort particulier. L'enfant est simplement invité à se détendre pendant que le système analyse l'activité de son cerveau et lui fournit des retours en temps réel.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-4" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-lg font-semibold text-left hover:no-underline">
+                  Y a-t-il des contre-indications ?
+                </AccordionTrigger>
+                <AccordionContent className="text-base text-muted-foreground">
+                  Le neurofeedback dynamique est une méthode non invasive et sans danger. Il n'y a pas de contre-indications majeures. Cependant, nous recommandons de nous informer de tout traitement médical en cours ou de toute condition particulière lors de la première séance.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-5" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-lg font-semibold text-left hover:no-underline">
+                  Les effets sont-ils durables ?
+                </AccordionTrigger>
+                <AccordionContent className="text-base text-muted-foreground">
+                  Oui, les effets du neurofeedback sont généralement durables car il s'agit d'un apprentissage du cerveau. Une fois que le cerveau a appris à mieux s'autoréguler, ces nouvelles capacités restent acquises. Des séances d'entretien peuvent être bénéfiques dans certains cas, mais ne sont pas systématiquement nécessaires.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-6" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-lg font-semibold text-left hover:no-underline">
+                  Le neurofeedback peut-il remplacer un traitement médical ?
+                </AccordionTrigger>
+                <AccordionContent className="text-base text-muted-foreground">
+                  Non, le neurofeedback est une méthode de bien-être qui vise à accompagner l'autorégulation naturelle du cerveau. Elle ne remplace en aucun cas un traitement médical prescrit par un professionnel de santé. Il est important de ne jamais arrêter un traitement sans l'avis de votre médecin.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
+        </section>
+
         {/* For whom */}
         <section className="container mx-auto px-4 py-16">
           <div className="max-w-4xl mx-auto">
@@ -352,9 +422,9 @@ const Neurofeedback = () => {
                   </div>
                   <a 
                     href="mailto:sylvia.rui33@gmail.com"
-                    className="inline-flex items-center justify-center w-full h-11 px-8 rounded-md text-base font-medium bg-primary text-white hover:bg-primary/90 transition-colors"
+                    className="flex items-center justify-center w-full h-11 px-8 rounded-md text-base font-medium bg-primary text-white hover:bg-primary/90 transition-colors cursor-pointer"
                   >
-                    Contacter par email
+                    Prendre rendez-vous
                   </a>
                 </CardContent>
               </Card>
