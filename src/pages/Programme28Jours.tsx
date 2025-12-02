@@ -306,7 +306,7 @@ const Programme28Jours = () => {
                   grâce à vos retours :
                 </p>
                 <div className="bg-card p-6 rounded-lg mb-6 text-center">
-                  <p className="text-3xl font-bold text-primary mb-2">Offre de lancement</p>
+                  <p className="text-3xl font-bold text-primary mb-2">Profitez de cette offre de lancement à 90€</p>
                   <p className="text-sm text-muted-foreground"></p>
                 </div>
                 <Button size="lg" className="w-full bg-gradient-primary hover:shadow-strong text-lg" asChild>
