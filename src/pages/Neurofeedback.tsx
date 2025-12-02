@@ -85,14 +85,16 @@ const Neurofeedback = () => {
         </div>
 
         {/* Hero Section */}
-        <section className="container mx-auto px-4 py-12">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground">
-              Neurofeedback Dynamique à Tresses
-            </h1>
-            <p className="text-xl text-muted-foreground">
-              Une approche douce et naturelle pour retrouver apaisement mental, concentration et sommeil paisible
-            </p>
+        <section className="py-12 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center space-y-6">
+              <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground">
+                Neurofeedback Dynamique à Tresses
+              </h1>
+              <p className="text-xl text-muted-foreground">
+                Une approche douce et naturelle pour retrouver apaisement mental, concentration et sommeil paisible
+              </p>
+            </div>
           </div>
         </section>
 
