@@ -299,7 +299,7 @@ const Programme28Jours = () => {
               {/* Launch Offer */}
               <div className="bg-gradient-to-br from-primary/10 to-secondary/10 p-8 rounded-lg border-2 border-primary/20 mb-8">
                 <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                  <span>🚀</span> Offre de lancement 90€ au lieu de 149€
+                  <span>🚀</span> Une offre à ne pas rater !
                 </h3>
                 <p className="text-foreground/80 mb-6">
                   Je propose actuellement ce programme, à tarif réduit, pour donner un coup de boost à votre perte de
