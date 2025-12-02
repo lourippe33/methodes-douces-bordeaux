@@ -420,12 +420,13 @@ const Neurofeedback = () => {
                       </div>
                     </div>
                   </div>
-                  <a 
-                    href="mailto:sylvia.rui33@gmail.com"
-                    className="flex items-center justify-center w-full h-11 px-8 rounded-md text-base font-medium bg-primary text-white hover:bg-primary/90 transition-colors"
+                  <Button 
+                    size="lg" 
+                    className="w-full bg-primary text-white hover:bg-primary/90"
+                    onClick={() => window.location.href = 'mailto:sylvia.rui33@gmail.com'}
                   >
                     Prendre rendez-vous
-                  </a>
+                  </Button>
                 </CardContent>
               </Card>
             </div>
