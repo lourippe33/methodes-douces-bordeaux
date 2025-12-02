@@ -95,9 +95,9 @@ const HypnoseEftH = () => {
     });
     document.head.appendChild(structuredDataService);
 
-    // Load Stripe Buy Button script
+    // Load ThriveCart script
     const script = document.createElement('script');
-    script.src = 'https://js.stripe.com/v3/buy-button.js';
+    script.src = '//tinder.thrivecart.com/embed/v1/thrivecart.js';
     script.async = true;
     document.body.appendChild(script);
     return () => {
@@ -244,6 +244,16 @@ const HypnoseEftH = () => {
                   <div>
                     <p className="text-lg font-medium text-foreground">Séances d'hypnose et/ou EFT-H</p>
                     <p className="text-sm text-muted-foreground">Durée variable selon les besoins</p>
+                  </div>
+                  <div>
+                    <a 
+                      data-thrivecart-account="ericgata" 
+                      data-thrivecart-tpl="v2" 
+                      data-thrivecart-product="4" 
+                      className="thrivecart-button thrivecart-button-styled thrivecart-button_style-rounded thrivecart-button-blue"
+                    >
+                      Paiement en ligne
+                    </a>
                   </div>
                 </div>
               </div>
