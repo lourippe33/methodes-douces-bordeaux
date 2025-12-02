@@ -302,8 +302,8 @@ const Programme28Jours = () => {
                   <span>🚀</span> Offre de lancement 90€
                 </h3>
                 <p className="text-foreground/80 mb-6">
-                  Je propose actuellement ce programme en version test, à tarif réduit, afin d'améliorer l'expérience
-                  grâce à vos retours :
+                  Je propose actuellement ce programme, à tarif réduit, pour donner un coup de boost à votre perte de
+                  poids :
                 </p>
                 <div className="bg-card p-6 rounded-lg mb-6 text-center">
                   <p className="text-3xl font-bold text-primary mb-2">Profitez de cette offre de lancement à 90€</p>
