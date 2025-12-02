@@ -6,19 +6,15 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Brain, Heart, Moon, Zap, CheckCircle } from "lucide-react";
-
 const Neurofeedback = () => {
   const navigate = useNavigate();
-
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = "Neurofeedback Dynamique à Tresses - Gestion du Stress et Sommeil | Eric Gata";
-    
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute("content", "Neurofeedback dynamique à Tresses près de Bordeaux. Méthode naturelle pour gérer le stress, améliorer le sommeil, la concentration et l'équilibre émotionnel.");
     }
-
     const canonicalLink = document.querySelector('link[rel="canonical"]');
     if (canonicalLink) {
       canonicalLink.setAttribute("href", "https://www.ericgata.fr/neurofeedback");
@@ -40,7 +36,6 @@ const Neurofeedback = () => {
       "contentUrl": "https://player.vimeo.com/video/1142362792",
       "embedUrl": "https://player.vimeo.com/video/1142362792?h=36874df46f"
     };
-
     const existingVideoSchema = document.querySelector('script[data-video-schema]');
     if (existingVideoSchema) {
       existingVideoSchema.textContent = JSON.stringify(videoSchema);
@@ -52,59 +47,46 @@ const Neurofeedback = () => {
       document.head.appendChild(script);
     }
   }, []);
-
   const scrollToContact = () => {
     navigate("/");
     setTimeout(() => {
       const contactSection = document.getElementById("contact");
       if (contactSection) {
-        contactSection.scrollIntoView({ behavior: "smooth" });
+        contactSection.scrollIntoView({
+          behavior: "smooth"
+        });
       }
     }, 100);
   };
-
-  const benefits = [
-    {
-      icon: Brain,
-      title: "Apaisement mental",
-      description: "Réduction de la surcharge mentale et amélioration de la clarté d'esprit"
-    },
-    {
-      icon: Moon,
-      title: "Sommeil réparateur",
-      description: "Amélioration de la qualité du sommeil et facilitation de l'endormissement"
-    },
-    {
-      icon: Heart,
-      title: "Équilibre émotionnel",
-      description: "Meilleure gestion des émotions et diminution de l'agitation intérieure"
-    },
-    {
-      icon: Zap,
-      title: "Concentration accrue",
-      description: "Renforcement des capacités de concentration et de focus"
-    }
-  ];
-
-  const processSteps = [
-    "Entretien initial pour comprendre vos besoins et objectifs",
-    "Installation confortable avec capteurs non invasifs",
-    "Séance d'entraînement cérébral guidée (33 minutes)",
-    "Débriefing et ajustement du protocole si nécessaire"
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const benefits = [{
+    icon: Brain,
+    title: "Apaisement mental",
+    description: "Réduction de la surcharge mentale et amélioration de la clarté d'esprit"
+  }, {
+    icon: Moon,
+    title: "Sommeil réparateur",
+    description: "Amélioration de la qualité du sommeil et facilitation de l'endormissement"
+  }, {
+    icon: Heart,
+    title: "Équilibre émotionnel",
+    description: "Meilleure gestion des émotions et diminution de l'agitation intérieure"
+  }, {
+    icon: Zap,
+    title: "Concentration accrue",
+    description: "Renforcement des capacités de concentration et de focus"
+  }];
+  const processSteps = ["Entretien initial pour comprendre vos besoins et objectifs", "Installation confortable avec capteurs non invasifs", "Séance d'entraînement cérébral guidée (33 minutes)", "Débriefing et ajustement du protocole si nécessaire"];
+  return <div className="min-h-screen bg-background">
       <Header />
       
       <main className="pt-24">
         <div className="container mx-auto px-4 py-8">
-          <Breadcrumbs 
-            items={[
-              { label: "Accueil", path: "/" },
-              { label: "Neurofeedback Dynamique" }
-            ]} 
-          />
+          <Breadcrumbs items={[{
+          label: "Accueil",
+          path: "/"
+        }, {
+          label: "Neurofeedback Dynamique"
+        }]} />
         </div>
 
         {/* Hero Section */}
@@ -149,16 +131,17 @@ const Neurofeedback = () => {
                   Découvrez en images comment fonctionne une séance de neurofeedback dynamique et les bienfaits de cette méthode naturelle d'autorégulation cérébrale.
                 </p>
               </div>
-              <div className="relative w-full" style={{ padding: "56.25% 0 0 0", position: "relative" }}>
-                <iframe 
-                  src="https://player.vimeo.com/video/1142362792?h=36874df46f&badge=0&autopause=0&player_id=0&app_id=58479"
-                  frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
-                  title="Explication du Neurofeedback Dynamique à Tresses"
-                  className="rounded-lg shadow-lg"
-                />
+              <div className="relative w-full" style={{
+              padding: "56.25% 0 0 0",
+              position: "relative"
+            }}>
+                <iframe src="https://player.vimeo.com/video/1142362792?h=36874df46f&badge=0&autopause=0&player_id=0&app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerPolicy="strict-origin-when-cross-origin" style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%"
+              }} title="Explication du Neurofeedback Dynamique à Tresses" className="rounded-lg shadow-lg" />
               </div>
             </div>
           </div>
@@ -172,9 +155,8 @@ const Neurofeedback = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {benefits.map((benefit, index) => {
-                const Icon = benefit.icon;
-                return (
-                  <Card key={index} className="hover:shadow-warm transition-all">
+              const Icon = benefit.icon;
+              return <Card key={index} className="hover:shadow-warm transition-all">
                     <CardHeader>
                       <div className="flex items-center gap-4">
                         <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center">
@@ -186,9 +168,8 @@ const Neurofeedback = () => {
                     <CardContent>
                       <p className="text-muted-foreground">{benefit.description}</p>
                     </CardContent>
-                  </Card>
-                );
-              })}
+                  </Card>;
+            })}
             </div>
           </div>
         </section>
@@ -202,14 +183,12 @@ const Neurofeedback = () => {
             <Card>
               <CardContent className="pt-6">
                 <div className="space-y-4">
-                  {processSteps.map((step, index) => (
-                    <div key={index} className="flex items-start gap-4">
+                  {processSteps.map((step, index) => <div key={index} className="flex items-start gap-4">
                       <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-primary flex items-center justify-center text-white font-bold">
                         {index + 1}
                       </div>
                       <p className="text-lg pt-1">{step}</p>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
               </CardContent>
             </Card>
@@ -300,18 +279,14 @@ const Neurofeedback = () => {
                     </div>
                     <div className="flex items-center gap-3 text-foreground">
                       <CheckCircle className="text-primary flex-shrink-0" size={20} />
-                      <span className="text-lg">Mardi : 14h00-18h30</span>
+                      <span className="text-lg">Mardi : 9h00-12h00 / 14h00-18h30</span>
                     </div>
                     <div className="flex items-center gap-3 text-foreground">
                       <CheckCircle className="text-primary flex-shrink-0" size={20} />
                       <span className="text-lg">Vendredi : 9h00-12h00 / 14h00-18h30</span>
                     </div>
                   </div>
-                  <Button 
-                    size="lg" 
-                    onClick={scrollToContact}
-                    className="w-full bg-primary text-white hover:bg-primary/90"
-                  >
+                  <Button size="lg" onClick={scrollToContact} className="w-full bg-primary text-white hover:bg-primary/90">
                     Prendre rendez-vous
                   </Button>
                 </CardContent>
@@ -335,11 +310,7 @@ const Neurofeedback = () => {
                       <span className="text-lg">Jeudi : 13h00-18h00</span>
                     </div>
                   </div>
-                  <Button 
-                    size="lg" 
-                    asChild
-                    className="w-full bg-primary text-white hover:bg-primary/90"
-                  >
+                  <Button size="lg" asChild className="w-full bg-primary text-white hover:bg-primary/90">
                     <a href="mailto:sylvia.rui33@gmail.com">
                       Contacter par email
                     </a>
@@ -359,8 +330,6 @@ const Neurofeedback = () => {
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Neurofeedback;
