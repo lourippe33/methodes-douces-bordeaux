@@ -28,6 +28,29 @@ const Neurofeedback = () => {
       newCanonical.href = 'https://www.ericgata.fr/neurofeedback';
       document.head.appendChild(newCanonical);
     }
+
+    // Add VideoObject structured data for SEO
+    const videoSchema = {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "Explication du Neurofeedback Dynamique",
+      "description": "Découvrez le fonctionnement du neurofeedback dynamique, une méthode naturelle pour gérer le stress, améliorer le sommeil et la concentration à Tresses près de Bordeaux.",
+      "thumbnailUrl": "https://www.ericgata.fr/og-image-1200x630.png",
+      "uploadDate": "2024-01-01",
+      "contentUrl": "https://player.vimeo.com/video/1142362792",
+      "embedUrl": "https://player.vimeo.com/video/1142362792?h=36874df46f"
+    };
+
+    const existingVideoSchema = document.querySelector('script[data-video-schema]');
+    if (existingVideoSchema) {
+      existingVideoSchema.textContent = JSON.stringify(videoSchema);
+    } else {
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.setAttribute('data-video-schema', 'true');
+      script.textContent = JSON.stringify(videoSchema);
+      document.head.appendChild(script);
+    }
   }, []);
 
   const scrollToContact = () => {
@@ -111,6 +134,33 @@ const Neurofeedback = () => {
                 </p>
               </CardContent>
             </Card>
+          </div>
+        </section>
+
+        {/* Video Section */}
+        <section className="bg-muted/30 py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto space-y-8">
+              <div className="text-center space-y-4">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold">
+                  Comprendre le Neurofeedback en vidéo
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Découvrez en images comment fonctionne une séance de neurofeedback dynamique et les bienfaits de cette méthode naturelle d'autorégulation cérébrale.
+                </p>
+              </div>
+              <div className="relative w-full" style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+                <iframe 
+                  src="https://player.vimeo.com/video/1142362792?h=36874df46f&badge=0&autopause=0&player_id=0&app_id=58479"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+                  title="Explication du Neurofeedback Dynamique à Tresses"
+                  className="rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
