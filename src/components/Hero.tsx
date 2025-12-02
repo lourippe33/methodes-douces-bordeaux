@@ -50,7 +50,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               onClick={scrollToServices}
-              className="bg-gradient-primary hover:shadow-strong transition-all text-base md:text-lg px-6 md:px-8 py-5 md:py-6 group w-full sm:w-auto"
+              className="bg-gradient-primary hover:shadow-strong transition-all text-base md:text-lg px-6 md:px-8 py-5 md:py-6 group w-full sm:w-auto hover:scale-105"
             >
               Découvrir mes prestations
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
@@ -62,7 +62,7 @@ const Hero = () => {
                 const element = document.getElementById("formation");
                 if (element) element.scrollIntoView({ behavior: "smooth" });
               }}
-              className="border-2 border-primary text-primary hover:bg-primary/10 text-base md:text-lg px-6 md:px-8 py-5 md:py-6 w-full sm:w-auto"
+              className="border-2 border-primary text-primary hover:bg-primary/10 text-base md:text-lg px-6 md:px-8 py-5 md:py-6 w-full sm:w-auto hover:scale-105 transition-transform"
             >
               Formation praticiens
             </Button>

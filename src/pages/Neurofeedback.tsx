@@ -395,7 +395,7 @@ const Neurofeedback = () => {
                       </div>
                     </div>
                   </div>
-                  <Button size="lg" onClick={scrollToContact} className="w-full bg-primary text-white hover:bg-primary/90">
+                  <Button size="lg" onClick={scrollToContact} className="w-full bg-primary text-white hover:bg-primary/90 hover:scale-105 transition-transform">
                     Prendre rendez-vous
                   </Button>
                   <a 
@@ -444,12 +444,12 @@ const Neurofeedback = () => {
                   </div>
                   <Button 
                     size="lg" 
-                    className="w-full bg-primary text-white hover:bg-primary/90"
+                    className="w-full bg-primary text-white hover:bg-primary/90 hover:scale-105 transition-transform"
                     onClick={() => setIsContactDialogOpen(true)}
                   >
                     Prendre rendez-vous
                   </Button>
-                  <div className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all w-full h-11 px-8 bg-primary text-white hover:bg-primary/90 hover:scale-105 cursor-pointer">
+                  <div className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium w-full h-11 px-8 bg-muted text-muted-foreground cursor-default">
                     Paiement sur place
                   </div>
                 </CardContent>

@@ -76,7 +76,7 @@ const Header = () => {
                 </span>
               </span>
             </button>
-            <Button onClick={() => scrollToSection("contact")} className="bg-gradient-primary hover:shadow-strong transition-all">
+            <Button onClick={() => scrollToSection("contact")} className="bg-gradient-primary hover:shadow-strong transition-all hover:scale-105">
               Contact
             </Button>
           </nav>
@@ -109,7 +109,7 @@ const Header = () => {
                 </span>
               </span>
             </button>
-            <Button onClick={() => scrollToSection("contact")} className="bg-gradient-primary w-full">
+            <Button onClick={() => scrollToSection("contact")} className="bg-gradient-primary w-full hover:scale-105 transition-transform">
               Contact
             </Button>
           </nav>}

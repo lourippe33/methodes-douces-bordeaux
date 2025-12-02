@@ -141,7 +141,7 @@ const Contact = () => {
                   </div>
                   <Button
                     type="submit"
-                    className="w-full bg-gradient-primary hover:shadow-strong transition-all"
+                    className="w-full bg-gradient-primary hover:shadow-strong transition-all hover:scale-105"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
