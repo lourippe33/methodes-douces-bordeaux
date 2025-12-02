@@ -350,11 +350,12 @@ const Neurofeedback = () => {
                       </div>
                     </div>
                   </div>
-                  <Button size="lg" asChild className="w-full bg-primary text-white hover:bg-primary/90">
-                    <a href="mailto:sylvia.rui33@gmail.com">
-                      Contacter par email
-                    </a>
-                  </Button>
+                  <a 
+                    href="mailto:sylvia.rui33@gmail.com"
+                    className="inline-flex items-center justify-center w-full h-11 px-8 rounded-md text-base font-medium bg-primary text-white hover:bg-primary/90 transition-colors"
+                  >
+                    Contacter par email
+                  </a>
                 </CardContent>
               </Card>
             </div>
