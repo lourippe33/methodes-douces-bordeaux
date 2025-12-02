@@ -65,6 +65,9 @@ const Header = () => {
             <button onClick={navigateToAbout} className="text-foreground hover:text-primary transition-colors font-medium">
               À propos
             </button>
+            <button onClick={() => navigate("/blog")} className="text-foreground hover:text-primary transition-colors font-medium">
+              Blog
+            </button>
             <button onClick={navigateToProgramme} className="relative text-foreground hover:text-primary transition-colors font-medium group">
               <span className="relative inline-flex items-center gap-2">
                 Défi minceur 28 Jours
@@ -94,6 +97,9 @@ const Header = () => {
             </button>
             <button onClick={navigateToAbout} className="text-left text-foreground hover:text-primary transition-colors font-medium py-2">
               À propos
+            </button>
+            <button onClick={() => navigate("/blog")} className="text-left text-foreground hover:text-primary transition-colors font-medium py-2">
+              Blog
             </button>
             <button onClick={navigateToProgramme} className="text-left text-foreground hover:text-primary transition-colors font-medium py-2">
               <span className="flex items-center gap-2">
