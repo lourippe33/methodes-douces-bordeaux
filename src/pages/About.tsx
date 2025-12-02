@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Heart, Target, Sparkles, Award, Users, BookOpen } from "lucide-react";
-import ericPhoto from "@/assets/eric-gata.webp";
+import ericPhoto from "@/assets/eric-gata-portrait.png";
 const About = () => {
   const navigate = useNavigate();
   useEffect(() => {
