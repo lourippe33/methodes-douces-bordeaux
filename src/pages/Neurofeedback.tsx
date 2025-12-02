@@ -56,6 +56,18 @@ const Neurofeedback = () => {
       script.textContent = JSON.stringify(videoSchema);
       document.head.appendChild(script);
     }
+
+    // Load ThriveCart script
+    const thriveScript = document.createElement('script');
+    thriveScript.src = '//tinder.thrivecart.com/embed/v1/thrivecart.js';
+    thriveScript.async = true;
+    document.body.appendChild(thriveScript);
+
+    return () => {
+      if (thriveScript.parentNode) {
+        document.body.removeChild(thriveScript);
+      }
+    };
   }, []);
   const scrollToContact = () => {
     navigate("/");
@@ -386,6 +398,14 @@ const Neurofeedback = () => {
                   <Button size="lg" onClick={scrollToContact} className="w-full bg-primary text-white hover:bg-primary/90">
                     Prendre rendez-vous
                   </Button>
+                  <a 
+                    data-thrivecart-account="ericgata" 
+                    data-thrivecart-tpl="v2" 
+                    data-thrivecart-product="3" 
+                    className="thrivecart-button thrivecart-button-styled thrivecart-button_style-rounded thrivecart-button-blue"
+                  >
+                    Neuro paiement en ligne avec Eric
+                  </a>
                 </CardContent>
               </Card>
 
