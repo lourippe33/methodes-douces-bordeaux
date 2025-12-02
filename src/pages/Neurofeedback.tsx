@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Brain, Heart, Moon, Zap, CheckCircle } from "lucide-react";
+import { Brain, Heart, Moon, Zap, CheckCircle, Mail, Phone } from "lucide-react";
 import ericPhoto from "@/assets/eric-gata-portrait.png";
 import sylviaPhoto from "@/assets/sylvia-rui-portrait.png";
 const Neurofeedback = () => {
@@ -281,26 +281,38 @@ const Neurofeedback = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-6">
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-3 text-foreground">
-                      <CheckCircle className="text-primary flex-shrink-0" size={20} />
-                      <span className="text-lg">Lundi : 9h00-12h00 / 14h00-18h30</span>
+                  <div className="space-y-4">
+                    <div className="space-y-2 pb-3 border-b border-border/50">
+                      <a href="mailto:eric.gata@gmail.com" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
+                        <Mail className="text-primary flex-shrink-0" size={20} />
+                        <span className="text-base">eric.gata@gmail.com</span>
+                      </a>
+                      <a href="tel:0782386621" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
+                        <Phone className="text-primary flex-shrink-0" size={20} />
+                        <span className="text-base">07 82 38 66 21</span>
+                      </a>
                     </div>
-                    <div className="flex items-center gap-3 text-foreground">
-                      <CheckCircle className="text-primary flex-shrink-0" size={20} />
-                      <span className="text-lg">Mardi : 9h00-12h00 / 14h00-18h30</span>
-                    </div>
-                    <div className="flex items-center gap-3 text-foreground">
-                      <CheckCircle className="text-primary flex-shrink-0" size={20} />
-                      <span className="text-lg">Mercredi : 9h00-12h00</span>
-                    </div>
-                    <div className="flex items-center gap-3 text-foreground">
-                      <CheckCircle className="text-primary flex-shrink-0" size={20} />
-                      <span className="text-lg">Jeudi : 9h00-12h00</span>
-                    </div>
-                    <div className="flex items-center gap-3 text-foreground">
-                      <CheckCircle className="text-primary flex-shrink-0" size={20} />
-                      <span className="text-lg">Vendredi : 9h00-12h00 / 14h00-18h30</span>
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-3 text-foreground">
+                        <CheckCircle className="text-primary flex-shrink-0" size={20} />
+                        <span className="text-base">Lundi : 9h00-12h00 / 14h00-18h30</span>
+                      </div>
+                      <div className="flex items-center gap-3 text-foreground">
+                        <CheckCircle className="text-primary flex-shrink-0" size={20} />
+                        <span className="text-base">Mardi : 9h00-12h00 / 14h00-18h30</span>
+                      </div>
+                      <div className="flex items-center gap-3 text-foreground">
+                        <CheckCircle className="text-primary flex-shrink-0" size={20} />
+                        <span className="text-base">Mercredi : 9h00-12h00</span>
+                      </div>
+                      <div className="flex items-center gap-3 text-foreground">
+                        <CheckCircle className="text-primary flex-shrink-0" size={20} />
+                        <span className="text-base">Jeudi : 9h00-12h00</span>
+                      </div>
+                      <div className="flex items-center gap-3 text-foreground">
+                        <CheckCircle className="text-primary flex-shrink-0" size={20} />
+                        <span className="text-base">Vendredi : 9h00-12h00 / 14h00-18h30</span>
+                      </div>
                     </div>
                   </div>
                   <Button size="lg" onClick={scrollToContact} className="w-full bg-primary text-white hover:bg-primary/90">
@@ -324,14 +336,26 @@ const Neurofeedback = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-6">
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-3 text-foreground">
-                      <CheckCircle className="text-primary flex-shrink-0" size={20} />
-                      <span className="text-lg">Mercredi : 13h00-18h00</span>
+                  <div className="space-y-4">
+                    <div className="space-y-2 pb-3 border-b border-border/50">
+                      <a href="mailto:sylvia.rui33@gmail.com" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
+                        <Mail className="text-primary flex-shrink-0" size={20} />
+                        <span className="text-base">sylvia.rui33@gmail.com</span>
+                      </a>
+                      <a href="tel:0783358869" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
+                        <Phone className="text-primary flex-shrink-0" size={20} />
+                        <span className="text-base">07 83 35 88 69</span>
+                      </a>
                     </div>
-                    <div className="flex items-center gap-3 text-foreground">
-                      <CheckCircle className="text-primary flex-shrink-0" size={20} />
-                      <span className="text-lg">Jeudi : 13h00-18h00</span>
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-3 text-foreground">
+                        <CheckCircle className="text-primary flex-shrink-0" size={20} />
+                        <span className="text-base">Mercredi : 13h00-18h00</span>
+                      </div>
+                      <div className="flex items-center gap-3 text-foreground">
+                        <CheckCircle className="text-primary flex-shrink-0" size={20} />
+                        <span className="text-base">Jeudi : 13h00-18h00</span>
+                      </div>
                     </div>
                   </div>
                   <Button size="lg" asChild className="w-full bg-primary text-white hover:bg-primary/90">
