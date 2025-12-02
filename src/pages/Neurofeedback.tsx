@@ -274,20 +274,79 @@ const Neurofeedback = () => {
 
         {/* CTA Section */}
         <section className="bg-gradient-primary text-white py-16">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Prêt à retrouver votre équilibre ?
-            </h2>
-            <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Réservez votre première séance de Neurofeedback à Tresses et découvrez les bienfaits de cette méthode naturelle
-            </p>
-            <Button 
-              size="lg" 
-              onClick={scrollToContact}
-              className="bg-white text-primary hover:bg-white/90 text-lg px-8"
-            >
-              Prendre rendez-vous
-            </Button>
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+                Prêt à retrouver votre équilibre ?
+              </h2>
+              <p className="text-xl max-w-2xl mx-auto">
+                Réservez votre première séance de Neurofeedback à Tresses et découvrez les bienfaits de cette méthode naturelle
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              {/* Eric Gata */}
+              <Card className="bg-white/95 backdrop-blur">
+                <CardHeader>
+                  <CardTitle className="text-2xl text-center text-primary">
+                    Avec Eric GATA
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3 text-foreground">
+                      <CheckCircle className="text-primary flex-shrink-0" size={20} />
+                      <span className="text-lg">Lundi : 9h00-12h00 / 14h00-18h30</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-foreground">
+                      <CheckCircle className="text-primary flex-shrink-0" size={20} />
+                      <span className="text-lg">Mardi : 14h00-18h30</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-foreground">
+                      <CheckCircle className="text-primary flex-shrink-0" size={20} />
+                      <span className="text-lg">Vendredi : 9h00-12h00 / 14h00-18h30</span>
+                    </div>
+                  </div>
+                  <Button 
+                    size="lg" 
+                    onClick={scrollToContact}
+                    className="w-full bg-primary text-white hover:bg-primary/90"
+                  >
+                    Prendre rendez-vous
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Sylvia RUI */}
+              <Card className="bg-white/95 backdrop-blur">
+                <CardHeader>
+                  <CardTitle className="text-2xl text-center text-primary">
+                    Avec Sylvia RUI
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3 text-foreground">
+                      <CheckCircle className="text-primary flex-shrink-0" size={20} />
+                      <span className="text-lg">Mercredi : 13h00-18h00</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-foreground">
+                      <CheckCircle className="text-primary flex-shrink-0" size={20} />
+                      <span className="text-lg">Jeudi : 13h00-18h00</span>
+                    </div>
+                  </div>
+                  <Button 
+                    size="lg" 
+                    asChild
+                    className="w-full bg-primary text-white hover:bg-primary/90"
+                  >
+                    <a href="mailto:sylvia.rui33@gmail.com">
+                      Contacter par email
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </section>
 
