@@ -7,7 +7,7 @@ import { useEffect } from "react";
 const Programme28Jours = () => {
   useEffect(() => {
     document.title = "Programme 28 Jours - Défi Minceur | Cabinet AGP Tresses";
-    
+
     // Canonical
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (!canonicalLink) {
@@ -16,7 +16,6 @@ const Programme28Jours = () => {
       document.head.appendChild(canonicalLink);
     }
     canonicalLink.setAttribute('href', 'https://methodes-douces-bordeaux.fr/programme-28-jours');
-    
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute("content", "Programme AGP en ligne pour une perte de poids durable, sans régime strict. Méthode simple, structurée et personnalisée, accessible partout en francophonie.");
@@ -26,7 +25,7 @@ const Programme28Jours = () => {
       meta.content = "Programme AGP en ligne pour une perte de poids durable, sans régime strict. Méthode simple, structurée et personnalisée, accessible partout en francophonie.";
       document.head.appendChild(meta);
     }
-    
+
     // Structured Data - Event/Course
     const structuredData = document.createElement('script');
     structuredData.type = 'application/ld+json';
@@ -47,21 +46,19 @@ const Programme28Jours = () => {
       }
     });
     document.head.appendChild(structuredData);
-
     return () => {
       if (structuredData.parentNode) {
         structuredData.parentNode.removeChild(structuredData);
       }
     };
   }, []);
-
   return <div className="min-h-screen">
       <Header />
       <main className="pt-24">
         <div className="container mx-auto px-4 max-w-4xl">
-          <Breadcrumbs items={[
-            { label: "Programme 28 Jours" }
-          ]} />
+          <Breadcrumbs items={[{
+          label: "Programme 28 Jours"
+        }]} />
         </div>
         {/* Hero Section */}
         <section className="py-20 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
@@ -283,7 +280,8 @@ const Programme28Jours = () => {
                 </p>
                 <div className="bg-card p-6 rounded-lg mb-6 text-center">
                   <p className="text-3xl font-bold text-primary mb-2">Offre de lancement</p>
-                  <p className="text-sm text-muted-foreground">Tarif réduit pour cette phase test</p>
+                  <p className="text-sm text-muted-foreground">
+                </p>
                 </div>
                 <Button size="lg" className="w-full bg-gradient-primary hover:shadow-strong text-lg" asChild>
                   <a href="https://ericgata.thrivecart.com/httpsbuystripecom14a4gzetc8fu1qtekqc3m02/" target="_blank" rel="noopener noreferrer">
