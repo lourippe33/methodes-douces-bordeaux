@@ -1,8 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { ContactSylviaDialog } from "@/components/ContactSylviaDialog";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -16,6 +17,7 @@ import ericPhoto from "@/assets/eric-gata-portrait.png";
 import sylviaPhoto from "@/assets/sylvia-rui-portrait.png";
 const Neurofeedback = () => {
   const navigate = useNavigate();
+  const [isContactDialogOpen, setIsContactDialogOpen] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = "Neurofeedback Dynamique à Tresses - Gestion du Stress et Sommeil | Eric Gata";
@@ -423,7 +425,7 @@ const Neurofeedback = () => {
                   <Button 
                     size="lg" 
                     className="w-full bg-primary text-white hover:bg-primary/90"
-                    onClick={() => window.location.href = 'mailto:sylvia.rui33@gmail.com'}
+                    onClick={() => setIsContactDialogOpen(true)}
                   >
                     Prendre rendez-vous
                   </Button>
@@ -440,6 +442,11 @@ const Neurofeedback = () => {
           </p>
         </section>
       </main>
+
+      <ContactSylviaDialog 
+        open={isContactDialogOpen} 
+        onOpenChange={setIsContactDialogOpen} 
+      />
 
       <Footer />
     </div>;
