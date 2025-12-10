@@ -13,64 +13,74 @@ const BlogBurnOut = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  // —— SCHEMA ARTICLE OPTIMISÉ —— //
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Le Neurofeedback face au Burn Out : Une Solution Naturelle",
-    "description": "Découvrez comment le neurofeedback peut vous aider à surmonter le burn out. Réduction du stress, amélioration du sommeil et récupération durable.",
-    "image": "https://methodes-douces-bordeaux.fr/assets/neurofeedback-burn-out.png",
-    "author": {
+    headline: "Neurofeedback & Burn Out : Une Solution Naturelle pour Surmonter l'Épuisement Professionnel",
+    description:
+      "Le neurofeedback aide à réduire le stress, l’épuisement professionnel et les troubles émotionnels liés au burn out. Découvrez une méthode naturelle pour retrouver énergie et clarté mentale.",
+    image: "https://methodes-douces-bordeaux.fr/assets/neurofeedback-burn-out.png",
+    author: {
       "@type": "Person",
-      "name": "Eric Gata",
-      "url": "https://methodes-douces-bordeaux.fr/a-propos"
+      name: "Eric Gata",
+      url: "https://methodes-douces-bordeaux.fr/a-propos",
     },
-    "publisher": {
+    publisher: {
       "@type": "Organization",
-      "name": "Méthodes Douces Bordeaux",
-      "logo": {
+      name: "Méthodes Douces Bordeaux",
+      logo: {
         "@type": "ImageObject",
-        "url": "https://methodes-douces-bordeaux.fr/logo-agp.png"
-      }
+        url: "https://methodes-douces-bordeaux.fr/logo-agp.png",
+      },
     },
-    "datePublished": "2024-09-15",
-    "dateModified": "2025-12-10",
-    "mainEntityOfPage": {
+    datePublished: "2024-09-15",
+    dateModified: "2025-12-10",
+    mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": "https://methodes-douces-bordeaux.fr/blog/neurofeedback-burn-out"
+      "@id": "https://methodes-douces-bordeaux.fr/blog/neurofeedback-burn-out",
     },
-    "keywords": "burn out, neurofeedback, épuisement professionnel, récupération, stress, fatigue chronique, Tresses, Bordeaux"
+    keywords:
+      "neurofeedback burn out, burn out, épuisement professionnel, stress au travail, fatigue chronique, récupération mentale, Tresses, Bordeaux",
   };
 
   return (
     <>
       <Helmet>
-        <title>Burn Out et Neurofeedback : Retrouvez Votre Énergie | Tresses Bordeaux</title>
-        <meta name="description" content="Surmonter le burn out grâce au neurofeedback. Méthode naturelle pour réduire le stress, améliorer le sommeil et retrouver la clarté mentale. Cabinet à Tresses." />
-        <meta name="keywords" content="burn out, neurofeedback, épuisement professionnel, fatigue chronique, stress, récupération, bien-être, Tresses, Bordeaux" />
+        <title>Neurofeedback & Burn Out : Surmonter l'Épuisement Professionnel | Tresses Bordeaux</title>
+
+        <meta
+          name="description"
+          content="Surmontez le burn out grâce au neurofeedback : réduction du stress, meilleure gestion émotionnelle, sommeil réparateur et récupération durable. Cabinet à Tresses, près de Bordeaux."
+        />
+
         <link rel="canonical" href="https://methodes-douces-bordeaux.fr/blog/neurofeedback-burn-out" />
-        <meta property="og:title" content="Burn Out et Neurofeedback : Retrouvez Votre Énergie" />
-        <meta property="og:description" content="Découvrez comment le neurofeedback peut vous aider à surmonter le burn out et retrouver un équilibre durable." />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://methodes-douces-bordeaux.fr/blog/neurofeedback-burn-out" />
+
+        <meta property="og:title" content="Neurofeedback & Burn Out : Surmonter l'Épuisement Professionnel" />
+        <meta
+          property="og:description"
+          content="Le neurofeedback est une méthode naturelle qui aide à réduire le stress, l’épuisement professionnel et les troubles du sommeil liés au burn out."
+        />
         <meta property="og:image" content="https://methodes-douces-bordeaux.fr/assets/neurofeedback-burn-out.png" />
+
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 
       <div className="min-h-screen bg-background">
         <Header />
-        
+
         <main className="pt-24">
           <div className="container mx-auto px-4 py-8">
-            <Breadcrumbs 
+            <Breadcrumbs
               items={[
                 { label: "Accueil", path: "/" },
                 { label: "Blog", path: "/blog" },
-                { label: "Burn Out & Neurofeedback" }
-              ]} 
+                { label: "Burn Out & Neurofeedback" },
+              ]}
             />
           </div>
 
-          {/* Hero Section */}
+          {/* Hero */}
           <section className="container mx-auto px-4 pb-12">
             <div className="max-w-4xl mx-auto">
               <Button variant="ghost" asChild className="mb-6 hover:bg-primary/10">
@@ -79,7 +89,7 @@ const BlogBurnOut = () => {
                   Retour au blog
                 </Link>
               </Button>
-              
+
               <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
                 <div className="flex items-center gap-2">
                   <Calendar size={16} />
@@ -87,7 +97,7 @@ const BlogBurnOut = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock size={16} />
-                  <span>8 min de lecture</span>
+                  <span>10 min de lecture</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <User size={16} />
@@ -95,159 +105,157 @@ const BlogBurnOut = () => {
                 </div>
               </div>
 
+              {/* —— H1 SEO OPTIMISÉ —— */}
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
-                Le Neurofeedback face au Burn Out
+                Neurofeedback & Burn Out : Une Approche Naturelle pour Retrouver Votre Énergie
               </h1>
+
+              <p className="text-xl text-primary font-medium mb-8">
+                Comprendre, apaiser et surmonter l’épuisement professionnel grâce à une méthode douce et non invasive.
+              </p>
             </div>
           </section>
 
-          {/* Featured Image */}
+          {/* Image */}
           <section className="container mx-auto px-4 pb-12">
             <div className="max-w-4xl mx-auto">
-              <img 
-                src={burnoutImage} 
-                alt="Burn out un cadeau mal emballé - témoignages et conseils pour comprendre le burn out et faire de cette épreuve une chance" 
+              <img
+                src={burnoutImage}
+                alt="Illustration du burn out et de la récupération grâce au neurofeedback NeurOptimal"
                 className="w-full h-auto rounded-xl shadow-lg"
-                width={1200}
-                height={400}
-                loading="eager"
               />
             </div>
           </section>
 
-          {/* Article Content */}
+          {/* Article */}
           <article className="container mx-auto px-4 pb-16">
             <div className="max-w-4xl mx-auto prose prose-lg prose-slate dark:prose-invert">
-              
-              {/* Introduction */}
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Le <strong>burn out</strong> est un épuisement profond, une fatigue qui semble engloutir toute l'énergie. Chaque jour, je me lève avec un poids sur la poitrine, une sensation de vide et d'impuissance. Les tâches qui paraissaient autrefois simples deviennent des montagnes insurmontables. La motivation m'échappe, et je me sens piégé dans une spirale descendante. Mes relations, mes passions, tout ce qui apportait joie et sens à ma vie semble désormais hors de portée.
-              </p>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                J'ai besoin d'une solution qui ne se limite pas à un simple traitement symptomatique, mais qui s'attaque à la racine de mon mal-être. Célébrer de petites victoires serait une grande source de motivation pour moi. Même les progrès minimes me rappelleraient que la guérison est possible et que chaque pas compte.
+              {/* INTRO */}
+              <p>
+                Le <strong>burn out</strong> est un épuisement profond, émotionnel et mental, souvent lié au stress
+                chronique. Il impacte la motivation, la concentration, les émotions et la qualité de vie. Le
+                neurofeedback NeurOptimal est une méthode douce qui aide le cerveau à se rééquilibrer pour favoriser un
+                retour progressif vers l’énergie, la clarté mentale et la sérénité.
               </p>
 
-              {/* Section: Comprendre le burn out */}
-              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mt-12 mb-6">
-                Comprendre le burn out et ses conséquences
-              </h2>
-              
-              <p className="text-muted-foreground leading-relaxed">
-                Le <strong>burn out</strong> se produit lorsque les exigences de la vie professionnelle ou personnelle dépassent la capacité d'adaptation d'une personne. Cela entraîne souvent une fatigue persistante et une irritabilité. De plus, les personnes touchées par cette condition peuvent éprouver des difficultés de concentration et des douleurs physiques. La gestion du stress devient alors cruciale pour éviter une détérioration de la santé.
+              {/* —— SECTION SEO : POUR QUI ? —— */}
+              <h2>Pour qui le neurofeedback est-il efficace en cas de burn out ?</h2>
+              <p>Le neurofeedback est particulièrement adapté si vous souffrez de :</p>
+              <ul>
+                <li>épuisement professionnel ou surcharge mentale,</li>
+                <li>perte de motivation, irritabilité, anxiété,</li>
+                <li>troubles du sommeil (réveils nocturnes, sommeil non réparateur),</li>
+                <li>difficultés de concentration ou brouillard mental,</li>
+                <li>fatigue chronique persistante,</li>
+                <li>stress au travail ou tensions émotionnelles répétées.</li>
+              </ul>
+
+              {/* —— SECTION SEO : SYMPTÔMES —— */}
+              <h2>Reconnaître les symptômes du burn out</h2>
+              <p>Le burn out se manifeste par un ensemble de signes qui évoluent souvent lentement :</p>
+              <ul>
+                <li>épuisement extrême malgré le repos,</li>
+                <li>sentiment de pression constante,</li>
+                <li>diminution de la concentration,</li>
+                <li>perte de sens ou détachement émotionnel,</li>
+                <li>tensions musculaires, migraines, troubles digestifs,</li>
+                <li>difficulté à gérer ses émotions.</li>
+              </ul>
+
+              {/* —— H2 —— */}
+              <h2>Qu’est-ce que le neurofeedback NeurOptimal ?</h2>
+              <p>
+                Le neurofeedback NeurOptimal analyse l’activité cérébrale en temps réel. Grâce à des micro-signaux
+                sonores, il aide le cerveau à corriger spontanément ses déséquilibres. C’est une méthode naturelle,
+                douce et entièrement non invasive.
               </p>
 
-              {/* Section: Qu'est-ce que le neurofeedback */}
-              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mt-12 mb-6">
-                Qu'est-ce que le neurofeedback ?
-              </h2>
-              
-              <p className="text-muted-foreground leading-relaxed">
-                Le neurofeedback est une technique non invasive qui permet d'analyser et de réguler l'activité cérébrale. En utilisant des capteurs placés sur le cuir chevelu, les praticiens mesurent les ondes cérébrales et fournissent un retour instantané. Cette méthode aide à améliorer le fonctionnement du cerveau en le guidant vers un état plus équilibré.
+              <p>
+                Elle est particulièrement efficace pour les personnes souffrant de stress intense. Vous pouvez en savoir
+                plus sur notre approche via la page{" "}
+                <Link to="/gestion-stress" className="text-primary font-medium">
+                  gestion du stress
+                </Link>
+                .
               </p>
 
-              {/* Section: Les bienfaits */}
-              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mt-12 mb-6">
-                Les bienfaits du neurofeedback pour le burn out
-              </h2>
-              
-              <p className="text-muted-foreground leading-relaxed">
-                Le principal avantage, est qu'il s'agit d'une méthode naturelle qui ne requiert ni médicament, ni intervention invasive. Cette approche est entièrement personnalisée, car elle se base sur l'activité cérébrale unique de chaque individu. Pour les personnes souffrant de <strong>burn out</strong>, il offre plusieurs bienfaits significatifs :
-              </p>
-              
-              <h3 className="text-xl font-heading font-semibold text-foreground mt-8 mb-4">
-                1. Réduction du stress
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                En rééquilibrant l'activité cérébrale, cela vous aide à diminuer les niveaux de stress et à retrouver une sensation de calme. Cela peut être particulièrement utile pour les personnes en état d'épuisement émotionnel.
-              </p>
-              
-              <h3 className="text-xl font-heading font-semibold text-foreground mt-8 mb-4">
-                2. Amélioration du sommeil
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                C'est un passage où souvent s'installent les troubles du sommeil. En régulant l'activité cérébrale, cette technique aide à retrouver un sommeil réparateur, essentiel pour la récupération mentale et physique. Un meilleur sommeil retrouvé, c'est de nouvelles possibilités.
-              </p>
-              
-              <h3 className="text-xl font-heading font-semibold text-foreground mt-8 mb-4">
-                3. Augmentation de la clarté mentale
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Travailler sur votre activité cérébrale est une véritable révélation. Vous commencez à ressentir une clarté d'esprit que vous n'aviez pas connue depuis longtemps. La concentration s'améliore, et la prise de décision devient plus fluide, presque instinctive.
-              </p>
-              
-              <p className="text-muted-foreground leading-relaxed">
-                Fini le brouillard permanent qui obscurcissait vos pensées dès le réveil. Vous vous réveillez avec une sensation de légèreté et d'énergie, prêt à affronter la journée. Votre esprit devient plus vif, et chaque choix que vous faites est désormais accompagné d'une confiance nouvelle. Vous retrouvez le plaisir d'agir, d'interagir et de vivre pleinement chaque moment.
-              </p>
-              
-              <h3 className="text-xl font-heading font-semibold text-foreground mt-8 mb-4">
-                4. Gestion des émotions
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Cette méthode vous accompagne dans la stabilisation de vos émotions, vous offrant une véritable bouffée d'air. En réduisant les réactions excessives face au stress, vous ressentez un allègement, comme si un poids était levé de vos épaules. Vous commencez à développer une résilience que vous ne pensiez pas possible, et la gestion de vos émotions devient plus naturelle.
-              </p>
-              
-              <p className="text-muted-foreground leading-relaxed">
-                La fatigue, qui pesait lourdement sur votre quotidien, se transforme en un sentiment de légèreté. Avec chaque jour qui passe, vous constatez une évolution positive dans votre vie. Vous découvrez qu'il devient de plus en plus facile de vivre, de savourer les petits moments et d'affronter les défis avec une nouvelle sérénité.
+              {/* —— H2 —— */}
+              <h2>Les bienfaits du neurofeedback pour surmonter le burn out</h2>
+
+              <h3>1. Réduction profonde du stress</h3>
+              <p>
+                En aidant le cerveau à retrouver un fonctionnement plus stable, le neurofeedback diminue la charge
+                émotionnelle et les réactions excessives au stress. Vous ressentez progressivement un apaisement
+                intérieur.
               </p>
 
-              {/* Section: Prévention */}
-              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mt-12 mb-6">
-                Un soutien pour la prévention du burn out
-              </h2>
-              
-              <p className="text-muted-foreground leading-relaxed">
-                Outre son efficacité pour traiter un <strong>burn out</strong> déjà installé, cette méthode peut également jouer un rôle crucial dans la prévention. Pour les personnes vivant dans des environnements stressants, comme les professionnels en milieu médical, les enseignants ou les entrepreneurs, le neurofeedback peut aider à renforcer la résilience face au stress.
-              </p>
-              
-              <p className="text-muted-foreground leading-relaxed">
-                En apprenant au cerveau à réagir plus sereinement aux situations difficiles, cette technique permet d'éviter l'accumulation de stress prolongé, l'une des principales causes du <strong>burn out</strong>. Ainsi, au lieu de se retrouver dans une situation d'épuisement total, le cerveau est mieux préparé à gérer les tensions quotidiennes.
+              <h3>2. Amélioration du sommeil</h3>
+              <p>
+                Le sommeil est souvent déséquilibré en cas de burn out. Le neurofeedback favorise un sommeil plus
+                réparateur, ce qui accélère la récupération physique et mentale.
               </p>
 
-              {/* Section: Pourquoi choisir */}
-              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mt-12 mb-6">
-                Pourquoi choisir le neurofeedback ?
-              </h2>
-              
-              <p className="text-muted-foreground leading-relaxed">
-                Il offre de nombreux avantages. Il s'agit d'une approche douce, non médicamenteuse, qui agit directement sur la source des problèmes en modifiant l'activité cérébrale. Contrairement aux solutions temporaires, le neurofeedback apporte des changements durables dans la manière dont le cerveau réagit au stress.
-              </p>
-              
-              <p className="text-muted-foreground leading-relaxed">
-                En intégrant cette technique dans une démarche globale de bien-être, les personnes souffrant de <strong>burn out</strong> peuvent retrouver un équilibre plus rapidement et prévenir les rechutes à long terme. En bref, le neurofeedback s'impose comme une méthode efficace et innovante pour aider à surmonter les défis du <strong>burn out</strong>.
+              <h3>3. Clarté mentale retrouvée</h3>
+              <p>
+                Le brouillard mental, les difficultés de concentration et l’impression d’être “débordé” s’atténuent avec
+                les séances. La prise de décision devient plus fluide et naturelle.
               </p>
 
-              {/* Lien externe */}
-              <p className="text-muted-foreground leading-relaxed mt-8">
-                <a 
-                  href="https://www.service-public.fr/particuliers/vosdroits/F35235" 
-                  target="_blank" 
+              <h3>4. Meilleure gestion des émotions</h3>
+              <p>
+                Le neurofeedback aide à stabiliser les émotions : irritabilité, anxiété, pleurs fréquents,
+                hypersensibilité... Vous retrouvez progressivement résilience et équilibre intérieur.
+              </p>
+
+              {/* —— H2 —— */}
+              <h2>Prévenir le burn out grâce au neurofeedback</h2>
+              <p>
+                Le neurofeedback n’agit pas seulement en phase d’épuisement : c’est aussi un puissant outil de
+                prévention. Il renforce votre capacité d’adaptation au stress avant que la surcharge ne devienne
+                toxique.
+              </p>
+
+              <p>
+                Il est particulièrement recommandé aux professionnels exposés à un stress intense : soignants,
+                enseignants, cadres, entrepreneurs.
+              </p>
+
+              {/* —— H2 —— */}
+              <h2>Pourquoi choisir le neurofeedback NeurOptimal ?</h2>
+              <p>
+                C’est une approche naturelle, personnalisée, qui agit directement sur la dynamique cérébrale.
+                Contrairement aux méthodes uniquement symptomatiques, elle rétablit un fonctionnement global plus
+                harmonieux.
+              </p>
+
+              {/* —— Lien externe —— */}
+              <p className="mt-8">
+                Pour en savoir plus sur vos droits liés au burn out, consultez :{" "}
+                <a
+                  href="https://www.service-public.fr/particuliers/vosdroits/F35235"
+                  target="_blank"
                   rel="noopener noreferrer"
-                  className="text-primary hover:underline inline-flex items-center gap-1"
+                  className="text-primary underline inline-flex items-center gap-2"
                 >
-                  En savoir plus sur le burn out c'est par ici
-                  <ExternalLink size={14} />
+                  Service Public — Dossier Burn Out <ExternalLink size={14} />
                 </a>
               </p>
 
-              {/* CTA */}
+              {/* —— CTA —— */}
               <div className="mt-12 p-8 bg-gradient-to-br from-primary/10 via-background to-secondary/10 rounded-xl text-center">
-                <h3 className="text-xl font-heading font-bold text-foreground mb-4">
+                <h3 className="text-xl font-heading font-bold mb-4">
                   Prenez rendez-vous pour une séance de neurofeedback
                 </h3>
-                <p className="text-muted-foreground mb-6">
-                  Cabinet situé à Tresses, près de Bordeaux
-                </p>
-                <Button asChild size="lg" className="hover:scale-105 transition-transform">
-                  <Link to="/neurofeedback">
-                    Découvrir le neurofeedback
-                  </Link>
+                <p className="text-muted-foreground mb-6">Cabinet situé à Tresses, près de Bordeaux</p>
+
+                <Button asChild size="lg" className="hover:scale-105">
+                  <Link to="/neurofeedback">Découvrir le neurofeedback</Link>
                 </Button>
               </div>
 
-              {/* Disclaimer */}
-              <p className="text-sm text-muted-foreground italic mt-8 pt-6 border-t border-border">
-                Ces méthodes visent au bien-être et ne remplacent pas un suivi médical si nécessaire.
+              {/* —— DISCLAIMER —— */}
+              <p className="text-sm italic mt-8 pt-6 border-t">
+                Ces méthodes visent au bien-être et ne remplacent pas un suivi médical.
               </p>
             </div>
           </article>
