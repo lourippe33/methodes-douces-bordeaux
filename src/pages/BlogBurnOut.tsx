@@ -43,6 +43,53 @@ const BlogBurnOut = () => {
       "burn out, épuisement professionnel, stress chronique, neurofeedback NeurOptimal, fatigue mentale, surcharge, sommeil, Tresses, Bordeaux",
   };
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Combien de séances de neurofeedback sont nécessaires pour sortir d'un burn-out ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Le nombre de séances varie selon chaque personne. Certains ressentent un soulagement dès les premières séances, mais un accompagnement régulier sur plusieurs semaines permet des résultats plus durables. En moyenne, 10 à 20 séances sont recommandées pour un burn-out.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Le neurofeedback NeurOptimal peut-il remplacer un arrêt maladie en cas de burn-out ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Non, le neurofeedback est un complément, pas un substitut à un suivi médical. En cas de burn-out sévère, un arrêt de travail et un accompagnement médical restent essentiels. Le neurofeedback aide à accélérer la récupération et à stabiliser le système nerveux.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Le neurofeedback est-il efficace contre la fatigue mentale chronique ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Oui, le neurofeedback NeurOptimal aide à réguler l'activité cérébrale et à sortir des états de surcharge. De nombreuses personnes constatent une amélioration de leur clarté mentale, de leur énergie et de leur capacité de concentration.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Le neurofeedback peut-il aider à mieux dormir après un burn-out ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Absolument. Le sommeil perturbé est l'un des symptômes majeurs du burn-out. Le neurofeedback aide le cerveau à retrouver un rythme plus stable, favorisant un endormissement plus rapide et des nuits plus réparatrices.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Cette méthode convient-elle à tous les types de stress professionnel ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Oui, que vous soyez cadre, soignant, entrepreneur ou salarié, le neurofeedback s'adapte à votre situation. Il agit sur le système nerveux de manière globale, sans distinction de métier ou de type de stress.",
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <Helmet>
@@ -59,6 +106,7 @@ const BlogBurnOut = () => {
         />
         <meta property="og:image" content="https://methodes-douces-bordeaux.fr/assets/neurofeedback-burn-out.png" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqStructuredData)}</script>
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -243,6 +291,58 @@ const BlogBurnOut = () => {
                 Le burn-out n'est pas une fin : c'est souvent le début d'une reconstruction. NeurOptimal peut vous
                 accompagner sur ce chemin.
               </p>
+
+              {/* FAQ Section */}
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mt-12 mb-6">
+                Foire aux questions (FAQ) sur le burn-out et le neurofeedback
+              </h2>
+
+              <div className="space-y-6">
+                <div className="bg-secondary/30 p-6 rounded-lg">
+                  <h3 className="font-semibold text-foreground mb-2">
+                    1. Combien de séances sont nécessaires pour sortir d'un burn-out ?
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Le nombre de séances varie selon chaque personne. Certains ressentent un soulagement dès les premières séances, mais un accompagnement régulier sur plusieurs semaines permet des résultats plus durables. En moyenne, 10 à 20 séances sont recommandées.
+                  </p>
+                </div>
+
+                <div className="bg-secondary/30 p-6 rounded-lg">
+                  <h3 className="font-semibold text-foreground mb-2">
+                    2. Le neurofeedback peut-il remplacer un arrêt maladie ?
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Non, le neurofeedback est un complément, pas un substitut à un suivi médical. En cas de burn-out sévère, un arrêt de travail et un accompagnement médical restent essentiels. Le neurofeedback aide à accélérer la récupération.
+                  </p>
+                </div>
+
+                <div className="bg-secondary/30 p-6 rounded-lg">
+                  <h3 className="font-semibold text-foreground mb-2">
+                    3. Le neurofeedback est-il efficace contre la fatigue mentale chronique ?
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Oui, le neurofeedback NeurOptimal aide à réguler l'activité cérébrale et à sortir des états de surcharge. De nombreuses personnes constatent une amélioration de leur clarté mentale, de leur énergie et de leur concentration.
+                  </p>
+                </div>
+
+                <div className="bg-secondary/30 p-6 rounded-lg">
+                  <h3 className="font-semibold text-foreground mb-2">
+                    4. Le neurofeedback peut-il aider à mieux dormir après un burn-out ?
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Absolument. Le sommeil perturbé est l'un des symptômes majeurs du burn-out. Le neurofeedback aide le cerveau à retrouver un rythme plus stable, favorisant un endormissement plus rapide et des nuits plus réparatrices.
+                  </p>
+                </div>
+
+                <div className="bg-secondary/30 p-6 rounded-lg">
+                  <h3 className="font-semibold text-foreground mb-2">
+                    5. Cette méthode convient-elle à tous les types de stress professionnel ?
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Oui, que vous soyez cadre, soignant, entrepreneur ou salarié, le neurofeedback s'adapte à votre situation. Il agit sur le système nerveux de manière globale, sans distinction de métier.
+                  </p>
+                </div>
+              </div>
 
               {/* CTA */}
               <div className="mt-12 p-8 text-center bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl">
