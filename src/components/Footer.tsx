@@ -27,7 +27,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div className="space-y-4">
-            <img src={logo} alt="Cabinet bien-être Tresses - AGP Méthodes Douces" className="h-16 w-auto" />
+            <img src={logo} alt="Cabinet bien-être neurofeedback hypnose Tresses Bordeaux" className="h-16 w-auto" />
             <p className="text-muted-foreground text-sm">
               Cabinet de bien-être à Tresses près de Bordeaux. Hypnose, neurofeedback et méthodes douces pour adultes, enfants et adolescents.
             </p>
