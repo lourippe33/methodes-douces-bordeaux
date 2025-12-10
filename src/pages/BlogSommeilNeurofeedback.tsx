@@ -214,7 +214,7 @@ const BlogSommeilNeurofeedback = () => {
                 </li>
                 <li>
                   Vous vivez une période de{" "}
-                  <Link to="/gestion-stress" className="text-primary font-medium">
+                  <Link to="/blog/gestion-stress-angoisses" className="text-primary font-medium">
                     stress important
                   </Link>{" "}
                   ou de surcharge mentale.
@@ -448,7 +448,7 @@ const BlogSommeilNeurofeedback = () => {
                   </h3>
                   <p className="text-muted-foreground">
                     Oui, il aide également à la{" "}
-                    <Link to="/gestion-stress" className="text-primary font-medium">
+                    <Link to="/blog/gestion-stress-angoisses" className="text-primary font-medium">
                       gestion du stress
                     </Link>
                     , à l’amélioration de la concentration et au bien-être général. C’est une approche globale de
@@ -469,15 +469,10 @@ const BlogSommeilNeurofeedback = () => {
               </p>
 
               <p className="text-lg text-foreground font-medium mt-6">
-                Pour en savoir plus ou démarrer un accompagnement, vous pouvez découvrir notre page{" "}
+                Pour en savoir plus ou démarrer un accompagnement, découvrez notre{" "}
                 <Link to="/neurofeedback" className="text-primary font-medium">
-                  dédiée au neurofeedback
-                </Link>{" "}
-                ou nous écrire via la page{" "}
-                <Link to="/contact" className="text-primary font-medium">
-                  contact
-                </Link>
-                .
+                  page dédiée au neurofeedback
+                </Link>.
               </p>
 
               {/* CTA */}
