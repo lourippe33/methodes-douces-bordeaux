@@ -102,7 +102,7 @@ const BlogAmeliorerSommeil = () => {
         />
         <link
           rel="canonical"
-          href="https://methodes-douces-bordeaux.fr/blog/ameliorer-sommeil"
+          href="https://methodes-douces-bordeaux.fr/blog/ameliorer-sommeil-neuroptimal"
         />
         <meta
           property="og:title"
