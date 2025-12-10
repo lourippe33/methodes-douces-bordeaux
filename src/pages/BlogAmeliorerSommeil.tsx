@@ -278,5 +278,3 @@ const BlogAmeliorerSommeil = () => {
 };
 
 export default BlogAmeliorerSommeil;
-
-export default BlogAmeliorerSommeil;
