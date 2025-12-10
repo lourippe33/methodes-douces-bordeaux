@@ -18,6 +18,7 @@ import MentionsLegales from "./pages/MentionsLegales";
 import CGV from "./pages/CGV";
 import Confidentialite from "./pages/Confidentialite";
 import NotFound from "./pages/NotFound";
+import NeurofeedbackBordeaux from "./pages/NeurofeedbackBordeaux";
 import CookieConsent from "@/components/CookieConsent";
 
 const queryClient = new QueryClient();
@@ -45,6 +46,7 @@ const App = () => (
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/cgv" element={<CGV />} />
           <Route path="/confidentialite" element={<Confidentialite />} />
+          <Route path="/neurofeedback-bordeaux" element={<NeurofeedbackBordeaux />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
