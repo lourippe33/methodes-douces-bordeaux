@@ -340,6 +340,23 @@ const HypnoseEftH = () => {
               </Accordion>
             </section>
 
+            {/* Liens locaux SEO */}
+            <section className="space-y-4 bg-muted/30 p-6 rounded-xl">
+              <p className="text-sm text-muted-foreground text-center">
+                Vous êtes à Bordeaux, Cenon ou Floirac ? Découvrez également les accompagnements dans votre secteur :
+              </p>
+              <div className="flex flex-wrap justify-center gap-4 text-sm">
+                <a href="/hypnose-bordeaux" className="text-primary hover:underline">Hypnose Bordeaux</a>
+                <a href="/hypnose-cenon" className="text-primary hover:underline">Hypnose Cenon</a>
+                <a href="/hypnose-floirac" className="text-primary hover:underline">Hypnose Floirac</a>
+              </div>
+              <div className="flex flex-wrap justify-center gap-4 text-sm">
+                <a href="/eft-bordeaux" className="text-primary hover:underline">EFT Bordeaux</a>
+                <a href="/eft-cenon" className="text-primary hover:underline">EFT Cenon</a>
+                <a href="/eft-floirac" className="text-primary hover:underline">EFT Floirac</a>
+              </div>
+            </section>
+
             <section className="space-y-6 border-t pt-12">
               <h2 className="text-3xl font-heading font-bold text-foreground">
                 Informations pratiques

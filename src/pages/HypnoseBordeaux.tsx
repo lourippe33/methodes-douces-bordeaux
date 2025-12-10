@@ -1,0 +1,184 @@
+import { Helmet } from "react-helmet-async";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { MapPin, Sparkles, Brain, Heart, Shield, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
+
+const HypnoseBordeaux = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Méthodes Douces Bordeaux",
+    "description": "Hypnose à Bordeaux : séances pour réduire le stress, apaiser les émotions, améliorer la confiance et se libérer des blocages.",
+    "image": "https://methodes-douces-bordeaux.fr/og-image-1200x630.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "8 avenue de la Gardette",
+      "addressLocality": "Tresses",
+      "postalCode": "33370",
+      "addressRegion": "Gironde",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 44.8637,
+      "longitude": -0.4837
+    },
+    "telephone": "+33 6 64 87 30 56",
+    "url": "https://methodes-douces-bordeaux.fr/hypnose-bordeaux",
+    "areaServed": [
+      { "@type": "City", "name": "Bordeaux" },
+      { "@type": "AdministrativeArea", "name": "Bordeaux Métropole" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Hypnose",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hypnose"
+          }
+        }
+      ]
+    },
+    "priceRange": "€€"
+  };
+
+  const reasons = [
+    { icon: Zap, text: "Stress" },
+    { icon: Heart, text: "Blocages émotionnels" },
+    { icon: Shield, text: "Peurs" },
+    { icon: Sparkles, text: "Manque de confiance" },
+    { icon: Brain, text: "Surcharge mentale" },
+    { icon: Heart, text: "Difficulté à lâcher prise" },
+  ];
+
+  const results = [
+    "Apaisement intérieur",
+    "Meilleure gestion émotionnelle",
+    "Confiance retrouvée",
+    "Prise de recul",
+    "Plus grande sérénité",
+  ];
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Hypnose Bordeaux | Gestion du stress, émotions & confiance</title>
+        <meta name="description" content="Hypnose à Bordeaux : séances pour réduire le stress, apaiser les émotions, améliorer la confiance et se libérer des blocages." />
+        <link rel="canonical" href="https://methodes-douces-bordeaux.fr/hypnose-bordeaux" />
+        <meta property="og:title" content="Hypnose Bordeaux | Gestion du stress, émotions & confiance" />
+        <meta property="og:description" content="Hypnose à Bordeaux : séances pour réduire le stress, apaiser les émotions, améliorer la confiance et se libérer des blocages." />
+        <meta property="og:url" content="https://methodes-douces-bordeaux.fr/hypnose-bordeaux" />
+        <meta property="og:image" content="https://methodes-douces-bordeaux.fr/og-image-1200x630.png" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
+
+      <Header />
+
+      <main className="pt-20">
+        {/* Hero Section */}
+        <section className="bg-gradient-to-br from-primary/10 via-background to-secondary/10 py-16 md:py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="flex items-center gap-2 text-primary mb-4">
+                <MapPin className="h-5 w-5" />
+                <span className="text-sm font-medium">Cabinet à Tresses, à 10 min de Bordeaux</span>
+              </div>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
+                Hypnose à Bordeaux – Une approche douce pour transformer vos émotions
+              </h1>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                L'hypnose est une méthode puissante et naturelle qui permet de reprogrammer en douceur les réactions émotionnelles et comportementales.
+              </p>
+              <img 
+                src="/og-image-1200x630.png" 
+                alt="Hypnose à Bordeaux – séance douce de relaxation guidée"
+                className="w-full rounded-xl shadow-lg mb-8"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Pourquoi consulter */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8">
+                🌿 Pourquoi consulter en hypnose à Bordeaux ?
+              </h2>
+              <ul className="space-y-3 mb-8">
+                {reasons.map((reason, index) => (
+                  <li key={index} className="flex items-center gap-3 text-lg text-muted-foreground">
+                    <reason.icon className="h-5 w-5 text-primary flex-shrink-0" />
+                    <span>{reason.text}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Séance */}
+        <section className="py-16 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8">
+                🎧 Comment se déroule une séance ?
+              </h2>
+              <div className="bg-card rounded-xl p-8 border border-border">
+                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                  Une séance d'hypnose est une <strong>expérience guidée, sécurisante et relaxante</strong>. Vous restez conscient tout en accédant à un état d'attention intérieure favorable au changement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Résultats */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8">
+                💡 Résultats observés
+              </h2>
+              <ul className="grid md:grid-cols-2 gap-4">
+                {results.map((result, index) => (
+                  <li key={index} className="flex items-center gap-3 text-lg text-muted-foreground bg-card p-4 rounded-lg border border-border">
+                    <Sparkles className="h-5 w-5 text-primary flex-shrink-0" />
+                    <span>{result}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-16 bg-gradient-to-r from-primary/10 to-secondary/10">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+              👉 Page principale
+            </h2>
+            <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
+              Découvrez l'accompagnement complet en hypnose et EFT-H.
+            </p>
+            <Button asChild size="lg" className="hover:scale-105 transition-transform">
+              <Link to="/hypnose-eft-h">En savoir plus sur l'hypnose</Link>
+            </Button>
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default HypnoseBordeaux;

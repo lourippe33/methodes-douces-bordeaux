@@ -5,12 +5,12 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Headphones, Users, Sparkles, Brain, Moon, Zap, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const NeurofeedbackBordeaux = () => {
+const NeurofeedbackCenon = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Méthodes Douces Bordeaux",
-    "description": "Séances de neurofeedback NeurOptimal à Bordeaux : méthode douce pour réduire le stress, améliorer le sommeil, apaiser le mental et retrouver un meilleur équilibre émotionnel.",
+    "description": "Séances de neurofeedback à Cenon : méthode naturelle pour apaiser le mental, retrouver de la clarté, diminuer les réveils nocturnes et mieux gérer le stress.",
     "image": "https://methodes-douces-bordeaux.fr/og-image-1200x630.png",
     "address": {
       "@type": "PostalAddress",
@@ -26,9 +26,9 @@ const NeurofeedbackBordeaux = () => {
       "longitude": -0.4837
     },
     "telephone": "+33 6 64 87 30 56",
-    "url": "https://methodes-douces-bordeaux.fr/neurofeedback-bordeaux",
+    "url": "https://methodes-douces-bordeaux.fr/neurofeedback-cenon",
     "areaServed": [
-      { "@type": "City", "name": "Bordeaux" },
+      { "@type": "City", "name": "Cenon" },
       { "@type": "AdministrativeArea", "name": "Bordeaux Métropole" }
     ],
     "hasOfferCatalog": {
@@ -47,40 +47,32 @@ const NeurofeedbackBordeaux = () => {
     "priceRange": "€€"
   };
 
-  const benefits = [
-    { icon: Brain, text: "Réduire le stress chronique" },
-    { icon: Sparkles, text: "Apaiser les ruminations et l'anxiété" },
-    { icon: Moon, text: "Améliorer la qualité du sommeil" },
-    { icon: Zap, text: "Retrouver de la clarté mentale" },
-    { icon: Heart, text: "Augmenter l'énergie au quotidien" },
-    { icon: Users, text: "Accompagner un burn-out ou un surmenage" },
+  const reasons = [
+    { icon: Brain, text: "Apaiser un mental trop actif" },
+    { icon: Sparkles, text: "Réduire le stress du quotidien" },
+    { icon: Moon, text: "Retrouver un sommeil plus profond" },
+    { icon: Heart, text: "Accompagner un épuisement émotionnel" },
+    { icon: Zap, text: "Améliorer la concentration" },
+    { icon: Users, text: "Réguler les émotions" },
   ];
 
   const results = [
-    "Baisse notable du stress",
-    "Sommeil plus profond",
-    "Diminution des réveils nocturnes",
-    "Meilleure stabilité émotionnelle",
-    "Regain d'énergie",
-    "Impression d'être plus « soi-même »",
-  ];
-
-  const audiences = [
-    "Adultes stressés ou surmenés",
-    "Personnes en épuisement moral ou professionnel",
-    "Enfants en difficulté de concentration",
-    "Adolescents anxieux ou au sommeil instable",
+    "Endormissement facilité",
+    "Moins de réveils nocturnes",
+    "Plus de calme intérieur",
+    "Meilleure concentration",
+    "Baisse du stress chronique",
   ];
 
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Neurofeedback Bordeaux | Séances NeurOptimal pour Stress & Sommeil</title>
-        <meta name="description" content="Découvrez le neurofeedback NeurOptimal à Bordeaux : méthode douce pour réduire le stress, améliorer le sommeil, apaiser le mental et retrouver un meilleur équilibre émotionnel." />
-        <link rel="canonical" href="https://methodes-douces-bordeaux.fr/neurofeedback-bordeaux" />
-        <meta property="og:title" content="Neurofeedback Bordeaux | Séances NeurOptimal pour Stress & Sommeil" />
-        <meta property="og:description" content="Découvrez le neurofeedback NeurOptimal à Bordeaux : méthode douce pour réduire le stress, améliorer le sommeil, apaiser le mental et retrouver un meilleur équilibre émotionnel." />
-        <meta property="og:url" content="https://methodes-douces-bordeaux.fr/neurofeedback-bordeaux" />
+        <title>Neurofeedback Cenon | Réduction du stress & amélioration du sommeil</title>
+        <meta name="description" content="Séances de neurofeedback à Cenon : méthode naturelle pour apaiser le mental, retrouver de la clarté, diminuer les réveils nocturnes et mieux gérer le stress." />
+        <link rel="canonical" href="https://methodes-douces-bordeaux.fr/neurofeedback-cenon" />
+        <meta property="og:title" content="Neurofeedback Cenon | Réduction du stress & amélioration du sommeil" />
+        <meta property="og:description" content="Séances de neurofeedback à Cenon : méthode naturelle pour apaiser le mental, retrouver de la clarté, diminuer les réveils nocturnes et mieux gérer le stress." />
+        <meta property="og:url" content="https://methodes-douces-bordeaux.fr/neurofeedback-cenon" />
         <meta property="og:image" content="https://methodes-douces-bordeaux.fr/og-image-1200x630.png" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
@@ -97,71 +89,68 @@ const NeurofeedbackBordeaux = () => {
             <div className="max-w-4xl mx-auto">
               <div className="flex items-center gap-2 text-primary mb-4">
                 <MapPin className="h-5 w-5" />
-                <span className="text-sm font-medium">Cabinet à Tresses, à 10 min de Bordeaux</span>
+                <span className="text-sm font-medium">Cabinet à Tresses, proche de Cenon</span>
               </div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
-                Neurofeedback à Bordeaux – Une méthode douce pour retrouver équilibre et clarté mentale
+                Neurofeedback à Cenon – Retrouver apaisement et confort mental
               </h1>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                À Bordeaux, de plus en plus de personnes cherchent une approche naturelle pour réduire le stress, mieux dormir et apaiser un mental trop actif. Le neurofeedback NeurOptimal est une méthode douce, non invasive, qui aide le cerveau à retrouver une meilleure autorégulation.
+                À Cenon, le neurofeedback dynamique attire toutes les personnes recherchant une solution naturelle pour calmer le mental, réduire les tensions et retrouver un meilleur sommeil.
               </p>
               <img 
                 src="/og-image-1200x630.png" 
-                alt="Neurofeedback à Bordeaux – séance de neurofeedback dynamique"
+                alt="Neurofeedback à Cenon – séance apaisante pour le stress et le sommeil"
                 className="w-full rounded-xl shadow-lg mb-8"
               />
             </div>
           </div>
         </section>
 
-        {/* Pourquoi choisir */}
+        {/* Pourquoi consulter */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8">
-                🌿 Pourquoi choisir le neurofeedback à Bordeaux ?
+                🌿 Pourquoi consulter à Cenon ?
               </h2>
-              <p className="text-lg text-muted-foreground mb-6">Les Bordelais sollicitent cette approche pour :</p>
+              <p className="text-lg text-muted-foreground mb-6">Les habitants de Cenon utilisent le neurofeedback pour :</p>
               <ul className="space-y-3 mb-8">
-                {benefits.map((benefit, index) => (
+                {reasons.map((reason, index) => (
                   <li key={index} className="flex items-center gap-3 text-lg text-muted-foreground">
-                    <benefit.icon className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span>{benefit.text}</span>
+                    <reason.icon className="h-5 w-5 text-primary flex-shrink-0" />
+                    <span>{reason.text}</span>
                   </li>
                 ))}
               </ul>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Le neurofeedback n'impose rien au cerveau : il lui renvoie simplement une information qui lui permet de se réorganiser naturellement.
-              </p>
             </div>
           </div>
         </section>
 
-        {/* Comment se déroule une séance */}
+        {/* Séance */}
         <section className="py-16 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8">
-                🎧 Comment se déroule une séance ?
+                🎧 Une séance simple et relaxante
               </h2>
               <div className="bg-card rounded-xl p-8 border border-border">
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  Chaque séance dure <strong>33 minutes</strong>. Vous êtes confortablement installé, vous écoutez une musique pendant que le système analyse en temps réel l'activité cérébrale.
+                  <strong>Durée : 33 minutes.</strong> Vous êtes installé confortablement, vous écoutez une musique, tandis que le système détecte les variations de l'activité cérébrale.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  <strong>Aucune stimulation, aucune manipulation</strong> : le cerveau s'ajuste par lui-même.
+                  Le cerveau ajuste lui-même son fonctionnement.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Bénéfices observés */}
+        {/* Résultats */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8">
-                💡 Bénéfices observés par les clients
+                💡 Résultats fréquemment observés
               </h2>
               <ul className="grid md:grid-cols-2 gap-4">
                 {results.map((result, index) => (
@@ -175,37 +164,17 @@ const NeurofeedbackBordeaux = () => {
           </div>
         </section>
 
-        {/* Pour qui */}
-        <section className="py-16 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8">
-                📍 Pour qui ?
-              </h2>
-              <p className="text-lg text-muted-foreground mb-6">Le neurofeedback est adapté aux :</p>
-              <ul className="space-y-3 mb-8">
-                {audiences.map((audience, index) => (
-                  <li key={index} className="flex items-center gap-3 text-lg text-muted-foreground">
-                    <Users className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span>{audience}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-
         {/* CTA Section */}
         <section className="py-16 bg-gradient-to-r from-primary/10 to-secondary/10">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-              👉 Découvrir l'accompagnement
+              👉 En savoir plus
             </h2>
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-              Pour en savoir plus, consultez la page dédiée au neurofeedback.
+              Découvrez notre accompagnement neurofeedback complet.
             </p>
             <Button asChild size="lg" className="hover:scale-105 transition-transform">
-              <Link to="/neurofeedback">En savoir plus sur le neurofeedback</Link>
+              <Link to="/neurofeedback">Découvrir le neurofeedback</Link>
             </Button>
           </div>
         </section>
@@ -216,4 +185,4 @@ const NeurofeedbackBordeaux = () => {
   );
 };
 
-export default NeurofeedbackBordeaux;
+export default NeurofeedbackCenon;

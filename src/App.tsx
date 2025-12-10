@@ -19,6 +19,14 @@ import CGV from "./pages/CGV";
 import Confidentialite from "./pages/Confidentialite";
 import NotFound from "./pages/NotFound";
 import NeurofeedbackBordeaux from "./pages/NeurofeedbackBordeaux";
+import NeurofeedbackCenon from "./pages/NeurofeedbackCenon";
+import NeurofeedbackFloirac from "./pages/NeurofeedbackFloirac";
+import HypnoseBordeaux from "./pages/HypnoseBordeaux";
+import HypnoseCenon from "./pages/HypnoseCenon";
+import HypnoseFloirac from "./pages/HypnoseFloirac";
+import EftBordeaux from "./pages/EftBordeaux";
+import EftCenon from "./pages/EftCenon";
+import EftFloirac from "./pages/EftFloirac";
 import CookieConsent from "@/components/CookieConsent";
 
 const queryClient = new QueryClient();
@@ -46,7 +54,18 @@ const App = () => (
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/cgv" element={<CGV />} />
           <Route path="/confidentialite" element={<Confidentialite />} />
+          {/* Pages locales SEO - Neurofeedback */}
           <Route path="/neurofeedback-bordeaux" element={<NeurofeedbackBordeaux />} />
+          <Route path="/neurofeedback-cenon" element={<NeurofeedbackCenon />} />
+          <Route path="/neurofeedback-floirac" element={<NeurofeedbackFloirac />} />
+          {/* Pages locales SEO - Hypnose */}
+          <Route path="/hypnose-bordeaux" element={<HypnoseBordeaux />} />
+          <Route path="/hypnose-cenon" element={<HypnoseCenon />} />
+          <Route path="/hypnose-floirac" element={<HypnoseFloirac />} />
+          {/* Pages locales SEO - EFT */}
+          <Route path="/eft-bordeaux" element={<EftBordeaux />} />
+          <Route path="/eft-cenon" element={<EftCenon />} />
+          <Route path="/eft-floirac" element={<EftFloirac />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

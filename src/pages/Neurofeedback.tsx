@@ -458,6 +458,18 @@ const Neurofeedback = () => {
           </div>
         </section>
 
+        {/* Liens locaux SEO */}
+        <section className="container mx-auto px-4 py-8 border-t border-border">
+          <p className="text-sm text-muted-foreground text-center max-w-3xl mx-auto mb-4">
+            Vous êtes à Bordeaux, Cenon ou Floirac ? Découvrez également les accompagnements dans votre secteur :
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 text-sm">
+            <a href="/neurofeedback-bordeaux" className="text-primary hover:underline">Neurofeedback Bordeaux</a>
+            <a href="/neurofeedback-cenon" className="text-primary hover:underline">Neurofeedback Cenon</a>
+            <a href="/neurofeedback-floirac" className="text-primary hover:underline">Neurofeedback Floirac</a>
+          </div>
+        </section>
+
         {/* Disclaimer */}
         <section className="container mx-auto px-4 py-8">
           <p className="text-sm text-muted-foreground text-center max-w-3xl mx-auto italic">
