@@ -9,149 +9,180 @@ const HypnoseCenon = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Méthodes Douces Bordeaux",
-    "description": "Hypnose à Cenon : libération émotionnelle, confiance en soi, réduction du stress et accompagnement du changement.",
-    "image": "https://methodes-douces-bordeaux.fr/og-image-1200x630.png",
-    "address": {
+    name: "Méthodes Douces Bordeaux",
+    description:
+      "Hypnose à Cenon : séances professionnelles pour réduire le stress, améliorer la confiance, libérer les blocages émotionnels et retrouver une stabilité intérieure.",
+    image: "https://methodes-douces-bordeaux.fr/og-image-1200x630.png",
+    address: {
       "@type": "PostalAddress",
-      "streetAddress": "8 avenue de la Gardette",
-      "addressLocality": "Tresses",
-      "postalCode": "33370",
-      "addressRegion": "Gironde",
-      "addressCountry": "FR"
+      streetAddress: "8 avenue de la Gardette",
+      addressLocality: "Tresses",
+      postalCode: "33370",
+      addressRegion: "Gironde",
+      addressCountry: "FR",
     },
-    "geo": {
+    geo: {
       "@type": "GeoCoordinates",
-      "latitude": 44.8637,
-      "longitude": -0.4837
+      latitude: 44.8637,
+      longitude: -0.4837,
     },
-    "telephone": "+33 6 64 87 30 56",
-    "url": "https://methodes-douces-bordeaux.fr/hypnose-cenon",
-    "areaServed": [
-      { "@type": "City", "name": "Cenon" },
-      { "@type": "AdministrativeArea", "name": "Bordeaux Métropole" }
+    telephone: "+33 6 64 87 30 56",
+    url: "https://methodes-douces-bordeaux.fr/hypnose-cenon",
+    areaServed: [
+      { "@type": "City", name: "Cenon" },
+      { "@type": "AdministrativeArea", name: "Bordeaux Métropole" },
     ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Hypnose",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Hypnose"
-          }
-        }
-      ]
-    },
-    "priceRange": "€€"
+    priceRange: "€€",
   };
 
   const reasons = [
-    { icon: Zap, text: "Stress" },
-    { icon: Sparkles, text: "Manque de confiance" },
-    { icon: Brain, text: "Anxiété" },
-    { icon: Heart, text: "Émotions débordantes" },
-    { icon: Users, text: "Difficultés relationnelles" },
-    { icon: Shield, text: "Peurs" },
+    { icon: Zap, text: "Stress persistant ou surcharge mentale" },
+    { icon: Sparkles, text: "Manque de confiance ou d’estime de soi" },
+    { icon: Brain, text: "Anxiété ou pensées envahissantes" },
+    { icon: Heart, text: "Émotions difficiles à gérer" },
+    { icon: Users, text: "Difficultés relationnelles ou hypersensibilité" },
+    { icon: Shield, text: "Peurs, appréhensions, blocages" },
   ];
 
   const results = [
-    "Calme intérieur",
-    "Recul émotionnel",
-    "Clarté mentale",
-    "Meilleure estime de soi",
+    "Calme intérieur durable",
+    "Gestion émotionnelle améliorée",
+    "Confiance renforcée",
+    "Plus grande clarté mentale",
+    "Diminution du stress",
+    "Meilleure stabilité au quotidien",
   ];
 
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Hypnose Cenon | Gestion du stress & émotions</title>
-        <meta name="description" content="Hypnose à Cenon : libération émotionnelle, confiance en soi, réduction du stress et accompagnement du changement." />
+        <title>Hypnose Cenon | Gestion du stress, émotions & confiance</title>
+        <meta
+          name="description"
+          content="Hypnose à Cenon : libération émotionnelle, confiance en soi, réduction du stress et accompagnement du changement. Une approche douce et personnalisée, adaptée à chacun."
+        />
         <link rel="canonical" href="https://methodes-douces-bordeaux.fr/hypnose-cenon" />
         <meta property="og:title" content="Hypnose Cenon | Gestion du stress & émotions" />
-        <meta property="og:description" content="Hypnose à Cenon : libération émotionnelle, confiance en soi, réduction du stress et accompagnement du changement." />
-        <meta property="og:url" content="https://methodes-douces-bordeaux.fr/hypnose-cenon" />
+        <meta
+          property="og:description"
+          content="Séances d'hypnose à Cenon pour apaiser le stress, clarifier les émotions et retrouver confiance en soi."
+        />
         <meta property="og:image" content="https://methodes-douces-bordeaux.fr/og-image-1200x630.png" />
         <meta property="og:type" content="website" />
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
+        <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 
       <Header />
 
       <main className="pt-20">
-        {/* Hero Section */}
+        {/* HERO */}
         <section className="bg-gradient-to-br from-primary/10 via-background to-secondary/10 py-16 md:py-24">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="flex items-center gap-2 text-primary mb-4">
-                <MapPin className="h-5 w-5" />
-                <span className="text-sm font-medium">Cabinet à Tresses, proche de Cenon</span>
-              </div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
-                Hypnose à Cenon – Un accompagnement en douceur pour apaiser le mental
-              </h1>
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                L'hypnose est une méthode naturelle qui aide à transformer ses réactions, à apaiser les tensions et à retrouver plus de sérénité.
-              </p>
-              <img 
-                src="/og-image-1200x630.png" 
-                alt="Hypnose à Cenon – séance d'hypnose douce et sécurisante"
-                className="w-full rounded-xl shadow-lg mb-8"
-              />
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="flex items-center gap-2 text-primary mb-4">
+              <MapPin className="h-5 w-5" />
+              <span className="text-sm font-medium">Cabinet à Tresses — proche de Cenon</span>
             </div>
-          </div>
-        </section>
 
-        {/* Motifs fréquents */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8">
-                🌿 Motifs fréquents
-              </h2>
-              <ul className="space-y-3 mb-8">
-                {reasons.map((reason, index) => (
-                  <li key={index} className="flex items-center gap-3 text-lg text-muted-foreground">
-                    <reason.icon className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span>{reason.text}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6">
+              Hypnose à Cenon – Une méthode douce pour apaiser votre mental
+            </h1>
 
-        {/* Bienfaits */}
-        <section className="py-16 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8">
-                💡 Bienfaits
-              </h2>
-              <ul className="grid md:grid-cols-2 gap-4">
-                {results.map((result, index) => (
-                  <li key={index} className="flex items-center gap-3 text-lg text-muted-foreground bg-card p-4 rounded-lg border border-border">
-                    <Sparkles className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span>{result}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-16 bg-gradient-to-r from-primary/10 to-secondary/10">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-              👉 En savoir plus
-            </h2>
-            <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-              Découvrez l'accompagnement complet en hypnose et EFT-H.
+            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+              L’hypnose permet de comprendre et transformer en douceur vos réactions émotionnelles. Elle constitue un
+              accompagnement efficace pour apaiser les tensions internes, réduire le stress et restaurer votre équilibre
+              intérieur — sans forcer, sans pression, à votre rythme.
             </p>
+
+            <img
+              src="/og-image-1200x630.png"
+              alt="Hypnose à Cenon – séance d’accompagnement émotionnel"
+              className="w-full rounded-xl shadow-lg mb-8"
+            />
+          </div>
+        </section>
+
+        {/* MOTIFS */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8">
+              🌿 Motifs fréquents de consultation en hypnose à Cenon
+            </h2>
+
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Beaucoup de personnes consultent lorsqu’elles sentent que leur mental tourne « trop vite », qu’une émotion
+              prend trop de place ou qu’un blocage persiste malgré les efforts. L’hypnose offre un espace d’apaisement
+              et de compréhension profonde.
+            </p>
+
+            <ul className="space-y-3 mb-8">
+              {reasons.map((reason, index) => (
+                <li key={index} className="flex items-center gap-3 text-lg text-muted-foreground">
+                  <reason.icon className="h-5 w-5 text-primary" />
+                  <span>{reason.text}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* SÉANCE */}
+        <section className="py-16 bg-muted/30">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8">
+              🎧 Comment se déroule une séance d’hypnose ?
+            </h2>
+
+            <div className="bg-card p-8 rounded-xl border border-border leading-relaxed text-muted-foreground">
+              <p className="mb-4">
+                Une séance est un moment calme et guidé, où vous restez parfaitement conscient. L’état d’hypnose
+                ressemble à une profonde relaxation qui permet d’accéder à des ressources internes habituellement moins
+                disponibles.
+              </p>
+
+              <p className="mb-4">
+                Il ne s’agit pas de “perdre le contrôle”, mais au contraire, d’apprivoiser ce qui vous traverse afin d’y
+                répondre avec plus de sérénité.
+              </p>
+
+              <p>Chaque séance est entièrement personnalisée pour correspondre à votre rythme et votre personnalité.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* RÉSULTATS */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8">
+              💡 Résultats observés grâce à l’hypnose
+            </h2>
+
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Les changements peuvent être progressifs ou rapides selon chacun. Voici ce que les personnes rapportent le
+              plus souvent à l’issue des séances :
+            </p>
+
+            <ul className="grid md:grid-cols-2 gap-4">
+              {results.map((result, index) => (
+                <li
+                  key={index}
+                  className="flex items-center gap-3 text-lg text-muted-foreground bg-card p-4 rounded-lg border border-border"
+                >
+                  <Sparkles className="h-5 w-5 text-primary" />
+                  <span>{result}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="py-16 bg-gradient-to-r from-primary/10 to-secondary/10 text-center">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">👉 En savoir plus sur l’hypnose</h2>
+            <p className="text-muted-foreground mb-8">
+              Découvrez l’approche complète en hypnose et EFT-H proposée au cabinet.
+            </p>
+
             <Button asChild size="lg" className="hover:scale-105 transition-transform">
               <Link to="/hypnose-eft-h">Découvrir l'hypnose</Link>
             </Button>
