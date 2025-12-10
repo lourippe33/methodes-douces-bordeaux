@@ -18,7 +18,7 @@ const BlogAmeliorerSommeil = () => {
     "@type": "Article",
     headline: "Améliorer son Sommeil grâce au Neurofeedback Dynamique",
     description:
-      "Découvrez comment le neurofeedback dynamique aide à retrouver un sommeil profond, stable et réparateur. Solution naturelle contre les réveils nocturnes, l’insomnie et la fatigue chronique.",
+      "Découvrez comment le neurofeedback dynamique aide à retrouver un sommeil profond, stable et réparateur. Solution naturelle contre les réveils nocturnes, l'insomnie et la fatigue chronique.",
     image: "https://methodes-douces-bordeaux.fr/assets/sommeil-reparateur-neurofeedback.jpg",
     author: {
       "@type": "Person",
@@ -46,22 +46,32 @@ const BlogAmeliorerSommeil = () => {
   return (
     <>
       <Helmet>
-        <title>Améliorer son sommeil grâce au Neurofeedback | Sommeil Réparateur à Tresses</title>
+        <title>
+          Améliorer son sommeil grâce au Neurofeedback | Sommeil Réparateur à Tresses
+        </title>
         <meta
           name="description"
           content="Retrouvez un sommeil réparateur grâce au neurofeedback dynamique : moins de réveils nocturnes, endormissement plus rapide, sommeil plus profond. Solution naturelle à Tresses."
         />
-        <link rel="canonical" href="https://methodes-douces-bordeaux.fr/blog/ameliorer-sommeil" />
-        <meta property="og:title" content="Améliorer son sommeil grâce au Neurofeedback" />
+        <link
+          rel="canonical"
+          href="https://methodes-douces-bordeaux.fr/blog/ameliorer-sommeil"
+        />
+        <meta
+          property="og:title"
+          content="Améliorer son sommeil grâce au Neurofeedback"
+        />
         <meta
           property="og:description"
-          content="Le neurofeedback dynamique aide à réduire l’insomnie, les réveils nocturnes et la fatigue chronique."
+          content="Le neurofeedback dynamique aide à réduire l'insomnie, les réveils nocturnes et la fatigue chronique."
         />
         <meta
           property="og:image"
           content="https://methodes-douces-bordeaux.fr/assets/sommeil-reparateur-neurofeedback.jpg"
         />
-        <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -109,8 +119,8 @@ const BlogAmeliorerSommeil = () => {
               </h1>
 
               <p className="text-xl text-primary font-medium mb-8">
-                Nuits agitées, réveils nocturnes, fatigue au réveil ? Le neurofeedback peut vous aider à retrouver des
-                nuits profondes et paisibles.
+                Nuits agitées, réveils nocturnes, fatigue au réveil ?
+                Le neurofeedback peut vous aider à retrouver des nuits profondes et paisibles.
               </p>
             </div>
           </section>
@@ -129,23 +139,25 @@ const BlogAmeliorerSommeil = () => {
           {/* Article */}
           <article className="container mx-auto px-4 pb-16">
             <div className="max-w-4xl mx-auto prose prose-lg prose-slate dark:prose-invert">
+
               <p>
-                Mal dormir ne se résume pas à être fatigué. Lorsque les nuits deviennent trop légères ou instables,
-                c’est tout notre équilibre qui se dérègle : humeur, énergie, concentration, motivations.
+                Mal dormir ne se résume pas à être fatigué.  
+                Lorsque les nuits deviennent trop légères ou instables, c'est tout notre équilibre
+                qui se dérègle : humeur, énergie, concentration, motivations.
               </p>
 
               <p>
-                Le <strong>neurofeedback dynamique</strong> est une méthode douce qui aide le cerveau à retrouver un
-                fonctionnement plus stable. Sans effort, sans médicament, il favorise un sommeil naturellement plus
-                profond et réparateur.
+                Le <strong>neurofeedback dynamique</strong> est une méthode douce qui aide le cerveau
+                à retrouver un fonctionnement plus stable. Sans effort, sans médicament, il favorise
+                un sommeil naturellement plus profond et réparateur.
               </p>
 
-              <h2>Pourquoi votre sommeil n’est-il plus réparateur ?</h2>
+              <h2>Pourquoi votre sommeil n'est-il plus réparateur ?</h2>
 
               <p>Plusieurs signes indiquent un sommeil de mauvaise qualité :</p>
 
               <ul>
-                <li>difficultés d’endormissement</li>
+                <li>difficultés d'endormissement</li>
                 <li>réveils nocturnes fréquents</li>
                 <li>sommeil léger ou agité</li>
                 <li>réveil trop tôt</li>
@@ -154,16 +166,17 @@ const BlogAmeliorerSommeil = () => {
               </ul>
 
               <p>
-                Avec le temps, ces perturbations s’installent et donnent l’impression d’être constamment épuisé, même
-                après une longue nuit.
+                Avec le temps, ces perturbations s'installent et donnent l'impression d'être
+                constamment épuisé, même après une longue nuit.
               </p>
 
               <h2>Comment le neurofeedback aide-t-il à mieux dormir ?</h2>
 
               <p>
-                Le système analyse en temps réel l’activité cérébrale et envoie des micro-signaux sonores lors
-                d’irrégularités. Ces micro-interruptions agissent comme un miroir permettant au cerveau de se
-                réorganiser spontanément.
+                Le système analyse en temps réel l'activité cérébrale et envoie des micro-signaux
+                sonores lors d'irrégularités.  
+                Ces micro-interruptions agissent comme un miroir permettant au cerveau
+                de se réorganiser spontanément.
               </p>
 
               <p>Progressivement, le sommeil devient :</p>
@@ -190,9 +203,10 @@ const BlogAmeliorerSommeil = () => {
               <h2>Une séance : simple, apaisante, naturelle</h2>
 
               <p>
-                Une séance dure **33 minutes**. Vous êtes installé dans un fauteuil, vous écoutez une musique douce, et
-                le système travaille en arrière-plan. Rien n’est envoyé au cerveau : aucune stimulation, aucune
-                sensation.
+                Une séance dure <strong>33 minutes</strong>.  
+                Vous êtes installé dans un fauteuil, vous écoutez une musique douce,  
+                et le système travaille en arrière-plan.  
+                Rien n'est envoyé au cerveau : aucune stimulation, aucune sensation.
               </p>
 
               <h2>Quels résultats attendre ?</h2>
@@ -218,22 +232,26 @@ const BlogAmeliorerSommeil = () => {
               <h2>Une solution naturelle pour des nuits profondes</h2>
 
               <p>
-                Le neurofeedback est une approche douce, moderne et efficace pour retrouver un sommeil réellement
-                réparateur. Une méthode naturelle, respectueuse du fonctionnement du cerveau.
+                Le neurofeedback est une approche douce, moderne et efficace pour retrouver un
+                sommeil réellement réparateur.  
+                Une méthode naturelle, respectueuse du fonctionnement du cerveau.
               </p>
 
               <p className="text-lg font-medium">
                 Pour en savoir plus ou commencer un accompagnement, découvrez notre page{" "}
                 <Link to="/neurofeedback" className="text-primary font-medium">
                   dédiée au neurofeedback
-                </Link>
-                .
+                </Link>.
               </p>
 
               {/* CTA */}
               <div className="mt-12 p-8 text-center bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl">
-                <h3 className="text-xl font-bold mb-4">Envie de retrouver des nuits plus paisibles ?</h3>
-                <p className="text-muted-foreground mb-6">Je vous accueille au cabinet à Tresses, près de Bordeaux.</p>
+                <h3 className="text-xl font-bold mb-4">
+                  Envie de retrouver des nuits plus paisibles ?
+                </h3>
+                <p className="text-muted-foreground mb-6">
+                  Je vous accueille au cabinet à Tresses, près de Bordeaux.
+                </p>
                 <Button asChild size="lg" className="hover:scale-105 transition-transform">
                   <Link to="/neurofeedback">Découvrir le neurofeedback</Link>
                 </Button>
