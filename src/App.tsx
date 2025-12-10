@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import HypnoseEftH from "./pages/HypnoseEftH";
 import Neurofeedback from "./pages/Neurofeedback";
 import Blog from "./pages/Blog";
+import BlogSommeilNeurofeedback from "./pages/BlogSommeilNeurofeedback";
 import About from "./pages/About";
 import Programme28Jours from "./pages/Programme28Jours";
 import MentionsLegales from "./pages/MentionsLegales";
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/hypnose-eft-h" element={<HypnoseEftH />} />
           <Route path="/neurofeedback" element={<Neurofeedback />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/neurofeedback-sommeil-reparateur" element={<BlogSommeilNeurofeedback />} />
           <Route path="/blog/:slug" element={<Blog />} />
           <Route path="/a-propos" element={<About />} />
           <Route path="/programme-28-jours" element={<Programme28Jours />} />
