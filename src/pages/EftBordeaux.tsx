@@ -57,7 +57,7 @@ const EftBordeaux = () => {
     "Libération émotionnelle",
     "Sensation de légèreté intérieure",
     "Apaisement rapide du stress",
-    "Retour d’un sentiment de contrôle",
+    "Retour d'un sentiment de contrôle",
   ];
 
   return (
@@ -69,12 +69,18 @@ const EftBordeaux = () => {
           content="EFT à Bordeaux : une méthode douce pour libérer les émotions, réduire le stress et retrouver un apaisement profond. Séances à Tresses, proche Bordeaux."
         />
         <link rel="canonical" href="https://methodes-douces-bordeaux.fr/eft-bordeaux" />
-        <meta property="og:title" content="EFT Bordeaux | Libération émotionnelle & gestion du stress" />
+        <meta
+          property="og:title"
+          content="EFT Bordeaux | Libération émotionnelle & gestion du stress"
+        />
         <meta
           property="og:description"
           content="Découvrez l'EFT à Bordeaux : libération émotionnelle, stress, blocages et surcharge mentale. Une méthode efficace et accessible."
         />
-        <meta property="og:image" content="https://methodes-douces-bordeaux.fr/og-image-1200x630.png" />
+        <meta
+          property="og:image"
+          content="https://methodes-douces-bordeaux.fr/og-image-1200x630.png"
+        />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 
@@ -87,22 +93,26 @@ const EftBordeaux = () => {
             <div className="max-w-4xl mx-auto">
               <div className="flex items-center gap-2 text-primary mb-4">
                 <MapPin className="h-5 w-5" />
-                <span className="text-sm font-medium">Cabinet à Tresses — à 10 min de Bordeaux</span>
+                <span className="text-sm font-medium">
+                  Cabinet à Tresses — à 10 min de Bordeaux
+                </span>
               </div>
 
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
-                EFT à Bordeaux — Une méthode simple, douce et puissante pour libérer vos émotions
+                EFT à Bordeaux — Une méthode simple, douce et puissante pour libérer vos
+                émotions
               </h1>
 
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                L’EFT (Emotional Freedom Techniques) est une technique de libération émotionnelle accessible à tous.
-                Elle aide à diminuer l’intensité du stress, des pensées envahissantes et des blocages, tout en
-                favorisant un apaisement profond.
+                L'EFT (Emotional Freedom Techniques) est une technique de libération
+                émotionnelle accessible à tous. Elle aide à diminuer l'intensité du stress,
+                des pensées envahissantes et des blocages, tout en favorisant un
+                apaisement profond.
               </p>
 
               <img
                 src="/og-image-1200x630.png"
-                alt="Séance d’EFT à Bordeaux – libération émotionnelle"
+                alt="Séance d'EFT à Bordeaux – libération émotionnelle"
                 className="w-full rounded-xl shadow-lg mb-8"
               />
             </div>
@@ -112,17 +122,23 @@ const EftBordeaux = () => {
         {/* POURQUOI ESSAYER */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8">🌿 Pourquoi essayer l’EFT à Bordeaux ?</h2>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8">
+              🌿 Pourquoi essayer l'EFT à Bordeaux ?
+            </h2>
 
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Que vous traversiez une période de stress intense, une surcharge émotionnelle ou un blocage récurrent,
-              l’EFT offre un soutien concret et immédiat. C’est une approche douce, sans douleur et sans risque, qui
-              agit directement sur le système nerveux.
+              Que vous traversiez une période de stress intense, une surcharge émotionnelle
+              ou un blocage récurrent, l'EFT offre un soutien concret et immédiat. C'est
+              une approche douce, sans douleur et sans risque, qui agit directement sur le
+              système nerveux.
             </p>
 
             <ul className="space-y-4">
               {reasons.map((reason, index) => (
-                <li key={index} className="flex items-center gap-3 text-lg text-muted-foreground">
+                <li
+                  key={index}
+                  className="flex items-center gap-3 text-lg text-muted-foreground"
+                >
                   <reason.icon className="h-5 w-5 text-primary flex-shrink-0" />
                   <span>{reason.text}</span>
                 </li>
@@ -139,8 +155,9 @@ const EftBordeaux = () => {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Dès les premières séances, beaucoup de personnes ressentent un apaisement notable et une diminution des
-              tensions internes. Avec la pratique, l’EFT permet d’aller plus loin en libérant les émotions bloquées.
+              Dès les premières séances, beaucoup de personnes ressentent un apaisement
+              notable et une diminution des tensions internes. Avec la pratique, l'EFT
+              permet d'aller plus loin en libérant les émotions bloquées.
             </p>
 
             <ul className="grid md:grid-cols-2 gap-4">
@@ -164,11 +181,12 @@ const EftBordeaux = () => {
               👉 En savoir plus sur l'accompagnement EFT-H
             </h2>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              L’EFT fait partie intégrante de l’accompagnement global EFT-H et Hypnose. Une approche complète pour
-              apaiser le mental, libérer les émotions et retrouver un équilibre durable.
+              L'EFT fait partie intégrante de l'accompagnement global EFT-H et Hypnose.
+              Une approche complète pour apaiser le mental, libérer les émotions et
+              retrouver un équilibre durable.
             </p>
             <Button asChild size="lg" className="hover:scale-105 transition-transform">
-              <Link to="/hypnose-eft-h">Découvrir l’EFT-H</Link>
+              <Link to="/hypnose-eft-h">Découvrir l'EFT-H</Link>
             </Button>
           </div>
         </section>
