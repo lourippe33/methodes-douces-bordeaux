@@ -27,11 +27,11 @@ const Neurofeedback = () => {
     }
     const canonicalLink = document.querySelector('link[rel="canonical"]');
     if (canonicalLink) {
-      canonicalLink.setAttribute("href", "https://www.ericgata.fr/neurofeedback");
+      canonicalLink.setAttribute("href", "https://methodes-douces-bordeaux.fr/neurofeedback");
     } else {
       const newCanonical = document.createElement('link');
       newCanonical.rel = 'canonical';
-      newCanonical.href = 'https://www.ericgata.fr/neurofeedback';
+      newCanonical.href = 'https://methodes-douces-bordeaux.fr/neurofeedback';
       document.head.appendChild(newCanonical);
     }
 
@@ -41,7 +41,7 @@ const Neurofeedback = () => {
       "@type": "VideoObject",
       "name": "Explication du Neurofeedback Dynamique",
       "description": "Découvrez le fonctionnement du neurofeedback dynamique, une méthode naturelle pour gérer le stress, améliorer le sommeil et la concentration à Tresses près de Bordeaux.",
-      "thumbnailUrl": "https://www.ericgata.fr/og-image-1200x630.png",
+      "thumbnailUrl": "https://methodes-douces-bordeaux.fr/og-image-1200x630.png",
       "uploadDate": "2024-01-01",
       "contentUrl": "https://player.vimeo.com/video/1142362792",
       "embedUrl": "https://player.vimeo.com/video/1142362792?h=36874df46f"
@@ -359,7 +359,7 @@ const Neurofeedback = () => {
                     </CardTitle>
                     <img 
                       src={ericPhoto} 
-                      alt="Eric GATA praticien neurofeedback" 
+                      alt="Eric GATA praticien neurofeedback à Tresses près de Bordeaux" 
                       className="w-16 h-16 rounded-full object-cover"
                     />
                   </div>
@@ -418,7 +418,7 @@ const Neurofeedback = () => {
                     </CardTitle>
                     <img 
                       src={sylviaPhoto} 
-                      alt="Sylvia RUI praticienne neurofeedback" 
+                      alt="Sylvia RUI praticienne neurofeedback à Tresses près de Bordeaux" 
                       className="w-16 h-16 rounded-full object-cover"
                     />
                   </div>

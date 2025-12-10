@@ -164,7 +164,7 @@ const BlogBurnOut = () => {
             <div className="max-w-4xl mx-auto overflow-hidden rounded-xl shadow-lg">
               <img
                 src={burnoutImage}
-                alt="Illustration du burn-out et du neurofeedback NeurOptimal"
+                alt="Neurofeedback burn-out épuisement professionnel Tresses Bordeaux"
                 className="w-full h-auto transition-transform duration-300 hover:scale-105"
               />
             </div>

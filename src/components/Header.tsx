@@ -51,7 +51,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3 cursor-pointer" onClick={handleLogoClick}>
-            <img src={logo} alt="Logo AGP accompagnement bien-être" className="h-12 w-auto" width="48" height="48" loading="lazy" />
+            <img src={logo} alt="Logo AGP cabinet bien-être Tresses Bordeaux" className="h-12 w-auto" width="48" height="48" loading="lazy" />
           </div>
 
           {/* Desktop Navigation */}
