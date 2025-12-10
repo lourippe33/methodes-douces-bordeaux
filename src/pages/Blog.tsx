@@ -7,6 +7,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar } from "lucide-react";
 
+// Import images
+import sommeilReparateurImg from "@/assets/sommeil-reparateur-neurofeedback.jpg";
+import ameliorerSommeilImg from "@/assets/ameliorer-sommeil-neuroptimal.jpg";
+import stressTravailImg from "@/assets/stress-travail-neurofeedback.jpg";
+import gestionStressImg from "@/assets/gestion-stress-angoisses.png";
+import burnOutImg from "@/assets/neurofeedback-burn-out.png";
+
 const Blog = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,38 +28,48 @@ const Blog = () => {
   const articles = [
     {
       slug: "neurofeedback-sommeil-reparateur",
-      title: "Retrouver un Sommeil Réparateur avec le Neurofeedback",
+      title: "Retrouver un Sommeil Réparateur avec le Neurofeedback Dynamique",
       excerpt: "Fatigue persistante, concentration difficile, émotions instables ? Découvrez comment le neurofeedback dynamique peut vous aider à retrouver un sommeil de qualité.",
       date: "Mars 2025",
-      category: "Sommeil"
+      category: "Sommeil",
+      image: sommeilReparateurImg,
+      imageAlt: "Améliorer le sommeil avec le neurofeedback dynamique"
     },
     {
       slug: "ameliorer-sommeil-neuroptimal",
-      title: "Améliorer le Sommeil grâce au Neurofeedback",
+      title: "Améliorer le Sommeil grâce au Neurofeedback NeurOptimal",
       excerpt: "Le neurofeedback NeurOptimal est une méthode naturelle non invasive qui aide votre cerveau à s'autoréguler pour un sommeil réparateur.",
       date: "Janvier 2025",
-      category: "Sommeil"
+      category: "Sommeil",
+      image: ameliorerSommeilImg,
+      imageAlt: "Améliorer le sommeil naturellement avec le neurofeedback"
     },
     {
       slug: "stress-travail-neurofeedback",
-      title: "Réduire le Stress au Travail avec le Neurofeedback",
+      title: "Réduire le Stress au Travail avec le Neurofeedback Dynamique",
       excerpt: "Entre échéances, responsabilités et attentes, le stress professionnel impacte votre bien-être. Découvrez comment le neurofeedback peut vous aider.",
       date: "Novembre 2024",
-      category: "Stress"
+      category: "Stress",
+      image: stressTravailImg,
+      imageAlt: "Stress au travail - solutions avec le neurofeedback"
     },
     {
       slug: "gestion-stress-angoisses",
       title: "Gestion du Stress et des Angoisses",
       excerpt: "La gestion du stress est devenue une préoccupation majeure. Découvrez comment retrouver votre équilibre avec des méthodes naturelles.",
       date: "Octobre 2024",
-      category: "Stress"
+      category: "Stress",
+      image: gestionStressImg,
+      imageAlt: "Gestion du stress et des angoisses"
     },
     {
       slug: "neurofeedback-burn-out",
       title: "Le Neurofeedback face au Burn-out",
       excerpt: "Le burn-out est un épuisement profond. Découvrez comment le neurofeedback dynamique peut accompagner votre chemin vers la récupération.",
       date: "Septembre 2024",
-      category: "Bien-être"
+      category: "Bien-être",
+      image: burnOutImg,
+      imageAlt: "Burn out - un cadeau mal emballé"
     }
   ];
 
@@ -84,22 +101,36 @@ const Blog = () => {
 
         {/* Articles Grid */}
         <section className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {articles.map((article, index) => (
-              <Card key={index} className="group hover:shadow-warm transition-all duration-500 hover:-translate-y-1">
-                <CardHeader>
+              <Card key={index} className="group hover:shadow-warm transition-all duration-500 hover:-translate-y-1 overflow-hidden">
+                {/* Image Thumbnail */}
+                <Link to={`/blog/${article.slug}`} className="block overflow-hidden">
+                  <div className="aspect-video overflow-hidden">
+                    <img 
+                      src={article.image} 
+                      alt={article.imageAlt}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                  </div>
+                </Link>
+                
+                <CardHeader className="pb-2">
                   <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
                     <Calendar size={16} />
                     <span>{article.date}</span>
                     <span>•</span>
-                    <span className="text-primary">{article.category}</span>
+                    <span className="text-primary font-medium">{article.category}</span>
                   </div>
-                  <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                    {article.title}
+                  <CardTitle className="text-xl group-hover:text-primary transition-colors line-clamp-2">
+                    <Link to={`/blog/${article.slug}`}>
+                      {article.title}
+                    </Link>
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <CardDescription className="text-base">
+                  <CardDescription className="text-base line-clamp-3">
                     {article.excerpt}
                   </CardDescription>
                   <Button 
