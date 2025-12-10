@@ -77,31 +77,35 @@ const BlogBurnOut = () => {
           </div>
 
           {/* HERO */}
-          <section className="container mx-auto px-4 pb-10">
+          <section className="container mx-auto px-4 pb-12">
             <div className="max-w-4xl mx-auto">
-              <Button variant="ghost" asChild className="mb-6">
+              <Button variant="ghost" asChild className="mb-6 hover:bg-primary/10">
                 <Link to="/blog">
-                  <ArrowLeft size={16} className="mr-2" /> Retour au blog
+                  <ArrowLeft size={16} className="mr-2" />
+                  Retour au blog
                 </Link>
               </Button>
 
               <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
                 <div className="flex items-center gap-2">
-                  <Calendar size={16} /> <span>Mars 2025</span>
+                  <Calendar size={16} />
+                  <span>Mars 2025</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Clock size={16} /> <span>8 min de lecture</span>
+                  <Clock size={16} />
+                  <span>8 min de lecture</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <User size={16} /> <span>Eric Gata</span>
+                  <User size={16} />
+                  <span>Eric Gata</span>
                 </div>
               </div>
 
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
                 Burn-out : Comprendre, Respirer, Se Reconstruire avec le Neurofeedback NeurOptimal
               </h1>
 
-              <p className="text-xl text-primary font-medium">
+              <p className="text-xl text-primary font-medium mb-8">
                 Une méthode douce pour soulager la surcharge mentale, la fatigue profonde et retrouver un nouvel élan.
               </p>
             </div>
@@ -119,100 +123,124 @@ const BlogBurnOut = () => {
           </section>
 
           {/* ARTICLE */}
-          <article className="container mx-auto px-4 pb-20">
+          <article className="container mx-auto px-4 pb-16">
             <div className="max-w-4xl mx-auto prose prose-lg prose-slate dark:prose-invert">
-              <p>
-                Le burn-out n’arrive jamais d’un coup. Il s’installe lentement, dans le silence, jusqu’à vider
-                l’énergie, la motivation et la capacité à faire face. On se sent alors épuisé, dépassé, parfois même
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Le burn-out n'arrive jamais d'un coup. Il s'installe lentement, dans le silence, jusqu'à vider
+                l'énergie, la motivation et la capacité à faire face. On se sent alors épuisé, dépassé, parfois même
                 déconnecté de soi.
               </p>
 
-              <p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 Le <strong>neurofeedback NeurOptimal</strong> offre une approche naturelle et apaisante pour accompagner
                 ce processus de reconstruction. Sans effort, sans stimulation, il aide le système nerveux à retrouver un
                 fonctionnement plus stable.
               </p>
 
-              <h2>Reconnaître les signes du burn-out</h2>
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mt-12 mb-6">
+                Reconnaître les signes du burn-out
+              </h2>
 
-              <p>Ils varient d’une personne à l’autre, mais reviennent souvent :</p>
-
-              <ul>
-                <li>fatigue profonde, même après le repos</li>
-                <li>perte de motivation, sentiment d’être vidé</li>
-                <li>difficultés de concentration</li>
-                <li>émotions instables ou amplification du stress</li>
-                <li>tensions physiques, migraines, douleurs diffuses</li>
-                <li>sommeil perturbé, réveils fréquents</li>
-              </ul>
-
-              <p>
-                Quand le corps et l’esprit n’arrivent plus à suivre, c’est souvent le signe que les capacités
-                d’adaptation sont dépassées.
+              <p className="text-muted-foreground leading-relaxed">
+                Ils varient d'une personne à l'autre, mais reviennent souvent :
               </p>
 
-              <h2>Comment NeurOptimal accompagne les personnes en burn-out ?</h2>
+              <ul className="space-y-3 text-muted-foreground">
+                <li>Fatigue profonde, même après le repos</li>
+                <li>Perte de motivation, sentiment d'être vidé</li>
+                <li>Difficultés de concentration</li>
+                <li>Émotions instables ou amplification du stress</li>
+                <li>Tensions physiques, migraines, douleurs diffuses</li>
+                <li>Sommeil perturbé, réveils fréquents</li>
+              </ul>
 
-              <p>
-                NeurOptimal observe l’activité cérébrale et signale au système nerveux chaque irrégularité. À ce moment
-                précis, le cerveau se « réorganise », comme s’il se recalait sur un mode de fonctionnement plus adapté.
+              <p className="text-muted-foreground leading-relaxed">
+                Quand le corps et l'esprit n'arrivent plus à suivre, c'est souvent le signe que les capacités
+                d'adaptation sont dépassées.
               </p>
 
-              <p>Résultat : une sensation d’apaisement progressive.</p>
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mt-12 mb-6">
+                Comment NeurOptimal accompagne les personnes en burn-out ?
+              </h2>
 
-              <h2>Les bienfaits observés</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                NeurOptimal observe l'activité cérébrale et signale au système nerveux chaque irrégularité. À ce moment
+                précis, le cerveau se « réorganise », comme s'il se recalait sur un mode de fonctionnement plus adapté.
+              </p>
 
-              <ul>
-                <li>diminution du stress et des tensions</li>
-                <li>meilleur sommeil, moins de réveils nocturnes</li>
-                <li>retour progressif de l’énergie</li>
-                <li>clarté mentale retrouvée</li>
-                <li>plus de stabilité émotionnelle</li>
-                <li>meilleure capacité à faire face au quotidien</li>
+              <p className="text-muted-foreground leading-relaxed">
+                Résultat : une sensation d'apaisement progressive.
+              </p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mt-12 mb-6">
+                Les bienfaits observés
+              </h2>
+
+              <ul className="space-y-3 text-muted-foreground">
+                <li><strong>Diminution du stress</strong> et des tensions</li>
+                <li><strong>Meilleur sommeil</strong>, moins de réveils nocturnes</li>
+                <li><strong>Retour progressif de l'énergie</strong></li>
+                <li><strong>Clarté mentale retrouvée</strong></li>
+                <li><strong>Plus de stabilité émotionnelle</strong></li>
+                <li><strong>Meilleure capacité</strong> à faire face au quotidien</li>
               </ul>
 
-              <h2>Pour qui NeurOptimal est-il particulièrement utile ?</h2>
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mt-12 mb-6">
+                Pour qui NeurOptimal est-il particulièrement utile ?
+              </h2>
 
-              <p>Il peut aider si vous :</p>
+              <p className="text-muted-foreground leading-relaxed">
+                Il peut aider si vous :
+              </p>
 
-              <ul>
-                <li>vous sentez submergé ou mentalement épuisé</li>
-                <li>n’arrivez plus à récupérer</li>
-                <li>êtes irritable, à fleur de peau</li>
-                <li>travaillez dans un environnement très stressant</li>
-                <li>avez perdu votre motivation</li>
+              <ul className="space-y-3 text-muted-foreground">
+                <li>Vous sentez submergé ou mentalement épuisé</li>
+                <li>N'arrivez plus à récupérer</li>
+                <li>Êtes irritable, à fleur de peau</li>
+                <li>Travaillez dans un environnement très stressant</li>
+                <li>Avez perdu votre motivation</li>
               </ul>
 
-              <h2>Comment se déroule une séance ?</h2>
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mt-12 mb-6">
+                Comment se déroule une séance ?
+              </h2>
 
-              <p>
+              <p className="text-muted-foreground leading-relaxed">
                 Une séance dure <strong>33 minutes</strong>. Vous êtes installé confortablement, casque audio sur les
                 oreilles. Vous écoutez une musique pendant que le système observe votre activité cérébrale.
               </p>
 
-              <p>Rien n’est imposé. Aucune stimulation. Le cerveau s’ajuste simplement grâce à l’information reçue.</p>
+              <p className="text-muted-foreground leading-relaxed">
+                Rien n'est imposé. Aucune stimulation. Le cerveau s'ajuste simplement grâce à l'information reçue.
+              </p>
 
-              <h2>Quels résultats attendre ?</h2>
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mt-12 mb-6">
+                Quels résultats attendre ?
+              </h2>
 
-              <p>Les changements peuvent être subtils au début, puis s’installer :</p>
+              <p className="text-muted-foreground leading-relaxed">
+                Les changements peuvent être subtils au début, puis s'installer :
+              </p>
 
-              <ul>
-                <li>moins de pression interne</li>
-                <li>meilleure gestion du stress</li>
-                <li>capacités de concentration qui reviennent</li>
-                <li>sommeil plus profond</li>
-                <li>sentiment de reprendre le contrôle</li>
+              <ul className="space-y-3 text-muted-foreground">
+                <li>Moins de pression interne</li>
+                <li>Meilleure gestion du stress</li>
+                <li>Capacités de concentration qui reviennent</li>
+                <li>Sommeil plus profond</li>
+                <li>Sentiment de reprendre le contrôle</li>
               </ul>
 
-              <h2>Un soutien naturel, sans effort</h2>
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mt-12 mb-6">
+                Un soutien naturel, sans effort
+              </h2>
 
-              <p>
-                NeurOptimal ne remplace pas un accompagnement médical si nécessaire, mais c’est un outil précieux pour
+              <p className="text-muted-foreground leading-relaxed">
+                NeurOptimal ne remplace pas un accompagnement médical si nécessaire, mais c'est un outil précieux pour
                 retrouver un équilibre intérieur solide et des ressources émotionnelles plus stables.
               </p>
 
-              <p className="text-lg font-semibold">
-                Le burn-out n’est pas une fin : c’est souvent le début d’une reconstruction. NeurOptimal peut vous
+              <p className="text-lg font-medium text-foreground">
+                Le burn-out n'est pas une fin : c'est souvent le début d'une reconstruction. NeurOptimal peut vous
                 accompagner sur ce chemin.
               </p>
 
