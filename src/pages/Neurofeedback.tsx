@@ -42,7 +42,7 @@ const Neurofeedback = () => {
       "name": "Explication du Neurofeedback Dynamique",
       "description": "Découvrez le fonctionnement du neurofeedback dynamique, une méthode naturelle pour gérer le stress, améliorer le sommeil et la concentration à Tresses près de Bordeaux.",
       "thumbnailUrl": "https://methodes-douces-bordeaux.fr/og-image-1200x630.png",
-      "uploadDate": "2024-01-01",
+      "uploadDate": "2024-01-01T09:00:00+01:00",
       "contentUrl": "https://player.vimeo.com/video/1142362792",
       "embedUrl": "https://player.vimeo.com/video/1142362792?h=36874df46f"
     };
