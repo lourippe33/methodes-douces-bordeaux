@@ -9,13 +9,13 @@ const HypnoseBordeaux = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "Méthodes Douces Bordeaux",
+    name: "AGP – Méthodes douces & Neurofeedback",
     description:
       "Hypnose à Bordeaux : séances professionnelles pour réduire le stress, apaiser les émotions, dépasser les peurs et retrouver confiance en soi.",
-    image: "https://methodes-douces-bordeaux.fr/og-image-1200x630.png",
+    image: "https://methodes-douces-bordeaux.fr/og-agp-1200x630.jpg",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "8 avenue de la Gardette",
+      streetAddress: "9 Galerie Marchande",
       addressLocality: "Tresses",
       postalCode: "33370",
       addressRegion: "Gironde",
@@ -26,7 +26,7 @@ const HypnoseBordeaux = () => {
       latitude: 44.8637,
       longitude: -0.4837,
     },
-    telephone: "+33 6 64 87 30 56",
+    telephone: "+33 7 82 38 66 21",
     url: "https://methodes-douces-bordeaux.fr/hypnose-bordeaux",
     areaServed: [
       { "@type": "City", name: "Bordeaux" },
@@ -67,7 +67,7 @@ const HypnoseBordeaux = () => {
           property="og:description"
           content="Séances d’hypnose à Bordeaux pour apaiser le stress, dépasser les blocages et retrouver confiance en soi."
         />
-        <meta property="og:image" content="https://methodes-douces-bordeaux.fr/og-image-1200x630.png" />
+        <meta property="og:image" content="https://methodes-douces-bordeaux.fr/og-agp-1200x630.jpg" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
