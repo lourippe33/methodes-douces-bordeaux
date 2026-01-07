@@ -402,7 +402,7 @@ const Neurofeedback = () => {
                     data-thrivecart-account="ericgata" 
                     data-thrivecart-tpl="v2" 
                     data-thrivecart-product="3" 
-                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 h-11 px-8 w-full bg-primary text-white hover:bg-primary/90 hover:scale-105 transition-transform cursor-pointer"
+                    className="thrivecart-button inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 h-11 px-8 w-full bg-primary text-white hover:bg-primary/90 hover:scale-105 transition-transform cursor-pointer"
                   >
                     Neuro paiement en ligne avec Eric
                   </a>
