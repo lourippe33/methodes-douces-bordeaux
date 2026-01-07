@@ -62,7 +62,7 @@ const Footer = () => {
               <div className="flex items-center gap-2 mt-4">
                 <ExternalLink className="h-4 w-4 flex-shrink-0 text-primary" />
                 <a 
-                  href="https://g.co/kgs/placeholder" 
+                  href="https://share.google/Fplupp8bDIzNgaPJo" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors text-sm"
