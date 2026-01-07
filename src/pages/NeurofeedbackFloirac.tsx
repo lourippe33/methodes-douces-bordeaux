@@ -99,7 +99,7 @@ const NeurofeedbackFloirac = () => {
               </p>
               <img 
                 src="/hero-image.jpg" 
-                alt="Neurofeedback à Floirac – équilibre émotionnel et sommeil réparateur"
+                alt="Cabinet AGP neurofeedback Floirac Bordeaux Cenon – méthodes douces en Gironde"
                 className="w-full rounded-xl shadow-lg mb-8"
               />
             </div>

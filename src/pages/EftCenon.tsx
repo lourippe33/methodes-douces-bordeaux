@@ -72,7 +72,7 @@ const EftCenon = () => {
         <meta property="og:title" content="EFT Cenon | Libération émotionnelle & apaisement du stress" />
         <meta
           property="og:description"
-          content="Découvrez l’EFT à Cenon : une méthode efficace pour calmer le mental, réduire le stress et retrouver un apaisement durable."
+          content="Découvrez l'EFT à Cenon : une méthode efficace pour calmer le mental, réduire le stress et retrouver un apaisement durable."
         />
         <meta property="og:image" content="https://methodes-douces-bordeaux.fr/og-image-1200x630.png" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
@@ -94,14 +94,14 @@ const EftCenon = () => {
             </h1>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              L’EFT est une approche de libération émotionnelle reconnue pour réduire la charge mentale, calmer les
-              pensées envahissantes et diminuer l’impact du stress sur le quotidien. Une méthode accessible, naturelle
+              L'EFT est une approche de libération émotionnelle reconnue pour réduire la charge mentale, calmer les
+              pensées envahissantes et diminuer l'impact du stress sur le quotidien. Une méthode accessible, naturelle
               et efficace.
             </p>
 
             <img
               src="/hero-image.jpg"
-              alt="Séance d’EFT à Cenon — apaisement émotionnel et tapping"
+              alt="Cabinet AGP EFT Cenon Bordeaux Floirac – méthodes douces et neurofeedback en Gironde"
               className="w-full rounded-xl shadow-lg mb-8"
             />
           </div>
@@ -110,11 +110,11 @@ const EftCenon = () => {
         {/* POURQUOI CONSULTER */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8">🌿 Quand l’EFT peut-elle vous aider ?</h2>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8">🌿 Quand l'EFT peut-elle vous aider ?</h2>
 
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Beaucoup de personnes venant de Cenon consultent pour retrouver de la stabilité émotionnelle. L’EFT aide
-              le système nerveux à se réguler et permet d’apaiser ce qui pèse intérieurement.
+              Beaucoup de personnes venant de Cenon consultent pour retrouver de la stabilité émotionnelle. L'EFT aide
+              le système nerveux à se réguler et permet d'apaiser ce qui pèse intérieurement.
             </p>
 
             <ul className="space-y-4 mb-8">
@@ -131,11 +131,11 @@ const EftCenon = () => {
         {/* BIENFAITS */}
         <section className="py-16 bg-muted/30">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8">💡 Les bienfaits ressentis avec l’EFT</h2>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8">💡 Les bienfaits ressentis avec l'EFT</h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Grâce à la stimulation douce de points énergétiques, l’EFT agit directement sur le stress, les émotions
-              bloquées et les automatismes mentaux. C’est une méthode douce, respectueuse et adaptée à tous.
+              Grâce à la stimulation douce de points énergétiques, l'EFT agit directement sur le stress, les émotions
+              bloquées et les automatismes mentaux. C'est une méthode douce, respectueuse et adaptée à tous.
             </p>
 
             <ul className="grid md:grid-cols-2 gap-4">
@@ -156,14 +156,14 @@ const EftCenon = () => {
         <section className="py-16 bg-gradient-to-r from-primary/10 to-secondary/10">
           <div className="container mx-auto px-4 text-center max-w-3xl">
             <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-              👉 En savoir plus sur l’accompagnement EFT-H
+              👉 En savoir plus sur l'accompagnement EFT-H
             </h2>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              L’EFT fait partie de l’accompagnement EFT-H : une approche complète pour apaiser le mental, libérer les
+              L'EFT fait partie de l'accompagnement EFT-H : une approche complète pour apaiser le mental, libérer les
               émotions et retrouver un véritable équilibre intérieur.
             </p>
             <Button asChild size="lg" className="hover:scale-105 transition-transform">
-              <Link to="/hypnose-eft-h">Découvrir l’EFT-H</Link>
+              <Link to="/hypnose-eft-h">Découvrir l'EFT-H</Link>
             </Button>
           </div>
         </section>

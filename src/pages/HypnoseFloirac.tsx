@@ -92,7 +92,7 @@ const HypnoseFloirac = () => {
 
             <img
               src="/hero-image.jpg"
-              alt="Hypnose à Floirac – séance d'accompagnement émotionnel"
+              alt="Cabinet AGP hypnose Floirac Bordeaux Cenon – méthodes douces et neurofeedback en Gironde"
               className="w-full rounded-xl shadow-lg mb-8"
             />
           </div>
