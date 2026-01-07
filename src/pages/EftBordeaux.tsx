@@ -111,7 +111,7 @@ const EftBordeaux = () => {
               </p>
 
               <img
-                src="/og-image-1200x630.png"
+                src="/hero-image.jpg"
                 alt="Séance d'EFT à Bordeaux – libération émotionnelle"
                 className="w-full rounded-xl shadow-lg mb-8"
               />

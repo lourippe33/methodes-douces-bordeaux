@@ -98,7 +98,7 @@ const NeurofeedbackFloirac = () => {
                 Le neurofeedback à Floirac aide les personnes stressées, fatiguées ou en surcharge mentale à retrouver un meilleur équilibre.
               </p>
               <img 
-                src="/og-image-1200x630.png" 
+                src="/hero-image.jpg" 
                 alt="Neurofeedback à Floirac – équilibre émotionnel et sommeil réparateur"
                 className="w-full rounded-xl shadow-lg mb-8"
               />

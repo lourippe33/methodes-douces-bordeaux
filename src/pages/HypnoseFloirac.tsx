@@ -91,7 +91,7 @@ const HypnoseFloirac = () => {
             </p>
 
             <img
-              src="/og-image-1200x630.png"
+              src="/hero-image.jpg"
               alt="Hypnose à Floirac – séance d'accompagnement émotionnel"
               className="w-full rounded-xl shadow-lg mb-8"
             />
