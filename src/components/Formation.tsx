@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { GraduationCap, Users, Video, Award } from "lucide-react";
-import logo from "@/assets/logo-agp.png";
+import agpBanner from "@/assets/agp-banner.jpg";
 import formationImage from "@/assets/formation-hands.jpg";
 
 const Formation = () => {
@@ -25,14 +25,15 @@ const Formation = () => {
 
           {/* Main Card */}
           <Card className="border-0 shadow-strong overflow-hidden bg-card/80 backdrop-blur-sm">
-            <div className="bg-gradient-hero p-8 text-white text-center">
-              <img src={logo} alt="Logo AGP accompagnement bien-être" className="h-20 w-auto mx-auto mb-4 bg-white/90 rounded-xl p-2" width="80" height="80" loading="lazy" />
-              <h3 className="text-3xl font-heading font-bold mb-2">
-                Devenez un pro de la gestion du poids !
-              </h3>
-              <div className="inline-block bg-white/20 backdrop-blur-sm px-6 py-2 rounded-full mt-4">
-                <p className="text-lg font-semibold">Maitrisez vos accompagnements !</p>
-              </div>
+            <div className="relative overflow-hidden rounded-t-lg">
+              <img 
+                src={agpBanner} 
+                alt="AGP - Méthodes douces & Neurofeedback - Accompagnement bien-être global" 
+                className="w-full h-auto object-cover"
+                width="1200"
+                height="600"
+                loading="lazy"
+              />
             </div>
 
             <CardHeader className="text-center pb-4">
