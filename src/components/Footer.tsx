@@ -60,6 +60,17 @@ const Footer = () => {
                 </a>
               </div>
               <div className="flex items-center gap-2 mt-4">
+                <MapPin className="h-4 w-4 flex-shrink-0 text-primary" />
+                <a 
+                  href="https://www.google.com/maps/dir//9+Gal+Marchande,+33370+Tresses" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors text-sm"
+                >
+                  Itinéraire Google Maps
+                </a>
+              </div>
+              <div className="flex items-center gap-2 mt-2">
                 <ExternalLink className="h-4 w-4 flex-shrink-0 text-primary" />
                 <a 
                   href="https://share.google/Fplupp8bDIzNgaPJo" 
@@ -67,7 +78,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors text-sm"
                 >
-                  Voir sur Google Maps
+                  Fiche Google Business
                 </a>
               </div>
             </div>
