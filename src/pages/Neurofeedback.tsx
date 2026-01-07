@@ -12,7 +12,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Brain, Heart, Moon, Zap, CheckCircle, Phone } from "lucide-react";
+import { Brain, Heart, Moon, Zap, CheckCircle, Phone, CreditCard } from "lucide-react";
 import ericPhoto from "@/assets/eric-gata-portrait.png";
 import sylviaPhoto from "@/assets/sylvia-rui-portrait.png";
 const Neurofeedback = () => {
@@ -404,6 +404,7 @@ const Neurofeedback = () => {
                     data-thrivecart-product="3" 
                     className="thrivecart-button inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 h-11 px-8 w-full bg-primary text-white hover:bg-primary/90 hover:scale-105 transition-transform cursor-pointer"
                   >
+                    <CreditCard className="size-4" />
                     Neuro paiement en ligne avec Eric
                   </a>
                 </CardContent>
