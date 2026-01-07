@@ -111,7 +111,7 @@ const EftBordeaux = () => {
               </p>
 
               <img
-                src="/hero-image.jpg"
+                src="/images/agp-hero-2026-01-07.jpg"
                 alt="Cabinet AGP EFT Bordeaux Cenon Floirac – méthodes douces et neurofeedback en Gironde"
                 className="w-full rounded-xl shadow-lg mb-8"
               />

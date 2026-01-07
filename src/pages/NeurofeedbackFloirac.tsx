@@ -98,7 +98,7 @@ const NeurofeedbackFloirac = () => {
                 Le neurofeedback à Floirac aide les personnes stressées, fatiguées ou en surcharge mentale à retrouver un meilleur équilibre.
               </p>
               <img 
-                src="/hero-image.jpg" 
+                src="/images/agp-hero-2026-01-07.jpg" 
                 alt="Cabinet AGP neurofeedback Floirac Bordeaux Cenon – méthodes douces en Gironde"
                 className="w-full rounded-xl shadow-lg mb-8"
               />
