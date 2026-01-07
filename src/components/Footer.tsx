@@ -1,4 +1,5 @@
-import { useNavigate, useLocation } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Phone, MapPin, ExternalLink } from "lucide-react";
 import logo from "@/assets/logo-agp.png";
 
 const Footer = () => {
@@ -25,7 +26,8 @@ const Footer = () => {
   return (
     <footer className="bg-foreground/5 border-t border-border py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          {/* Logo & Description */}
           <div className="space-y-4">
             <img src={logo} alt="Cabinet bien-être neurofeedback hypnose Tresses Bordeaux" className="h-16 w-auto" />
             <p className="text-muted-foreground text-sm">
@@ -36,50 +38,115 @@ const Footer = () => {
             </p>
           </div>
 
+          {/* NAP - Name, Address, Phone */}
+          <div>
+            <h3 className="font-semibold mb-4">AGP – Méthodes douces & Neurofeedback</h3>
+            <div className="space-y-3 text-muted-foreground text-sm">
+              <div className="flex items-start gap-2">
+                <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-primary" />
+                <address className="not-italic">
+                  9 Galerie Marchande<br />
+                  33370 Tresses<br />
+                  <span className="text-primary font-medium">Cabinet proche de Bordeaux</span>
+                </address>
+              </div>
+              <div className="flex items-center gap-2">
+                <Phone className="h-4 w-4 flex-shrink-0 text-primary" />
+                <a 
+                  href="tel:+33782386621" 
+                  className="hover:text-primary transition-colors"
+                >
+                  07 82 38 66 21
+                </a>
+              </div>
+              <div className="flex items-center gap-2 mt-4">
+                <ExternalLink className="h-4 w-4 flex-shrink-0 text-primary" />
+                <a 
+                  href="https://g.co/kgs/placeholder" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors text-sm"
+                >
+                  Voir sur Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Liens rapides */}
           <div>
             <h3 className="font-semibold mb-4">Liens rapides</h3>
             <ul className="space-y-2 text-muted-foreground text-sm">
               <li>
-                <button 
-                  onClick={() => scrollToSection("services")} 
-                  className="hover:text-primary transition-colors text-left"
+                <a 
+                  href="/#services" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("services");
+                  }}
+                  className="hover:text-primary transition-colors"
                 >
                   Prestations
-                </button>
+                </a>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection("formation")} 
-                  className="hover:text-primary transition-colors text-left"
+                <a 
+                  href="/#formation" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("formation");
+                  }}
+                  className="hover:text-primary transition-colors"
                 >
                   Formation
-                </button>
+                </a>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection("about")} 
-                  className="hover:text-primary transition-colors text-left"
+                <a 
+                  href="/#about" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("about");
+                  }}
+                  className="hover:text-primary transition-colors"
                 >
                   À propos
-                </button>
+                </a>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection("contact")} 
-                  className="hover:text-primary transition-colors text-left"
+                <a 
+                  href="/#contact" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection("contact");
+                  }}
+                  className="hover:text-primary transition-colors"
                 >
                   Contact
-                </button>
+                </a>
               </li>
             </ul>
           </div>
 
+          {/* Informations légales */}
           <div>
             <h3 className="font-semibold mb-4">Informations légales</h3>
             <ul className="space-y-2 text-muted-foreground text-sm">
-              <li><a href="/mentions-legales" className="hover:text-primary transition-colors">Mentions légales</a></li>
-              <li><a href="/cgv" className="hover:text-primary transition-colors">CGV</a></li>
-              <li><a href="/confidentialite" className="hover:text-primary transition-colors">Confidentialité</a></li>
+              <li>
+                <Link to="/mentions-legales" className="hover:text-primary transition-colors">
+                  Mentions légales
+                </Link>
+              </li>
+              <li>
+                <Link to="/cgv" className="hover:text-primary transition-colors">
+                  CGV
+                </Link>
+              </li>
+              <li>
+                <Link to="/confidentialite" className="hover:text-primary transition-colors">
+                  Confidentialité
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

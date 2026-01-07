@@ -9,13 +9,13 @@ const EftBordeaux = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "Méthodes Douces Bordeaux",
+    name: "AGP – Méthodes douces & Neurofeedback",
     description:
       "EFT à Bordeaux : libération émotionnelle, gestion du stress et apaisement des blocages. Séances sur mesure à Tresses, proche Bordeaux.",
-    image: "https://methodes-douces-bordeaux.fr/og-image-1200x630.png",
+    image: "https://methodes-douces-bordeaux.fr/og-agp-1200x630.jpg",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "8 avenue de la Gardette",
+      streetAddress: "9 Galerie Marchande",
       addressLocality: "Tresses",
       postalCode: "33370",
       addressRegion: "Gironde",
@@ -26,7 +26,7 @@ const EftBordeaux = () => {
       latitude: 44.8637,
       longitude: -0.4837,
     },
-    telephone: "+33 6 64 87 30 56",
+    telephone: "+33 7 82 38 66 21",
     url: "https://methodes-douces-bordeaux.fr/eft-bordeaux",
     areaServed: [
       { "@type": "City", name: "Bordeaux" },
@@ -79,7 +79,7 @@ const EftBordeaux = () => {
         />
         <meta
           property="og:image"
-          content="https://methodes-douces-bordeaux.fr/og-image-1200x630.png"
+          content="https://methodes-douces-bordeaux.fr/og-agp-1200x630.jpg"
         />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>

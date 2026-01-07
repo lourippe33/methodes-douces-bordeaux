@@ -9,13 +9,13 @@ const NeurofeedbackCenon = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "Méthodes Douces Bordeaux",
+    name: "AGP – Méthodes douces & Neurofeedback",
     description:
       "Séances de neurofeedback à Cenon : méthode naturelle pour apaiser le mental, améliorer le sommeil, diminuer le stress et retrouver un meilleur équilibre émotionnel.",
-    image: "https://methodes-douces-bordeaux.fr/og-image-1200x630.png",
+    image: "https://methodes-douces-bordeaux.fr/og-agp-1200x630.jpg",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "8 avenue de la Gardette",
+      streetAddress: "9 Galerie Marchande",
       addressLocality: "Tresses",
       postalCode: "33370",
       addressRegion: "Gironde",
@@ -26,7 +26,7 @@ const NeurofeedbackCenon = () => {
       latitude: 44.8637,
       longitude: -0.4837,
     },
-    telephone: "+33 6 64 87 30 56",
+    telephone: "+33 7 82 38 66 21",
     url: "https://methodes-douces-bordeaux.fr/neurofeedback-cenon",
     areaServed: [
       { "@type": "City", name: "Cenon" },
@@ -75,7 +75,7 @@ const NeurofeedbackCenon = () => {
           content="Séances de neurofeedback dynamique pour calmer le mental, réduire le stress et retrouver un meilleur sommeil."
         />
         <meta property="og:url" content="https://methodes-douces-bordeaux.fr/neurofeedback-cenon" />
-        <meta property="og:image" content="https://methodes-douces-bordeaux.fr/og-image-1200x630.png" />
+        <meta property="og:image" content="https://methodes-douces-bordeaux.fr/og-agp-1200x630.jpg" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 
