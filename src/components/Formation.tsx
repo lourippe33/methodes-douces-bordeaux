@@ -1,7 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { GraduationCap, Users, Video, Award } from "lucide-react";
-import agpBanner from "@/assets/agp-banner.jpg";
 import formationImage from "@/assets/formation-hands.jpg";
 
 const Formation = () => {
@@ -25,17 +24,6 @@ const Formation = () => {
 
           {/* Main Card */}
           <Card className="border-0 shadow-strong overflow-hidden bg-card/80 backdrop-blur-sm">
-            <div className="relative overflow-hidden rounded-t-lg">
-              <img 
-                src={agpBanner} 
-                alt="AGP - Méthodes douces & Neurofeedback - Accompagnement bien-être global" 
-                className="w-full h-auto object-cover"
-                width="1200"
-                height="600"
-                loading="lazy"
-              />
-            </div>
-
             <CardHeader className="text-center pb-4">
               <CardTitle className="text-2xl font-heading">Formation complète et accessible</CardTitle>
               <CardDescription className="text-base font-light">
