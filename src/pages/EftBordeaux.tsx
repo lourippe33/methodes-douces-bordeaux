@@ -112,7 +112,7 @@ const EftBordeaux = () => {
 
               <img
                 src="/hero-image.jpg"
-                alt="Séance d'EFT à Bordeaux – libération émotionnelle"
+                alt="Cabinet AGP EFT Bordeaux Cenon Floirac – méthodes douces et neurofeedback en Gironde"
                 className="w-full rounded-xl shadow-lg mb-8"
               />
             </div>

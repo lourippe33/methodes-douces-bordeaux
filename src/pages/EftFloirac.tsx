@@ -99,7 +99,7 @@ const EftFloirac = () => {
 
             <img
               src="/hero-image.jpg"
-              alt="EFT à Floirac – séance de tapping et gestion émotionnelle"
+              alt="Cabinet AGP EFT Floirac Bordeaux Cenon – méthodes douces et neurofeedback en Gironde"
               className="w-full rounded-xl shadow-lg mb-8"
             />
           </div>

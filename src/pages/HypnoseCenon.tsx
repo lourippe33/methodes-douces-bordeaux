@@ -37,7 +37,7 @@ const HypnoseCenon = () => {
 
   const reasons = [
     { icon: Zap, text: "Stress persistant ou surcharge mentale" },
-    { icon: Sparkles, text: "Manque de confiance ou d’estime de soi" },
+    { icon: Sparkles, text: "Manque de confiance ou d'estime de soi" },
     { icon: Brain, text: "Anxiété ou pensées envahissantes" },
     { icon: Heart, text: "Émotions difficiles à gérer" },
     { icon: Users, text: "Difficultés relationnelles ou hypersensibilité" },
@@ -88,14 +88,14 @@ const HypnoseCenon = () => {
             </h1>
 
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              L’hypnose permet de comprendre et transformer en douceur vos réactions émotionnelles. Elle constitue un
+              L'hypnose permet de comprendre et transformer en douceur vos réactions émotionnelles. Elle constitue un
               accompagnement efficace pour apaiser les tensions internes, réduire le stress et restaurer votre équilibre
               intérieur — sans forcer, sans pression, à votre rythme.
             </p>
 
             <img
               src="/hero-image.jpg"
-              alt="Hypnose à Cenon – séance d’accompagnement émotionnel"
+              alt="Cabinet AGP hypnose Cenon Bordeaux Floirac – méthodes douces et neurofeedback en Gironde"
               className="w-full rounded-xl shadow-lg mb-8"
             />
           </div>
@@ -109,8 +109,8 @@ const HypnoseCenon = () => {
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Beaucoup de personnes consultent lorsqu’elles sentent que leur mental tourne « trop vite », qu’une émotion
-              prend trop de place ou qu’un blocage persiste malgré les efforts. L’hypnose offre un espace d’apaisement
+              Beaucoup de personnes consultent lorsqu'elles sentent que leur mental tourne « trop vite », qu'une émotion
+              prend trop de place ou qu'un blocage persiste malgré les efforts. L'hypnose offre un espace d'apaisement
               et de compréhension profonde.
             </p>
 
@@ -129,18 +129,18 @@ const HypnoseCenon = () => {
         <section className="py-16 bg-muted/30">
           <div className="container mx-auto px-4 max-w-4xl">
             <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8">
-              🎧 Comment se déroule une séance d’hypnose ?
+              🎧 Comment se déroule une séance d'hypnose ?
             </h2>
 
             <div className="bg-card p-8 rounded-xl border border-border leading-relaxed text-muted-foreground">
               <p className="mb-4">
-                Une séance est un moment calme et guidé, où vous restez parfaitement conscient. L’état d’hypnose
-                ressemble à une profonde relaxation qui permet d’accéder à des ressources internes habituellement moins
+                Une séance est un moment calme et guidé, où vous restez parfaitement conscient. L'état d'hypnose
+                ressemble à une profonde relaxation qui permet d'accéder à des ressources internes habituellement moins
                 disponibles.
               </p>
 
               <p className="mb-4">
-                Il ne s’agit pas de “perdre le contrôle”, mais au contraire, d’apprivoiser ce qui vous traverse afin d’y
+                Il ne s'agit pas de "perdre le contrôle", mais au contraire, d'apprivoiser ce qui vous traverse afin d'y
                 répondre avec plus de sérénité.
               </p>
 
@@ -153,12 +153,12 @@ const HypnoseCenon = () => {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4 max-w-4xl">
             <h2 className="text-2xl md:text-3xl font-heading font-bold mb-8">
-              💡 Résultats observés grâce à l’hypnose
+              💡 Résultats observés grâce à l'hypnose
             </h2>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
               Les changements peuvent être progressifs ou rapides selon chacun. Voici ce que les personnes rapportent le
-              plus souvent à l’issue des séances :
+              plus souvent à l'issue des séances :
             </p>
 
             <ul className="grid md:grid-cols-2 gap-4">
@@ -178,9 +178,9 @@ const HypnoseCenon = () => {
         {/* CTA */}
         <section className="py-16 bg-gradient-to-r from-primary/10 to-secondary/10 text-center">
           <div className="container mx-auto px-4 max-w-3xl">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">👉 En savoir plus sur l’hypnose</h2>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">👉 En savoir plus sur l'hypnose</h2>
             <p className="text-muted-foreground mb-8">
-              Découvrez l’approche complète en hypnose et EFT-H proposée au cabinet.
+              Découvrez l'approche complète en hypnose et EFT-H proposée au cabinet.
             </p>
 
             <Button asChild size="lg" className="hover:scale-105 transition-transform">
