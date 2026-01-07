@@ -102,7 +102,7 @@ const NeurofeedbackBordeaux = () => {
             </p>
 
             <img
-              src="/hero-image.jpg"
+              src="/images/agp-hero-2026-01-07.jpg"
               alt="Cabinet AGP neurofeedback Bordeaux Cenon Floirac – méthodes douces en Gironde"
               className="w-full rounded-xl shadow-lg mb-8"
             />
