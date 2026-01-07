@@ -399,6 +399,7 @@ const Neurofeedback = () => {
                     Prendre rendez-vous
                   </Button>
                   <a 
+                    href="https://ericgata.thrivecart.com/seance-neurofeedback/"
                     data-thrivecart-account="ericgata" 
                     data-thrivecart-tpl="v2" 
                     data-thrivecart-product="3" 
