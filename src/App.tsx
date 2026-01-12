@@ -18,7 +18,7 @@ import BlogStressTravail from "./pages/BlogStressTravail";
 import BlogGestionStress from "./pages/BlogGestionStress";
 import BlogBurnOut from "./pages/BlogBurnOut";
 import About from "./pages/About";
-import Programme28Jours from "./pages/Programme28Jours";
+import Programme30Jours from "./pages/Programme30Jours";
 import MentionsLegales from "./pages/MentionsLegales";
 import CGV from "./pages/CGV";
 import Confidentialite from "./pages/Confidentialite";
@@ -61,7 +61,8 @@ const App = () => (
           <Route path="/blog/gestion-stress-angoisses" element={<BlogGestionStress />} />
           <Route path="/blog/neurofeedback-burn-out" element={<BlogBurnOut />} />
           <Route path="/a-propos" element={<About />} />
-          <Route path="/programme-28-jours" element={<Programme28Jours />} />
+          <Route path="/programme-30-jours" element={<Programme30Jours />} />
+          <Route path="/programme-28-jours" element={<Programme30Jours />} /> {/* Redirect ancienne URL */}
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/cgv" element={<CGV />} />
           <Route path="/confidentialite" element={<Confidentialite />} />

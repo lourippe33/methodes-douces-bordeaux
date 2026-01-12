@@ -4,9 +4,11 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Calendar, Target, TrendingDown, CheckCircle2 } from "lucide-react";
 import { useEffect } from "react";
-const Programme28Jours = () => {
+import logoProgramme30Jours from "@/assets/logo-programme-30-jours.jpg";
+
+const Programme30Jours = () => {
   useEffect(() => {
-    document.title = "Programme 28 Jours - Défi Minceur | Cabinet AGP Tresses";
+    document.title = "Programme 30 Jours - Défi Minceur | Cabinet AGP Tresses";
 
     // Canonical
     let canonicalLink = document.querySelector('link[rel="canonical"]');
@@ -15,18 +17,18 @@ const Programme28Jours = () => {
       canonicalLink.setAttribute("rel", "canonical");
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.setAttribute("href", "https://methodes-douces-bordeaux.fr/programme-28-jours");
+    canonicalLink.setAttribute("href", "https://methodes-douces-bordeaux.fr/programme-30-jours");
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Programme AGP en ligne pour une perte de poids durable, sans régime strict. Méthode simple, structurée et personnalisée, accessible partout en francophonie.",
+        "Programme AGP 30 jours en ligne pour une perte de poids durable, sans régime strict. Méthode simple, structurée et personnalisée, accessible partout en francophonie.",
       );
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
       meta.content =
-        "Programme AGP en ligne pour une perte de poids durable, sans régime strict. Méthode simple, structurée et personnalisée, accessible partout en francophonie.";
+        "Programme AGP 30 jours en ligne pour une perte de poids durable, sans régime strict. Méthode simple, structurée et personnalisée, accessible partout en francophonie.";
       document.head.appendChild(meta);
     }
 
@@ -36,8 +38,8 @@ const Programme28Jours = () => {
     structuredData.textContent = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Course",
-      name: "Programme 28 Jours - Défi Minceur",
-      description: "Programme complet de gestion du poids sur 28 jours avec hypnose, EFT-H et suivi personnalisé",
+      name: "Programme 30 Jours - Défi Minceur",
+      description: "Programme complet de gestion du poids sur 30 jours avec hypnose, EFT-H et suivi personnalisé",
       provider: {
         "@id": "https://methodes-douces-bordeaux.fr/#business",
       },
@@ -64,7 +66,7 @@ const Programme28Jours = () => {
           <Breadcrumbs
             items={[
               {
-                label: "Programme 28 Jours",
+                label: "Programme 30 Jours",
               },
             ]}
           />
@@ -81,13 +83,22 @@ const Programme28Jours = () => {
                 <span className="text-sm font-semibold text-primary">Nouveau Programme</span>
               </div>
 
+              {/* Logo du programme */}
+              <div className="mb-8">
+                <img 
+                  src={logoProgramme30Jours} 
+                  alt="Logo Programme Minceur 30 Jours AGP" 
+                  className="w-48 h-48 mx-auto rounded-full shadow-lg object-cover"
+                />
+              </div>
+
               <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-                Programme 28 Jours
+                Programme 30 Jours
               </h1>
 
               <div className="space-y-4 text-lg text-foreground/80 mb-8 max-w-3xl mx-auto text-left">
                 <p>
-                  Le Programme 28 Jours AGP est destiné à toute personne francophone souhaitant perdre du poids de
+                  Le Programme 30 Jours AGP est destiné à toute personne francophone souhaitant perdre du poids de
                   manière durable, sans régime strict ni frustration. Cet accompagnement se déroule entièrement en
                   ligne, avec un suivi pratique et progressif basé sur l'écoute du corps, la gestion des habitudes
                   alimentaires et la compréhension du rythme biologique. Vous êtes guidé pas à pas, quel que soit votre
@@ -102,7 +113,7 @@ const Programme28Jours = () => {
               </div>
 
               <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-                Transformez votre quotidien en seulement 28 jours
+                Transformez votre quotidien en seulement 30 jours
               </p>
 
               <p className="text-lg text-foreground/80 mb-12 max-w-2xl mx-auto">
@@ -131,7 +142,7 @@ const Programme28Jours = () => {
                 <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
                   <Calendar className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">28 Jours</h3>
+                <h3 className="text-xl font-semibold mb-2">30 Jours</h3>
                 <p className="text-muted-foreground">Programme structuré et progressif</p>
               </div>
 
@@ -170,9 +181,9 @@ const Programme28Jours = () => {
 
               {/* Introduction */}
               <div className="bg-card p-8 rounded-lg border border-border mb-8">
-                <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">🌿 Défi minceur 28 jours</h3>
+                <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">🌿 Défi minceur 30 jours</h3>
                 <p className="text-xl font-semibold text-primary mb-6">
-                  28 jours pour reprendre le contrôle en douceur, naturellement.
+                  30 jours pour reprendre le contrôle en douceur, naturellement.
                 </p>
                 <div className="space-y-4 text-foreground/80">
                   <p>
@@ -203,7 +214,7 @@ const Programme28Jours = () => {
                     depuis plus de 10 ans.
                   </p>
                   <p>
-                    Le programme AGP 28 jours est la version destinée au grand public : une méthode accessible, guidée,
+                    Le programme AGP 30 jours est la version destinée au grand public : une méthode accessible, guidée,
                     simple à suivre, qui vous permet d'agir sur votre relation à la nourriture, à votre rythme. C'est
                     une application qui vous guide et vous permet d'avancer à votre rythme.
                   </p>
@@ -216,7 +227,7 @@ const Programme28Jours = () => {
                   <span>🧭</span> Comment fonctionne le programme ?
                 </h3>
                 <p className="text-foreground/80 mb-6">
-                  Pendant 28 jours, vous êtes accompagné(e) étape par étape via :
+                  Pendant 30 jours, vous êtes accompagné(e) étape par étape via :
                 </p>
 
                 <div className="space-y-6">
@@ -348,4 +359,4 @@ const Programme28Jours = () => {
     </div>
   );
 };
-export default Programme28Jours;
+export default Programme30Jours;

@@ -26,7 +26,7 @@ const WeightLossPopup = () => {
   const handleCTA = () => {
     localStorage.setItem("hasSeenWeightLossPopup", "true");
     setOpen(false);
-    navigate("/programme-28-jours");
+    navigate("/programme-30-jours");
   };
 
   return (
@@ -38,7 +38,7 @@ const WeightLossPopup = () => {
           </div>
           <DialogTitle className="text-center text-2xl font-bold">
             Défi minceur
-            <span className="bg-gradient-hero bg-clip-text text-transparent"> 28 Jours</span>
+            <span className="bg-gradient-hero bg-clip-text text-transparent"> 30 Jours</span>
           </DialogTitle>
           <DialogDescription className="space-y-4 pt-4 text-center text-base">
             <p className="text-foreground font-medium">
