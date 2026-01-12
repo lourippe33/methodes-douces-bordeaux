@@ -27,7 +27,7 @@ const BlogAgp = () => {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: "Articles Méthode AGP - Blog Méthodes Douces Bordeaux",
-    description: "Articles sur la méthode AGP : perte de poids durable, chronobiologie, programme 28 jours. Conseils et informations par Eric Gata.",
+    description: "Articles sur la méthode AGP : perte de poids durable, chronobiologie, programme 30 jours. Conseils et informations par Eric Gata.",
     url: "https://methodes-douces-bordeaux.fr/blog/agp"
   };
 
@@ -37,7 +37,7 @@ const BlogAgp = () => {
         <title>Articles Méthode AGP | Perte de Poids, Chronobiologie | Blog</title>
         <meta 
           name="description" 
-          content="Articles sur la méthode AGP : perte de poids durable sans régime strict, chronobiologie, programme 28 jours. Conseils par Eric Gata, praticien à Tresses." 
+          content="Articles sur la méthode AGP : perte de poids durable sans régime strict, chronobiologie, programme 30 jours. Conseils par Eric Gata, praticien à Tresses." 
         />
         <link rel="canonical" href="https://methodes-douces-bordeaux.fr/blog/agp" />
         <meta property="og:title" content="Articles Méthode AGP | Perte de Poids, Chronobiologie" />
@@ -77,8 +77,8 @@ const BlogAgp = () => {
                 sans régime strict, basée sur l'écoute du corps et la chronobiologie.
               </p>
               <Button asChild variant="outline" className="mt-4">
-                <Link to="/programme-28-jours">
-                  Découvrir le programme 28 jours
+                <Link to="/programme-30-jours">
+                  Découvrir le programme 30 jours
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
@@ -158,14 +158,14 @@ const BlogAgp = () => {
         <section className="py-16 bg-gradient-to-r from-primary/10 to-secondary/10">
           <div className="container mx-auto px-4 text-center max-w-3xl">
             <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
-              Découvrir le Défi Minceur 28 Jours
+              Découvrir le Défi Minceur 30 Jours
             </h2>
             <p className="text-muted-foreground mb-8">
               Un programme en ligne pour perdre du poids durablement, sans régime strict, 
               basé sur l'écoute de votre corps.
             </p>
             <Button asChild size="lg" className="hover:scale-105 transition-transform">
-              <Link to="/programme-28-jours">Découvrir le programme</Link>
+              <Link to="/programme-30-jours">Découvrir le programme</Link>
             </Button>
           </div>
         </section>
