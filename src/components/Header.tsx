@@ -45,7 +45,7 @@ const Header = () => {
   };
   const navigateToProgramme = () => {
     setIsMenuOpen(false);
-    navigate("/programme-28-jours");
+    navigate("/programme-30-jours");
   };
   return <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-soft">
       <div className="container mx-auto px-4 py-4">
@@ -70,7 +70,7 @@ const Header = () => {
             </button>
             <button onClick={navigateToProgramme} className="relative text-foreground hover:text-primary transition-colors font-medium group">
               <span className="relative inline-flex items-center gap-2">
-                Défi minceur 28 Jours
+                Défi minceur 30 Jours
                 <span className="bg-blue-500 text-white px-2 py-0.5 rounded-full animate-pulse text-xs whitespace-nowrap">
                   🔥 NOUVEAU
                 </span>
@@ -103,7 +103,7 @@ const Header = () => {
             </button>
             <button onClick={navigateToProgramme} className="text-left text-foreground hover:text-primary transition-colors font-medium py-2">
               <span className="flex items-center gap-2">
-                Programme 28 jours
+                Programme 30 jours
                 <span className="bg-blue-500 text-white px-2 py-0.5 rounded-full animate-pulse text-xs whitespace-nowrap">
                   🔥 NOUVEAU
                 </span>
