@@ -471,10 +471,14 @@ const BlogPertePoidsRegime = () => {
               100% en ligne • Accessible depuis Bordeaux, Gironde et toute la France
             </p>
             <Button asChild size="lg" className="hover:scale-105 transition-transform">
-              <Link to="/programme-30-jours">
+              <a
+                href="https://ericgata.thrivecart.com/httpsbuystripecom14a4gzetc8fu1qtekqc3m02/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Je réserve mon programme à 90€
                 <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
+              </a>
             </Button>
           </div>
         </section>
