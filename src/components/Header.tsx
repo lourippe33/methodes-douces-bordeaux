@@ -56,8 +56,13 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <button onClick={navigateToProgramme} className="text-foreground hover:text-primary transition-colors font-medium">
-              Programme Perte de Poids
+            <button onClick={navigateToProgramme} className="relative text-foreground hover:text-primary transition-colors font-medium">
+              <span className="relative inline-flex items-center gap-2">
+                Programme Perte de Poids
+                <span className="bg-blue-500 text-white px-2 py-0.5 rounded-full animate-pulse text-xs whitespace-nowrap">
+                  🔥 NOUVEAU
+                </span>
+              </span>
             </button>
             <button onClick={() => navigate("/neurofeedback")} className="text-foreground hover:text-primary transition-colors font-medium">
               Neurofeedback
@@ -70,14 +75,6 @@ const Header = () => {
             </button>
             <button onClick={() => navigate("/blog")} className="text-foreground hover:text-primary transition-colors font-medium">
               Blog
-            </button>
-            <button onClick={navigateToProgramme} className="relative text-foreground hover:text-primary transition-colors font-medium group">
-              <span className="relative inline-flex items-center gap-2">
-                Défi minceur 30 Jours
-                <span className="bg-blue-500 text-white px-2 py-0.5 rounded-full animate-pulse text-xs whitespace-nowrap">
-                  🔥 NOUVEAU
-                </span>
-              </span>
             </button>
             <Button onClick={() => scrollToSection("contact")} className="bg-gradient-primary hover:shadow-strong transition-all hover:scale-105">
               Contact
@@ -93,7 +90,12 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && <nav className="md:hidden mt-4 pb-4 flex flex-col gap-4 animate-fade-in">
             <button onClick={navigateToProgramme} className="text-left text-foreground hover:text-primary transition-colors font-medium py-2">
-              Programme Perte de Poids
+              <span className="flex items-center gap-2">
+                Programme Perte de Poids
+                <span className="bg-blue-500 text-white px-2 py-0.5 rounded-full animate-pulse text-xs whitespace-nowrap">
+                  🔥 NOUVEAU
+                </span>
+              </span>
             </button>
             <button onClick={() => navigate("/neurofeedback")} className="text-left text-foreground hover:text-primary transition-colors font-medium py-2">
               Neurofeedback
@@ -106,14 +108,6 @@ const Header = () => {
             </button>
             <button onClick={() => navigate("/blog")} className="text-left text-foreground hover:text-primary transition-colors font-medium py-2">
               Blog
-            </button>
-            <button onClick={navigateToProgramme} className="text-left text-foreground hover:text-primary transition-colors font-medium py-2">
-              <span className="flex items-center gap-2">
-                Programme 30 jours
-                <span className="bg-blue-500 text-white px-2 py-0.5 rounded-full animate-pulse text-xs whitespace-nowrap">
-                  🔥 NOUVEAU
-                </span>
-              </span>
             </button>
             <Button onClick={() => scrollToSection("contact")} className="bg-gradient-primary w-full hover:scale-105 transition-transform">
               Contact
