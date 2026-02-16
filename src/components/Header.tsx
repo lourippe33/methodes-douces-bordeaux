@@ -56,8 +56,11 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <button onClick={() => scrollToSection("services")} className="text-foreground hover:text-primary transition-colors font-medium">
-              Prestations
+            <button onClick={navigateToProgramme} className="text-foreground hover:text-primary transition-colors font-medium">
+              Programme Perte de Poids
+            </button>
+            <button onClick={() => navigate("/neurofeedback")} className="text-foreground hover:text-primary transition-colors font-medium">
+              Neurofeedback
             </button>
             <button onClick={() => scrollToSection("formation")} className="text-foreground hover:text-primary transition-colors font-medium">
               Formation
@@ -89,8 +92,11 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && <nav className="md:hidden mt-4 pb-4 flex flex-col gap-4 animate-fade-in">
-            <button onClick={() => scrollToSection("services")} className="text-left text-foreground hover:text-primary transition-colors font-medium py-2">
-              Prestations
+            <button onClick={navigateToProgramme} className="text-left text-foreground hover:text-primary transition-colors font-medium py-2">
+              Programme Perte de Poids
+            </button>
+            <button onClick={() => navigate("/neurofeedback")} className="text-left text-foreground hover:text-primary transition-colors font-medium py-2">
+              Neurofeedback
             </button>
             <button onClick={() => scrollToSection("formation")} className="text-left text-foreground hover:text-primary transition-colors font-medium py-2">
               Formation

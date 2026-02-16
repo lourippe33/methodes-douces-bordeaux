@@ -3,16 +3,16 @@ const SEOContent = () => {
     <section className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto space-y-8">
-          {/* Section Hypnose & EFT-H */}
+          {/* Section Programme Perte de Poids */}
           <div className="space-y-3">
             <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground">
-              Hypnose & EFT-H à Tresses
+              Programme Perte de Poids AGP à Tresses
             </h2>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-              L'hypnose et l'EFT-H permettent de relâcher les tensions mentales, 
-              d'apaiser les émotions et de renforcer la confiance en soi. 
-              Ces méthodes favorisent le lâcher-prise et soutiennent les changements d'habitudes, 
-              comme la gestion de l'alimentation ou l'arrêt du tabac.
+              Le Programme 30 Jours AGP combine hypnose, EFT-H et chronobiologie 
+              pour une perte de poids durable, sans régime ni frustration. 
+              Accessible en ligne avec un suivi personnalisé hebdomadaire en visio 
+              depuis le cabinet de Tresses (33370), près de Bordeaux.
             </p>
           </div>
 
@@ -35,19 +35,18 @@ const SEOContent = () => {
             </h2>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               Cet accompagnement s'adresse aux enfants, adolescents et adultes souhaitant 
-              retrouver plus d'équilibre émotionnel, améliorer leur sommeil, 
-              réguler l'agitation intérieure, renforcer la confiance en soi 
-              ou vivre un changement durable.
+              perdre du poids durablement, retrouver plus d'équilibre émotionnel, améliorer leur sommeil, 
+              réguler l'agitation intérieure ou vivre un changement durable.
             </p>
           </div>
 
-          {/* Additional content before disclaimer */}
+          {/* Additional content */}
           <div className="space-y-3">
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               Chaque accompagnement est personnalisé en fonction de vos objectifs et de votre rythme. 
               Les séances permettent de mieux comprendre vos réactions internes, d'apaiser le mental et 
-              d'encourager des changements durables. Que ce soit pour vous libérer d'une surcharge émotionnelle, 
-              retrouver un sommeil plus paisible, mieux gérer vos habitudes ou renforcer la confiance en vous, 
+              d'encourager des changements durables. Que ce soit pour la gestion du poids, 
+              retrouver un sommeil plus paisible ou renforcer la confiance en vous, 
               les méthodes utilisées favorisent l'autorégulation naturelle et l'équilibre intérieur.
             </p>
 
