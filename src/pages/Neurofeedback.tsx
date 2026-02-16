@@ -459,6 +459,26 @@ const Neurofeedback = () => {
           </div>
         </section>
 
+        {/* Le saviez-vous */}
+        <section className="py-16 bg-primary/5">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center space-y-6">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">
+                💡 Le saviez-vous ?
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Le neurofeedback peut être combiné avec nos autres accompagnements comme 
+                <strong> l'hypnose et l'EFT-H</strong> pour des résultats encore plus complets. 
+                Cette synergie permet de travailler à la fois sur le cerveau, les émotions 
+                et les comportements.
+              </p>
+              <a href="/hypnose-eft-h" className="text-primary hover:underline font-medium inline-block">
+                Découvrir l'hypnose et l'EFT-H →
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Liens locaux SEO */}
         <section className="container mx-auto px-4 py-8 border-t border-border">
           <p className="text-sm text-muted-foreground text-center max-w-3xl mx-auto mb-4">

@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import heroBackground from "@/assets/hero-background.webp";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   const scrollToServices = () => {
     const element = document.getElementById("services");
     if (element) {
@@ -34,37 +37,37 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-6 md:space-y-8 animate-fade-in">
           <h1 className="text-3xl md:text-6xl font-heading font-bold text-foreground leading-tight">
-            Méthodes douces & neurofeedback à Tresses (près de Bordeaux)
+            Perdre du Poids Durablement à Bordeaux et en Gironde
           </h1>
           
-          <p className="text-base md:text-xl text-foreground max-w-3xl mx-auto leading-relaxed">
-            Bienvenue au cabinet de bien-être à Tresses, spécialisé en hypnose, EFT-H et neurofeedback dynamique. 
-            J'accompagne les adultes, enfants et adolescents à retrouver plus de calme intérieur, 
-            à relâcher les tensions émotionnelles et à favoriser un sommeil plus paisible. 
-            Les méthodes proposées sont douces, sans médicament, et respectent le rythme de chacun. 
-            Mon approche est centrée sur l'écoute, la régulation naturelle et le fonctionnement du cerveau. 
-            Les séances se déroulent au cabinet, sur rendez-vous, dans un espace dédié au bien-être.
+          <h2 className="text-xl md:text-2xl font-heading font-semibold text-foreground/90">
+            Programme 30 Jours AGP + Neurofeedback – Accessible partout en France en visio
+            <br />
+            Cabinet à Tresses (33370)
+          </h2>
+
+          <p className="text-base md:text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+            Basé à Tresses près de Bordeaux, j'accompagne des clients dans toute la France 
+            grâce au suivi hebdomadaire en visioconférence. Que vous soyez à Bordeaux, Libourne, 
+            Paris ou ailleurs, vous bénéficiez du même accompagnement personnalisé.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center pt-4 md:pt-6">
             <Button 
               size="lg" 
-              onClick={scrollToServices}
+              onClick={() => navigate("/programme-30-jours")}
               className="bg-gradient-primary hover:shadow-strong transition-all text-base md:text-lg px-6 md:px-8 py-5 md:py-6 group w-full sm:w-auto hover:scale-105"
             >
-              Découvrir mes prestations
+              Découvrir le Programme 30 Jours
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
             </Button>
             <Button 
               size="lg" 
               variant="outline"
-              onClick={() => {
-                const element = document.getElementById("formation");
-                if (element) element.scrollIntoView({ behavior: "smooth" });
-              }}
+              onClick={scrollToServices}
               className="border-2 border-primary text-primary hover:bg-primary/10 text-base md:text-lg px-6 md:px-8 py-5 md:py-6 w-full sm:w-auto hover:scale-105 transition-transform"
             >
-              Formation praticiens
+              Voir nos accompagnements
             </Button>
           </div>
 
