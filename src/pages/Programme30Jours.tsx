@@ -2,13 +2,14 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
-import { Calendar, Target, TrendingDown, CheckCircle2 } from "lucide-react";
+import { Calendar, Target, TrendingDown, CheckCircle2, MapPin, Phone } from "lucide-react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import logoProgramme30Jours from "@/assets/logo-programme-30-jours.jpg";
 
 const Programme30Jours = () => {
   useEffect(() => {
-    document.title = "Programme 30 Jours - Défi Minceur | Cabinet AGP Tresses";
+    document.title = "Programme Perte de Poids 30 Jours Bordeaux | Méthode AGP Tresses Gironde";
 
     // Canonical
     let canonicalLink = document.querySelector('link[rel="canonical"]');
@@ -18,37 +19,56 @@ const Programme30Jours = () => {
       document.head.appendChild(canonicalLink);
     }
     canonicalLink.setAttribute("href", "https://methodes-douces-bordeaux.fr/programme-30-jours");
+
+    // Meta description
     const metaDescription = document.querySelector('meta[name="description"]');
+    const descContent = "Programme perte de poids 30 jours à Bordeaux et en Gironde. Méthode AGP sans régime, avec suivi personnalisé en visio depuis Tresses (33370). Hypnose, EFT et chronobiologie. 90€.";
     if (metaDescription) {
-      metaDescription.setAttribute(
-        "content",
-        "Programme AGP 30 jours en ligne pour une perte de poids durable, sans régime strict. Méthode simple, structurée et personnalisée, accessible partout en francophonie.",
-      );
+      metaDescription.setAttribute("content", descContent);
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
-      meta.content =
-        "Programme AGP 30 jours en ligne pour une perte de poids durable, sans régime strict. Méthode simple, structurée et personnalisée, accessible partout en francophonie.";
+      meta.content = descContent;
       document.head.appendChild(meta);
     }
 
-    // Structured Data - Event/Course
+    // Meta keywords
+    let metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (!metaKeywords) {
+      metaKeywords = document.createElement("meta");
+      metaKeywords.setAttribute("name", "keywords");
+      document.head.appendChild(metaKeywords);
+    }
+    metaKeywords.setAttribute("content", "programme perte de poids bordeaux, maigrir bordeaux, perte de poids gironde, programme minceur tresses, méthode AGP, hypnose perte de poids bordeaux");
+
+    // Structured Data - Product
     const structuredData = document.createElement("script");
     structuredData.type = "application/ld+json";
     structuredData.textContent = JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "Course",
-      name: "Programme 30 Jours - Défi Minceur",
-      description: "Programme complet de gestion du poids sur 30 jours avec hypnose, EFT-H et suivi personnalisé",
-      provider: {
-        "@id": "https://methodes-douces-bordeaux.fr/#business",
-      },
+      "@type": "Product",
+      name: "Programme Perte de Poids 30 Jours AGP",
+      description: "Programme complet de gestion du poids sur 30 jours avec hypnose, EFT-H et suivi personnalisé depuis Tresses, Bordeaux",
       offers: {
         "@type": "Offer",
         price: "90",
         priceCurrency: "EUR",
         availability: "https://schema.org/InStock",
-        validFrom: "2025-01-27",
+        seller: {
+          "@type": "LocalBusiness",
+          name: "Méthodes Douces Bordeaux",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "9 Galerie Marchande",
+            addressLocality: "Tresses",
+            postalCode: "33370",
+          },
+        },
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5",
+        reviewCount: "55",
       },
     });
     document.head.appendChild(structuredData);
@@ -58,6 +78,7 @@ const Programme30Jours = () => {
       }
     };
   }, []);
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -71,6 +92,7 @@ const Programme30Jours = () => {
             ]}
           />
         </div>
+
         {/* Hero Section */}
         <section className="py-20 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
           <div className="container mx-auto px-4">
@@ -85,15 +107,15 @@ const Programme30Jours = () => {
 
               {/* Logo du programme */}
               <div className="mb-8">
-                <img 
-                  src={logoProgramme30Jours} 
-                  alt="Logo Programme Minceur 30 Jours AGP" 
+                <img
+                  src={logoProgramme30Jours}
+                  alt="Logo Programme AGP Perte de Poids Bordeaux"
                   className="w-48 h-48 mx-auto rounded-full shadow-lg object-cover"
                 />
               </div>
 
               <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-                Programme 30 Jours
+                Programme Perte de Poids 30 Jours - Bordeaux &amp; Gironde
               </h1>
 
               <div className="space-y-4 text-lg text-foreground/80 mb-8 max-w-3xl mx-auto text-left">
@@ -127,7 +149,7 @@ const Programme30Jours = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Réserver ma place
+                  Je réserve mon programme à 90€
                 </a>
               </Button>
             </div>
@@ -191,6 +213,17 @@ const Programme30Jours = () => {
                     repris, re-perdu, puis reperdu confiance dans votre capacité à changer. Si c'est le cas, sachez une
                     chose : <strong>ce n'est pas vous le problème.</strong>
                   </p>
+
+                  {/* INSERTION 1 - Paragraphe géolocalisé */}
+                  <div className="bg-primary/5 p-4 rounded-lg border border-primary/10">
+                    <p className="font-semibold text-foreground flex items-center gap-2 mb-2">
+                      <MapPin className="w-5 h-5 text-primary" /> Vous habitez Bordeaux, Tresses, Libourne ou la Gironde ?
+                    </p>
+                    <p>
+                      Ce programme est 100% accessible en ligne avec un suivi personnalisé hebdomadaire en visio depuis mon cabinet à Tresses (33370).
+                    </p>
+                  </div>
+
                   <p>
                     Le corps, les émotions et les automatismes alimentaires travaillent ensemble. Si l'un prend le
                     dessus, tout devient lutte.
@@ -205,7 +238,7 @@ const Programme30Jours = () => {
               {/* Origin */}
               <div className="bg-card p-8 rounded-lg border border-border mb-8">
                 <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                  <span>✨</span> D'où vient cette méthode ?
+                  <span>✨</span> La Méthode AGP : 10 Ans d'Expertise en Perte de Poids à Bordeaux
                 </h3>
                 <div className="space-y-4 text-foreground/80">
                   <p>
@@ -224,7 +257,7 @@ const Programme30Jours = () => {
               {/* How it works */}
               <div className="bg-card p-8 rounded-lg border border-border mb-8">
                 <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
-                  <span>🧭</span> Comment fonctionne le programme ?
+                  <span>🧭</span> Comment Fonctionne le Programme Perte de Poids en Ligne ?
                 </h3>
                 <p className="text-foreground/80 mb-6">
                   Pendant 30 jours, vous êtes accompagné(e) étape par étape via :
@@ -268,13 +301,23 @@ const Programme30Jours = () => {
                       <li>• maintenir l'élan</li>
                     </ul>
                   </div>
+
+                  {/* INSERTION 2 - Suivi géolocalisé */}
+                  <div className="bg-primary/5 p-4 rounded-lg border border-primary/10">
+                    <p className="font-semibold text-foreground flex items-center gap-2 mb-2">
+                      <MapPin className="w-5 h-5 text-primary" /> Suivi depuis Tresses, accessible partout :
+                    </p>
+                    <p className="text-foreground/80">
+                      Que vous soyez à Bordeaux centre, Libourne, Cenon ou ailleurs en Gironde, vous bénéficiez du même accompagnement de qualité en visio.
+                    </p>
+                  </div>
                 </div>
               </div>
 
               {/* What it's not */}
               <div className="bg-card p-8 rounded-lg border border-border mb-8">
                 <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                  <span>💛</span> Ce que ce programme n'est pas
+                  <span>💛</span> Une Alternative aux Régimes : Méthode Douce et Durable
                 </h3>
                 <ul className="space-y-3 text-foreground/80 mb-6">
                   <li>• Ce n'est pas un régime</li>
@@ -295,7 +338,7 @@ const Programme30Jours = () => {
               {/* Who is it for */}
               <div className="bg-card p-8 rounded-lg border border-border mb-8">
                 <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                  <span>🎯</span> Pour qui est-il fait ?
+                  <span>🎯</span> Pour Qui ? Habitants de Bordeaux, Tresses, Libourne et Gironde
                 </h3>
                 <ul className="space-y-3 text-foreground/80 mb-4">
                   <li>• Si vous mangez par stress, fatigue, ennui ou vide</li>
@@ -303,6 +346,8 @@ const Programme30Jours = () => {
                   <li>• Si vous cherchez une solution douce mais durable</li>
                   <li>• Si vous voulez vous sentir fière, stable, alignée</li>
                   <li>• Si vous voulez arrêter de commencer / arrêter / recommencer</li>
+                  {/* INSERTION 3 - Ligne géolocalisée */}
+                  <li>• Si vous cherchez un accompagnement perte de poids à Bordeaux ou en Gironde</li>
                 </ul>
                 <p className="text-lg font-semibold text-primary">Alors ce programme est pour vous.</p>
               </div>
@@ -310,7 +355,7 @@ const Programme30Jours = () => {
               {/* Launch Offer */}
               <div className="bg-gradient-to-br from-primary/10 to-secondary/10 p-8 rounded-lg border-2 border-primary/20 mb-8">
                 <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                  <span>🚀</span> Une offre à ne pas rater !
+                  <span>🚀</span> Offre de Lancement : 90€ au lieu de 149€
                 </h3>
                 <p className="text-foreground/80 mb-6">
                   Je propose actuellement ce programme, à tarif réduit, pour donner un coup de boost à votre perte de
@@ -328,7 +373,7 @@ const Programme30Jours = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Réserver ma place
+                    Je réserve mon programme à 90€
                   </a>
                 </Button>
               </div>
@@ -336,7 +381,7 @@ const Programme30Jours = () => {
               {/* What you'll find */}
               <div className="bg-card p-8 rounded-lg border border-border">
                 <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                  <span>🧡</span> Ce que vous allez retrouver
+                  <span>🧡</span> Les Bénéfices : Retrouvez une Relation Saine avec la Nourriture
                 </h3>
                 <ul className="space-y-3 text-foreground/80 mb-6">
                   <li>• La sensation de vous choisir</li>
@@ -354,9 +399,61 @@ const Programme30Jours = () => {
             </div>
           </div>
         </section>
+
+        {/* Zone d'intervention - Gironde */}
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center flex items-center justify-center gap-3">
+                <MapPin className="w-8 h-8 text-primary" />
+                Zone d'Intervention - Gironde (33)
+              </h2>
+
+              <div className="bg-card p-8 rounded-lg border border-border mb-8 text-center">
+                <p className="text-xl font-semibold mb-4">
+                  Cabinet situé à Tresses (entre Bordeaux et Libourne)
+                </p>
+                <p className="text-foreground/80 mb-6">
+                  Le Programme 30 Jours AGP est accessible en ligne depuis toute la France,
+                  avec un suivi personnalisé hebdomadaire en visioconférence.
+                </p>
+                <p className="text-foreground/80 font-medium mb-4">
+                  Nos clients viennent de :
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Bordeaux • Tresses • Libourne • Cenon • Floirac • Artigues-près-Bordeaux •
+                  Carbon-Blanc • Bègles • Talence • Mérignac • Pessac • Lormont •
+                  Bassens • Saint-Loubès • et toute la Gironde (33)
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-lg border border-primary/10 text-center">
+                <p className="text-xl font-semibold mb-4 flex items-center justify-center gap-2">
+                  <Phone className="w-5 h-5 text-primary" />
+                  Vous avez des questions ?
+                </p>
+                <a
+                  href="tel:0782386621"
+                  className="text-2xl font-bold text-primary hover:underline mb-4 inline-block"
+                >
+                  07 82 38 66 21
+                </a>
+                <p className="mt-4">
+                  <Link
+                    to="/#contact"
+                    className="text-primary hover:underline font-medium"
+                  >
+                    Ou contactez-nous via notre formulaire →
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
   );
 };
+
 export default Programme30Jours;
