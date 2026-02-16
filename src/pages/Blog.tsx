@@ -52,9 +52,9 @@ const Blog = () => {
     {
       slug: "agp",
       title: "Perte de poids",
-      description: "Perte de poids durable, chronobiologie, programme 28 jours. Une approche sans régime strict.",
+      description: "Perte de poids durable, chronobiologie, programme 30 jours. Une approche sans régime strict.",
       icon: Scale,
-      articleCount: 0,
+      articleCount: 1,
       color: "text-green-600",
     },
     {

@@ -7,21 +7,24 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Scale } from "lucide-react";
+import pertePoidsImg from "@/assets/perte-poids-sans-regime-bordeaux.jpg";
 
 const BlogAgp = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Articles de la catégorie AGP (à compléter avec de futurs articles)
-  const articles: Array<{
-    slug: string;
-    title: string;
-    excerpt: string;
-    date: string;
-    image: string;
-    imageAlt: string;
-  }> = [];
+  // Articles de la catégorie AGP
+  const articles = [
+    {
+      slug: "perdre-poids-sans-regime-bordeaux",
+      title: "Perdre du Poids sans Régime à Bordeaux : La Méthode AGP Expliquée",
+      excerpt: "Découvrez comment perdre du poids durablement sans régime restrictif grâce à la méthode AGP. Programme 30 jours à 90€, accessible en visio depuis Bordeaux et toute la France.",
+      date: "Février 2025",
+      image: pertePoidsImg,
+      imageAlt: "Perdre du poids sans régime à Bordeaux - Méthode AGP",
+    },
+  ];
 
   const structuredData = {
     "@context": "https://schema.org",

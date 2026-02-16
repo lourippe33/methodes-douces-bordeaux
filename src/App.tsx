@@ -17,6 +17,7 @@ import BlogAmeliorerSommeil from "./pages/BlogAmeliorerSommeil";
 import BlogStressTravail from "./pages/BlogStressTravail";
 import BlogGestionStress from "./pages/BlogGestionStress";
 import BlogBurnOut from "./pages/BlogBurnOut";
+import BlogPertePoidsRegime from "./pages/BlogPertePoidsRegime";
 import About from "./pages/About";
 import Programme30Jours from "./pages/Programme30Jours";
 import MentionsLegales from "./pages/MentionsLegales";
@@ -60,6 +61,7 @@ const App = () => (
           <Route path="/blog/stress-travail-neurofeedback" element={<BlogStressTravail />} />
           <Route path="/blog/gestion-stress-angoisses" element={<BlogGestionStress />} />
           <Route path="/blog/neurofeedback-burn-out" element={<BlogBurnOut />} />
+          <Route path="/blog/perdre-poids-sans-regime-bordeaux" element={<BlogPertePoidsRegime />} />
           <Route path="/a-propos" element={<About />} />
           <Route path="/programme-30-jours" element={<Programme30Jours />} />
           <Route path="/programme-28-jours" element={<Programme30Jours />} /> {/* Redirect ancienne URL */}
