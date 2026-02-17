@@ -14,6 +14,8 @@ import ameliorerSommeilImg from "@/assets/ameliorer-sommeil-neuroptimal.jpg";
 import stressTravailImg from "@/assets/stress-travail-neurofeedback.jpg";
 import gestionStressImg from "@/assets/gestion-stress-angoisses.png";
 import burnOutImg from "@/assets/neurofeedback-burn-out.png";
+import pertePoidsImg from "@/assets/perte-poids-sans-regime-bordeaux.jpg";
+import visioCoachingImg from "@/assets/seance-visio-coaching-agp.jpg";
 
 const Blog = () => {
   useEffect(() => {
@@ -69,6 +71,28 @@ const Blog = () => {
 
   // Derniers articles (tous confondus)
   const recentArticles = [
+    {
+      slug: "perdre-poids-sans-regime-bordeaux",
+      title: "Perdre du Poids sans Régime à Bordeaux : La Méthode AGP Expliquée",
+      excerpt:
+        "Découvrez comment perdre du poids durablement sans régime restrictif grâce à la méthode AGP. Programme 30 jours accessible en visio.",
+      date: "Février 2026",
+      category: "Perte de poids",
+      categorySlug: "agp",
+      image: pertePoidsImg,
+      imageAlt: "Perdre du poids sans régime à Bordeaux - Méthode AGP",
+    },
+    {
+      slug: "programme-perte-de-poids-en-ligne-coaching-bordeaux",
+      title: "Programme Perte de Poids en Ligne : Pourquoi l'Application Seule ne Suffit Pas",
+      excerpt:
+        "Le Programme AGP 30 jours combine application guidée et coaching hebdomadaire humain. Créé à Bordeaux, accessible partout en France.",
+      date: "Février 2026",
+      category: "Perte de poids",
+      categorySlug: "agp",
+      image: visioCoachingImg,
+      imageAlt: "Coaching perte de poids en visioconférence - Programme AGP Bordeaux",
+    },
     {
       slug: "neurofeedback-sommeil-reparateur",
       title: "Retrouver un Sommeil Réparateur avec le Neurofeedback Dynamique",
