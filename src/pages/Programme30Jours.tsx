@@ -259,8 +259,10 @@ const Programme30Jours = () => {
                   </p>
                   <p>
                     Le programme AGP 30 jours est la version destinée au grand public : une méthode accessible, guidée,
-                    simple à suivre, qui vous permet d'agir sur votre relation à la nourriture, à votre rythme. C'est
-                    une application qui vous guide et vous permet d'avancer à votre rythme.
+                    simple à suivre grâce à l'application, qui vous permet d'agir sur votre relation à la nourriture, à
+                    votre rythme. C'est une application qui vous guide et vous permet d'avancer à votre rythme. Et les
+                    30 premiers jours je vous accompagne une fois par semaine. Le suivi jour 1 on met ensempble
+                    l'application en marche, je vous explique tout et c'est à vous de jouer.
                   </p>
                 </div>
               </div>
