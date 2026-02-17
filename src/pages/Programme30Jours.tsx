@@ -23,7 +23,7 @@ const Programme30Jours = () => {
     // Meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     const descContent =
-      "Programme perte de poids 30 jours à Bordeaux et en Gironde. Méthode AGP sans régime, avec suivi personnalisé en visio depuis Tresses (33370). Hypnose, EFT et chronobiologie. 90€.";
+    "Programme perte de poids 30 jours à Bordeaux et en Gironde. Méthode AGP sans régime, avec suivi personnalisé en visio depuis Tresses (33370). Hypnose, EFT et chronobiologie. 90€.";
     if (metaDescription) {
       metaDescription.setAttribute("content", descContent);
     } else {
@@ -42,7 +42,7 @@ const Programme30Jours = () => {
     }
     metaKeywords.setAttribute(
       "content",
-      "programme perte de poids bordeaux, maigrir bordeaux, perte de poids gironde, programme minceur tresses, méthode AGP, hypnose perte de poids bordeaux",
+      "programme perte de poids bordeaux, maigrir bordeaux, perte de poids gironde, programme minceur tresses, méthode AGP, hypnose perte de poids bordeaux"
     );
 
     // Structured Data - Product
@@ -53,7 +53,7 @@ const Programme30Jours = () => {
       "@type": "Product",
       name: "Programme Perte de Poids 30 Jours AGP",
       description:
-        "Programme complet de gestion du poids sur 30 jours avec hypnose, EFT-H et suivi personnalisé depuis Tresses, Bordeaux",
+      "Programme complet de gestion du poids sur 30 jours avec hypnose, EFT-H et suivi personnalisé depuis Tresses, Bordeaux",
       offers: {
         "@type": "Offer",
         price: "90",
@@ -66,15 +66,15 @@ const Programme30Jours = () => {
             "@type": "PostalAddress",
             streetAddress: "9 Galerie Marchande",
             addressLocality: "Tresses",
-            postalCode: "33370",
-          },
-        },
+            postalCode: "33370"
+          }
+        }
       },
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: "5",
-        reviewCount: "55",
-      },
+        reviewCount: "55"
+      }
     });
     document.head.appendChild(structuredData);
     return () => {
@@ -91,11 +91,11 @@ const Programme30Jours = () => {
         <div className="container mx-auto px-4 max-w-4xl">
           <Breadcrumbs
             items={[
-              {
-                label: "Programme 30 Jours",
-              },
-            ]}
-          />
+            {
+              label: "Programme 30 Jours"
+            }]
+            } />
+
         </div>
 
         {/* Hero Section */}
@@ -115,8 +115,8 @@ const Programme30Jours = () => {
                 <img
                   src={logoProgramme30Jours}
                   alt="Logo Programme AGP Perte de Poids Bordeaux"
-                  className="w-48 h-48 mx-auto rounded-full shadow-lg object-cover"
-                />
+                  className="w-48 h-48 mx-auto rounded-full shadow-lg object-cover" />
+
               </div>
 
               <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
@@ -151,13 +151,13 @@ const Programme30Jours = () => {
               <Button
                 size="lg"
                 className="bg-gradient-primary hover:shadow-strong text-lg px-8 py-6 hover:scale-105 transition-transform"
-                asChild
-              >
+                asChild>
+
                 <a
                   href="https://ericgata.thrivecart.com/httpsbuystripecom14a4gzetc8fu1qtekqc3m02/"
                   target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  rel="noopener noreferrer">
+
                   Je réserve mon programme à 90€
                 </a>
               </Button>
@@ -257,12 +257,12 @@ const Programme30Jours = () => {
                     comportement alimentaire, qui a déjà permis de former plus de 450 praticiens. Cette méthode existe
                     depuis plus de 10 ans.
                   </p>
-                  <p>
-                    Le programme AGP 30 jours est la version destinée au grand public : une méthode accessible, guidée,
-                    simple à suivre grâce à l'application, qui vous permet d'agir sur votre relation à la nourriture, à
-                    votre rythme. C'est une application qui vous guide et vous permet d'avancer à votre rythme. Et les
-                    30 premiers jours je vous accompagne une fois par semaine. Le suivi jour 1 on met ensempble
-                    l'application en marche, je vous explique tout et c'est à vous de jouer.
+                  <p>Le programme AGP 30 jours est la version destinée au grand public : une méthode accessible, guidée, simple à suivre grâce à l'application, qui vous permet d'agir sur votre relation à la nourriture, à votre rythme. C'est une application qui vous guide et vous permet d'avancer à votre rythme. Et les 30 premiers jours je vous accompagne une fois par semaine. Le suivi jour 1, on met ensempble l'application en marche, je vous explique tout et c'est à vous de jouer.
+
+
+
+
+
                   </p>
                 </div>
               </div>
@@ -384,13 +384,13 @@ const Programme30Jours = () => {
                 <Button
                   size="lg"
                   className="w-full bg-gradient-primary hover:shadow-strong text-lg hover:scale-105 transition-transform"
-                  asChild
-                >
+                  asChild>
+
                   <a
                     href="https://ericgata.thrivecart.com/httpsbuystripecom14a4gzetc8fu1qtekqc3m02/"
                     target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                    rel="noopener noreferrer">
+
                     Je réserve mon programme à 90€
                   </a>
                 </Button>
@@ -459,8 +459,8 @@ const Programme30Jours = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>);
+
 };
 
 export default Programme30Jours;
