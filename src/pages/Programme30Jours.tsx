@@ -315,6 +315,15 @@ const Programme30Jours = () => {
                     </ul>
                   </div>
 
+                  <div className="border-l-4 border-primary pl-6">
+                    <h4 className="text-xl font-semibold mb-3 flex items-center gap-2">
+                      <span>💬</span> Une communauté WhatsApp
+                    </h4>
+                    <p className="text-foreground/80">
+                      Pour échanger entre nous et répondre à vos questions tout au long du programme.
+                    </p>
+                  </div>
+
                   {/* INSERTION 2 - Suivi géolocalisé */}
                   <div className="bg-primary/5 p-4 rounded-lg border border-primary/10">
                     <p className="font-semibold text-foreground flex items-center gap-2 mb-2">
