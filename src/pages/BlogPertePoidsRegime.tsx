@@ -298,7 +298,7 @@ const BlogPertePoidsRegime = () => {
                 <div>
                   <h3 className="text-xl font-heading font-bold text-foreground mb-3">2. L'hypnose et l'EFT-H : transformer vos automatismes et libérer les émotions</h3>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                    Les techniques d'<Link to="/hypnose" className="text-primary hover:underline">hypnose</Link> et d'<Link to="/eft" className="text-primary hover:underline">EFT-H</Link> sont intégrées directement dans l'application sous forme d'audios et d'exercices guidés. Vous les pratiquez en autonomie, à votre rythme, selon vos besoins.
+                    Les techniques d'<Link to="/hypnose-eft-h" className="text-primary hover:underline">hypnose</Link> et d'<Link to="/hypnose-eft-h" className="text-primary hover:underline">EFT-H</Link> sont intégrées directement dans l'application sous forme d'audios et d'exercices guidés. Vous les pratiquez en autonomie, à votre rythme, selon vos besoins.
                   </p>
                   <ul className="space-y-2 mb-4 text-lg text-muted-foreground">
                     <li className="flex items-start gap-2"><CheckCircle className="text-primary mt-1 shrink-0" size={18} />Réduire les fringales impulsives</li>
