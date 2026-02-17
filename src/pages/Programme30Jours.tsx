@@ -277,7 +277,7 @@ const Programme30Jours = () => {
 
                   <div className="border-l-4 border-primary pl-6">
                     <h4 className="text-xl font-semibold mb-3 flex items-center gap-2">
-                      <span>🎧</span> Des séances d'hypnose et d'EFT
+                      <span>🎧</span> Des techniques guidées comme l'hypnose, PNE, bulle 3p...
                     </h4>
                     <p className="text-foreground/80 mb-2">Pour :</p>
                     <ul className="space-y-2 text-foreground/80">
