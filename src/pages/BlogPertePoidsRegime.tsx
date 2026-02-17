@@ -10,8 +10,8 @@ import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+  AccordionTrigger } from
+"@/components/ui/accordion";
 import featuredImage from "@/assets/perte-poids-sans-regime-bordeaux.jpg";
 
 const BlogPertePoidsRegime = () => {
@@ -28,82 +28,82 @@ const BlogPertePoidsRegime = () => {
     author: { "@type": "Person", name: "Éric Gata" },
     publisher: {
       "@type": "Organization",
-      name: "Méthodes Douces Bordeaux",
+      name: "Méthodes Douces Bordeaux"
     },
     datePublished: "2025-02-16",
     dateModified: "2025-02-16",
-    mainEntityOfPage: "https://methodes-douces-bordeaux.fr/blog/perdre-poids-sans-regime-bordeaux",
+    mainEntityOfPage: "https://methodes-douces-bordeaux.fr/blog/perdre-poids-sans-regime-bordeaux"
   };
 
   const faqStructuredData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: [
-      {
-        "@type": "Question",
-        name: "Est-ce que le programme de perte de poids à Bordeaux marche vraiment ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Oui. La méthode AGP existe depuis plus de 10 ans et a formé 450 praticiens. Créé à Bordeaux, ce programme produit des résultats durables car nous travaillons sur les causes (émotions, chronobiologie, automatismes) et non juste les symptômes.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Combien de kilos vais-je perdre avec le programme AGP ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Chaque personne est unique. En moyenne, nos clients perdent entre 5 et 15kg sur 3 à 6 mois, de manière progressive et durable.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Est-ce que je dois me déplacer à Tresses pour suivre le programme ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Non. Le Programme 30 Jours est 100% en ligne. Le seul moment en direct est le coaching hebdomadaire en visioconférence. Vous pouvez suivre le programme depuis Bordeaux, la Gironde, Paris, Lyon, ou n'importe où en France.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Quelle est la différence avec un régime classique ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Un régime classique restreint les aliments, compte les calories et ignore les émotions (taux d'échec 95%). La méthode AGP, conçue à Bordeaux, n'interdit aucun aliment, respecte votre chronobiologie, travaille sur les émotions et vous accompagne chaque semaine.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Et si j'ai déjà tout essayé pour perdre du poids ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "C'est justement pour vous que cette méthode existe. Si les régimes ne marchent pas, c'est normal : ils ne traitent pas la vraie cause. AGP s'adresse aux personnes en Gironde et partout en France qui veulent une solution durable.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Y a-t-il une garantie satisfait ou remboursé ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Oui. Garantie satisfait ou remboursé 7 jours. Si après une semaine vous estimez que le programme ne vous convient pas, vous êtes remboursé intégralement, sans question.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Le programme perte de poids est-il adapté aux hommes ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Absolument. Environ 30% de nos participants sont des hommes. La méthode AGP est basée sur la science (chronobiologie, neurosciences), pas sur des concepts genrés.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Puis-je suivre le programme si j'ai un traitement médical ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Si vous suivez un traitement médical ou un suivi pour une pathologie, vous devez en informer votre médecin avant de commencer. La méthode AGP n'est pas un traitement médical, c'est un accompagnement bien-être pour personnes en bonne santé.",
-        },
-      },
-    ],
+    {
+      "@type": "Question",
+      name: "Est-ce que le programme de perte de poids à Bordeaux marche vraiment ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Oui. La méthode AGP existe depuis plus de 10 ans et a formé 450 praticiens. Créé à Bordeaux, ce programme produit des résultats durables car nous travaillons sur les causes (émotions, chronobiologie, automatismes) et non juste les symptômes."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Combien de kilos vais-je perdre avec le programme AGP ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Chaque personne est unique. En moyenne, nos clients perdent entre 5 et 15kg sur 3 à 6 mois, de manière progressive et durable."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Est-ce que je dois me déplacer à Tresses pour suivre le programme ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Non. Le Programme 30 Jours est 100% en ligne. Le seul moment en direct est le coaching hebdomadaire en visioconférence. Vous pouvez suivre le programme depuis Bordeaux, la Gironde, Paris, Lyon, ou n'importe où en France."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Quelle est la différence avec un régime classique ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Un régime classique restreint les aliments, compte les calories et ignore les émotions (taux d'échec 95%). La méthode AGP, conçue à Bordeaux, n'interdit aucun aliment, respecte votre chronobiologie, travaille sur les émotions et vous accompagne chaque semaine."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Et si j'ai déjà tout essayé pour perdre du poids ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "C'est justement pour vous que cette méthode existe. Si les régimes ne marchent pas, c'est normal : ils ne traitent pas la vraie cause. AGP s'adresse aux personnes en Gironde et partout en France qui veulent une solution durable."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Y a-t-il une garantie satisfait ou remboursé ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Oui. Garantie satisfait ou remboursé 7 jours. Si après une semaine vous estimez que le programme ne vous convient pas, vous êtes remboursé intégralement, sans question."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Le programme perte de poids est-il adapté aux hommes ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Absolument. Environ 30% de nos participants sont des hommes. La méthode AGP est basée sur la science (chronobiologie, neurosciences), pas sur des concepts genrés."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Puis-je suivre le programme si j'ai un traitement médical ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Si vous suivez un traitement médical ou un suivi pour une pathologie, vous devez en informer votre médecin avant de commencer. La méthode AGP n'est pas un traitement médical, c'est un accompagnement bien-être pour personnes en bonne santé."
+      }
+    }]
+
   };
 
   return (
@@ -112,12 +112,12 @@ const BlogPertePoidsRegime = () => {
         <title>Perdre du Poids sans Régime à Bordeaux | Méthode AGP | Programme 30 Jours</title>
         <meta
           name="description"
-          content="Découvrez comment perdre du poids durablement sans régime restrictif grâce à la méthode AGP. Programme 30 jours à 90€, accessible en visio depuis Bordeaux et toute la France."
-        />
+          content="Découvrez comment perdre du poids durablement sans régime restrictif grâce à la méthode AGP. Programme 30 jours à 90€, accessible en visio depuis Bordeaux et toute la France." />
+
         <meta
           name="keywords"
-          content="perte de poids Bordeaux, maigrir sans régime, hypnose perte de poids, programme minceur Gironde, chronobiologie, méthode AGP"
-        />
+          content="perte de poids Bordeaux, maigrir sans régime, hypnose perte de poids, programme minceur Gironde, chronobiologie, méthode AGP" />
+
         <link rel="canonical" href="https://methodes-douces-bordeaux.fr/blog/perdre-poids-sans-regime-bordeaux" />
         <meta property="og:title" content="Perdre du Poids sans Régime à Bordeaux : La Méthode AGP Expliquée" />
         <meta property="og:description" content="Découvrez comment perdre du poids durablement sans régime restrictif grâce à la méthode AGP. Programme 30 jours à 90€." />
@@ -134,12 +134,12 @@ const BlogPertePoidsRegime = () => {
         <div className="container mx-auto px-4 py-8">
           <Breadcrumbs
             items={[
-              { label: "Accueil", path: "/" },
-              { label: "Blog", path: "/blog" },
-              { label: "Perte de poids", path: "/blog/agp" },
-              { label: "Perdre du poids sans régime" },
-            ]}
-          />
+            { label: "Accueil", path: "/" },
+            { label: "Blog", path: "/blog" },
+            { label: "Perte de poids", path: "/blog/agp" },
+            { label: "Perdre du poids sans régime" }]
+            } />
+
         </div>
 
         {/* Featured Image */}
@@ -149,8 +149,8 @@ const BlogPertePoidsRegime = () => {
               <img
                 src={featuredImage}
                 alt="Perdre du poids sans régime à Bordeaux - Méthode AGP programme 30 jours"
-                className="w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-500"
-              />
+                className="w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-500" />
+
             </div>
           </div>
         </section>
@@ -170,7 +170,7 @@ const BlogPertePoidsRegime = () => {
             </h1>
 
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground mb-8">
-              <span className="flex items-center gap-1"><Calendar size={16} /> Février 2025</span>
+              <span className="flex items-center gap-1"><Calendar size={16} />Février 2026</span>
               <span className="flex items-center gap-1"><Clock size={16} /> 8 min de lecture</span>
               <span className="flex items-center gap-1"><User size={16} /> Éric Gata</span>
             </div>
@@ -260,16 +260,16 @@ const BlogPertePoidsRegime = () => {
               <h3 className="text-xl font-heading font-bold text-foreground mb-4">Les principes fondamentaux</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 {[
-                  { title: "Aucun aliment interdit", desc: "Vous pouvez manger de tout. Nous travaillons sur le \"quand\" et le \"comment\", pas sur le \"quoi\"." },
-                  { title: "Respecter votre rythme biologique", desc: "Manger les bons aliments au bon moment change radicalement les résultats." },
-                  { title: "Travailler sur les causes", desc: "La nourriture n'est pas le problème. C'est votre relation aux émotions et aux automatismes." },
-                  { title: "Vous accompagner", desc: "Un suivi hebdomadaire vous permet d'ajuster, de comprendre, de progresser." },
-                ].map((item, i) => (
-                  <div key={i} className="p-4 rounded-lg border bg-card">
+                { title: "Aucun aliment interdit", desc: "Vous pouvez manger de tout. Nous travaillons sur le \"quand\" et le \"comment\", pas sur le \"quoi\"." },
+                { title: "Respecter votre rythme biologique", desc: "Manger les bons aliments au bon moment change radicalement les résultats." },
+                { title: "Travailler sur les causes", desc: "La nourriture n'est pas le problème. C'est votre relation aux émotions et aux automatismes." },
+                { title: "Vous accompagner", desc: "Un suivi hebdomadaire vous permet d'ajuster, de comprendre, de progresser." }].
+                map((item, i) =>
+                <div key={i} className="p-4 rounded-lg border bg-card">
                     <h4 className="font-bold text-foreground mb-2">{i + 1}. {item.title}</h4>
                     <p className="text-muted-foreground">{item.desc}</p>
                   </div>
-                ))}
+                )}
               </div>
             </section>
 
@@ -409,15 +409,15 @@ const BlogPertePoidsRegime = () => {
               </h2>
               <div className="space-y-6">
                 {[
-                  { name: "Sophie, 42 ans, Bordeaux", text: "J'ai perdu 12kg en 3 mois avec la méthode AGP, mais ce n'est pas ça le plus important. J'ai retrouvé le plaisir de manger sans culpabilité. Les fringales du soir ont disparu grâce aux séances d'hypnose." },
-                  { name: "Marie, 35 ans, Libourne", text: "Pour 90€, j'ai reçu un accompagnement qui vaut 10 fois plus. Le suivi hebdomadaire avec Éric a été essentiel. J'ai perdu 8kg en 2 mois, et je continue à perdre naturellement." },
-                  { name: "Julien, 48 ans, Cenon", text: "L'approche AGP est scientifique, pas 'régime de filles'. J'ai appris à manger selon ma chronobiologie. -15kg en 4 mois, plus d'énergie, meilleur sommeil. Je recommande." },
-                ].map((t, i) => (
-                  <blockquote key={i} className="border-l-4 border-primary pl-6 py-4 bg-muted/20 rounded-r-lg">
+                { name: "Sophie, 42 ans, Bordeaux", text: "J'ai perdu 12kg en 3 mois avec la méthode AGP, mais ce n'est pas ça le plus important. J'ai retrouvé le plaisir de manger sans culpabilité. Les fringales du soir ont disparu grâce aux séances d'hypnose." },
+                { name: "Marie, 35 ans, Libourne", text: "Pour 90€, j'ai reçu un accompagnement qui vaut 10 fois plus. Le suivi hebdomadaire avec Éric a été essentiel. J'ai perdu 8kg en 2 mois, et je continue à perdre naturellement." },
+                { name: "Julien, 48 ans, Cenon", text: "L'approche AGP est scientifique, pas 'régime de filles'. J'ai appris à manger selon ma chronobiologie. -15kg en 4 mois, plus d'énergie, meilleur sommeil. Je recommande." }].
+                map((t, i) =>
+                <blockquote key={i} className="border-l-4 border-primary pl-6 py-4 bg-muted/20 rounded-r-lg">
                     <p className="text-lg text-muted-foreground italic mb-2">"{t.text}"</p>
                     <footer className="text-sm font-semibold text-foreground">— {t.name}</footer>
                   </blockquote>
-                ))}
+                )}
               </div>
             </section>
 
@@ -428,16 +428,16 @@ const BlogPertePoidsRegime = () => {
               </h2>
               <Accordion type="single" collapsible className="w-full">
                 {[
-                  { q: "Est-ce que le programme de perte de poids à Bordeaux marche vraiment ?", a: "Oui. La méthode AGP existe depuis plus de 10 ans et a formé 450 praticiens. Créé à Bordeaux, ce programme produit des résultats durables car nous travaillons sur les causes (émotions, chronobiologie, automatismes) et non juste les symptômes." },
-                  { q: "Combien de kilos vais-je perdre avec le programme AGP ?", a: "Chaque personne est unique. En moyenne, nos clients perdent entre 5 et 15kg sur 3 à 6 mois, de manière progressive et durable." },
-                  { q: "Est-ce que je dois me déplacer à Tresses pour suivre le programme ?", a: "Non. Le Programme 30 Jours est 100% en ligne. Le seul moment en direct est le coaching hebdomadaire en visioconférence. Vous pouvez suivre le programme depuis Bordeaux, la Gironde, Paris, Lyon, ou n'importe où en France." },
-                  { q: "Quelle est la différence avec un régime classique ?", a: "Un régime classique restreint les aliments, compte les calories et ignore les émotions (taux d'échec 95%). La méthode AGP, conçue à Bordeaux, n'interdit aucun aliment, respecte votre chronobiologie, travaille sur les émotions et vous accompagne chaque semaine." },
-                  { q: "Et si j'ai déjà tout essayé pour perdre du poids ?", a: "C'est justement pour vous que cette méthode existe. Si les régimes ne marchent pas, c'est normal : ils ne traitent pas la vraie cause. AGP s'adresse aux personnes en Gironde et partout en France qui veulent une solution durable." },
-                  { q: "Y a-t-il une garantie ?", a: "Oui. Garantie satisfait ou remboursé 7 jours. Si après une semaine le programme ne vous convient pas, vous êtes remboursé intégralement." },
-                  { q: "Le programme est-il adapté aux hommes ?", a: "Absolument. Environ 30% de nos participants sont des hommes. La méthode est basée sur la science (chronobiologie, neurosciences), pas sur des concepts genrés." },
-                  { q: "Puis-je suivre le programme avec un traitement médical ?", a: "Vous devez en informer votre médecin avant de commencer. La méthode AGP n'est pas un traitement médical, c'est un accompagnement bien-être." },
-                ].map((item, i) => (
-                  <AccordionItem key={i} value={`faq-${i}`}>
+                { q: "Est-ce que le programme de perte de poids à Bordeaux marche vraiment ?", a: "Oui. La méthode AGP existe depuis plus de 10 ans et a formé 450 praticiens. Créé à Bordeaux, ce programme produit des résultats durables car nous travaillons sur les causes (émotions, chronobiologie, automatismes) et non juste les symptômes." },
+                { q: "Combien de kilos vais-je perdre avec le programme AGP ?", a: "Chaque personne est unique. En moyenne, nos clients perdent entre 5 et 15kg sur 3 à 6 mois, de manière progressive et durable." },
+                { q: "Est-ce que je dois me déplacer à Tresses pour suivre le programme ?", a: "Non. Le Programme 30 Jours est 100% en ligne. Le seul moment en direct est le coaching hebdomadaire en visioconférence. Vous pouvez suivre le programme depuis Bordeaux, la Gironde, Paris, Lyon, ou n'importe où en France." },
+                { q: "Quelle est la différence avec un régime classique ?", a: "Un régime classique restreint les aliments, compte les calories et ignore les émotions (taux d'échec 95%). La méthode AGP, conçue à Bordeaux, n'interdit aucun aliment, respecte votre chronobiologie, travaille sur les émotions et vous accompagne chaque semaine." },
+                { q: "Et si j'ai déjà tout essayé pour perdre du poids ?", a: "C'est justement pour vous que cette méthode existe. Si les régimes ne marchent pas, c'est normal : ils ne traitent pas la vraie cause. AGP s'adresse aux personnes en Gironde et partout en France qui veulent une solution durable." },
+                { q: "Y a-t-il une garantie ?", a: "Oui. Garantie satisfait ou remboursé 7 jours. Si après une semaine le programme ne vous convient pas, vous êtes remboursé intégralement." },
+                { q: "Le programme est-il adapté aux hommes ?", a: "Absolument. Environ 30% de nos participants sont des hommes. La méthode est basée sur la science (chronobiologie, neurosciences), pas sur des concepts genrés." },
+                { q: "Puis-je suivre le programme avec un traitement médical ?", a: "Vous devez en informer votre médecin avant de commencer. La méthode AGP n'est pas un traitement médical, c'est un accompagnement bien-être." }].
+                map((item, i) =>
+                <AccordionItem key={i} value={`faq-${i}`}>
                     <AccordionTrigger className="text-left font-semibold text-foreground">
                       {item.q}
                     </AccordionTrigger>
@@ -445,7 +445,7 @@ const BlogPertePoidsRegime = () => {
                       {item.a}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -468,8 +468,8 @@ const BlogPertePoidsRegime = () => {
               <a
                 href="https://ericgata.thrivecart.com/httpsbuystripecom14a4gzetc8fu1qtekqc3m02/"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
+
                 Je réserve mon programme à 90€
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
@@ -479,8 +479,8 @@ const BlogPertePoidsRegime = () => {
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>);
+
 };
 
 export default BlogPertePoidsRegime;
