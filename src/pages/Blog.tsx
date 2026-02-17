@@ -54,7 +54,7 @@ const Blog = () => {
       title: "Perte de poids",
       description: "Perte de poids durable, chronobiologie, programme 30 jours. Une approche sans régime strict.",
       icon: Scale,
-      articleCount: 1,
+      articleCount: 2,
       color: "text-green-600",
     },
     {

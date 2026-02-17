@@ -8,6 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Scale } from "lucide-react";
 import pertePoidsImg from "@/assets/perte-poids-sans-regime-bordeaux.jpg";
+import visioCoachingImg from "@/assets/seance-visio-coaching-agp.jpg";
 
 const BlogAgp = () => {
   useEffect(() => {
@@ -23,6 +24,14 @@ const BlogAgp = () => {
       date: "Février 2025",
       image: pertePoidsImg,
       imageAlt: "Perdre du poids sans régime à Bordeaux - Méthode AGP",
+    },
+    {
+      slug: "programme-perte-de-poids-en-ligne-coaching-bordeaux",
+      title: "Programme Perte de Poids en Ligne : Pourquoi l'Application Seule ne Suffit Pas",
+      excerpt: "Ni une app froide, ni des séances isolées. Le Programme AGP 30 jours combine application guidée et coaching hebdomadaire humain. Créé à Bordeaux, accessible partout en France.",
+      date: "Février 2026",
+      image: visioCoachingImg,
+      imageAlt: "Coaching perte de poids en visioconférence - Programme AGP Bordeaux",
     },
   ];
 
