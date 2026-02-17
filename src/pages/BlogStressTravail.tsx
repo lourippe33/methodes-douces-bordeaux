@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Calendar, Clock, User, ExternalLink } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import stressImage from "@/assets/stress-travail-neurofeedback.jpg";
 
 const BlogStressTravail = () => {
@@ -141,16 +141,11 @@ const BlogStressTravail = () => {
               </ul>
               
               <p className="text-muted-foreground leading-relaxed">
-                Pour mieux comprendre les effets du stress sur votre santé, consultez cet article détaillé : 
-                <a 
-                  href="https://www.santemagazine.fr/sante/maladies/maladies-mentales/stress/quest-ce-que-le-stress-et-quelles-sont-ses-consequences-sur-la-sante-170896" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline inline-flex items-center gap-1"
-                >
-                  "Qu'est-ce que le stress et quelles sont ses conséquences sur la santé ?" – Santé Magazine
-                  <ExternalLink size={14} />
-                </a>.
+                Si ce stress persiste, il peut mener à un véritable{" "}
+                <Link to="/blog/neurofeedback-burn-out" className="text-primary hover:underline">
+                  épuisement professionnel (burn-out)
+                </Link>
+                , nécessitant un accompagnement adapté.
               </p>
 
               {/* Section: Neurofeedback dynamique */}
@@ -232,16 +227,10 @@ const BlogStressTravail = () => {
               </blockquote>
               
               <p className="text-muted-foreground leading-relaxed">
-                Pour en savoir plus sur les symptômes du stress et des méthodes pour le gérer, consultez cet article : 
-                <a 
-                  href="https://sante.journaldesfemmes.fr/fiches-maladies/2534455-stress-symptomes-causes-consequences-traitements/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline inline-flex items-center gap-1"
-                >
-                  "Stress : Symptômes, Causes, Effets et Traitements" – Journal des Femmes Santé
-                  <ExternalLink size={14} />
-                </a>.
+                Le stress chronique impacte aussi fortement la qualité du sommeil. Découvrez comment le neurofeedback peut vous aider à{" "}
+                <Link to="/blog/neurofeedback-sommeil-reparateur" className="text-primary hover:underline">
+                  retrouver un sommeil réparateur
+                </Link>.
               </p>
 
               {/* Conclusion */}
@@ -256,6 +245,25 @@ const BlogStressTravail = () => {
               <p className="text-lg text-foreground font-medium mt-6">
                 Prenez rendez-vous dès aujourd'hui et découvrez comment réduire durablement votre <strong>stress au travail</strong> grâce au neurofeedback dynamique.
               </p>
+
+              {/* Articles liés */}
+              <div className="p-6 bg-muted/20 rounded-xl border border-border mt-8 mb-8">
+                <p className="text-sm text-muted-foreground mb-3">À lire aussi :</p>
+                <div className="space-y-2">
+                  <Link 
+                    to="/blog/neurofeedback-burn-out" 
+                    className="block text-primary hover:underline font-medium"
+                  >
+                    Burn-out : Comprendre, Respirer, Se Reconstruire avec le Neurofeedback →
+                  </Link>
+                  <Link 
+                    to="/blog/gestion-stress-angoisses" 
+                    className="block text-primary hover:underline font-medium"
+                  >
+                    Gestion du Stress, des Angoisses et des Insomnies →
+                  </Link>
+                </div>
+              </div>
 
               {/* CTA */}
               <div className="mt-12 p-8 bg-gradient-to-br from-primary/10 via-background to-secondary/10 rounded-xl text-center">

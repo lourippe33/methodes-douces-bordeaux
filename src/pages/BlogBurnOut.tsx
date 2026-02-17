@@ -344,6 +344,25 @@ const BlogBurnOut = () => {
                 </div>
               </div>
 
+              {/* Articles liés */}
+              <div className="p-6 bg-muted/20 rounded-xl border border-border mb-8">
+                <p className="text-sm text-muted-foreground mb-3">À lire aussi :</p>
+                <div className="space-y-2">
+                  <Link 
+                    to="/blog/stress-travail-neurofeedback" 
+                    className="block text-primary hover:underline font-medium"
+                  >
+                    Réduire le Stress au Travail avec le Neurofeedback Dynamique →
+                  </Link>
+                  <Link 
+                    to="/blog/neurofeedback-sommeil-reparateur" 
+                    className="block text-primary hover:underline font-medium"
+                  >
+                    Retrouver un Sommeil Réparateur grâce au Neurofeedback →
+                  </Link>
+                </div>
+              </div>
+
               {/* CTA */}
               <div className="mt-12 p-8 text-center bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl">
                 <h3 className="text-xl font-bold mb-4">Envie de souffler et de repartir plus sereinement ?</h3>
