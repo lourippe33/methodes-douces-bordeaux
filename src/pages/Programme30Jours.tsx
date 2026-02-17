@@ -342,8 +342,8 @@ const Programme30Jours = () => {
                 </p>
                 <p className="text-sm text-muted-foreground italic">
                   Si vous vivez une difficulté émotionnelle plus profonde (trauma, anxiété intense, blessure
-                  affective…), l'application vous en informera et je vous orienterai vers un accompagnement
-                  complémentaire adapté. Vous ne serez jamais seul(e).
+                  affective…), l'application vous en informera dans le suivi bien-être et je vous orienterai vers un
+                  accompagnement complémentaire adapté. Vous ne serez jamais seul(e).
                 </p>
               </div>
 
