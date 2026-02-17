@@ -244,7 +244,7 @@ const BlogProgrammePertePoidsEnLigne = () => {
                 <strong>La structure quotidienne</strong> que vous n'avez pas à créer vous-même. Chaque jour pendant 30 jours, vous savez exactement quoi faire :
               </p>
               <ul className="space-y-3 text-muted-foreground">
-                <li>Des <strong>audios d'hypnose et d'EFT-H</strong> accessibles à n'importe quelle heure selon vos besoins du moment</li>
+                <li>Des <strong>audios d'<Link to="/hypnose" className="text-primary hover:underline">hypnose</Link> et d'<Link to="/eft" className="text-primary hover:underline">EFT-H</Link></strong> accessibles à n'importe quelle heure selon vos besoins du moment</li>
                 <li>Des <strong>exercices courts</strong> (5 à 15 minutes) pour ancrer progressivement de nouveaux comportements alimentaires</li>
                 <li>Des <strong>conseils chronobiologiques</strong> adaptés à votre journée — pas des règles génériques, mais des indications qui respectent votre rythme biologique</li>
                 <li>Un <strong>fil rouge quotidien</strong> qui maintient la cohérence sur 30 jours</li>
@@ -415,6 +415,17 @@ const BlogProgrammePertePoidsEnLigne = () => {
                     Je rejoins le Programme AGP à 90€
                   </a>
                 </Button>
+              </div>
+
+              {/* Article lié */}
+              <div className="p-6 bg-muted/20 rounded-xl border border-border my-8">
+                <p className="text-sm text-muted-foreground mb-2">À lire aussi :</p>
+                <Link 
+                  to="/blog/perdre-poids-sans-regime-bordeaux" 
+                  className="text-lg font-semibold text-primary hover:underline"
+                >
+                  Perdre du Poids sans Régime à Bordeaux : La Méthode AGP Expliquée →
+                </Link>
               </div>
 
               {/* FAQ */}
