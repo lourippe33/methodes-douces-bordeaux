@@ -22,7 +22,8 @@ const Programme30Jours = () => {
 
     // Meta description
     const metaDescription = document.querySelector('meta[name="description"]');
-    const descContent = "Programme perte de poids 30 jours à Bordeaux et en Gironde. Méthode AGP sans régime, avec suivi personnalisé en visio depuis Tresses (33370). Hypnose, EFT et chronobiologie. 90€.";
+    const descContent =
+      "Programme perte de poids 30 jours à Bordeaux et en Gironde. Méthode AGP sans régime, avec suivi personnalisé en visio depuis Tresses (33370). Hypnose, EFT et chronobiologie. 90€.";
     if (metaDescription) {
       metaDescription.setAttribute("content", descContent);
     } else {
@@ -39,7 +40,10 @@ const Programme30Jours = () => {
       metaKeywords.setAttribute("name", "keywords");
       document.head.appendChild(metaKeywords);
     }
-    metaKeywords.setAttribute("content", "programme perte de poids bordeaux, maigrir bordeaux, perte de poids gironde, programme minceur tresses, méthode AGP, hypnose perte de poids bordeaux");
+    metaKeywords.setAttribute(
+      "content",
+      "programme perte de poids bordeaux, maigrir bordeaux, perte de poids gironde, programme minceur tresses, méthode AGP, hypnose perte de poids bordeaux",
+    );
 
     // Structured Data - Product
     const structuredData = document.createElement("script");
@@ -48,7 +52,8 @@ const Programme30Jours = () => {
       "@context": "https://schema.org",
       "@type": "Product",
       name: "Programme Perte de Poids 30 Jours AGP",
-      description: "Programme complet de gestion du poids sur 30 jours avec hypnose, EFT-H et suivi personnalisé depuis Tresses, Bordeaux",
+      description:
+        "Programme complet de gestion du poids sur 30 jours avec hypnose, EFT-H et suivi personnalisé depuis Tresses, Bordeaux",
       offers: {
         "@type": "Offer",
         price: "90",
@@ -143,7 +148,11 @@ const Programme30Jours = () => {
                 et sans frustration.
               </p>
 
-              <Button size="lg" className="bg-gradient-primary hover:shadow-strong text-lg px-8 py-6 hover:scale-105 transition-transform" asChild>
+              <Button
+                size="lg"
+                className="bg-gradient-primary hover:shadow-strong text-lg px-8 py-6 hover:scale-105 transition-transform"
+                asChild
+              >
                 <a
                   href="https://ericgata.thrivecart.com/httpsbuystripecom14a4gzetc8fu1qtekqc3m02/"
                   target="_blank"
@@ -217,10 +226,12 @@ const Programme30Jours = () => {
                   {/* INSERTION 1 - Paragraphe géolocalisé */}
                   <div className="bg-primary/5 p-4 rounded-lg border border-primary/10">
                     <p className="font-semibold text-foreground flex items-center gap-2 mb-2">
-                      <MapPin className="w-5 h-5 text-primary" /> Vous habitez Bordeaux, Tresses, Libourne ou la Gironde ?
+                      <MapPin className="w-5 h-5 text-primary" /> Vous habitez Bordeaux, Tresses, Libourne ou la Gironde
+                      ?
                     </p>
                     <p>
-                      Ce programme est 100% accessible en ligne avec un suivi personnalisé hebdomadaire en visio depuis mon cabinet à Tresses (33370).
+                      Ce programme est 100% accessible en ligne avec un suivi personnalisé hebdomadaire en visio depuis
+                      mon cabinet à Tresses (33370).
                     </p>
                   </div>
 
@@ -289,7 +300,7 @@ const Programme30Jours = () => {
 
                   <div className="border-l-4 border-primary pl-6">
                     <h4 className="text-xl font-semibold mb-3 flex items-center gap-2">
-                      <span>💬</span> Un suivi hebdomadaire personnalisé
+                      <span>💬</span> Un suivi hebdomadaire personnalisé pendant 30 jours
                     </h4>
                     <p className="text-foreground/80 mb-2">
                       Vous n'êtes pas seul(e). Chaque semaine, nous faisons un point ensemble, en visio, pour :
@@ -308,7 +319,8 @@ const Programme30Jours = () => {
                       <MapPin className="w-5 h-5 text-primary" /> Suivi depuis Tresses, accessible partout :
                     </p>
                     <p className="text-foreground/80">
-                      Que vous soyez à Bordeaux centre, Libourne, Cenon ou ailleurs en Gironde, vous bénéficiez du même accompagnement de qualité en visio.
+                      Que vous soyez à Bordeaux centre, Libourne, Cenon ou ailleurs en Gironde, vous bénéficiez du même
+                      accompagnement de qualité en visio.
                     </p>
                   </div>
                 </div>
@@ -367,7 +379,11 @@ const Programme30Jours = () => {
                   </p>
                   <p className="text-sm text-muted-foreground"></p>
                 </div>
-                <Button size="lg" className="w-full bg-gradient-primary hover:shadow-strong text-lg hover:scale-105 transition-transform" asChild>
+                <Button
+                  size="lg"
+                  className="w-full bg-gradient-primary hover:shadow-strong text-lg hover:scale-105 transition-transform"
+                  asChild
+                >
                   <a
                     href="https://ericgata.thrivecart.com/httpsbuystripecom14a4gzetc8fu1qtekqc3m02/"
                     target="_blank"
@@ -410,20 +426,15 @@ const Programme30Jours = () => {
               </h2>
 
               <div className="bg-card p-8 rounded-lg border border-border mb-8 text-center">
-                <p className="text-xl font-semibold mb-4">
-                  Cabinet situé à Tresses (entre Bordeaux et Libourne)
-                </p>
+                <p className="text-xl font-semibold mb-4">Cabinet situé à Tresses (entre Bordeaux et Libourne)</p>
                 <p className="text-foreground/80 mb-6">
-                  Le Programme 30 Jours AGP est accessible en ligne depuis toute la France,
-                  avec un suivi personnalisé hebdomadaire en visioconférence.
+                  Le Programme 30 Jours AGP est accessible en ligne depuis toute la France, avec un suivi personnalisé
+                  hebdomadaire en visioconférence.
                 </p>
-                <p className="text-foreground/80 font-medium mb-4">
-                  Nos clients viennent de :
-                </p>
+                <p className="text-foreground/80 font-medium mb-4">Nos clients viennent de :</p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Bordeaux • Tresses • Libourne • Cenon • Floirac • Artigues-près-Bordeaux •
-                  Carbon-Blanc • Bègles • Talence • Mérignac • Pessac • Lormont •
-                  Bassens • Saint-Loubès • et toute la Gironde (33)
+                  Bordeaux • Tresses • Libourne • Cenon • Floirac • Artigues-près-Bordeaux • Carbon-Blanc • Bègles •
+                  Talence • Mérignac • Pessac • Lormont • Bassens • Saint-Loubès • et toute la Gironde (33)
                 </p>
               </div>
 
@@ -432,17 +443,11 @@ const Programme30Jours = () => {
                   <Phone className="w-5 h-5 text-primary" />
                   Vous avez des questions ?
                 </p>
-                <a
-                  href="tel:0782386621"
-                  className="text-2xl font-bold text-primary hover:underline mb-4 inline-block"
-                >
+                <a href="tel:0782386621" className="text-2xl font-bold text-primary hover:underline mb-4 inline-block">
                   07 82 38 66 21
                 </a>
                 <p className="mt-4">
-                  <Link
-                    to="/#contact"
-                    className="text-primary hover:underline font-medium"
-                  >
+                  <Link to="/#contact" className="text-primary hover:underline font-medium">
                     Ou contactez-nous via notre formulaire →
                   </Link>
                 </p>
