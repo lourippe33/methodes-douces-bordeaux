@@ -41,26 +41,26 @@ const BlogPertePoidsRegime = () => {
     mainEntity: [
       {
         "@type": "Question",
-        name: "Est-ce que la méthode AGP marche vraiment ?",
+        name: "Est-ce que le programme de perte de poids à Bordeaux marche vraiment ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Oui. La méthode AGP existe depuis plus de 10 ans et a formé 450 praticiens. Les résultats sont durables car nous travaillons sur les causes (émotions, chronobiologie, automatismes) et non juste les symptômes.",
+          text: "Oui. La méthode AGP existe depuis plus de 10 ans et a formé 450 praticiens. Créé à Bordeaux, ce programme produit des résultats durables car nous travaillons sur les causes (émotions, chronobiologie, automatismes) et non juste les symptômes.",
         },
       },
       {
         "@type": "Question",
-        name: "Combien de kilos vais-je perdre avec la méthode AGP ?",
+        name: "Combien de kilos vais-je perdre avec le programme AGP ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Chaque personne est unique. En moyenne, nos clients perdent entre 5 et 15kg sur 3 à 6 mois, de manière progressive et durable. L'important n'est pas la vitesse, mais la stabilité des résultats.",
+          text: "Chaque personne est unique. En moyenne, nos clients perdent entre 5 et 15kg sur 3 à 6 mois, de manière progressive et durable.",
         },
       },
       {
         "@type": "Question",
-        name: "Est-ce que je dois me déplacer à Tresses ?",
+        name: "Est-ce que je dois me déplacer à Tresses pour suivre le programme ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Non. Le Programme 30 Jours est 100% en ligne. Le seul moment en direct est le suivi hebdomadaire en visio. Vous pouvez suivre le programme depuis Bordeaux, Paris, Lyon, ou n'importe où en France.",
+          text: "Non. Le Programme 30 Jours est 100% en ligne. Le seul moment en direct est le coaching hebdomadaire en visioconférence. Vous pouvez suivre le programme depuis Bordeaux, la Gironde, Paris, Lyon, ou n'importe où en France.",
         },
       },
       {
@@ -68,7 +68,7 @@ const BlogPertePoidsRegime = () => {
         name: "Quelle est la différence avec un régime classique ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Un régime classique restreint les aliments, compte les calories, ignore les émotions et vous laisse seul(e) avec un taux d'échec de 95%. La méthode AGP n'interdit aucun aliment, respecte votre chronobiologie, travaille sur les émotions et vous accompagne chaque semaine pour des résultats durables.",
+          text: "Un régime classique restreint les aliments, compte les calories et ignore les émotions (taux d'échec 95%). La méthode AGP, conçue à Bordeaux, n'interdit aucun aliment, respecte votre chronobiologie, travaille sur les émotions et vous accompagne chaque semaine.",
         },
       },
       {
@@ -76,7 +76,7 @@ const BlogPertePoidsRegime = () => {
         name: "Et si j'ai déjà tout essayé pour perdre du poids ?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "C'est justement pour vous que cette méthode existe. Si les régimes ne marchent pas, c'est normal : ils ne traitent pas la vraie cause. AGP s'adresse spécifiquement aux personnes qui ont fait le yo-yo et veulent une solution durable.",
+          text: "C'est justement pour vous que cette méthode existe. Si les régimes ne marchent pas, c'est normal : ils ne traitent pas la vraie cause. AGP s'adresse aux personnes en Gironde et partout en France qui veulent une solution durable.",
         },
       },
       {
@@ -296,35 +296,23 @@ const BlogPertePoidsRegime = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-heading font-bold text-foreground mb-3">2. L'hypnose : transformer vos automatismes</h3>
+                  <h3 className="text-xl font-heading font-bold text-foreground mb-3">2. L'hypnose et l'EFT-H : transformer vos automatismes et libérer les émotions</h3>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                    L'hypnose est un outil thérapeutique puissant qui permet d'accéder à votre inconscient pour modifier des comportements ancrés.
+                    Les techniques d'hypnose et d'EFT-H sont intégrées directement dans l'application sous forme d'audios et d'exercices guidés. Vous les pratiquez en autonomie, à votre rythme, selon vos besoins.
                   </p>
                   <ul className="space-y-2 mb-4 text-lg text-muted-foreground">
                     <li className="flex items-start gap-2"><CheckCircle className="text-primary mt-1 shrink-0" size={18} />Réduire les fringales impulsives</li>
                     <li className="flex items-start gap-2"><CheckCircle className="text-primary mt-1 shrink-0" size={18} />Transformer votre relation à la nourriture</li>
                     <li className="flex items-start gap-2"><CheckCircle className="text-primary mt-1 shrink-0" size={18} />Renforcer votre confiance en vous</li>
                     <li className="flex items-start gap-2"><CheckCircle className="text-primary mt-1 shrink-0" size={18} />Installer de nouveaux automatismes positifs</li>
+                    <li className="flex items-start gap-2"><CheckCircle className="text-primary mt-1 shrink-0" size={18} />Libérer les émotions bloquées (stress chronique, manque de confiance)</li>
                   </ul>
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-heading font-bold text-foreground mb-3">3. L'EFT-H : libérer les émotions bloquées</h3>
+                  <h3 className="text-xl font-heading font-bold text-foreground mb-3">3. Le suivi personnalisé : ne jamais être seul(e)</h3>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                    L'EFT-H (Emotional Freedom Techniques + Hypnose) combine la stimulation de points d'acupuncture et des approches issues de l'hypnose.
-                  </p>
-                  <p className="text-lg text-muted-foreground leading-relaxed mb-2">Souvent, le surpoids est lié à des émotions non digérées :</p>
-                  <ul className="space-y-2 mb-4 text-lg text-muted-foreground">
-                    <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Un stress chronique</li>
-                    <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Un besoin de protection (le poids comme armure)</li>
-                    <li className="flex items-start gap-2"><span className="text-primary mt-1">•</span>Un manque de confiance</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-heading font-bold text-foreground mb-3">4. Le suivi personnalisé : ne jamais être seul(e)</h3>
-                  <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                    Contrairement à un régime que vous suivez seul(e), la méthode AGP vous accompagne activement avec un point hebdomadaire en visioconférence, des ajustements en fonction de votre progression, et un soutien bienveillant sans jugement.
+                    Contrairement à un régime que vous suivez seul(e), la méthode AGP vous accompagne activement avec un point hebdomadaire en visioconférence, des ajustements en fonction de votre progression, et un soutien bienveillant sans jugement. Ce suivi hebdomadaire est un coaching stratégique en visioconférence permettant d'ajuster votre progression, répondre à vos questions et maintenir votre engagement.
                   </p>
                   <p className="text-lg font-semibold text-foreground">
                     Vous n'êtes pas livré(e) à vous-même. Et c'est cette différence qui fait que cette fois-ci, ça marche.
@@ -350,13 +338,13 @@ const BlogPertePoidsRegime = () => {
                 </div>
                 <div className="p-6 rounded-lg border bg-card">
                   <p className="text-2xl mb-2">🎧</p>
-                  <h4 className="font-bold text-foreground mb-2">Séances d'hypnose et EFT-H</h4>
-                  <p className="text-muted-foreground">Apaiser les envies impulsives, diminuer le stress, renforcer la confiance.</p>
+                  <h4 className="font-bold text-foreground mb-2">Techniques guidées intégrées dans l'application</h4>
+                  <p className="text-muted-foreground">Les techniques sont accessibles directement dans l'application sous forme d'audios et d'exercices guidés. Elles peuvent être utilisées en autonomie pendant les 30 jours.</p>
                 </div>
                 <div className="p-6 rounded-lg border bg-card">
                   <p className="text-2xl mb-2">💬</p>
                   <h4 className="font-bold text-foreground mb-2">Suivi hebdomadaire personnalisé</h4>
-                  <p className="text-muted-foreground">Point visio chaque semaine pour ajuster, encourager et maintenir l'élan.</p>
+                  <p className="text-muted-foreground">Point visio chaque semaine pour ajuster, encourager et maintenir l'élan. Ce suivi hebdomadaire est un coaching stratégique en visioconférence permettant d'ajuster votre progression, répondre à vos questions et maintenir votre engagement.</p>
                 </div>
                 <div className="p-6 rounded-lg border bg-card">
                   <p className="text-2xl mb-2">📚</p>
@@ -365,11 +353,17 @@ const BlogPertePoidsRegime = () => {
                 </div>
               </div>
 
+              <div className="bg-muted/30 rounded-lg p-6 mb-6 border border-border">
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  <strong className="text-foreground">Important :</strong> Le programme 30 jours ne comprend pas de séances individuelles en cabinet. Si une séance spécifique en présentiel est souhaitée, elle fait l'objet d'un rendez-vous distinct.
+                </p>
+              </div>
+
               <div className="bg-primary/5 rounded-xl p-6 border border-primary/20 mb-6">
                 <p className="text-xl font-bold text-foreground mb-2">💰 90€ au lieu de 149€ (offre de lancement)</p>
                 <p className="text-muted-foreground">
+                  Programme créé à Bordeaux par un praticien expérimenté. Coaching assuré depuis Tresses (Gironde – 33), accessible partout en France en visioconférence.
                   C'est moins cher que 2 mois de salle de sport, 2 consultations chez une diététicienne ou 3 mois de Weight Watchers.
-                  100% en ligne, accessible depuis Bordeaux, Tresses, Libourne, ou toute la France.
                 </p>
               </div>
             </section>
@@ -434,11 +428,11 @@ const BlogPertePoidsRegime = () => {
               </h2>
               <Accordion type="single" collapsible className="w-full">
                 {[
-                  { q: "Est-ce que ça marche vraiment ?", a: "Oui. La méthode AGP existe depuis plus de 10 ans et a formé 450 praticiens. Les résultats sont durables car nous travaillons sur les causes (émotions, chronobiologie, automatismes) et non juste les symptômes." },
-                  { q: "Combien de kilos vais-je perdre ?", a: "Chaque personne est unique. En moyenne, nos clients perdent entre 5 et 15kg sur 3 à 6 mois, de manière progressive et durable." },
-                  { q: "Est-ce que je dois me déplacer à Tresses ?", a: "Non. Le Programme 30 Jours est 100% en ligne. Le seul moment en direct est le suivi hebdomadaire en visio. Vous pouvez suivre le programme depuis Bordeaux, Paris, Lyon, ou n'importe où en France." },
-                  { q: "Quelle est la différence avec un régime classique ?", a: "Un régime classique restreint les aliments, compte les calories et ignore les émotions (taux d'échec 95%). La méthode AGP n'interdit aucun aliment, respecte votre chronobiologie, travaille sur les émotions et vous accompagne chaque semaine." },
-                  { q: "Et si j'ai déjà tout essayé ?", a: "C'est justement pour vous que cette méthode existe. Si les régimes ne marchent pas, c'est normal : ils ne traitent pas la vraie cause. AGP s'adresse aux personnes qui veulent une solution durable." },
+                  { q: "Est-ce que le programme de perte de poids à Bordeaux marche vraiment ?", a: "Oui. La méthode AGP existe depuis plus de 10 ans et a formé 450 praticiens. Créé à Bordeaux, ce programme produit des résultats durables car nous travaillons sur les causes (émotions, chronobiologie, automatismes) et non juste les symptômes." },
+                  { q: "Combien de kilos vais-je perdre avec le programme AGP ?", a: "Chaque personne est unique. En moyenne, nos clients perdent entre 5 et 15kg sur 3 à 6 mois, de manière progressive et durable." },
+                  { q: "Est-ce que je dois me déplacer à Tresses pour suivre le programme ?", a: "Non. Le Programme 30 Jours est 100% en ligne. Le seul moment en direct est le coaching hebdomadaire en visioconférence. Vous pouvez suivre le programme depuis Bordeaux, la Gironde, Paris, Lyon, ou n'importe où en France." },
+                  { q: "Quelle est la différence avec un régime classique ?", a: "Un régime classique restreint les aliments, compte les calories et ignore les émotions (taux d'échec 95%). La méthode AGP, conçue à Bordeaux, n'interdit aucun aliment, respecte votre chronobiologie, travaille sur les émotions et vous accompagne chaque semaine." },
+                  { q: "Et si j'ai déjà tout essayé pour perdre du poids ?", a: "C'est justement pour vous que cette méthode existe. Si les régimes ne marchent pas, c'est normal : ils ne traitent pas la vraie cause. AGP s'adresse aux personnes en Gironde et partout en France qui veulent une solution durable." },
                   { q: "Y a-t-il une garantie ?", a: "Oui. Garantie satisfait ou remboursé 7 jours. Si après une semaine le programme ne vous convient pas, vous êtes remboursé intégralement." },
                   { q: "Le programme est-il adapté aux hommes ?", a: "Absolument. Environ 30% de nos participants sont des hommes. La méthode est basée sur la science (chronobiologie, neurosciences), pas sur des concepts genrés." },
                   { q: "Puis-je suivre le programme avec un traitement médical ?", a: "Vous devez en informer votre médecin avant de commencer. La méthode AGP n'est pas un traitement médical, c'est un accompagnement bien-être." },
