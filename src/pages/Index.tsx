@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import LocalIntro from "@/components/LocalIntro";
 import SEOContent from "@/components/SEOContent";
 import Services from "@/components/Services";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -15,10 +16,10 @@ import WeightLossPopup from "@/components/WeightLossPopup";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Perte de Poids & Neurofeedback Bordeaux | Cabinet Tresses (33)";
+    document.title = "Perte de poids Bordeaux & Gironde – Programme AGP créé à Bordeaux";
 
     const metaDescription = document.querySelector('meta[name="description"]');
-    const descContent = "Perdez du poids durablement avec le Programme 30 Jours AGP (90€). Neurofeedback pour concentration et stress. Cabinet à Tresses près de Bordeaux, accessible en visio.";
+    const descContent = "Programme de perte de poids structuré par un praticien bordelais à Tresses (33). Hypnose, chronobiologie & neurofeedback – suivi en ligne ou en cabinet.";
     if (metaDescription) {
       metaDescription.setAttribute("content", descContent);
     }
@@ -41,8 +42,8 @@ const Index = () => {
       }
       tag.setAttribute("content", content);
     };
-    setOgMeta("og:title", "Perte de Poids & Neurofeedback Bordeaux | Cabinet Tresses");
-    setOgMeta("og:description", "Programme 30 Jours perte de poids à 90€ + Neurofeedback. Cabinet à Tresses (Bordeaux), accessible en visio partout en France.");
+    setOgMeta("og:title", "Perte de poids Bordeaux & Gironde – Programme AGP créé à Bordeaux");
+    setOgMeta("og:description", "Programme de perte de poids structuré par un praticien bordelais à Tresses (33). Hypnose, chronobiologie & neurofeedback – suivi en ligne ou en cabinet.");
     setOgMeta("og:type", "website");
 
     // Schema Markup LocalBusiness
@@ -128,6 +129,7 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <LocalIntro />
         <SEOContent />
         <Services />
         <WhyChooseUs />

@@ -10,9 +10,11 @@ const SEOContent = () => {
             </h2>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               Le Programme 30 Jours AGP combine hypnose, EFT-H et chronobiologie 
-              pour une perte de poids durable, sans régime ni frustration. 
-              Accessible en ligne avec un suivi personnalisé hebdomadaire en visio 
-              depuis le cabinet de Tresses (33370), près de Bordeaux.
+              pour une perte de poids durable, sans régime ni frustration. Créé à Bordeaux 
+              par un praticien expérimenté, ce programme est accessible en ligne avec un suivi 
+              personnalisé hebdomadaire en visioconférence ou en présentiel depuis le cabinet 
+              à Tresses (33370), près de Bordeaux. Que vous soyez à Bordeaux, Libourne, 
+              Talence ou partout en France, vous bénéficiez du même accompagnement structuré et humain.
             </p>
           </div>
 

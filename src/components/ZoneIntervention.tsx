@@ -13,24 +13,14 @@ const ZoneIntervention = () => {
 
           <div className="bg-card p-8 rounded-xl border border-border shadow-soft mb-8 text-center">
             <p className="text-xl font-semibold text-foreground mb-4">
-              9 Galerie Marchande, 33370 Tresses
-              <br />
-              <span className="text-muted-foreground font-normal text-lg">Entre Bordeaux et Libourne</span>
+              Cabinet situé à Tresses (33370), entre Bordeaux et Libourne.
             </p>
 
             <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-              <strong>Consultations en cabinet</strong> pour le neurofeedback (nécessite un équipement spécifique)
-              <br />
-              <strong>Programme perte de poids 100% en ligne</strong> accessible partout en France avec suivi visio hebdomadaire
-            </p>
-
-            <p className="font-semibold text-lg text-foreground mb-3">
-              Nos clients locaux viennent de :
-            </p>
-            <p className="text-muted-foreground leading-loose">
-              Bordeaux • Tresses • Libourne • Cenon • Floirac • Artigues-près-Bordeaux •
-              Carbon-Blanc • Bègles • Talence • Mérignac • Pessac • Lormont •
-              Bassens • Saint-Loubès • et toute la Gironde (33)
+              Le programme AGP a été conçu à Bordeaux par un praticien local et accompagne 
+              des clients de toute la Gironde : Bordeaux, Tresses, Libourne, Cenon, Floirac, 
+              Artigues-près-Bordeaux, Carbon-Blanc, Bègles, Talence, Mérignac, Pessac, 
+              Lormont, Bassens, Saint-Loubès… et partout en France en visioconférence.
             </p>
           </div>
 
