@@ -21,7 +21,7 @@ const BlogAgp = () => {
       slug: "perdre-poids-sans-regime-bordeaux",
       title: "Perdre du Poids sans Régime à Bordeaux : La Méthode AGP Expliquée",
       excerpt: "Découvrez comment perdre du poids durablement sans régime restrictif grâce à la méthode AGP. Programme 30 jours à 90€, accessible en visio depuis Bordeaux et toute la France.",
-      date: "Février 2025",
+      date: "Février 2026",
       image: pertePoidsImg,
       imageAlt: "Perdre du poids sans régime à Bordeaux - Méthode AGP",
     },
