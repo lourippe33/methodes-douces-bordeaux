@@ -316,7 +316,7 @@ const Programme30Jours = () => {
                   {/* INSERTION 2 - Suivi géolocalisé */}
                   <div className="bg-primary/5 p-4 rounded-lg border border-primary/10">
                     <p className="font-semibold text-foreground flex items-center gap-2 mb-2">
-                      <MapPin className="w-5 h-5 text-primary" /> Suivi depuis Tresses, accessible partout :
+                      <MapPin className="w-5 h-5 text-primary" /> Suivi depuis Tresses, et accessible partout :
                     </p>
                     <p className="text-foreground/80">
                       Que vous soyez à Bordeaux centre, Libourne, Cenon ou ailleurs en Gironde, vous bénéficiez du même
