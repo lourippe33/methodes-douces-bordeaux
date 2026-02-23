@@ -216,6 +216,31 @@ const Contact = () => {
                   </div>
                 </CardContent>
               </Card>
+
+              <Card className="border-0 shadow-soft bg-card/80 backdrop-blur-sm overflow-hidden">
+                <CardContent className="pt-6">
+                  <h3 className="font-heading font-semibold text-lg mb-3">Plan d'accès</h3>
+                  <div className="w-full h-[280px] md:h-[320px] rounded-2xl overflow-hidden shadow-soft">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.709427612773!2d-0.4656139232893791!3d44.847850574350325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5536891f276fed%3A0x185c619e8631dd9e!2sPerdre%20du%20poids%20durablement%2C%20hypnose%2C%20neurofeedback%2C!5e0!3m2!1sfr!2sfr!4v1771839447203!5m2!1sfr!2sfr"
+                      className="w-full h-full border-0"
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Plan d'accès – 9 galerie marchande 33370 Tresses"
+                    />
+                  </div>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=9+galerie+marchande+33370+Tresses"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 mt-3 text-sm text-primary hover:underline transition-colors"
+                  >
+                    <MapPin size={14} />
+                    Ouvrir dans Google Maps
+                  </a>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
