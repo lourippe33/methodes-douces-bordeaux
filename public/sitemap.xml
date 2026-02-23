@@ -168,6 +168,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://methodes-douces-bordeaux.fr/blog/pourquoi-je-mange-mes-emotions-comprendre-pour-perdre-du-poids</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Pages légales -->
   <url>
     <loc>https://methodes-douces-bordeaux.fr/mentions-legales</loc>

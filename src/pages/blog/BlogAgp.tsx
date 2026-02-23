@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Scale } from "lucide-react";
 import pertePoidsImg from "@/assets/perte-poids-sans-regime-bordeaux.jpg";
 import visioCoachingImg from "@/assets/seance-visio-coaching-agp.jpg";
+import emotionsImg from "@/assets/manger-emotions-perte-poids.jpg";
 
 const BlogAgp = () => {
   useEffect(() => {
@@ -32,6 +33,14 @@ const BlogAgp = () => {
       date: "Février 2026",
       image: visioCoachingImg,
       imageAlt: "Coaching perte de poids en visioconférence - Programme AGP Bordeaux",
+    },
+    {
+      slug: "pourquoi-je-mange-mes-emotions-comprendre-pour-perdre-du-poids",
+      title: "Pourquoi je mange mes émotions ? Comprendre pour perdre du poids",
+      excerpt: "J'ai dépensé 1500€ en régimes avant de comprendre pourquoi je mangeais. Et si le vrai problème n'était pas la nourriture ? Témoignage et solution douce.",
+      date: "Février 2026",
+      image: emotionsImg,
+      imageAlt: "Femme seule dans sa cuisine tard le soir - illustration manger émotionnel perte de poids",
     },
   ];
 

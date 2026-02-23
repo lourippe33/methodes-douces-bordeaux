@@ -16,6 +16,7 @@ import gestionStressImg from "@/assets/gestion-stress-angoisses.png";
 import burnOutImg from "@/assets/neurofeedback-burn-out.png";
 import pertePoidsImg from "@/assets/perte-poids-sans-regime-bordeaux.jpg";
 import visioCoachingImg from "@/assets/seance-visio-coaching-agp.jpg";
+import emotionsImg from "@/assets/manger-emotions-perte-poids.jpg";
 
 const Blog = () => {
   useEffect(() => {
@@ -56,7 +57,7 @@ const Blog = () => {
       title: "Perte de poids",
       description: "Perte de poids durable, chronobiologie, programme 30 jours. Une approche sans régime strict.",
       icon: Scale,
-      articleCount: 2,
+      articleCount: 3,
       color: "text-green-600",
     },
     {
@@ -71,6 +72,17 @@ const Blog = () => {
 
   // Derniers articles (tous confondus)
   const recentArticles = [
+    {
+      slug: "pourquoi-je-mange-mes-emotions-comprendre-pour-perdre-du-poids",
+      title: "Pourquoi je mange mes émotions ? Comprendre pour perdre du poids",
+      excerpt:
+        "J'ai dépensé 1500€ en régimes avant de comprendre pourquoi je mangeais. Et si le vrai problème n'était pas la nourriture ?",
+      date: "Février 2026",
+      category: "Perte de poids",
+      categorySlug: "agp",
+      image: emotionsImg,
+      imageAlt: "Femme seule dans sa cuisine tard le soir - illustration manger émotionnel perte de poids",
+    },
     {
       slug: "perdre-poids-sans-regime-bordeaux",
       title: "Perdre du Poids sans Régime à Bordeaux : La Méthode AGP Expliquée",
