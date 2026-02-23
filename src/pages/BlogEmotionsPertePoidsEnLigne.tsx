@@ -197,7 +197,7 @@ const BlogEmotionsPertePoidsEnLigne = () => {
               Et si le problème n'était pas la nourriture, mais votre relation avec elle ?
             </p>
 
-            <div className="flex flex-wrap items-center gap-4 text-muted-foreground mb-8">
+            <div className="flex flex-wrap items-center gap-4 text-muted-foreground mb-4">
               <span className="flex items-center gap-1">
                 <Calendar size={16} />
                 23 février 2026
@@ -209,6 +209,9 @@ const BlogEmotionsPertePoidsEnLigne = () => {
                 <User size={16} /> Éric Gata
               </span>
             </div>
+            <p className="text-sm text-muted-foreground italic mb-8">
+              Le texte ci-dessous est un récit inspiré de situations réelles vécues en accompagnement.
+            </p>
           </div>
         </section>
 
@@ -249,7 +252,7 @@ const BlogEmotionsPertePoidsEnLigne = () => {
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
                 On mange pour se nourrir, bien sûr. Mais on mange aussi pour se consoler, se récompenser, 
                 se calmer, combler un vide, s'occuper. 
-                <strong className="text-foreground"> Le manger émotionnel touche plus de 75% des personnes en surpoids.</strong>
+                <strong className="text-foreground"> Le manger émotionnel est très fréquent chez les personnes qui luttent avec leur poids.</strong>
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
                 Et pourtant, aucun régime au monde n'aborde cette dimension. On vous dit quoi manger, 
@@ -258,25 +261,13 @@ const BlogEmotionsPertePoidsEnLigne = () => {
 
               <h3 className="text-xl font-heading font-bold text-foreground mb-3">Les signaux qui ne trompent pas</h3>
               <p className="text-lg text-muted-foreground leading-relaxed mb-2">Vous mangez vos émotions si :</p>
-              <ul className="space-y-2 mb-6 text-lg text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>Vous mangez sans vraiment avoir faim
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>Vous ressentez un besoin <em>urgent</em> de manger après un stress ou une émotion forte
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>Vous vous sentez coupable après avoir mangé
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>Vous mangez en cachette ou tard le soir
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>La nourriture est votre « récompense » après une journée difficile
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>Vous avez l'impression de ne pas pouvoir vous arrêter une fois que vous commencez
-                </li>
+              <ul className="list-disc list-inside mb-6 text-lg text-muted-foreground space-y-1">
+                <li>Vous mangez sans vraiment avoir faim</li>
+                <li>Vous ressentez un besoin <em>urgent</em> de manger après un stress ou une émotion forte</li>
+                <li>Vous vous sentez coupable après avoir mangé</li>
+                <li>Vous mangez en cachette ou tard le soir</li>
+                <li>La nourriture est votre « récompense » après une journée difficile</li>
+                <li>Vous avez l'impression de ne pas pouvoir vous arrêter une fois que vous commencez</li>
               </ul>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Si vous vous reconnaissez dans au moins 3 de ces points, 
@@ -500,6 +491,9 @@ const BlogEmotionsPertePoidsEnLigne = () => {
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
+                <p className="text-xs text-muted-foreground mt-3">
+                  Inscription en 2 minutes • Paiement sécurisé
+                </p>
               </div>
             </section>
 
@@ -647,6 +641,9 @@ const BlogEmotionsPertePoidsEnLigne = () => {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
+            <p className="text-xs text-muted-foreground mt-3">
+              Inscription en 2 minutes • Paiement sécurisé
+            </p>
           </div>
         </section>
       </main>
