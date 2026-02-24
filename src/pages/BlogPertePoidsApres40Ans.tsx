@@ -18,7 +18,7 @@ const BlogPertePoidsApres40Ans = () => {
   const articleStructuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Perte de Poids Après 40 Ans : Pourquoi Votre Corps Ne Réagit Plus Comme Avant",
+    headline: "Perte de poids après 40 ans : pourquoi votre corps ne réagit plus comme avant",
     description:
       "Découvrez pourquoi perdre du poids après 40 ans est différent : métabolisme ralenti, hormones, masse musculaire. Solutions concrètes et approche adaptée.",
     image: "https://methodes-douces-bordeaux.fr/og-agp-1200x630.jpg",
