@@ -196,7 +196,7 @@ const BlogPertePoidsApres40Ans = () => {
             </Button>
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
-              Perte de poids après 40 Ans : pourquoi votre corps ne réagit plus comme avant (et Que Faire)
+              Perte de poids après 40 Ans : pourquoi votre corps ne réagit plus comme avant (et que faire)
             </h1>
             <p className="text-xl text-muted-foreground mb-6 italic">
               Ce qui fonctionnait à 30 ans ne fonctionne plus. Et ce n'est pas votre faute.
