@@ -195,12 +195,13 @@ const BlogPertePoidsApres40Ans = () => {
             </p>
 
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground mb-8">
-              <span className="flex items-center gap-1">Février 2026
+              <span className="flex items-center gap-1">
                 <Calendar size={16} />
                 Février 2025
               </span>
-              <span className="flex items-center gap-1">5 min de lecture
-                <Clock size={16} /> 12 min de lecture
+              <span className="flex items-center gap-1">
+                <Clock size={16} />
+                12 min de lecture
               </span>
               <span className="flex items-center gap-1">
                 <User size={16} /> Éric Gata
