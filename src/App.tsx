@@ -20,6 +20,7 @@ import BlogBurnOut from "./pages/BlogBurnOut";
 import BlogPertePoidsRegime from "./pages/BlogPertePoidsRegime";
 import BlogProgrammePertePoidsEnLigne from "./pages/BlogProgrammePertePoidsEnLigne";
 import BlogEmotionsPertePoidsEnLigne from "./pages/BlogEmotionsPertePoidsEnLigne";
+import BlogPertePoidsApres40Ans from "./pages/BlogPertePoidsApres40Ans";
 import About from "./pages/About";
 import Programme30Jours from "./pages/Programme30Jours";
 import MentionsLegales from "./pages/MentionsLegales";
@@ -66,6 +67,7 @@ const App = () => (
           <Route path="/blog/perdre-poids-sans-regime-bordeaux" element={<BlogPertePoidsRegime />} />
           <Route path="/blog/programme-perte-de-poids-en-ligne-coaching-bordeaux" element={<BlogProgrammePertePoidsEnLigne />} />
           <Route path="/blog/pourquoi-je-mange-mes-emotions-comprendre-pour-perdre-du-poids" element={<BlogEmotionsPertePoidsEnLigne />} />
+          <Route path="/blog/perdre-du-poids-apres-40-ans-pourquoi-cest-different" element={<BlogPertePoidsApres40Ans />} />
           <Route path="/a-propos" element={<About />} />
           <Route path="/programme-30-jours" element={<Programme30Jours />} />
           <Route path="/programme-28-jours" element={<Programme30Jours />} /> {/* Redirect ancienne URL */}

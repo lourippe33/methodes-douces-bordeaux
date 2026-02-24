@@ -10,6 +10,7 @@ import { ArrowRight, Calendar, Scale } from "lucide-react";
 import pertePoidsImg from "@/assets/perte-poids-sans-regime-bordeaux.jpg";
 import visioCoachingImg from "@/assets/seance-visio-coaching-agp.jpg";
 import emotionsImg from "@/assets/manger-emotions-perte-poids.jpg";
+import pertePoidsApres40Img from "@/assets/perte-poids-apres-40-ans.jpg";
 
 const BlogAgp = () => {
   useEffect(() => {
@@ -41,6 +42,14 @@ const BlogAgp = () => {
       date: "Février 2026",
       image: emotionsImg,
       imageAlt: "Femme seule dans sa cuisine tard le soir - illustration manger émotionnel perte de poids",
+    },
+    {
+      slug: "perdre-du-poids-apres-40-ans-pourquoi-cest-different",
+      title: "Perdre du poids après 40 ans : pourquoi c'est différent",
+      excerpt: "Votre corps ne réagit plus comme avant ? Métabolisme, hormones, stress : découvrez pourquoi perdre du poids après 40 ans nécessite une approche différente.",
+      date: "Février 2025",
+      image: pertePoidsApres40Img,
+      imageAlt: "Femme de 45 ans confiante se regardant dans le miroir - perte de poids après 40 ans",
     },
   ];
 

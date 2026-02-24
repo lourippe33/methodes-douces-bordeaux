@@ -17,6 +17,7 @@ import burnOutImg from "@/assets/neurofeedback-burn-out.png";
 import pertePoidsImg from "@/assets/perte-poids-sans-regime-bordeaux.jpg";
 import visioCoachingImg from "@/assets/seance-visio-coaching-agp.jpg";
 import emotionsImg from "@/assets/manger-emotions-perte-poids.jpg";
+import pertePoidsApres40Img from "@/assets/perte-poids-apres-40-ans.jpg";
 
 const Blog = () => {
   useEffect(() => {
@@ -57,7 +58,7 @@ const Blog = () => {
       title: "Perte de poids",
       description: "Perte de poids durable, chronobiologie, programme 30 jours. Une approche sans régime strict.",
       icon: Scale,
-      articleCount: 3,
+      articleCount: 4,
       color: "text-green-600",
     },
     {
@@ -72,6 +73,17 @@ const Blog = () => {
 
   // Derniers articles (tous confondus)
   const recentArticles = [
+    {
+      slug: "perdre-du-poids-apres-40-ans-pourquoi-cest-different",
+      title: "Perdre du poids après 40 ans : pourquoi c'est différent",
+      excerpt:
+        "Votre corps ne réagit plus comme avant ? Métabolisme, hormones, stress : découvrez pourquoi perdre du poids après 40 ans nécessite une approche différente.",
+      date: "Février 2025",
+      category: "Perte de poids",
+      categorySlug: "agp",
+      image: pertePoidsApres40Img,
+      imageAlt: "Femme de 45 ans confiante se regardant dans le miroir - perte de poids après 40 ans",
+    },
     {
       slug: "pourquoi-je-mange-mes-emotions-comprendre-pour-perdre-du-poids",
       title: "Pourquoi je mange mes émotions ? Comprendre pour perdre du poids",
