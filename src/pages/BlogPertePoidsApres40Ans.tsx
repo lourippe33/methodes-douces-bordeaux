@@ -10,8 +10,8 @@ import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+  AccordionTrigger } from
+"@/components/ui/accordion";
 import featuredImage from "@/assets/perte-poids-apres-40-ans.jpg";
 import ericPortrait from "@/assets/eric-gata-portrait.png";
 
@@ -35,76 +35,76 @@ const BlogPertePoidsApres40Ans = () => {
       jobTitle: "Praticien en méthodes douces",
       worksFor: {
         "@type": "Organization",
-        name: "Méthodes Douces Bordeaux",
-      },
+        name: "Méthodes Douces Bordeaux"
+      }
     },
     publisher: {
       "@type": "Organization",
-      name: "Méthodes Douces Bordeaux",
+      name: "Méthodes Douces Bordeaux"
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": "https://methodes-douces-bordeaux.fr/blog/perdre-du-poids-apres-40-ans-pourquoi-cest-different",
+      "@id": "https://methodes-douces-bordeaux.fr/blog/perdre-du-poids-apres-40-ans-pourquoi-cest-different"
     },
     articleSection: "Perte de poids",
     keywords: "perte de poids après 40 ans, métabolisme femme 40 ans, ménopause poids, hormones perte de poids, sarcopénie",
     wordCount: 3000,
-    inLanguage: "fr-FR",
+    inLanguage: "fr-FR"
   };
 
   const faqStructuredData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: [
-      {
-        "@type": "Question",
-        name: "Est-ce que le programme fonctionne vraiment après 40 ans ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Oui, justement. Le Programme AGP a été conçu pour s'adapter aux réalités physiologiques des femmes après 40 ans : métabolisme ralenti, hormones en mouvement, stress élevé. La chronobiologie, l'hypnose et le coaching personnalisé permettent d'obtenir des résultats durables même quand les méthodes classiques échouent.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Je suis en périménopause / ménopause. Le programme convient-il ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Absolument. Beaucoup de nos clientes sont en périménopause ou ménopause. Le programme intègre des outils spécifiques pour gérer les fringales hormonales, le stress, les troubles du sommeil et la prise de poids abdominale typiques de cette période.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Combien de kilos puis-je perdre après 40 ans ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Après 40 ans, une perte progressive de 2 à 3 kg par mois est idéale. Sur 3 à 6 mois, nos clientes perdent généralement entre 6 et 15 kg, de façon stable et sans yoyo.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Je n'ai jamais fait d'hypnose. Est-ce que ça fonctionne à mon âge ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "L'hypnose thérapeutique fonctionne à tout âge. Ce sont des audios guidés qui vous aident à modifier vos automatismes alimentaires. Aucune expérience préalable n'est nécessaire.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Je prends un traitement hormonal substitutif (THS). Puis-je suivre le programme ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Si vous suivez un traitement médical, informez votre médecin avant de commencer. Le Programme AGP est un accompagnement bien-être qui se combine très bien avec un suivi médical, mais ne le remplace pas.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Le programme est accessible où ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "100% en ligne. L'application fonctionne partout en France. Les sessions de coaching se font en visioconférence depuis le cabinet à Tresses (Gironde), accessible depuis n'importe où.",
-        },
-      },
-    ],
+    {
+      "@type": "Question",
+      name: "Est-ce que le programme fonctionne vraiment après 40 ans ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Oui, justement. Le Programme AGP a été conçu pour s'adapter aux réalités physiologiques des femmes après 40 ans : métabolisme ralenti, hormones en mouvement, stress élevé. La chronobiologie, l'hypnose et le coaching personnalisé permettent d'obtenir des résultats durables même quand les méthodes classiques échouent."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Je suis en périménopause / ménopause. Le programme convient-il ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Absolument. Beaucoup de nos clientes sont en périménopause ou ménopause. Le programme intègre des outils spécifiques pour gérer les fringales hormonales, le stress, les troubles du sommeil et la prise de poids abdominale typiques de cette période."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Combien de kilos puis-je perdre après 40 ans ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Après 40 ans, une perte progressive de 2 à 3 kg par mois est idéale. Sur 3 à 6 mois, nos clientes perdent généralement entre 6 et 15 kg, de façon stable et sans yoyo."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Je n'ai jamais fait d'hypnose. Est-ce que ça fonctionne à mon âge ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "L'hypnose thérapeutique fonctionne à tout âge. Ce sont des audios guidés qui vous aident à modifier vos automatismes alimentaires. Aucune expérience préalable n'est nécessaire."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Je prends un traitement hormonal substitutif (THS). Puis-je suivre le programme ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Si vous suivez un traitement médical, informez votre médecin avant de commencer. Le Programme AGP est un accompagnement bien-être qui se combine très bien avec un suivi médical, mais ne le remplace pas."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Le programme est accessible où ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "100% en ligne. L'application fonctionne partout en France. Les sessions de coaching se font en visioconférence depuis le cabinet à Tresses (Gironde), accessible depuis n'importe où."
+      }
+    }]
+
   };
 
   return (
@@ -113,25 +113,25 @@ const BlogPertePoidsApres40Ans = () => {
         <title>Perdre du poids après 40 ans : pourquoi c'est différent</title>
         <meta
           name="description"
-          content="Votre corps ne réagit plus comme avant ? Métabolisme, hormones, stress : découvrez pourquoi perdre du poids après 40 ans nécessite une approche différente."
-        />
+          content="Votre corps ne réagit plus comme avant ? Métabolisme, hormones, stress : découvrez pourquoi perdre du poids après 40 ans nécessite une approche différente." />
+
         <meta
           name="keywords"
-          content="perdre du poids après 40 ans, maigrir après 40 ans femme, perte de poids ménopause, métabolisme après 40 ans, pourquoi je grossis après 40 ans, perdre du poids après 45 ans, perte de poids femme 40 ans"
-        />
+          content="perdre du poids après 40 ans, maigrir après 40 ans femme, perte de poids ménopause, métabolisme après 40 ans, pourquoi je grossis après 40 ans, perdre du poids après 45 ans, perte de poids femme 40 ans" />
+
         <link
           rel="canonical"
-          href="https://methodes-douces-bordeaux.fr/blog/perdre-du-poids-apres-40-ans-pourquoi-cest-different"
-        />
+          href="https://methodes-douces-bordeaux.fr/blog/perdre-du-poids-apres-40-ans-pourquoi-cest-different" />
+
         <meta property="og:title" content="Perte de Poids Après 40 Ans : Pourquoi Votre Corps Ne Réagit Plus Comme Avant" />
         <meta
           property="og:description"
-          content="Métabolisme, hormones, stress : découvrez pourquoi perdre du poids après 40 ans nécessite une approche différente et ce qui fonctionne vraiment."
-        />
+          content="Métabolisme, hormones, stress : découvrez pourquoi perdre du poids après 40 ans nécessite une approche différente et ce qui fonctionne vraiment." />
+
         <meta
           property="og:url"
-          content="https://methodes-douces-bordeaux.fr/blog/perdre-du-poids-apres-40-ans-pourquoi-cest-different"
-        />
+          content="https://methodes-douces-bordeaux.fr/blog/perdre-du-poids-apres-40-ans-pourquoi-cest-different" />
+
         <meta property="og:type" content="article" />
         <meta property="og:image" content="https://methodes-douces-bordeaux.fr/og-agp-1200x630.jpg" />
         <meta property="og:locale" content="fr_FR" />
@@ -151,12 +151,12 @@ const BlogPertePoidsApres40Ans = () => {
         <div className="container mx-auto px-4 py-8">
           <Breadcrumbs
             items={[
-              { label: "Accueil", path: "/" },
-              { label: "Blog", path: "/blog" },
-              { label: "Perte de poids", path: "/blog/agp" },
-              { label: "Perdre du poids après 40 ans" },
-            ]}
-          />
+            { label: "Accueil", path: "/" },
+            { label: "Blog", path: "/blog" },
+            { label: "Perte de poids", path: "/blog/agp" },
+            { label: "Perdre du poids après 40 ans" }]
+            } />
+
         </div>
 
         {/* Featured Image */}
@@ -168,8 +168,8 @@ const BlogPertePoidsApres40Ans = () => {
                 alt="Femme de 45 ans confiante en tenue de sport se regardant dans le miroir avec détermination et bienveillance envers son corps"
                 className="w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-500"
                 width="1200"
-                height="675"
-              />
+                height="675" />
+
             </div>
             <p className="text-sm text-muted-foreground text-center mt-2 italic">
               Après 40 ans : comprendre son corps pour mieux l'accompagner
@@ -195,11 +195,11 @@ const BlogPertePoidsApres40Ans = () => {
             </p>
 
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground mb-8">
-              <span className="flex items-center gap-1">
+              <span className="flex items-center gap-1">Février 2026
                 <Calendar size={16} />
                 Février 2025
               </span>
-              <span className="flex items-center gap-1">
+              <span className="flex items-center gap-1">5 min de lecture
                 <Clock size={16} /> 12 min de lecture
               </span>
               <span className="flex items-center gap-1">
@@ -686,8 +686,8 @@ const BlogPertePoidsApres40Ans = () => {
                   <a
                     href="https://ericgata.thrivecart.com/httpsbuystripecom14a4gzetc8fu1qtekqc3m02/"
                     target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                    rel="noopener noreferrer">
+
                     Je rejoins le Programme AGP à 90€
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
@@ -704,20 +704,20 @@ const BlogPertePoidsApres40Ans = () => {
                 <p className="text-sm text-muted-foreground mb-2">À lire aussi :</p>
                 <Link
                   to="/blog/pourquoi-je-mange-mes-emotions-comprendre-pour-perdre-du-poids"
-                  className="block text-lg font-semibold text-primary hover:underline"
-                >
+                  className="block text-lg font-semibold text-primary hover:underline">
+
                   Pourquoi je mange mes émotions ? Comprendre pour perdre du poids →
                 </Link>
                 <Link
                   to="/blog/perdre-poids-sans-regime-bordeaux"
-                  className="block text-lg font-semibold text-primary hover:underline"
-                >
+                  className="block text-lg font-semibold text-primary hover:underline">
+
                   Perdre du Poids sans Régime à Bordeaux : La Méthode AGP Expliquée →
                 </Link>
                 <Link
                   to="/blog/programme-perte-de-poids-en-ligne-coaching-bordeaux"
-                  className="block text-lg font-semibold text-primary hover:underline"
-                >
+                  className="block text-lg font-semibold text-primary hover:underline">
+
                   Programme Perte de Poids en Ligne : Pourquoi l'Application Seule ne Suffit Pas →
                 </Link>
               </div>
@@ -730,32 +730,32 @@ const BlogPertePoidsApres40Ans = () => {
               </h2>
               <Accordion type="single" collapsible className="w-full">
                 {[
-                  {
-                    q: "Est-ce que le programme fonctionne vraiment après 40 ans ?",
-                    a: "Oui, justement. Le Programme AGP a été conçu pour s'adapter aux réalités physiologiques des femmes après 40 ans : métabolisme ralenti, hormones en mouvement, stress élevé. La chronobiologie, l'hypnose et le coaching personnalisé permettent d'obtenir des résultats durables même quand les méthodes classiques échouent.",
-                  },
-                  {
-                    q: "Je suis en périménopause / ménopause. Le programme convient-il ?",
-                    a: "Absolument. Beaucoup de nos clientes sont en périménopause ou ménopause. Le programme intègre des outils spécifiques pour gérer les fringales hormonales, le stress, les troubles du sommeil et la prise de poids abdominale typiques de cette période.",
-                  },
-                  {
-                    q: "Combien de kilos puis-je perdre après 40 ans ?",
-                    a: "Après 40 ans, une perte progressive de 2 à 3 kg par mois est idéale. C'est moins spectaculaire qu'un régime drastique, mais infiniment plus durable. Sur 3 à 6 mois, nos clientes perdent généralement entre 6 et 15 kg, de façon stable et sans yoyo.",
-                  },
-                  {
-                    q: "Je n'ai jamais fait d'hypnose. Est-ce que ça fonctionne à mon âge ?",
-                    a: "L'hypnose thérapeutique fonctionne à tout âge. Ce sont des audios guidés qui vous aident à modifier vos automatismes alimentaires (grignotage, fringales, compulsions). Aucune expérience préalable n'est nécessaire. Et le coaching hebdomadaire est là pour répondre à toutes vos questions.",
-                  },
-                  {
-                    q: "Je prends un traitement hormonal substitutif (THS). Puis-je suivre le programme ?",
-                    a: "Si vous suivez un traitement médical, informez votre médecin avant de commencer. Le Programme AGP est un accompagnement bien-être qui se combine très bien avec un suivi médical, mais ne le remplace pas. Beaucoup de nos clientes sous THS suivent le programme avec succès.",
-                  },
-                  {
-                    q: "Le programme est accessible où ?",
-                    a: "100% en ligne. L'application fonctionne partout en France. Les sessions de coaching se font en visioconférence depuis le cabinet à Tresses (Gironde), accessible depuis n'importe où — Bordeaux, Paris, Lyon, ou ailleurs.",
-                  },
-                ].map((item, i) => (
-                  <AccordionItem key={i} value={`faq-${i}`}>
+                {
+                  q: "Est-ce que le programme fonctionne vraiment après 40 ans ?",
+                  a: "Oui, justement. Le Programme AGP a été conçu pour s'adapter aux réalités physiologiques des femmes après 40 ans : métabolisme ralenti, hormones en mouvement, stress élevé. La chronobiologie, l'hypnose et le coaching personnalisé permettent d'obtenir des résultats durables même quand les méthodes classiques échouent."
+                },
+                {
+                  q: "Je suis en périménopause / ménopause. Le programme convient-il ?",
+                  a: "Absolument. Beaucoup de nos clientes sont en périménopause ou ménopause. Le programme intègre des outils spécifiques pour gérer les fringales hormonales, le stress, les troubles du sommeil et la prise de poids abdominale typiques de cette période."
+                },
+                {
+                  q: "Combien de kilos puis-je perdre après 40 ans ?",
+                  a: "Après 40 ans, une perte progressive de 2 à 3 kg par mois est idéale. C'est moins spectaculaire qu'un régime drastique, mais infiniment plus durable. Sur 3 à 6 mois, nos clientes perdent généralement entre 6 et 15 kg, de façon stable et sans yoyo."
+                },
+                {
+                  q: "Je n'ai jamais fait d'hypnose. Est-ce que ça fonctionne à mon âge ?",
+                  a: "L'hypnose thérapeutique fonctionne à tout âge. Ce sont des audios guidés qui vous aident à modifier vos automatismes alimentaires (grignotage, fringales, compulsions). Aucune expérience préalable n'est nécessaire. Et le coaching hebdomadaire est là pour répondre à toutes vos questions."
+                },
+                {
+                  q: "Je prends un traitement hormonal substitutif (THS). Puis-je suivre le programme ?",
+                  a: "Si vous suivez un traitement médical, informez votre médecin avant de commencer. Le Programme AGP est un accompagnement bien-être qui se combine très bien avec un suivi médical, mais ne le remplace pas. Beaucoup de nos clientes sous THS suivent le programme avec succès."
+                },
+                {
+                  q: "Le programme est accessible où ?",
+                  a: "100% en ligne. L'application fonctionne partout en France. Les sessions de coaching se font en visioconférence depuis le cabinet à Tresses (Gironde), accessible depuis n'importe où — Bordeaux, Paris, Lyon, ou ailleurs."
+                }].
+                map((item, i) =>
+                <AccordionItem key={i} value={`faq-${i}`}>
                     <AccordionTrigger className="text-left font-semibold text-foreground">
                       {item.q}
                     </AccordionTrigger>
@@ -763,7 +763,7 @@ const BlogPertePoidsApres40Ans = () => {
                       {item.a}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
             </section>
 
@@ -775,32 +775,32 @@ const BlogPertePoidsApres40Ans = () => {
                   href="https://www.facebook.com/sharer/sharer.php?u=https://methodes-douces-bordeaux.fr/blog/perdre-du-poids-apres-40-ans-pourquoi-cest-different"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-primary hover:underline"
-                >
+                  className="text-sm text-primary hover:underline">
+
                   Facebook
                 </a>
                 <a
                   href="https://twitter.com/intent/tweet?url=https://methodes-douces-bordeaux.fr/blog/perdre-du-poids-apres-40-ans-pourquoi-cest-different&text=Perdre+du+poids+apr%C3%A8s+40+ans+%3A+pourquoi+c%27est+diff%C3%A9rent"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-primary hover:underline"
-                >
+                  className="text-sm text-primary hover:underline">
+
                   Twitter
                 </a>
                 <a
                   href="https://www.linkedin.com/sharing/share-offsite/?url=https://methodes-douces-bordeaux.fr/blog/perdre-du-poids-apres-40-ans-pourquoi-cest-different"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-primary hover:underline"
-                >
+                  className="text-sm text-primary hover:underline">
+
                   LinkedIn
                 </a>
                 <a
                   href="https://pinterest.com/pin/create/button/?url=https://methodes-douces-bordeaux.fr/blog/perdre-du-poids-apres-40-ans-pourquoi-cest-different&description=Perdre+du+poids+apr%C3%A8s+40+ans"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-primary hover:underline"
-                >
+                  className="text-sm text-primary hover:underline">
+
                   Pinterest
                 </a>
               </div>
@@ -813,8 +813,8 @@ const BlogPertePoidsApres40Ans = () => {
                   src={ericPortrait}
                   alt="Éric Gata praticien spécialisé perte de poids femmes 40 ans Bordeaux"
                   className="w-24 h-24 rounded-full object-cover"
-                  loading="lazy"
-                />
+                  loading="lazy" />
+
                 <div>
                   <h4 className="font-heading font-bold text-foreground text-lg mb-1">Éric Gata</h4>
                   <p className="text-muted-foreground leading-relaxed">
@@ -877,8 +877,8 @@ const BlogPertePoidsApres40Ans = () => {
               <a
                 href="https://ericgata.thrivecart.com/httpsbuystripecom14a4gzetc8fu1qtekqc3m02/"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
+
                 Je rejoins le Programme AGP à 90€
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
@@ -891,8 +891,8 @@ const BlogPertePoidsApres40Ans = () => {
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>);
+
 };
 
 export default BlogPertePoidsApres40Ans;
