@@ -197,7 +197,7 @@ const BlogPertePoidsApres40Ans = () => {
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground mb-8">
               <span className="flex items-center gap-1">
                 <Calendar size={16} />
-                Février 2025
+                Février 2026
               </span>
               <span className="flex items-center gap-1">
                 <Clock size={16} />
