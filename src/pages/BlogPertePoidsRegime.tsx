@@ -165,8 +165,8 @@ const BlogPertePoidsRegime = () => {
               </Link>
             </Button>
 
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
-              Perdre du Poids sans Régime à Bordeaux : La Méthode AGP Expliquée
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">Perdre du poids sans régime à Bordeaux : la méthode AGP expliquée
+
             </h1>
 
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground mb-8">
@@ -425,10 +425,10 @@ const BlogPertePoidsRegime = () => {
             <section className="mb-12">
               <div className="p-6 bg-muted/20 rounded-xl border border-border">
                 <p className="text-sm text-muted-foreground mb-2">À lire aussi :</p>
-                <Link 
-                  to="/blog/programme-perte-de-poids-en-ligne-coaching-bordeaux" 
-                  className="text-lg font-semibold text-primary hover:underline"
-                >
+                <Link
+                  to="/blog/programme-perte-de-poids-en-ligne-coaching-bordeaux"
+                  className="text-lg font-semibold text-primary hover:underline">
+
                   Programme Perte de Poids en Ligne : Pourquoi l'Application Seule ne Suffit Pas →
                 </Link>
               </div>
