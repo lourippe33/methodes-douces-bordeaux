@@ -201,7 +201,7 @@ const BlogPertePoidsApres40Ans = () => {
               </span>
               <span className="flex items-center gap-1">
                 <Clock size={16} />
-                12 min de lecture
+                5 min de lecture
               </span>
               <span className="flex items-center gap-1">
                 <User size={16} /> Éric Gata
