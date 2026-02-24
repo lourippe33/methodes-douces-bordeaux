@@ -10,8 +10,8 @@ import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+  AccordionTrigger } from
+"@/components/ui/accordion";
 import visioImage from "@/assets/seance-visio-coaching-agp.jpg";
 
 const BlogProgrammePertePoidsEnLigne = () => {
@@ -20,31 +20,31 @@ const BlogProgrammePertePoidsEnLigne = () => {
   }, []);
 
   const faqItems = [
-    {
-      question: "En quoi ce programme de perte de poids en ligne est-il différent d'une application classique ?",
-      answer: "Une application classique est entièrement automatisée. Elle ne vous connaît pas et ne peut pas s'adapter à ce que vous vivez réellement semaine après semaine. Le Programme AGP combine une application structurée avec un coaching humain hebdomadaire en visio — c'est cette combinaison qui permet des résultats durables."
-    },
-    {
-      question: "En quoi est-il différent de séances avec un hypnothérapeute ?",
-      answer: "Les séances classiques sont ponctuelles, sans structure quotidienne entre les rendez-vous. Le Programme AGP vous accompagne chaque jour via l'application ET chaque semaine via le coaching. C'est un système continu sur 30 jours, pas des rendez-vous isolés."
-    },
-    {
-      question: "Je ne suis pas à Bordeaux, puis-je quand même suivre le programme perte de poids ?",
-      answer: "Absolument. Le programme a été conçu pour être accessible depuis n'importe où en France. L'application fonctionne partout. Les sessions de coaching se font en visioconférence. Votre localisation n'a aucune importance."
-    },
-    {
-      question: "Combien de temps dois-je consacrer au programme chaque jour ?",
-      answer: "Entre 15 et 30 minutes par jour pour les exercices et audios de l'application, plus la session de coaching hebdomadaire d'environ 30 à 45 minutes. Le programme a été conçu pour s'intégrer dans une vie active."
-    },
-    {
-      question: "Que se passe-t-il si je ne vois pas de résultats après 7 jours ?",
-      answer: "Vous êtes remboursé(e) intégralement, sans question. La garantie satisfait ou remboursé 7 jours est inconditionnelle."
-    },
-    {
-      question: "Le programme convient-il aux personnes qui n'ont jamais fait d'hypnose ou d'EFT en Gironde ?",
-      answer: "Oui, totalement. Les audios et exercices sont accessibles à tous les niveaux, y compris pour les débutants complets. Aucune expérience préalable n'est nécessaire."
-    },
-  ];
+  {
+    question: "En quoi ce programme de perte de poids en ligne est-il différent d'une application classique ?",
+    answer: "Une application classique est entièrement automatisée. Elle ne vous connaît pas et ne peut pas s'adapter à ce que vous vivez réellement semaine après semaine. Le Programme AGP combine une application structurée avec un coaching humain hebdomadaire en visio — c'est cette combinaison qui permet des résultats durables."
+  },
+  {
+    question: "En quoi est-il différent de séances avec un hypnothérapeute ?",
+    answer: "Les séances classiques sont ponctuelles, sans structure quotidienne entre les rendez-vous. Le Programme AGP vous accompagne chaque jour via l'application ET chaque semaine via le coaching. C'est un système continu sur 30 jours, pas des rendez-vous isolés."
+  },
+  {
+    question: "Je ne suis pas à Bordeaux, puis-je quand même suivre le programme perte de poids ?",
+    answer: "Absolument. Le programme a été conçu pour être accessible depuis n'importe où en France. L'application fonctionne partout. Les sessions de coaching se font en visioconférence. Votre localisation n'a aucune importance."
+  },
+  {
+    question: "Combien de temps dois-je consacrer au programme chaque jour ?",
+    answer: "Entre 15 et 30 minutes par jour pour les exercices et audios de l'application, plus la session de coaching hebdomadaire d'environ 30 à 45 minutes. Le programme a été conçu pour s'intégrer dans une vie active."
+  },
+  {
+    question: "Que se passe-t-il si je ne vois pas de résultats après 7 jours ?",
+    answer: "Vous êtes remboursé(e) intégralement, sans question. La garantie satisfait ou remboursé 7 jours est inconditionnelle."
+  },
+  {
+    question: "Le programme convient-il aux personnes qui n'ont jamais fait d'hypnose ou d'EFT en Gironde ?",
+    answer: "Oui, totalement. Les audios et exercices sont accessibles à tous les niveaux, y compris pour les débutants complets. Aucune expérience préalable n'est nécessaire."
+  }];
+
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -55,23 +55,23 @@ const BlogProgrammePertePoidsEnLigne = () => {
     author: {
       "@type": "Person",
       name: "Eric Gata",
-      url: "https://methodes-douces-bordeaux.fr/a-propos",
+      url: "https://methodes-douces-bordeaux.fr/a-propos"
     },
     publisher: {
       "@type": "Organization",
       name: "Méthodes Douces Bordeaux",
       logo: {
         "@type": "ImageObject",
-        url: "https://methodes-douces-bordeaux.fr/logo-agp.png",
-      },
+        url: "https://methodes-douces-bordeaux.fr/logo-agp.png"
+      }
     },
     datePublished: "2026-02-17",
     dateModified: "2026-02-17",
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": "https://methodes-douces-bordeaux.fr/blog/programme-perte-de-poids-en-ligne-coaching-bordeaux",
+      "@id": "https://methodes-douces-bordeaux.fr/blog/programme-perte-de-poids-en-ligne-coaching-bordeaux"
     },
-    keywords: "programme perte de poids en ligne France, coaching perte de poids visio, application perte de poids avec suivi humain, méthode AGP Bordeaux",
+    keywords: "programme perte de poids en ligne France, coaching perte de poids visio, application perte de poids avec suivi humain, méthode AGP Bordeaux"
   };
 
   const faqStructuredData = {
@@ -82,9 +82,9 @@ const BlogProgrammePertePoidsEnLigne = () => {
       name: item.question,
       acceptedAnswer: {
         "@type": "Answer",
-        text: item.answer,
-      },
-    })),
+        text: item.answer
+      }
+    }))
   };
 
   return (
@@ -110,12 +110,12 @@ const BlogProgrammePertePoidsEnLigne = () => {
           <div className="container mx-auto px-4 py-8">
             <Breadcrumbs
               items={[
-                { label: "Accueil", path: "/" },
-                { label: "Blog", path: "/blog" },
-                { label: "Perte de poids", path: "/blog/agp" },
-                { label: "Programme en ligne + coaching" },
-              ]}
-            />
+              { label: "Accueil", path: "/" },
+              { label: "Blog", path: "/blog" },
+              { label: "Perte de poids", path: "/blog/agp" },
+              { label: "Programme en ligne + coaching" }]
+              } />
+
           </div>
 
           {/* Hero Section */}
@@ -143,8 +143,8 @@ const BlogProgrammePertePoidsEnLigne = () => {
                 </div>
               </div>
 
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
-                Programme Perte de Poids en Ligne : Pourquoi l'Application Seule ne Suffit Pas
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">Programme perte de poids en ligne : pourquoi l'application seule ne suffit pas
+
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
                 Application sans humain. Séances sans structure. Et si la vraie solution était ailleurs ?
@@ -161,8 +161,8 @@ const BlogProgrammePertePoidsEnLigne = () => {
                 className="w-full h-auto rounded-xl shadow-lg"
                 width={800}
                 height={533}
-                loading="eager"
-              />
+                loading="eager" />
+
             </div>
           </section>
 
@@ -351,31 +351,31 @@ const BlogProgrammePertePoidsEnLigne = () => {
               <div className="my-8 space-y-4">
                 <div className="space-y-3">
                   {[
-                    "Vous avez une vie chargée et avez besoin d'un programme qui s'adapte à vous",
-                    "Vous avez déjà essayé des applications sans obtenir de résultats durables",
-                    "Vous avez déjà fait des séances ponctuelles mais manquiez de structure au quotidien",
-                    "Vous voulez travailler sur vos émotions ET sur votre alimentation en même temps",
-                    "Vous préférez une approche progressive et douce plutôt qu'un régime drastique",
-                    "Vous habitez n'importe où en France et voulez un accompagnement de qualité",
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-start gap-3">
+                  "Vous avez une vie chargée et avez besoin d'un programme qui s'adapte à vous",
+                  "Vous avez déjà essayé des applications sans obtenir de résultats durables",
+                  "Vous avez déjà fait des séances ponctuelles mais manquiez de structure au quotidien",
+                  "Vous voulez travailler sur vos émotions ET sur votre alimentation en même temps",
+                  "Vous préférez une approche progressive et douce plutôt qu'un régime drastique",
+                  "Vous habitez n'importe où en France et voulez un accompagnement de qualité"].
+                  map((item, i) =>
+                  <div key={i} className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                       <span className="text-muted-foreground">{item}</span>
                     </div>
-                  ))}
+                  )}
                 </div>
 
                 <div className="space-y-3 mt-6">
                   {[
-                    "Vous cherchez un plan alimentaire strict à suivre sans réflexion",
-                    "Vous souhaitez des résultats en quelques jours",
-                    "Vous souffrez de troubles alimentaires sévères nécessitant un suivi médical spécialisé",
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-start gap-3">
+                  "Vous cherchez un plan alimentaire strict à suivre sans réflexion",
+                  "Vous souhaitez des résultats en quelques jours",
+                  "Vous souffrez de troubles alimentaires sévères nécessitant un suivi médical spécialisé"].
+                  map((item, i) =>
+                  <div key={i} className="flex items-start gap-3">
                       <XCircle className="h-5 w-5 text-destructive mt-0.5 shrink-0" />
                       <span className="text-muted-foreground">{item}</span>
                     </div>
-                  ))}
+                  )}
                 </div>
               </div>
 
@@ -420,10 +420,10 @@ const BlogProgrammePertePoidsEnLigne = () => {
               {/* Article lié */}
               <div className="p-6 bg-muted/20 rounded-xl border border-border my-8">
                 <p className="text-sm text-muted-foreground mb-2">À lire aussi :</p>
-                <Link 
-                  to="/blog/perdre-poids-sans-regime-bordeaux" 
-                  className="text-lg font-semibold text-primary hover:underline"
-                >
+                <Link
+                  to="/blog/perdre-poids-sans-regime-bordeaux"
+                  className="text-lg font-semibold text-primary hover:underline">
+
                   Perdre du Poids sans Régime à Bordeaux : La Méthode AGP Expliquée →
                 </Link>
               </div>
@@ -433,8 +433,8 @@ const BlogProgrammePertePoidsEnLigne = () => {
                 Questions fréquentes
               </h2>
               <Accordion type="single" collapsible className="w-full">
-                {faqItems.map((item, index) => (
-                  <AccordionItem key={index} value={`faq-${index}`}>
+                {faqItems.map((item, index) =>
+                <AccordionItem key={index} value={`faq-${index}`}>
                     <AccordionTrigger className="text-left text-foreground font-medium">
                       {item.question}
                     </AccordionTrigger>
@@ -442,7 +442,7 @@ const BlogProgrammePertePoidsEnLigne = () => {
                       {item.answer}
                     </AccordionContent>
                   </AccordionItem>
-                ))}
+                )}
               </Accordion>
 
               {/* Contact */}
@@ -468,8 +468,8 @@ const BlogProgrammePertePoidsEnLigne = () => {
 
         <Footer />
       </div>
-    </>
-  );
+    </>);
+
 };
 
 export default BlogProgrammePertePoidsEnLigne;
