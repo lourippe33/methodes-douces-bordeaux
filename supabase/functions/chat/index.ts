@@ -1,10 +1,13 @@
 import "https://deno.land/x/xhr@0.1.0/mod.ts";
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
 };
+
+const MAX_MESSAGES_PER_DAY = 20;
 
 serve(async (req) => {
   if (req.method === "OPTIONS") {
@@ -12,6 +15,51 @@ serve(async (req) => {
   }
 
   try {
+    // Rate limiting par IP
+    const ip =
+      req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+      req.headers.get("x-real-ip") ||
+      "unknown";
+
+    const supabase = createClient(
+      Deno.env.get("SUPABASE_URL")!,
+      Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!
+    );
+
+    const now = new Date();
+    const { data: rateData } = await supabase
+      .from("chat_rate_limits")
+      .select("count, window_start")
+      .eq("ip", ip)
+      .single();
+
+    if (rateData) {
+      const windowStart = new Date(rateData.window_start);
+      const diffHours = (now.getTime() - windowStart.getTime()) / (1000 * 60 * 60);
+
+      if (diffHours >= 24) {
+        // Réinitialiser la fenêtre
+        await supabase
+          .from("chat_rate_limits")
+          .update({ count: 1, window_start: now.toISOString() })
+          .eq("ip", ip);
+      } else if (rateData.count >= MAX_MESSAGES_PER_DAY) {
+        return new Response(
+          JSON.stringify({ error: `Limite journalière atteinte (${MAX_MESSAGES_PER_DAY} messages/jour). Revenez demain !` }),
+          { status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+        );
+      } else {
+        await supabase
+          .from("chat_rate_limits")
+          .update({ count: rateData.count + 1 })
+          .eq("ip", ip);
+      }
+    } else {
+      await supabase
+        .from("chat_rate_limits")
+        .insert({ ip, count: 1, window_start: now.toISOString() });
+    }
+
     const { messages } = await req.json();
     const OPENAI_API_KEY = Deno.env.get("OPENAI_API_KEY");
 
