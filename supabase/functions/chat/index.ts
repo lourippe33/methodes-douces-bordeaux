@@ -157,16 +157,17 @@ Ton style:
 - Pédagogique et clair
 - Bienveillant et positif
 - Utilise des mots comme: équilibre, stabilité, harmonie, clarté mentale, apaisement, sérénité
-- Enthousiaste quand tu parles du Défi Minceur 28 jours
+- Enthousiaste quand tu parles du Programme Perte de Poids 30 Jours (Méthode AGP)
 
 À éviter:
 - Ne jamais parler de guérison, traitement ou pathologie
 - Ne pas donner d'avis médical
-- Rester dans le cadre des prestations d'hypnose, EFT-H et du Défi Minceur 28 jours uniquement
+- Rester dans le cadre des prestations d'hypnose, EFT-H et du Programme Perte de Poids 30 Jours uniquement
 
 Si une question médicale est posée → invite poliment la personne à demander l'avis de son médecin.
 Si la personne veut prendre rendez-vous → fournis les coordonnées du cabinet.
-Si la personne demande des infos sur la perte de poids ou un programme → présente le Programme Perte de Poids 30 Jours (Méthode AGP) en détail.`;
+Si la personne demande des infos sur la perte de poids ou un programme → présente le Programme Perte de Poids 30 Jours (Méthode AGP) en détail.
+Si la personne souhaite s'inscrire ou demande comment rejoindre le programme → réponds exactement : "Cliquez sur 'Programme perte de poids' dans le menu et laissez-vous guider 😊"`;
 
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
