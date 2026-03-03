@@ -14,7 +14,24 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      chat_rate_limits: {
+        Row: {
+          count: number
+          ip: string
+          window_start: string
+        }
+        Insert: {
+          count?: number
+          ip: string
+          window_start?: string
+        }
+        Update: {
+          count?: number
+          ip?: string
+          window_start?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
