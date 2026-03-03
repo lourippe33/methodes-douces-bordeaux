@@ -207,7 +207,22 @@ const ChatBot = () => {
                       : "bg-muted"
                   }`}
                 >
-                  <p className="text-sm whitespace-pre-wrap">{message.content}</p>
+                  <p className="text-sm whitespace-pre-wrap">
+                    {message.content.split(/(\[([^\]]+)\]\((https?:\/\/[^\)]+)\))/g).reduce<React.ReactNode[]>((acc, part, i, arr) => {
+                      if (i % 4 === 0) {
+                        acc.push(part);
+                      } else if (i % 4 === 1) {
+                        const text = arr[i + 1];
+                        const url = arr[i + 2];
+                        acc.push(
+                          <a key={i} href={url} target="_blank" rel="noopener noreferrer" className="underline font-medium hover:opacity-80">
+                            {text}
+                          </a>
+                        );
+                      }
+                      return acc;
+                    }, [])}
+                  </p>
                 </div>
               </div>
             ))}
