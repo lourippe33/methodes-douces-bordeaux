@@ -16,10 +16,6 @@
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
-    [[redirects]]
-  from = "/*"
-  to = "https://programme-agp.fr/:splat"
-  status = 301
-  force = true
+   
 
 
